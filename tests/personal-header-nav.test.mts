@@ -2,7 +2,7 @@ import test, { afterEach } from "node:test";
 import assert from "node:assert/strict";
 import { JSDOM } from "jsdom";
 import React from "react";
-import type { User } from "@supabase/supabase-js";
+import type { User } from "../lib/app-services";
 const dom = new JSDOM("<!doctype html><html><body></body></html>", { url: "http://localhost/" });
 Object.defineProperties(globalThis, {
   window: { value: dom.window, configurable: true },

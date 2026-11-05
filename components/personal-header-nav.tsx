@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect, useId, useRef, useState } from "react";
-import type { KeyboardEvent } from "react";
-import type { User } from "@supabase/supabase-js";
+import { useEffect, useId, useRef, useState, type KeyboardEvent } from "react";
+import type { AppUser as User } from "@/lib/firebase/auth-user";
 
 export type PersonalHeaderNavProps = {
   user: User;

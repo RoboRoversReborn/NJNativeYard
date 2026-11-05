@@ -1,6 +1,6 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
-import type { User } from "@supabase/supabase-js";
+import type { AppUser as User } from "@/lib/firebase/auth-user";
 import { Camera, Leaf, LoaderCircle, Sprout, X } from "lucide-react";
 import { UploadProgress } from "./upload-progress";
 import { sampleYardById } from "@/lib/sample-yards";
@@ -431,7 +431,7 @@ export function NativeYardApp({
         )
           showView("home");
       }
-      // Supabase holds an auth lock while notifying listeners: load outside it.
+      // Auth listener notification: load outside it.
       const timer = setTimeout(() => {
         timers.delete(timer);
         void loadSession(
@@ -1366,7 +1366,7 @@ export function NativeYardApp({
                   areaId={areaId}
                   surveys={surveys}
                   tasks={tasks}
-                  displayName={user.user_metadata?.full_name}
+                  displayName={user.user_metadata?.full_name ?? undefined}
                   onSelectProperty={(id) => {
                     setPropertyId(id);
                     setAreaId("");

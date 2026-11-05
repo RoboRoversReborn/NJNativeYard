@@ -125,7 +125,7 @@ test("octet-stream camera files reach the local decoder instead of failing clien
 
 test("account changes clear retained private upload files and retry feedback",async()=>{
   const before=globalThis.fetch;
-  type User=import('@supabase/supabase-js').User;
+  type User=import('../lib/app-services').User;
   let listener:(user:User|null)=>void=()=>{};
   const service=services();
   service.auth.currentUser=async()=>({id:'owner-a',user_metadata:{}} as User);

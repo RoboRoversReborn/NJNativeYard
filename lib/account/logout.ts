@@ -1,10 +1,10 @@
 export function authCookieNames(
   cookieHeader: string,
-  supabaseUrl: string,
+  projectUrl: string,
 ): string[] {
   let ref: string;
   try {
-    ref = new URL(supabaseUrl).hostname.split(".")[0];
+    ref = new URL(projectUrl).hostname.split(".")[0];
   } catch {
     return [];
   }

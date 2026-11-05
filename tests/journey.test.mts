@@ -1070,7 +1070,7 @@ function identityUser(id: string) {
     user_metadata: { full_name: `${id} gardener` },
     created_at: "2024-01-01T00:00:00Z",
     email: `${id}@example.test`,
-  } as import("@supabase/supabase-js").User;
+  } as unknown as import("../lib/app-services").User;
 }
 function identityData(id: string) {
   const saved = {
@@ -1102,12 +1102,12 @@ function identityData(id: string) {
   };
 }
 async function identityServices(
-  initial: import("@supabase/supabase-js").User | null,
+  initial: import("../lib/app-services").User | null,
 ) {
   const { appServices } = await import("../lib/app-services");
   let current = initial;
   let listener: (
-    next: import("@supabase/supabase-js").User | null,
+    next: import("../lib/app-services").User | null,
   ) => void = () => {};
   const cleared: (string | undefined)[] = [];
   const kept: { survey: import("../lib/survey").Survey; ownerId?: string }[] =
@@ -1227,7 +1227,7 @@ test("auth events outrank late initialization and previous-owner account loads",
     Response.json({ vision: true, accounts: true });
   dom.window.history.replaceState(null, "", "/?view=properties");
   const h = await identityServices(identityUser("A"));
-  const initial = deferred<import("@supabase/supabase-js").User | null>();
+  const initial = deferred<import("../lib/app-services").User | null>();
   const accountA = deferred<ReturnType<typeof identityData>>();
   h.services.auth.currentUser = () => initial.promise;
   let owner = "A",

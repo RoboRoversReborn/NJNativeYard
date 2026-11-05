@@ -1,4 +1,19 @@
-import { createClient } from "./client";
+import {
+  isFirebaseConfigured,
+  getFirebaseDb,
+  getFirebaseAuth,
+} from "../firebase/client";
+import {
+  doc,
+  getDoc,
+  collection,
+  query,
+  where,
+  getDocs,
+  updateDoc,
+  setDoc,
+} from "firebase/firestore";
+
 export type AreaBaseline = {
   areaId: string;
   propertyId: string;
@@ -19,51 +34,38 @@ export type AreaBaselineEvent = {
   before_state: Record<string, unknown>;
   after_state: Record<string, unknown>;
 };
-async function signedInClient() {
-  const client = createClient();
-  if (!client) throw new Error("Account baselines are not configured.");
-  const {
-    data: { user },
-    error,
-  } = await client.auth.getUser();
-  if (error || !user)
-    throw new Error("Sign in to view or choose your area baseline.");
-  return client;
-}
+
 export async function loadAreaBaseline(areaId: string): Promise<AreaBaseline> {
-  const client = await signedInClient();
-  const { data, error } = await client
-    .from("yard_areas")
-    .select("id,property_id,baseline_survey_id")
-    .eq("id", areaId)
-    .single();
-  if (error || !data)
+  const db = getFirebaseDb();
+  if (!db) {
+    throw new Error("Account baselines are not configured.");
+  }
+  const snap = await getDoc(doc(db, "yard_areas", areaId));
+  if (!snap.exists()) {
     throw new Error(
       "The area baseline could not be loaded. Check the selected area and try again.",
     );
+  }
+  const data = snap.data();
   return {
-    areaId: data.id,
-    propertyId: data.property_id,
-    baselineSurveyId: data.baseline_survey_id,
+    areaId: snap.id,
+    propertyId: data.propertyId || data.property_id || "",
+    baselineSurveyId: data.baseline_survey_id || data.baselineSurveyId || null,
   };
 }
+
 export async function loadBaselineEvents(
   areaId: string,
 ): Promise<AreaBaselineEvent[]> {
-  const client = await signedInClient();
-  const { data, error } = await client
-    .from("ny_area_baseline_events")
-    .select(
-      "id,area_id,property_id,owner_user_id,actor_user_id,actor_type,event_type,occurred_at,reason,before_survey_id,after_survey_id,before_state,after_state",
-    )
-    .eq("area_id", areaId)
-    .order("occurred_at", { ascending: false });
-  if (error)
-    throw new Error(
-      "Baseline history could not be loaded. Your selected baseline has not been changed.",
-    );
-  return (data || []) as AreaBaselineEvent[];
+  const db = getFirebaseDb();
+  if (!db) return [];
+
+  const snap = await getDocs(
+    query(collection(db, "ny_area_baseline_events"), where("area_id", "==", areaId)),
+  );
+  return snap.docs.map((d) => ({ ...(d.data() as AreaBaselineEvent), id: d.id }));
 }
+
 export async function setAreaBaseline(
   areaId: string,
   surveyId: string | null,
@@ -71,14 +73,31 @@ export async function setAreaBaseline(
 ): Promise<void> {
   if (!reason.trim() || reason.trim().length > 1000)
     throw new Error("Give a reason of 1 to 1000 characters.");
-  const client = await signedInClient();
-  const { error } = await client.rpc("ny_set_area_baseline", {
-    p_area_id: areaId,
-    p_survey_id: surveyId,
-    p_reason: reason.trim(),
+
+  const auth = getFirebaseAuth();
+  const db = getFirebaseDb();
+  const user = auth?.currentUser;
+  if (!user) {
+    throw new Error("Sign in to view or choose your area baseline.");
+  }
+  if (!db) {
+    throw new Error("Account baselines are not configured.");
+  }
+
+  await updateDoc(doc(db, "yard_areas", areaId), {
+    baseline_survey_id: surveyId,
   });
-  if (error)
-    throw new Error(
-      "Baseline could not be saved. Choose a real uploaded photo from this area and try again.",
-    );
+
+  const eventId = crypto.randomUUID();
+  await setDoc(doc(db, "ny_area_baseline_events", eventId), {
+    id: eventId,
+    area_id: areaId,
+    owner_user_id: user.uid,
+    actor_user_id: user.uid,
+    actor_type: "owner",
+    event_type: surveyId ? "selected" : "cleared",
+    occurred_at: new Date().toISOString(),
+    reason: reason.trim(),
+    after_survey_id: surveyId,
+  });
 }

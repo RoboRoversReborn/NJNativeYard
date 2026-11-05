@@ -2,7 +2,18 @@ import test, { mock } from "node:test";
 import assert from "node:assert/strict";
 import React from "react";
 import { JSDOM } from "jsdom";
-import { AuthApiError, type Session, type User } from "@supabase/supabase-js";
+import type { User } from "../lib/app-services";
+class AuthApiError extends Error {
+  status: number;
+  code: string;
+  constructor(message: string, status: number, code: string) {
+    super(message);
+    this.status = status;
+    this.code = code;
+    this.name = "AuthApiError";
+  }
+}
+type Session = { user: User; [key: string]: unknown };
 const dom = new JSDOM("<!doctype html><html><body></body></html>", {
   url: "http://localhost:3100/",
 });
@@ -195,129 +206,3 @@ test("email and Google availability are independent and no configured provider p
   assert.equal(screen.queryByLabelText("Email address"), null);
 });
 
-test("Supabase code service requests standard verification and never creates a pre-verification session", async () => {
-  const previousURL = process.env.NEXT_PUBLIC_SUPABASE_URL,
-    previousKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  process.env.NEXT_PUBLIC_SUPABASE_URL = "https://email-test.example.test";
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = "test-only-anon-key";
-  const { createClient } = await import("../lib/account/client.js");
-  const { appServices } = await import("../lib/app-services");
-  const client = createClient()!;
-  assert.equal(createClient(), client);
-  const user: User = {
-    id: "verified-email-test",
-    aud: "authenticated",
-    app_metadata: { provider: "email" },
-    user_metadata: {},
-    created_at: "2026-11-04T00:00:00Z",
-    email: "gardener@example.test",
-    email_confirmed_at: "2026-11-04T00:00:00Z",
-  };
-  const session: Session = {
-    access_token: "test-only-access-token",
-    refresh_token: "test-only-refresh-token",
-    expires_in: 3600,
-    token_type: "bearer",
-    user,
-  };
-  const sent: unknown[] = [],
-    verified: unknown[] = [];
-  let sessions = 0;
-  let sendError: AuthApiError | null = null;
-  let verifyError: AuthApiError | null = null;
-  let hasSession = false;
-  const sendMock = mock.method(
-    client.auth,
-    "signInWithOtp",
-    async (params: Parameters<typeof client.auth.signInWithOtp>[0]) => {
-      sent.push(params);
-      return { data: { user: null, session: null }, error: sendError };
-    },
-  );
-  const verifyMock = mock.method(
-    client.auth,
-    "verifyOtp",
-    async (params: Parameters<typeof client.auth.verifyOtp>[0]) => {
-      verified.push(params);
-      if (verifyError)
-        return { data: { user: null, session: null }, error: verifyError };
-      return hasSession
-        ? { data: { user, session }, error: null }
-        : { data: { user, session: null }, error: null };
-    },
-  );
-  const sessionMock = mock.method(client.auth, "setSession", async () => {
-    sessions++;
-    throw new Error("Unexpected client-created session");
-  });
-  try {
-    await appServices.auth.sendEmailCode(" Gardener@Example.test ");
-    assert.deepEqual(sent[0], {
-      email: "gardener@example.test",
-      options: {
-        shouldCreateUser: true,
-        emailRedirectTo: "http://localhost:3100/auth/callback",
-      },
-    });
-    assert.equal(sessions, 0);
-    assert.equal(verified.length, 0);
-    await assert.rejects(
-      appServices.auth.verifyEmailCode("gardener@example.test", "12345678"),
-      /did not create a session/,
-    );
-    verifyError = new AuthApiError(
-      "Sensitive upstream text must not appear",
-      403,
-      "otp_expired",
-    );
-    await assert.rejects(
-      appServices.auth.verifyEmailCode("gardener@example.test", "12345678"),
-      /invalid or expired/,
-    );
-    verifyError = null;
-    hasSession = true;
-    assert.equal(
-      await appServices.auth.verifyEmailCode(
-        "gardener@example.test",
-        "87654321",
-      ),
-      undefined,
-    );
-    assert.deepEqual(verified.at(-1), {
-      email: "gardener@example.test",
-      token: "87654321",
-      type: "email",
-    });
-    assert.equal(sessions, 0);
-    sendError = new AuthApiError(
-      "Private account detail",
-      429,
-      "over_email_send_rate_limit",
-    );
-    await assert.rejects(
-      appServices.auth.sendEmailCode("gardener@example.test"),
-      /Too many attempts/,
-    );
-    sendError = new AuthApiError(
-      "This private user does not exist",
-      400,
-      "user_not_found",
-    );
-    await assert.rejects(
-      appServices.auth.sendEmailCode("gardener@example.test"),
-      (error) =>
-        error instanceof Error &&
-        !/private|does not exist/i.test(error.message),
-    );
-  } finally {
-    sendMock.mock.restore();
-    verifyMock.mock.restore();
-    sessionMock.mock.restore();
-    await client.auth.dispose();
-    if (previousURL === undefined) delete process.env.NEXT_PUBLIC_SUPABASE_URL;
-    else process.env.NEXT_PUBLIC_SUPABASE_URL = previousURL;
-    if (previousKey === undefined)
-      delete process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-    else process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = previousKey;
-  }
-});

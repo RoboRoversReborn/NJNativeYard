@@ -7,7 +7,7 @@ import { canonicalReferenceTaxon, referenceTaxonKey } from './taxon-names';
 import { readSpeciesReference, writeSpeciesReference } from './species-reference-cache';
 import { SPECIES_REFERENCE_VERSION } from './species-reference-version';
 
-export type SpeciesReferenceResult = { profile?: Plant; cache: { source: "memory" | "supabase" | "provider" | "none"; persisted: boolean; version: string } };
+export type SpeciesReferenceResult = { profile?: Plant; cache: { source: "memory" | "firestore" | "provider" | "none"; persisted: boolean; version: string } };
 const cache = new Map<string, { until: number; result: SpeciesReferenceResult }>();
 const pending = new Map<string, Promise<SpeciesReferenceResult>>();
 const key = (name: string) => referenceTaxonKey(name) || name.trim().toLowerCase().replace(/\s+/g, ' ');
@@ -69,7 +69,7 @@ export async function lookupSpeciesReference(scientificName: string): Promise<Sp
       const stored = await readSpeciesReference(canonical, SPECIES_REFERENCE_VERSION);
       if (stored && taxonKey(stored.scientificName) === taxonKey(canonical)) {
         const profile = { ...enrichNjPlant({ ...stored, scientificName: canonical, referenceVersion: SPECIES_REFERENCE_VERSION }), description: stored.description };
-        const result: SpeciesReferenceResult = { profile, cache: { source: "supabase", persisted: true, version: SPECIES_REFERENCE_VERSION } };
+        const result: SpeciesReferenceResult = { profile, cache: { source: "firestore", persisted: true, version: SPECIES_REFERENCE_VERSION } };
         remember(cacheKey, result); return result;
       }
       const carePromise = lookupSpeciesCare(canonical);

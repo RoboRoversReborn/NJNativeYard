@@ -2,7 +2,7 @@ import test, { mock } from "node:test";
 import assert from "node:assert/strict";
 import { JSDOM } from "jsdom";
 import React from "react";
-import type { User } from "@supabase/supabase-js";
+import type { User } from "../lib/app-services";
 import type { AppServices } from "../lib/app-services";
 import type { Property, RoadTask } from "../lib/account/repository";
 import type { Survey } from "../lib/survey";
@@ -677,7 +677,7 @@ test("repository rejects an account switch before photo fetch, storage upload or
     authMock.mock.restore();
     storageMock.mock.restore();
     writeMock.mock.restore();
-    await client.auth.dispose();
+    await (client.auth as any).dispose?.();
     globalThis.fetch = savedFetch;
     if (previousURL === undefined) delete process.env.NEXT_PUBLIC_SUPABASE_URL;
     else process.env.NEXT_PUBLIC_SUPABASE_URL = previousURL;

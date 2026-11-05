@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
-import type { User } from "@supabase/supabase-js";
+import type { AppUser as User } from "@/lib/firebase/auth-user";
 import { ArrowRight, Check, Plus, Sprout, TreeDeciduous } from "lucide-react";
 import {
   scanComparison,

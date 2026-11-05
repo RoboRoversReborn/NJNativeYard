@@ -1,5 +1,4 @@
 import type { User as FirebaseUser } from "firebase/auth";
-import type { User as SupabaseUser } from "@supabase/supabase-js";
 
 export type AppUser = {
   id: string;
@@ -9,7 +8,9 @@ export type AppUser = {
   phone?: string;
   created_at: string;
   confirmed_at?: string;
+  email_confirmed_at?: string;
   last_sign_in_at?: string;
+  [key: string]: unknown;
   app_metadata: {
     provider?: string;
     providers?: string[];
@@ -54,14 +55,5 @@ export function mapFirebaseUser(user: FirebaseUser | null): AppUser | null {
       providers: [provider],
     },
     is_anonymous: user.isAnonymous,
-  };
-}
-
-export function mapSupabaseUser(user: SupabaseUser | null): AppUser | null {
-  if (!user) return null;
-  return {
-    ...user,
-    user_metadata: (user.user_metadata || {}) as Record<string, unknown>,
-    app_metadata: (user.app_metadata || {}) as Record<string, unknown>,
   };
 }

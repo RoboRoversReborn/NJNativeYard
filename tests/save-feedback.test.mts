@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import React from "react";
 import { JSDOM } from "jsdom";
 import { readFileSync } from "node:fs";
-import type { User } from "@supabase/supabase-js";
+import type { User } from "../lib/app-services";
 import type { Survey } from "../lib/survey";
 import type { AppServices } from "../lib/app-services";
 const dom = new JSDOM("<!doctype html><html><body></body></html>", { url: "http://localhost:3100/" });

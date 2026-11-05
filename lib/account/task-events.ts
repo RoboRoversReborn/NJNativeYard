@@ -1,5 +1,11 @@
-import { createClient } from "./client";
+import {
+  isFirebaseConfigured,
+  getFirebaseDb,
+  getFirebaseAuth,
+} from "../firebase/client";
+import { collection, query, where, getDocs } from "firebase/firestore";
 import type { RoadTask } from "./repository";
+
 export type TaskStage = "Review" | "Plan" | "Do" | "Revisit";
 export type TaskStateSnapshot = RoadTask & { stage?: TaskStage | null };
 export type TaskEvent = {
@@ -16,33 +22,34 @@ export type TaskEvent = {
   before_state: TaskStateSnapshot | null;
   after_state: TaskStateSnapshot;
 };
+
 export async function loadTaskEvents(
   propertyId: string,
   taskId?: string,
 ): Promise<TaskEvent[]> {
   if (!propertyId) return [];
-  const client = createClient();
-  if (!client) throw new Error("Account history is not configured.");
-  const {
-    data: { user },
-    error: authError,
-  } = await client.auth.getUser();
-  if (authError || !user) throw new Error("Sign in to view your task history.");
-  let query = client
-    .from("ny_task_events")
-    .select(
-      "id,task_id,property_id,yard_area_id,owner_user_id,actor_user_id,actor_type,event_type,occurred_at,changed_fields,before_state,after_state",
-    )
-    .eq("property_id", propertyId)
-    .order("occurred_at", { ascending: false });
-  if (taskId) query = query.eq("task_id", taskId);
-  const { data, error } = await query;
-  if (error)
-    throw new Error(
-      "Task history could not be loaded. Your saved tasks have not been changed; try again.",
-    );
-  return (data || []) as TaskEvent[];
+
+  const auth = getFirebaseAuth();
+  const db = getFirebaseDb();
+  const user = auth?.currentUser;
+  if (!user) throw new Error("Sign in to view your task history.");
+  if (!db) throw new Error("Account history is not configured.");
+
+  const q = taskId
+    ? query(
+        collection(db, "ny_task_events"),
+        where("property_id", "==", propertyId),
+        where("task_id", "==", taskId),
+      )
+    : query(
+        collection(db, "ny_task_events"),
+        where("property_id", "==", propertyId),
+      );
+
+  const snap = await getDocs(q);
+  return snap.docs.map((d) => ({ ...(d.data() as TaskEvent), id: d.id }));
 }
+
 export function taskEventLabel(
   event: Pick<TaskEvent, "event_type" | "changed_fields">,
 ): string {

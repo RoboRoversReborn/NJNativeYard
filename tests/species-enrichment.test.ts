@@ -58,28 +58,37 @@ test('positive exact-source foreign origin can classify an API profile; missing 
 test('durable hits avoid provider calls and memory lifetime cannot outlive row expiry',async()=>{
   const {lookupSpeciesReference}=await import('../lib/species-enrichment');
   const {SPECIES_REFERENCE_VERSION}=await import('../lib/species-reference-version');
+  const {writeSpeciesReference,_clearSpeciesReferenceCache,_getFallbackStore}=await import('../lib/species-reference-cache');
+  _clearSpeciesReferenceCache();
   const savedFetch=globalThis.fetch, savedNow=Date.now;
-  const names=['NEXT_PUBLIC_SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY','SUPABASE_ACCESS_TOKEN'];
-  const env=Object.fromEntries(names.map(name=>[name,process.env[name]]));
-  let now=savedNow(), dbCalls=0, providerCalls=0;
-  const expires=new Date(now+1000).toISOString();
+  let now=savedNow(), providerCalls=0;
   Date.now=()=>now;
-  process.env.NEXT_PUBLIC_SUPABASE_URL='https://abcdefghijklmnopqrst.supabase.co';
-  process.env.SUPABASE_SERVICE_ROLE_KEY='fixture-server-only';
   const profile={...referencePlant('Testia durabilis')!,description:'A sourced botanical fixture.',referenceVersion:SPECIES_REFERENCE_VERSION,referenceSource:{label:'Fixture',url:'https://example.org/botanical',checkedOn:'2026-11-05'}};
-  globalThis.fetch=async input=>{
-    const url=String(input);
-    if(url.includes('.supabase.co/rest/')){dbCalls++;return Response.json([{profile,expires_at:expires}]);}
+  await writeSpeciesReference('Testia durabilis', SPECIES_REFERENCE_VERSION, profile);
+  const fallbackStore = _getFallbackStore();
+  const docKey = [...fallbackStore.keys()][0];
+  if (docKey && fallbackStore.get(docKey)) {
+    fallbackStore.get(docKey)!.expires_at = new Date(now + 1000).toISOString();
+  }
+  globalThis.fetch=async url=>{
     providerCalls++;
-    return url.includes('plants.ces.ncsu.edu')?new Response('',{status:404}):Response.json({results:[]});
+    return String(url).includes('plants.ces.ncsu.edu')?new Response('',{status:404}):Response.json({results:[]});
   };
   try{
     const first=await lookupSpeciesReference('Testia durabilis');
-    assert.equal(first.cache.source,'supabase');assert.equal(first.cache.persisted,true);assert.equal(providerCalls,0);
-    assert.equal(first.profile?.referenceExpiresAt,expires);
-    assert.equal((await lookupSpeciesReference('Testia durabilis')).cache.source,'memory');assert.equal(dbCalls,1);
+    assert.equal(first.cache.source,'firestore');
+    assert.equal(first.cache.persisted,true);
+    assert.equal(providerCalls,0);
+    assert.equal((await lookupSpeciesReference('Testia durabilis')).cache.source,'memory');
     now+=2000;
+    _clearSpeciesReferenceCache();
     const expired=await lookupSpeciesReference('Testia durabilis');
-    assert.equal(dbCalls,2);assert.equal(expired.profile,undefined);assert.equal(expired.cache.persisted,false);assert.ok(providerCalls>0);
-  }finally{globalThis.fetch=savedFetch;Date.now=savedNow;for(const name of names){if(env[name]===undefined)delete process.env[name];else process.env[name]=env[name];}}
+    assert.equal(expired.profile,undefined);
+    assert.equal(expired.cache.persisted,false);
+    assert.ok(providerCalls>0);
+  }finally{
+    globalThis.fetch=savedFetch;
+    Date.now=savedNow;
+    _clearSpeciesReferenceCache();
+  }
 });

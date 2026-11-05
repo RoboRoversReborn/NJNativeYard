@@ -1,4 +1,3 @@
-import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { NextResponse } from "next/server";
 import { isLocalQaRequest, type QaEnvironment } from "./gate";
 import {
@@ -7,7 +6,9 @@ import {
   type LocalQaConfig,
   type QaAccountName,
 } from "./config";
-import type { User, Session } from "@supabase/supabase-js";
+import type { User } from "../app-services";
+type Session = { user: User; access_token?: string; refresh_token?: string; [key: string]: unknown };
+type CookieOptions = Record<string, unknown>;
 type CookieWrite = { name: string; value: string; options: CookieOptions };
 type AuthClient = {
   auth: {
@@ -80,10 +81,14 @@ export async function handleQaLogin(
   const pending: CookieWrite[] = [];
   const createAuth =
     dependencies.createAuth ??
-    ((url, key, queue) =>
-      createServerClient(url, key, {
-        cookies: { getAll: () => [], setAll: queue },
-      }));
+    ((_url: string, _key: string, _queue: (items: CookieWrite[]) => void) => ({
+      auth: {
+        signInWithPassword: async () => ({
+          data: { user: null, session: null },
+          error: new Error("Supabase is disabled; use Firebase Authentication."),
+        }),
+      },
+    }));
   let client: AuthClient | undefined;
   try {
     client = createAuth(url, key, (items) => pending.push(...items));

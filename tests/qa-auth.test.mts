@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { Session, User } from "@supabase/supabase-js";
+import type { User } from "../lib/app-services";
+type Session = { user: User; access_token?: string; refresh_token?: string; [key: string]: unknown };
 import { isLocalQaRequest } from "../lib/qa/gate";
 import { validQaConfig, type LocalQaConfig } from "../lib/qa/config";
 import { handleQaLogin } from "../lib/qa/login";

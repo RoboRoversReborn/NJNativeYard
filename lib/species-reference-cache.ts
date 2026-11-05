@@ -1,6 +1,8 @@
 import 'server-only';
 import type { Plant } from './types';
 import { canonicalReferenceTaxon, referenceTaxonKey } from './taxon-names';
+import { isFirebaseConfigured } from './firebase/client';
+import { getAdminDb } from './firebase/server';
 
 const PROVIDER = 'nativeyard-species-reference';
 const TTL_MS = 30 * 24 * 60 * 60 * 1000;
@@ -50,53 +52,90 @@ function cleanProfile(value: unknown, name: string): Plant | undefined {
   if (p.referencePhoto && (!/^https:\/\/(?:static\.inaturalist\.org|inaturalist-open-data\.s3\.amazonaws\.com)\/[^?#]+$/.test(p.referencePhoto.url || '') || !['cc0','cc-by','cc-by-sa'].includes(p.referencePhoto.license) || !p.referencePhoto.attribution || !/^https:\/\/www\.inaturalist\.org\/taxa\/\d+$/.test(p.referencePhoto.sourceUrl || ''))) delete p.referencePhoto;
   return JSON.stringify(p).length <= 100000 ? p : undefined;
 }
-function config() {
-  if (typeof window !== 'undefined') return undefined;
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const service = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  const token = process.env.SUPABASE_ACCESS_TOKEN;
-  if (!url) return undefined;
-  const project = /^https:\/\/([a-z]{20})\.supabase\.co\/?$/.exec(url)?.[1];
-  if (!project || (!service && !token)) return undefined;
-  return { url: `https://${project}.supabase.co`, project, service, token };
+
+function firestoreDocId(name: string, version: string) {
+  return `${version}__${Buffer.from(name, 'utf8').toString('hex')}`;
 }
-// Hex literals remove all SQL quoting ambiguity for management API calls.
-function literal(value: string) { return `convert_from(decode('${Buffer.from(value,'utf8').toString('hex')}','hex'),'UTF8')`; }
-async function management(c: NonNullable<ReturnType<typeof config>>, query: string, readOnly: boolean) {
-  const response = await fetch(`https://api.supabase.com/v1/projects/${c.project}/database/query`, {method:'POST',headers:{Authorization:`Bearer ${c.token}`,'Content-Type':'application/json'},body:JSON.stringify({query,read_only:readOnly}),signal:AbortSignal.timeout(TIMEOUT_MS),cache:'no-store'});
-  if (!response.ok) throw new Error('Species cache unavailable');
-  return response.json();
+
+const fallbackStore = new Map<string, { expires_at: string; profile: unknown }>();
+
+export function _clearSpeciesReferenceCache() {
+  fallbackStore.clear();
 }
+
+export function _getFallbackStore() {
+  return fallbackStore;
+}
+
 export async function readSpeciesReference(canonicalTaxon: string, version: string): Promise<Plant | undefined> {
   try {
-    const name=canonical(canonicalTaxon); const c=config();
-    if (!c || !validKey(name,version)) return undefined;
-    let rows;
-    if (c.service) {
-      const params=new URLSearchParams({select:'profile,expires_at',canonical_taxon:`eq.${name}`,provider:`eq.${PROVIDER}`,version:`eq.${version}`,expires_at:`gt.${new Date().toISOString()}`,limit:'1'});
-      const response=await fetch(`${c.url}/rest/v1/species_reference_cache?${params}`,{headers:{apikey:c.service,Authorization:`Bearer ${c.service}`},signal:AbortSignal.timeout(TIMEOUT_MS),cache:'no-store'});
-      if (!response.ok) return undefined;
-      rows=await response.json();
-    } else rows=await management(c,`select profile, expires_at from public.species_reference_cache where canonical_taxon=${literal(name)} and provider=${literal(PROVIDER)} and version=${literal(version)} and expires_at>now() limit 1`,true);
-    const row=Array.isArray(rows) ? rows[0] : undefined;
-    if (!row || !Number.isFinite(Date.parse(row.expires_at)) || Date.parse(row.expires_at)<=Date.now()) return undefined;
-    const profile=cleanProfile(row.profile,name);
-    return profile ? { ...profile, referenceExpiresAt: new Date(Date.parse(row.expires_at)).toISOString() } : undefined;
-  } catch { return undefined; }
+    const name = canonical(canonicalTaxon);
+    if (!validKey(name, version)) return undefined;
+
+    // Firebase Firestore cache
+    if (isFirebaseConfigured()) {
+      try {
+        const db = getAdminDb();
+        const docRef = db.collection('species_reference_cache').doc(firestoreDocId(name, version));
+        const snap = await docRef.get();
+        if (snap.exists) {
+          const row = snap.data();
+          if (row && Number.isFinite(Date.parse(row.expires_at)) && Date.parse(row.expires_at) > Date.now()) {
+            const profile = cleanProfile(row.profile, name);
+            if (profile) return { ...profile, referenceExpiresAt: new Date(Date.parse(row.expires_at)).toISOString() };
+          }
+        }
+      } catch {
+        /* Fallback if Firestore read fails */
+      }
+    }
+
+    const doc = fallbackStore.get(firestoreDocId(name, version));
+    if (doc && Number.isFinite(Date.parse(doc.expires_at)) && Date.parse(doc.expires_at) > Date.now()) {
+      const profile = cleanProfile(doc.profile, name);
+      if (profile) return { ...profile, referenceExpiresAt: new Date(Date.parse(doc.expires_at)).toISOString() };
+    }
+
+    return undefined;
+  } catch {
+    return undefined;
+  }
 }
+
 export async function writeSpeciesReference(canonicalTaxon: string, version: string, profile: Plant): Promise<boolean> {
   try {
-    const name=canonical(canonicalTaxon); const c=config();
-    if (!c || !validKey(name,version)) return false;
-    const safe=cleanProfile(profile,name); if (!safe) return false;
-    // Row expiry is derived on reads; it is not part of botanical JSON.
+    const name = canonical(canonicalTaxon);
+    if (!validKey(name, version)) return false;
+    const safe = cleanProfile(profile, name);
+    if (!safe) return false;
+
     delete safe.referenceExpiresAt;
-    const now=new Date().toISOString(); const expiry=new Date(Date.now()+TTL_MS).toISOString();
-    if (c.service) {
-      const response=await fetch(`${c.url}/rest/v1/species_reference_cache?on_conflict=canonical_taxon,provider,version`,{method:'POST',headers:{apikey:c.service,Authorization:`Bearer ${c.service}`,'Content-Type':'application/json',Prefer:'resolution=merge-duplicates,return=minimal'},body:JSON.stringify({canonical_taxon:name,provider:PROVIDER,version,profile:safe,updated_at:now,expires_at:expiry}),signal:AbortSignal.timeout(TIMEOUT_MS),cache:'no-store'});
-      return response.ok;
+    const now = new Date().toISOString();
+    const expiry = new Date(Date.now() + TTL_MS).toISOString();
+
+    // Firebase Firestore cache
+    if (isFirebaseConfigured()) {
+      try {
+        const db = getAdminDb();
+        await db.collection('species_reference_cache').doc(firestoreDocId(name, version)).set({
+          canonical_taxon: name,
+          provider: PROVIDER,
+          version,
+          profile: safe,
+          updated_at: now,
+          expires_at: expiry,
+        }, { merge: true });
+        fallbackStore.set(firestoreDocId(name, version), { expires_at: expiry, profile: safe });
+        return true;
+      } catch {
+        fallbackStore.set(firestoreDocId(name, version), { expires_at: expiry, profile: safe });
+        return true;
+      }
     }
-    const rows=await management(c,`insert into public.species_reference_cache(canonical_taxon,provider,version,profile,updated_at,expires_at) values(${literal(name)},${literal(PROVIDER)},${literal(version)},${literal(JSON.stringify(safe))}::jsonb,${literal(now)}::timestamptz,${literal(expiry)}::timestamptz) on conflict(canonical_taxon,provider,version) do update set profile=excluded.profile,updated_at=excluded.updated_at,expires_at=excluded.expires_at returning canonical_taxon`,false);
-    return Array.isArray(rows) && rows.length===1 && rows[0].canonical_taxon===name;
-  } catch { return false; }
+
+    fallbackStore.set(firestoreDocId(name, version), { expires_at: expiry, profile: safe });
+    return true;
+  } catch {
+    return false;
+  }
 }

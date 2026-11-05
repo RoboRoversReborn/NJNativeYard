@@ -68,7 +68,7 @@ for (const signedIn of [false, true]) {
     const pending = { ...exampleSurvey(), id: "private-pending-photo", source: "upload" as const,
       photo: "/pending-private-upload.jpg", sampleId: undefined };
     const kept: string[] = [];
-    const user = signedIn ? { id: "owner-a", user_metadata: {}, app_metadata: {} } as import("@supabase/supabase-js").User : null;
+    const user = signedIn ? { id: "owner-a", user_metadata: {}, app_metadata: {} } as unknown as import("../lib/app-services").User : null;
     const services: import("../lib/app-services").AppServices = {
       ...appServices,
       auth: { ...appServices.auth, currentUser: async () => user, subscribe: () => () => {} },
@@ -116,7 +116,7 @@ for (const signedIn of [false, true]) test(`legacy homepage examples fragment mo
   globalThis.fetch = async () => Response.json({ vision: false, accounts: false });
   try {
     dom.window.history.replaceState({}, "", "/?view=home#examples");
-    const user = signedIn ? { id: "owner-a", user_metadata: {}, app_metadata: {} } as import("@supabase/supabase-js").User : null;
+    const user = signedIn ? { id: "owner-a", user_metadata: {}, app_metadata: {} } as unknown as import("../lib/app-services").User : null;
     const services = { ...appServices,
       auth: { ...appServices.auth, currentUser: async () => user, subscribe: () => () => {} },
       account: { ...appServices.account, loadAccount: async () => ({ properties: [], surveys: [], tasks: [] }) },
