@@ -4,5 +4,19 @@
   },
   "storage": {
     "rules": "storage.rules"
+  },
+  "hosting": {
+    "site": "nativeyard-nj",
+    "public": "public",
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "nativeyard",
+          "region": "us-east4"
+        }
+      }
+    ]
   }
 }
