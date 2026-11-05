@@ -50,9 +50,10 @@ export function JourneyHome({
             </em>
           </h1>
           <p className="home-intro">
-            The plants outside your door shape the life around them. Grounded in
-            New Jersey native flora and keystone ecology, learn what is growing
-            in your soil and uncover one high-impact change that welcomes life back.
+            Most suburban yards feed surprisingly little wildlife. Take a quick photo
+            of your property. We identify what is growing in your soil, flag invasive
+            plants, and recommend one high-impact swap that brings songbirds and
+            pollinators back.
           </p>
           <div className="actions">
             <button className="primary" onClick={onScan}>
@@ -112,7 +113,7 @@ export function JourneyHome({
           />
           <figcaption>
             <span className="home-field-kicker">
-              <Leaf size={15} /> MORE THAN SOMETHING GREEN
+              <Leaf size={15} /> LIVING HABITAT
             </span>
             <strong>
               A place for life
@@ -120,7 +121,7 @@ export function JourneyHome({
               to take root.
             </strong>
             <span className="home-field-caption">
-              Illustrative sample · {heroSample.title}
+              Field sample · {heroSample.title}
             </span>
             <SampleCredit sample={heroSample} />
           </figcaption>
@@ -133,7 +134,7 @@ export function JourneyHome({
         aria-labelledby="home-how-title"
       >
         <div className="home-discovery-heading">
-          <p className="eyebrow">A LITTLE CURIOSITY GOES A LONG WAY</p>
+          <p className="eyebrow">SIMPLE FIELD AUDIT</p>
           <h2 id="home-how-title">
             From “what’s that?”
             <br />
@@ -148,17 +149,17 @@ export function JourneyHome({
             {
               Icon: ScanLine,
               title: "Meet your yard",
-              copy: "Start with a photo. Get suggested plant matches and a first, provisional ecosystem score.",
+              copy: "Snap a photo of any bed. We spot the plants you have, flag troublesome invasives, and calculate a baseline score out of 100.",
             },
             {
               Icon: Leaf,
               title: "Follow your curiosity",
-              copy: "Look closer at a leaf or flower. Discover a plant’s role, its seasonal story and the life associated with it.",
+              copy: "Learn what each plant actually supports. See which caterpillars rely on its leaves and whether it crowds out local flora.",
             },
             {
               Icon: Sprout,
               title: "Make one useful change",
-              copy: "Explore a native option or a seasonal care step that suits your space. Start small, with what you’ve learned.",
+              copy: "No need to dig up your whole lawn. We suggest a targeted native replacement matched to your soil type and sun exposure.",
             },
           ].map(({ Icon, title, copy }, index) => (
             <li key={title}>
@@ -186,7 +187,7 @@ export function JourneyHome({
       >
         <div className="home-studio-heading">
           <div>
-            <p className="eyebrow">TAKE A LOOK AROUND</p>
+            <p className="eyebrow">FIELD WORKSPACES</p>
             <h2 id="sample-heading">
               Three yards.
               <br />
@@ -194,8 +195,9 @@ export function JourneyHome({
             </h2>
           </div>
           <p>
-            Open a sample, meet its plants and explore a next step. This is the
-            same workspace you’ll use for your own yard.
+            Browse three real New Jersey planting layouts. Inspect their plant
+            profiles and see how native choices shift the score before auditing
+            your own yard.
           </p>
         </div>
         <div className="home-yard-cards">
@@ -249,17 +251,18 @@ export function JourneyHome({
           })}
         </div>
         <p className="home-sample-note">
-          Illustrative plant matches and scores. Your own photo starts a fresh
-          assessment, with identities to review.
+          These examples use reference maps to illustrate the workspace. When
+          you upload your own photo, you review and verify each plant candidate
+          before saving.
         </p>
         <div className="home-account-invitation">
           <div>
-            <strong>Your yard has a story. Keep it growing.</strong>
+            <strong>Keep your yard's progress on record.</strong>
             <p>
               {signedIn
-                ? "Open your saved yards, photos and annual plans to choose your next useful step."
+                ? "Open your saved properties, photo history, and annual roadmaps to pick your next project."
                 : accountsAvailable
-                  ? "A profile lets you save photos and plans, then compare your yard’s assessments over time."
+                  ? "Create a profile to save photos, track plant removals, and see your habitat score climb year over year."
                   : "Account saving is unavailable right now. You can still explore, scan and print your findings as a guest."}
             </p>
           </div>
