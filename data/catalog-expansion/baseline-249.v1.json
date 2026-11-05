@@ -1,0 +1,1001 @@
+{
+  "checkedOn": "2026-11-04",
+  "profiles": [
+    {
+      "id": "quercus-alba",
+      "scientificName": "Quercus alba"
+    },
+    {
+      "id": "prunus-serotina",
+      "scientificName": "Prunus serotina"
+    },
+    {
+      "id": "solidago-rugosa",
+      "scientificName": "Solidago rugosa"
+    },
+    {
+      "id": "acer-rubrum",
+      "scientificName": "Acer rubrum"
+    },
+    {
+      "id": "nyssa-sylvatica",
+      "scientificName": "Nyssa sylvatica"
+    },
+    {
+      "id": "liriodendron-tulipifera",
+      "scientificName": "Liriodendron tulipifera"
+    },
+    {
+      "id": "cercis-canadensis",
+      "scientificName": "Cercis canadensis"
+    },
+    {
+      "id": "amelanchier-canadensis",
+      "scientificName": "Amelanchier canadensis"
+    },
+    {
+      "id": "cornus-florida",
+      "scientificName": "Cornus florida"
+    },
+    {
+      "id": "ilex-opaca",
+      "scientificName": "Ilex opaca"
+    },
+    {
+      "id": "juniperus-virginiana",
+      "scientificName": "Juniperus virginiana"
+    },
+    {
+      "id": "rhododendron-catawbiense",
+      "scientificName": "Rhododendron catawbiense"
+    },
+    {
+      "id": "thuja-occidentalis",
+      "scientificName": "Thuja occidentalis"
+    },
+    {
+      "id": "ilex-verticillata",
+      "scientificName": "Ilex verticillata"
+    },
+    {
+      "id": "vaccinium-corymbosum",
+      "scientificName": "Vaccinium corymbosum"
+    },
+    {
+      "id": "vaccinium-angustifolium",
+      "scientificName": "Vaccinium angustifolium"
+    },
+    {
+      "id": "rhus-aromatica",
+      "scientificName": "Rhus aromatica"
+    },
+    {
+      "id": "physocarpus-opulifolius",
+      "scientificName": "Physocarpus opulifolius"
+    },
+    {
+      "id": "viburnum-dentatum",
+      "scientificName": "Viburnum dentatum"
+    },
+    {
+      "id": "lindera-benzoin",
+      "scientificName": "Lindera benzoin"
+    },
+    {
+      "id": "clethra-alnifolia",
+      "scientificName": "Clethra alnifolia"
+    },
+    {
+      "id": "hydrangea-quercifolia",
+      "scientificName": "Hydrangea quercifolia"
+    },
+    {
+      "id": "morella-cerifera",
+      "scientificName": "Morella cerifera"
+    },
+    {
+      "id": "ilex-glabra",
+      "scientificName": "Ilex glabra"
+    },
+    {
+      "id": "packera-aurea",
+      "scientificName": "Packera aurea"
+    },
+    {
+      "id": "asarum-canadense",
+      "scientificName": "Asarum canadense"
+    },
+    {
+      "id": "chrysogonum-virginianum",
+      "scientificName": "Chrysogonum virginianum"
+    },
+    {
+      "id": "carex-pensylvanica",
+      "scientificName": "Carex pensylvanica"
+    },
+    {
+      "id": "panicum-virgatum",
+      "scientificName": "Panicum virgatum"
+    },
+    {
+      "id": "schizachyrium-scoparium",
+      "scientificName": "Schizachyrium scoparium"
+    },
+    {
+      "id": "rudbeckia-fulgida",
+      "scientificName": "Rudbeckia fulgida"
+    },
+    {
+      "id": "geranium-maculatum",
+      "scientificName": "Geranium maculatum"
+    },
+    {
+      "id": "osmundastrum-cinnamomeum",
+      "scientificName": "Osmundastrum cinnamomeum"
+    },
+    {
+      "id": "athyrium-filix-femina",
+      "scientificName": "Athyrium filix-femina"
+    },
+    {
+      "id": "tiarella-cordifolia",
+      "scientificName": "Tiarella cordifolia"
+    },
+    {
+      "id": "heuchera-americana",
+      "scientificName": "Heuchera americana"
+    },
+    {
+      "id": "lobelia-siphilitica",
+      "scientificName": "Lobelia siphilitica"
+    },
+    {
+      "id": "parthenocissus-quinquefolia",
+      "scientificName": "Parthenocissus quinquefolia"
+    },
+    {
+      "id": "lonicera-sempervirens",
+      "scientificName": "Lonicera sempervirens"
+    },
+    {
+      "id": "wisteria-frutescens",
+      "scientificName": "Wisteria frutescens"
+    },
+    {
+      "id": "rosa-carolina",
+      "scientificName": "Rosa carolina"
+    },
+    {
+      "id": "iris-versicolor",
+      "scientificName": "Iris versicolor"
+    },
+    {
+      "id": "echinacea-purpurea",
+      "scientificName": "Echinacea purpurea"
+    },
+    {
+      "id": "asclepias-tuberosa",
+      "scientificName": "Asclepias tuberosa"
+    },
+    {
+      "id": "monarda-fistulosa",
+      "scientificName": "Monarda fistulosa"
+    },
+    {
+      "id": "symphyotrichum-novae-angliae",
+      "scientificName": "Symphyotrichum novae-angliae"
+    },
+    {
+      "id": "eutrochium-purpureum",
+      "scientificName": "Eutrochium purpureum"
+    },
+    {
+      "id": "zizia-aurea",
+      "scientificName": "Zizia aurea"
+    },
+    {
+      "id": "acer-palmatum",
+      "scientificName": "Acer palmatum"
+    },
+    {
+      "id": "hosta",
+      "scientificName": "Hosta spp."
+    },
+    {
+      "id": "hydrangea-macrophylla",
+      "scientificName": "Hydrangea macrophylla"
+    },
+    {
+      "id": "buxus-sempervirens",
+      "scientificName": "Buxus sempervirens"
+    },
+    {
+      "id": "paeonia-lactiflora",
+      "scientificName": "Paeonia lactiflora"
+    },
+    {
+      "id": "lavandula-angustifolia",
+      "scientificName": "Lavandula angustifolia"
+    },
+    {
+      "id": "liriope-muscari",
+      "scientificName": "Liriope muscari"
+    },
+    {
+      "id": "narcissus-pseudonarcissus",
+      "scientificName": "Narcissus pseudonarcissus"
+    },
+    {
+      "id": "tulipa-gesneriana",
+      "scientificName": "Tulipa gesneriana"
+    },
+    {
+      "id": "acer-platanoides",
+      "scientificName": "Acer platanoides"
+    },
+    {
+      "id": "euonymus-alatus",
+      "scientificName": "Euonymus alatus"
+    },
+    {
+      "id": "berberis-thunbergii",
+      "scientificName": "Berberis thunbergii"
+    },
+    {
+      "id": "hedera-helix",
+      "scientificName": "Hedera helix"
+    },
+    {
+      "id": "hemerocallis-fulva",
+      "scientificName": "Hemerocallis fulva"
+    },
+    {
+      "id": "vinca-minor",
+      "scientificName": "Vinca minor"
+    },
+    {
+      "id": "ligustrum-sinense",
+      "scientificName": "Ligustrum sinense"
+    },
+    {
+      "id": "lonicera-japonica",
+      "scientificName": "Lonicera japonica"
+    },
+    {
+      "id": "wisteria-sinensis",
+      "scientificName": "Wisteria sinensis"
+    },
+    {
+      "id": "celastrus-orbiculatus",
+      "scientificName": "Celastrus orbiculatus"
+    },
+    {
+      "id": "rosa-multiflora",
+      "scientificName": "Rosa multiflora"
+    },
+    {
+      "id": "lythrum-salicaria",
+      "scientificName": "Lythrum salicaria"
+    },
+    {
+      "id": "phragmites-australis",
+      "scientificName": "Phragmites australis"
+    },
+    {
+      "id": "microstegium-vimineum",
+      "scientificName": "Microstegium vimineum"
+    },
+    {
+      "id": "alliaria-petiolata",
+      "scientificName": "Alliaria petiolata"
+    },
+    {
+      "id": "ailanthus-altissima",
+      "scientificName": "Ailanthus altissima"
+    },
+    {
+      "id": "elaeagnus-umbellata",
+      "scientificName": "Elaeagnus umbellata"
+    },
+    {
+      "id": "euonymus-fortunei",
+      "scientificName": "Euonymus fortunei"
+    },
+    {
+      "id": "iris-pseudacorus",
+      "scientificName": "Iris pseudacorus"
+    },
+    {
+      "id": "pueraria-montana",
+      "scientificName": "Pueraria montana"
+    },
+    {
+      "id": "rhamnus-cathartica",
+      "scientificName": "Rhamnus cathartica"
+    },
+    {
+      "id": "nandina-domestica",
+      "scientificName": "Nandina domestica"
+    },
+    {
+      "id": "mahonia-bealei",
+      "scientificName": "Mahonia bealei"
+    },
+    {
+      "id": "pyrus-calleryana",
+      "scientificName": "Pyrus calleryana"
+    },
+    {
+      "id": "morus-alba",
+      "scientificName": "Morus alba"
+    },
+    {
+      "id": "ulmus-pumila",
+      "scientificName": "Ulmus pumila"
+    },
+    {
+      "id": "miscanthus-sinensis",
+      "scientificName": "Miscanthus sinensis"
+    },
+    {
+      "id": "forsythia-spp",
+      "scientificName": "Forsythia spp."
+    },
+    {
+      "id": "pachysandra-terminalis",
+      "scientificName": "Pachysandra terminalis"
+    },
+    {
+      "id": "lonicera-maackii",
+      "scientificName": "Lonicera maackii"
+    },
+    {
+      "id": "fragaria-virginiana",
+      "scientificName": "Fragaria virginiana"
+    },
+    {
+      "id": "ceanothus-americanus",
+      "scientificName": "Ceanothus americanus"
+    },
+    {
+      "id": "hydrangea-arborescens",
+      "scientificName": "Hydrangea arborescens"
+    },
+    {
+      "id": "solidago-speciosa",
+      "scientificName": "Solidago speciosa"
+    },
+    {
+      "id": "pycnanthemum-muticum",
+      "scientificName": "Pycnanthemum muticum"
+    },
+    {
+      "id": "extended-0",
+      "scientificName": "Lonicera morrowii"
+    },
+    {
+      "id": "extended-1",
+      "scientificName": "Reynoutria japonica"
+    },
+    {
+      "id": "extended-2",
+      "scientificName": "Ligustrum obtusifolium"
+    },
+    {
+      "id": "extended-3",
+      "scientificName": "Ligustrum vulgare"
+    },
+    {
+      "id": "extended-4",
+      "scientificName": "Ligustrum ovalifolium"
+    },
+    {
+      "id": "extended-5",
+      "scientificName": "Ampelopsis glandulosa"
+    },
+    {
+      "id": "extended-6",
+      "scientificName": "Wisteria floribunda"
+    },
+    {
+      "id": "extended-7",
+      "scientificName": "Spiraea japonica"
+    },
+    {
+      "id": "extended-8",
+      "scientificName": "Rubus phoenicolasius"
+    },
+    {
+      "id": "extended-9",
+      "scientificName": "Persicaria perfoliata"
+    },
+    {
+      "id": "extended-10",
+      "scientificName": "Ficaria verna"
+    },
+    {
+      "id": "extended-11",
+      "scientificName": "Paulownia tomentosa"
+    },
+    {
+      "id": "extended-12",
+      "scientificName": "Albizia julibrissin"
+    },
+    {
+      "id": "extended-13",
+      "scientificName": "Rhodotypos scandens"
+    },
+    {
+      "id": "extended-14",
+      "scientificName": "Viburnum dilatatum"
+    },
+    {
+      "id": "extended-15",
+      "scientificName": "Hosta plantaginea"
+    },
+    {
+      "id": "extended-16",
+      "scientificName": "Hosta sieboldiana"
+    },
+    {
+      "id": "extended-17",
+      "scientificName": "Buxus microphylla"
+    },
+    {
+      "id": "extended-18",
+      "scientificName": "Hydrangea paniculata"
+    },
+    {
+      "id": "extended-19",
+      "scientificName": "Cornus kousa"
+    },
+    {
+      "id": "extended-20",
+      "scientificName": "Lagerstroemia indica"
+    },
+    {
+      "id": "extended-21",
+      "scientificName": "Hemerocallis lilioasphodelus"
+    },
+    {
+      "id": "extended-22",
+      "scientificName": "Taxus cuspidata"
+    },
+    {
+      "id": "extended-23",
+      "scientificName": "Taxus baccata"
+    },
+    {
+      "id": "extended-24",
+      "scientificName": "Taxus × media"
+    },
+    {
+      "id": "extended-25",
+      "scientificName": "Juniperus chinensis"
+    },
+    {
+      "id": "extended-26",
+      "scientificName": "Cupressus × leylandii"
+    },
+    {
+      "id": "extended-27",
+      "scientificName": "Picea abies"
+    },
+    {
+      "id": "extended-28",
+      "scientificName": "Forsythia × intermedia"
+    },
+    {
+      "id": "extended-29",
+      "scientificName": "Syringa vulgaris"
+    },
+    {
+      "id": "extended-30",
+      "scientificName": "Hibiscus syriacus"
+    },
+    {
+      "id": "extended-31",
+      "scientificName": "Ilex crenata"
+    },
+    {
+      "id": "extended-32",
+      "scientificName": "Prunus laurocerasus"
+    },
+    {
+      "id": "extended-33",
+      "scientificName": "Prunus serrulata"
+    },
+    {
+      "id": "extended-34",
+      "scientificName": "Pieris japonica"
+    },
+    {
+      "id": "extended-35",
+      "scientificName": "Rhododendron simsii"
+    },
+    {
+      "id": "extended-36",
+      "scientificName": "Rhododendron indicum"
+    },
+    {
+      "id": "extended-37",
+      "scientificName": "Ajuga reptans"
+    },
+    {
+      "id": "extended-38",
+      "scientificName": "Buddleja davidii"
+    },
+    {
+      "id": "extended-39",
+      "scientificName": "Pennisetum alopecuroides"
+    },
+    {
+      "id": "extended-40",
+      "scientificName": "Viburnum opulus"
+    },
+    {
+      "id": "extended-41",
+      "scientificName": "Viburnum plicatum"
+    },
+    {
+      "id": "extended-42",
+      "scientificName": "Hylotelephium spectabile"
+    },
+    {
+      "id": "extended-43",
+      "scientificName": "Nepeta × faassenii"
+    },
+    {
+      "id": "extended-44",
+      "scientificName": "Salvia nemorosa"
+    },
+    {
+      "id": "extended-45",
+      "scientificName": "Rosa chinensis"
+    },
+    {
+      "id": "extended-46",
+      "scientificName": "Weigela florida"
+    },
+    {
+      "id": "extended-47",
+      "scientificName": "Magnolia × soulangeana"
+    },
+    {
+      "id": "extended-48",
+      "scientificName": "Lolium perenne"
+    },
+    {
+      "id": "extended-49",
+      "scientificName": "Festuca arundinacea"
+    },
+    {
+      "id": "extended-50",
+      "scientificName": "Poa pratensis"
+    },
+    {
+      "id": "extended-51",
+      "scientificName": "Ageratum houstonianum"
+    },
+    {
+      "id": "extended-52",
+      "scientificName": "Helianthus annuus"
+    },
+    {
+      "id": "extended-53",
+      "scientificName": "Gaillardia aristata"
+    },
+    {
+      "id": "extended-54",
+      "scientificName": "Quercus rubra"
+    },
+    {
+      "id": "extended-55",
+      "scientificName": "Quercus palustris"
+    },
+    {
+      "id": "extended-56",
+      "scientificName": "Quercus bicolor"
+    },
+    {
+      "id": "extended-57",
+      "scientificName": "Quercus phellos"
+    },
+    {
+      "id": "extended-58",
+      "scientificName": "Quercus coccinea"
+    },
+    {
+      "id": "extended-59",
+      "scientificName": "Quercus velutina"
+    },
+    {
+      "id": "extended-60",
+      "scientificName": "Quercus montana"
+    },
+    {
+      "id": "extended-61",
+      "scientificName": "Prunus virginiana"
+    },
+    {
+      "id": "extended-62",
+      "scientificName": "Acer saccharinum"
+    },
+    {
+      "id": "extended-63",
+      "scientificName": "Acer saccharum"
+    },
+    {
+      "id": "extended-64",
+      "scientificName": "Betula nigra"
+    },
+    {
+      "id": "extended-65",
+      "scientificName": "Betula lenta"
+    },
+    {
+      "id": "extended-66",
+      "scientificName": "Betula populifolia"
+    },
+    {
+      "id": "extended-67",
+      "scientificName": "Salix nigra"
+    },
+    {
+      "id": "extended-68",
+      "scientificName": "Salix discolor"
+    },
+    {
+      "id": "extended-69",
+      "scientificName": "Populus tremuloides"
+    },
+    {
+      "id": "extended-70",
+      "scientificName": "Populus grandidentata"
+    },
+    {
+      "id": "extended-71",
+      "scientificName": "Carya ovata"
+    },
+    {
+      "id": "extended-72",
+      "scientificName": "Carya tomentosa"
+    },
+    {
+      "id": "extended-73",
+      "scientificName": "Pinus strobus"
+    },
+    {
+      "id": "extended-74",
+      "scientificName": "Pinus rigida"
+    },
+    {
+      "id": "extended-75",
+      "scientificName": "Ulmus americana"
+    },
+    {
+      "id": "extended-76",
+      "scientificName": "Malus coronaria"
+    },
+    {
+      "id": "extended-77",
+      "scientificName": "Amelanchier laevis"
+    },
+    {
+      "id": "extended-78",
+      "scientificName": "Amelanchier arborea"
+    },
+    {
+      "id": "extended-79",
+      "scientificName": "Liquidambar styraciflua"
+    },
+    {
+      "id": "extended-80",
+      "scientificName": "Platanus occidentalis"
+    },
+    {
+      "id": "extended-81",
+      "scientificName": "Diospyros virginiana"
+    },
+    {
+      "id": "extended-82",
+      "scientificName": "Sassafras albidum"
+    },
+    {
+      "id": "extended-83",
+      "scientificName": "Magnolia virginiana"
+    },
+    {
+      "id": "extended-84",
+      "scientificName": "Hamamelis virginiana"
+    },
+    {
+      "id": "extended-85",
+      "scientificName": "Itea virginica"
+    },
+    {
+      "id": "extended-86",
+      "scientificName": "Viburnum prunifolium"
+    },
+    {
+      "id": "extended-87",
+      "scientificName": "Viburnum acerifolium"
+    },
+    {
+      "id": "extended-88",
+      "scientificName": "Viburnum trilobum"
+    },
+    {
+      "id": "extended-89",
+      "scientificName": "Aronia arbutifolia"
+    },
+    {
+      "id": "extended-90",
+      "scientificName": "Aronia melanocarpa"
+    },
+    {
+      "id": "extended-91",
+      "scientificName": "Cephalanthus occidentalis"
+    },
+    {
+      "id": "extended-92",
+      "scientificName": "Sambucus canadensis"
+    },
+    {
+      "id": "extended-93",
+      "scientificName": "Rhododendron viscosum"
+    },
+    {
+      "id": "extended-94",
+      "scientificName": "Rhododendron periclymenoides"
+    },
+    {
+      "id": "extended-95",
+      "scientificName": "Rhododendron maximum"
+    },
+    {
+      "id": "extended-96",
+      "scientificName": "Kalmia latifolia"
+    },
+    {
+      "id": "extended-97",
+      "scientificName": "Morella pensylvanica"
+    },
+    {
+      "id": "extended-98",
+      "scientificName": "Rhus typhina"
+    },
+    {
+      "id": "extended-99",
+      "scientificName": "Rhus copallinum"
+    },
+    {
+      "id": "extended-100",
+      "scientificName": "Rosa palustris"
+    },
+    {
+      "id": "extended-101",
+      "scientificName": "Rubus occidentalis"
+    },
+    {
+      "id": "extended-102",
+      "scientificName": "Taxus canadensis"
+    },
+    {
+      "id": "extended-103",
+      "scientificName": "Juniperus communis"
+    },
+    {
+      "id": "extended-104",
+      "scientificName": "Diervilla lonicera"
+    },
+    {
+      "id": "extended-105",
+      "scientificName": "Comptonia peregrina"
+    },
+    {
+      "id": "extended-106",
+      "scientificName": "Hibiscus moscheutos"
+    },
+    {
+      "id": "extended-107",
+      "scientificName": "Solidago sempervirens"
+    },
+    {
+      "id": "extended-108",
+      "scientificName": "Solidago canadensis"
+    },
+    {
+      "id": "extended-109",
+      "scientificName": "Solidago nemoralis"
+    },
+    {
+      "id": "extended-110",
+      "scientificName": "Solidago caesia"
+    },
+    {
+      "id": "extended-111",
+      "scientificName": "Symphyotrichum laeve"
+    },
+    {
+      "id": "extended-112",
+      "scientificName": "Symphyotrichum cordifolium"
+    },
+    {
+      "id": "extended-113",
+      "scientificName": "Symphyotrichum ericoides"
+    },
+    {
+      "id": "extended-114",
+      "scientificName": "Symphyotrichum oblongifolium"
+    },
+    {
+      "id": "extended-115",
+      "scientificName": "Eurybia divaricata"
+    },
+    {
+      "id": "extended-116",
+      "scientificName": "Helianthus divaricatus"
+    },
+    {
+      "id": "extended-117",
+      "scientificName": "Helianthus giganteus"
+    },
+    {
+      "id": "extended-118",
+      "scientificName": "Eutrochium maculatum"
+    },
+    {
+      "id": "extended-119",
+      "scientificName": "Eutrochium fistulosum"
+    },
+    {
+      "id": "extended-120",
+      "scientificName": "Conoclinium coelestinum"
+    },
+    {
+      "id": "extended-121",
+      "scientificName": "Monarda didyma"
+    },
+    {
+      "id": "extended-122",
+      "scientificName": "Monarda punctata"
+    },
+    {
+      "id": "extended-123",
+      "scientificName": "Asclepias incarnata"
+    },
+    {
+      "id": "extended-124",
+      "scientificName": "Asclepias syriaca"
+    },
+    {
+      "id": "extended-125",
+      "scientificName": "Pycnanthemum virginianum"
+    },
+    {
+      "id": "extended-126",
+      "scientificName": "Pycnanthemum tenuifolium"
+    },
+    {
+      "id": "extended-127",
+      "scientificName": "Rudbeckia hirta"
+    },
+    {
+      "id": "extended-128",
+      "scientificName": "Rudbeckia laciniata"
+    },
+    {
+      "id": "extended-129",
+      "scientificName": "Lobelia cardinalis"
+    },
+    {
+      "id": "extended-130",
+      "scientificName": "Penstemon digitalis"
+    },
+    {
+      "id": "extended-131",
+      "scientificName": "Phlox paniculata"
+    },
+    {
+      "id": "extended-132",
+      "scientificName": "Phlox subulata"
+    },
+    {
+      "id": "extended-133",
+      "scientificName": "Aquilegia canadensis"
+    },
+    {
+      "id": "extended-134",
+      "scientificName": "Vernonia noveboracensis"
+    },
+    {
+      "id": "extended-135",
+      "scientificName": "Verbena hastata"
+    },
+    {
+      "id": "extended-136",
+      "scientificName": "Liatris spicata"
+    },
+    {
+      "id": "extended-137",
+      "scientificName": "Lilium superbum"
+    },
+    {
+      "id": "extended-138",
+      "scientificName": "Viola sororia"
+    },
+    {
+      "id": "extended-139",
+      "scientificName": "Andropogon gerardii"
+    },
+    {
+      "id": "extended-140",
+      "scientificName": "Sorghastrum nutans"
+    },
+    {
+      "id": "extended-141",
+      "scientificName": "Polystichum acrostichoides"
+    },
+    {
+      "id": "extended-142",
+      "scientificName": "Onoclea sensibilis"
+    },
+    {
+      "id": "extended-143",
+      "scientificName": "Matteuccia struthiopteris"
+    },
+    {
+      "id": "extended-144",
+      "scientificName": "Dennstaedtia punctilobula"
+    },
+    {
+      "id": "extended-145",
+      "scientificName": "Campsis radicans"
+    },
+    {
+      "id": "cotinus-coggygria",
+      "scientificName": "Cotinus coggygria"
+    },
+    {
+      "id": "nj-listed-aralia-elata",
+      "scientificName": "Aralia elata"
+    },
+    {
+      "id": "nj-listed-clematis-terniflora",
+      "scientificName": "Clematis terniflora"
+    },
+    {
+      "id": "nj-listed-eragrostis-curvula",
+      "scientificName": "Eragrostis curvula"
+    },
+    {
+      "id": "nj-listed-humulus-japonicus",
+      "scientificName": "Humulus japonicus"
+    },
+    {
+      "id": "nj-listed-malus-toringo",
+      "scientificName": "Malus toringo"
+    },
+    {
+      "id": "nj-listed-myriophyllum-spicatum",
+      "scientificName": "Myriophyllum spicatum"
+    },
+    {
+      "id": "nj-listed-photinia-villosa",
+      "scientificName": "Photinia villosa"
+    },
+    {
+      "id": "nj-listed-trapa-natans",
+      "scientificName": "Trapa natans"
+    },
+    {
+      "id": "nj-listed-viburnum-sieboldii",
+      "scientificName": "Viburnum sieboldii"
+    },
+    {
+      "id": "nj-listed-lespedeza-cuneata",
+      "scientificName": "Lespedeza cuneata"
+    }
+  ]
+}

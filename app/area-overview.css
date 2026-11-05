@@ -1,0 +1,202 @@
+.area-overview .area-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  margin: 0 0 24px;
+  color: var(--garden-muted);
+}
+.area-overview .area-switch {
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 180px;
+}
+.area-overview .area-switch select {
+  border: 1px solid var(--garden-line);
+  background: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: var(--garden-ink);
+}
+.area-overview .area-latest {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  background: white;
+  border: 1px solid var(--garden-line);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.area-overview .area-record-photo {
+  margin: 0;
+  background: #e6ece6;
+  overflow: hidden;
+  min-height: 120px;
+}
+.area-overview .area-record-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.area-overview .area-latest > .area-record-photo {
+  min-height: 380px;
+}
+.area-overview .area-photo-unavailable {
+  height: 100%;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  padding: 20px;
+  color: var(--garden-muted);
+}
+.area-overview .area-latest-body {
+  padding: 30px;
+  align-self: center;
+}
+.area-overview .area-record-date {
+  font-weight: 700;
+}
+.area-overview .area-index {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+  border-block: 1px solid var(--garden-line);
+  margin-top: 20px;
+  font-size: 13px;
+}
+.area-overview .area-index strong {
+  font-size: 42px;
+  line-height: 1.1;
+  color: var(--garden-teal);
+}
+.area-overview .area-index small {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+}
+.area-overview .area-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.area-overview .area-panel {
+  background: white;
+  border: 1px solid var(--garden-line);
+  border-radius: 14px;
+  padding: 26px;
+}
+.area-overview .area-panel h2 {
+  font-size: 26px;
+}
+.area-overview .area-panel details {
+  font-size: 13px;
+  margin: 14px 0;
+}
+.area-overview .area-panel summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+.area-overview .area-panel li {
+  margin-bottom: 6px;
+}
+.area-overview .area-panel svg {
+  max-width: 100%;
+}
+.area-overview .area-task-counts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 22px 0;
+}
+.area-overview .area-task-counts > div {
+  border-left: 2px solid var(--garden-line);
+  padding-left: 12px;
+}
+.area-overview .area-task-counts dt {
+  font-size: 13px;
+  color: var(--garden-muted);
+}
+.area-overview .area-task-counts dd {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+.area-overview .area-history-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.area-overview .area-history > ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.area-overview .area-history-record {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 1px solid var(--garden-line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  text-align: left;
+  color: var(--garden-ink);
+}
+.area-overview .area-history-record > .area-record-photo {
+  height: 140px;
+}
+.area-overview .area-history-record > span {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  font-size: 13px;
+}
+.area-overview .area-history-record small {
+  color: var(--garden-muted);
+}
+@media (max-width: 760px) {
+  .area-overview .area-latest,
+  .area-overview .area-overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .area-overview .area-latest > .area-record-photo {
+    height: 280px;
+    min-height: 0;
+  }
+  .area-overview .area-latest-body,
+  .area-overview .area-panel {
+    padding: 22px;
+  }
+  .area-overview .area-history > ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .area-overview .garden-heading,
+  .area-overview .area-history-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+@media (max-width: 440px) {
+  .area-overview .area-history > ul {
+    grid-template-columns: 1fr;
+  }
+  .area-overview .area-switch {
+    width: 100%;
+  }
+}

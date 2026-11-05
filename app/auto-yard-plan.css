@@ -1,0 +1,41 @@
+.yard-plan-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.4rem 0 0.75rem;
+}
+.yard-plan-filters button {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid #b8c9b8;
+  border-radius: 999px;
+  background: #fff;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+}
+.yard-plan-filters button[aria-pressed="true"] {
+  background: #244c36;
+  color: #fff;
+  border-color: #244c36;
+}
+.yard-plan-filters button:focus-visible {
+  outline: 3px solid #8c6229;
+  outline-offset: 3px;
+}
+.yard-plan-filters strong {
+  font-variant-numeric: tabular-nums;
+}
+.yard-plan-scope {
+  max-width: 80ch;
+}
+.yard-plan-state {
+  color: #244c36;
+  margin: 0.4rem 0;
+}
+.yard-plan-source {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  color: #4b594e;
+}

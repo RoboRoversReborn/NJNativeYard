@@ -1,0 +1,25 @@
+{
+  "Cotinus coggygria": [
+    {
+      "url": "https://bs.plantnet.org/image/m/d5b813e9f279489c745eb64e86e092ae80270681",
+      "author": "marisa tobey",
+      "license": "cc-by-sa",
+      "citation": "marisa tobey / Pl@ntNet, cc-by-sa",
+      "source": "PlantNet"
+    },
+    {
+      "url": "https://bs.plantnet.org/image/m/68ab4d03e588ff9af014002f71826b46d7ea5812",
+      "author": "Julia",
+      "license": "cc-by-sa",
+      "citation": "Julia / Pl@ntNet, cc-by-sa",
+      "source": "PlantNet"
+    },
+    {
+      "url": "https://bs.plantnet.org/image/m/1764c040c2311edf994291a9bd218763f8349a5d",
+      "author": "Julien Chp",
+      "license": "cc-by-sa",
+      "citation": "Julien Chp / Pl@ntNet, cc-by-sa",
+      "source": "PlantNet"
+    }
+  ]
+}

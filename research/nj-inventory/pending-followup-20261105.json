@@ -1,0 +1,112 @@
+{
+  "checkedOn": "2026-11-05",
+  "task": "Read-only prioritized follow-up of catalog pending taxa; Phlox paniculata handled separately by parent",
+  "implementation": "Research only; no shared classifier/data changes",
+  "baselinePendingCatalogCount": 31,
+  "excludedParentFix": "Phlox paniculata",
+  "priorityEvidenceCases": [
+    {
+      "scientificName": "Paeonia lactiflora",
+      "proposedClassification": "non-native",
+      "basis": "Explicit introduced Continental US status, corroborated Asian origin. Does not establish NJ occurrence, invasiveness, or growing suitability.",
+      "source": {
+        "organization": "ITIS / USDA PLANTS / Flora of North America expertise network",
+        "url": "https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=504091",
+        "claim": "Accepted species; jurisdiction/origin Continental US introduced and Canada introduced.",
+        "observedSection": "Geographic Information"
+      },
+      "corroboration": {
+        "organization": "NC State JC Raulston Arboretum",
+        "url": "https://jcra.ncsu.edu/horticulture/our-plants/results-by-name-serial-number.php?serial=109209",
+        "claim": "Exact species origin southeastern Siberia and northern/eastern China."
+      }
+    },
+    {
+      "scientificName": "Hosta sieboldiana",
+      "proposedClassification": "non-native",
+      "basis": "Exact species has positive foreign origin. The genus-level Hosta spp. identification must remain a separate review state.",
+      "source": {
+        "organization": "Kwantlen Polytechnic University School of Horticulture",
+        "url": "https://plantdatabase.kpu.ca/Plant/hosi",
+        "claim": "Exact species origin Japan / southeast Asia.",
+        "observedSection": "Origin"
+      },
+      "corroboration": {
+        "organization": "NC State Extension Gardener Plant Toolbox",
+        "url": "https://plants.ces.ncsu.edu/plants/hosta/common-name/hosta/",
+        "claim": "Genus page explicitly states Hosta sieboldiana is from Japan."
+      }
+    },
+    {
+      "scientificName": "Rhododendron simsii",
+      "proposedClassification": "non-native",
+      "basis": "Exact species positive Asian origin; do not transfer Florida invasiveness or recommendation conclusions to NJ.",
+      "source": {
+        "organization": "University of Florida IFAS Assessment",
+        "url": "https://assessment.ifas.ufl.edu/assessments/rhododendron-simsii/",
+        "claim": "Origin temperate and tropical Asia; assessments include 2025.",
+        "observedSection": "Origin"
+      },
+      "corroboration": {
+        "organization": "University of Florida Cooperative Extension",
+        "url": "https://hort.ifas.ufl.edu/database/documents/pdf/shrub_fact_sheets/rhosima.pdf",
+        "claim": "Exact species fact sheet explicitly states not native to North America."
+      }
+    },
+    {
+      "scientificName": "Penstemon digitalis",
+      "proposedClassification": "non-native",
+      "basis": "NJ-specific introduced distribution takes precedence over a broad USDA N code.",
+      "source": {
+        "organization": "Royal Botanic Gardens Kew Plants of the World Online",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:808077-1",
+        "claim": "Accepted species; New Jersey explicitly included in introduced distribution, outside its listed native states.",
+        "observedSection": "Distribution / Introduced into"
+      },
+      "caution": "Do not infer unsuitable for NJ gardens, invasive status, or illegal planting from introduced status."
+    },
+    {
+      "scientificName": "Rudbeckia hirta",
+      "proposedClassification": "native",
+      "basis": "Explicit NJ state native row, rather than mere occurrence or broad North America native range.",
+      "source": {
+        "organization": "USDA Agricultural Research Service GRIN Taxonomy",
+        "url": "https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomydetail?id=32495",
+        "claim": "Exact species distribution row lists Native, United States, New Jersey, citing Flora of North America.",
+        "observedSection": "Distribution / Native / Northeastern U.S.A."
+      },
+      "caution": "GRIN also records species naturalization in broad regions and notes overall exact native range obscure. Preserve that provenance caveat; do not imply all cultivated lineages/cultivars are indigenous NJ populations."
+    }
+  ],
+  "candidateCount": 5,
+  "unresolvedReviewStates": [
+    {
+      "taxa": [
+        "Hosta spp.",
+        "Forsythia spp."
+      ],
+      "reason": "Genus identification cannot invent exact species; remain identity review states."
+    },
+    {
+      "taxa": [
+        "Phragmites australis"
+      ],
+      "reason": "Species name overlaps native and invasive introduced lineages; preserve exact lineage review."
+    },
+    {
+      "taxa": [
+        "Viburnum opulus",
+        "Poa pratensis"
+      ],
+      "reason": "Mixed native/introduced lineage codes require additional taxonomic resolution."
+    },
+    {
+      "taxa": [
+        "Cornus alba",
+        "Xanthium strumarium"
+      ],
+      "reason": "Imported source conflicts; not resolved by foreign-origin statement alone."
+    }
+  ],
+  "notClaimed": "The remaining unaudited taxa are not claimed inherently unresolvable. This bounded pass found five evidence-backed candidates and did not comprehensively settle every pending taxon. No absence-to-nonnative inference, recommendations expansion, browser QA, tests, build, deployment, or server changes."
+}

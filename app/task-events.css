@@ -1,0 +1,130 @@
+/* Task stages and immutable, on-demand event history. */
+.task-stage-group {
+  margin: 28px 0;
+  min-width: 0;
+}
+.task-stage-group > h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 23px;
+}
+.task-stage-group > h2 small {
+  font:
+    12px Arial,
+    sans-serif;
+  color: #58717f;
+}
+.task-list .task-backlog-label {
+  display: inline-block;
+  padding: 4px 7px;
+  border: 1px solid #c6d5dc;
+  border-radius: 4px;
+  color: #365766;
+  font-size: 11px;
+}
+.task-event-history {
+  margin-top: 12px;
+  min-width: 0;
+  border-top: 1px solid #dce5e9;
+  padding-top: 7px;
+}
+.task-event-history > button {
+  min-height: 44px;
+}
+.task-event-history [hidden] {
+  display: none !important;
+}
+.task-event-list {
+  margin: 12px 0;
+  padding: 0 0 0 18px;
+}
+.task-event-list > li {
+  padding: 0 0 16px 7px;
+  margin: 0 0 16px;
+  border-bottom: 1px solid #e1e8eb;
+}
+.task-event-list > li > strong {
+  font-size: 13px;
+}
+.task-list .task-event-meta,
+.task-event-history .task-event-meta {
+  display: block;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.task-event-history summary {
+  padding: 8px 0;
+  min-height: 36px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+.task-event-changes {
+  margin: 7px 0;
+}
+.task-event-changes > div {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 10px;
+  padding: 8px 0;
+  border-top: 1px solid #e5ecee;
+}
+.task-event-changes dt {
+  font-size: 12px;
+  font-weight: 700;
+  color: #496674;
+}
+.task-event-changes dd {
+  margin: 0;
+  min-width: 0;
+  font-size: 12px;
+  line-height: 1.65;
+}
+.task-event-changes dd > span {
+  display: block;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.task-event-history .task-event-record p,
+.task-event-history .task-event-note {
+  display: block;
+  font-size: 11px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+.task-event-stale {
+  padding: 10px;
+  border: 1px solid #ccdbe1;
+  border-radius: 5px;
+}
+.task-event-history button:focus-visible,
+.task-event-history summary:focus-visible {
+  outline: 3px solid #087f6d;
+  outline-offset: 3px;
+}
+@media (max-width: 540px) {
+  .task-event-changes > div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .task-event-history {
+    margin-top: 10px;
+  }
+}
+.task-stage-group .task-check {
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+}
+.task-stage-group .task-list > article > div {
+  min-width: 0;
+}
+.task-stage-group .task-notes,
+.task-stage-group .task-list h3 {
+  overflow-wrap: anywhere;
+}
+.task-event-history button,
+.task-event-history summary {
+  min-height: 44px;
+}

@@ -1,0 +1,270 @@
+{
+  "source": "https://npsnj.org/wp-content/uploads/2023/01/BBP_Going_Native_Northern_NJ_Edition_2022.pdf",
+  "sha256": "dbe3c5fb05e756622326ef63a164b88ea8af013b407e51ef302cad36a70acfc0",
+  "scope": "Northern NJ garden guide relevance, not sufficient alone to establish NJ nativity",
+  "chartTaxa": [
+    {
+      "sourceName": "Amelanchier canadensis",
+      "canonicalName": "Amelanchier canadensis",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Amsonia tabernaemontana",
+      "canonicalName": "Amsonia tabernaemontana",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Aquilegia canadensis",
+      "canonicalName": "Aquilegia canadensis",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Asarum canadense",
+      "canonicalName": "Asarum canadense",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Asclepias incarnata",
+      "canonicalName": "Asclepias incarnata",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Asclepias tuberosa",
+      "canonicalName": "Asclepias tuberosa",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Carex pensylvanica",
+      "canonicalName": "Carex pensylvanica",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Ceanothus americanus",
+      "canonicalName": "Ceanothus americanus",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Cephalanthus occidentalis",
+      "canonicalName": "Cephalanthus occidentalis",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Cercis canadensis",
+      "canonicalName": "Cercis canadensis",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Chelone glabra",
+      "canonicalName": "Chelone glabra",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Clethra alnifolia",
+      "canonicalName": "Clethra alnifolia",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Cornus sericea",
+      "canonicalName": "Cornus sericea",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Echinacea purpurea",
+      "canonicalName": "Echinacea purpurea",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Eupatorium perfoliatum",
+      "canonicalName": "Eupatorium perfoliatum",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Eurybia divaricata",
+      "canonicalName": "Eurybia divaricata",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Heliopsis helianthoides",
+      "canonicalName": "Heliopsis helianthoides",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Hydrangea arborescens",
+      "canonicalName": "Hydrangea arborescens",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Hypericum prolificum",
+      "canonicalName": "Hypericum prolificum",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Ilex glabra",
+      "canonicalName": "Ilex glabra",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Ilex verticillata",
+      "canonicalName": "Ilex verticillata",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Itea virginica",
+      "canonicalName": "Itea virginica",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Liatris spicata",
+      "canonicalName": "Liatris spicata",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Lindera benzoin",
+      "canonicalName": "Lindera benzoin",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Lobelia cardinalis",
+      "canonicalName": "Lobelia cardinalis",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Lobelia siphilitica",
+      "canonicalName": "Lobelia siphilitica",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Lonicera sempervirens",
+      "canonicalName": "Lonicera sempervirens",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Monarda fistulosa",
+      "canonicalName": "Monarda fistulosa",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Morella pensylvanica",
+      "canonicalName": "Morella pensylvanica",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Packera aurea",
+      "canonicalName": "Packera aurea",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Panicum virgatum",
+      "canonicalName": "Panicum virgatum",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Penstemon digitalis",
+      "canonicalName": "Penstemon digitalis",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Phlox subulata",
+      "canonicalName": "Phlox subulata",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Photinia melanocarpa",
+      "canonicalName": "Aronia melanocarpa",
+      "note": "Kew whole-taxon synonym corroborated"
+    },
+    {
+      "sourceName": "Physocarpus opulifolius",
+      "canonicalName": "Physocarpus opulifolius",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Polystichum acrostichoides",
+      "canonicalName": "Polystichum acrostichoides",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Pycnanthemum virginianum",
+      "canonicalName": "Pycnanthemum virginianum",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Rudbeckia hirta",
+      "canonicalName": "Rudbeckia hirta",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Salix discolor",
+      "canonicalName": "Salix discolor",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Sambucus canadensis",
+      "canonicalName": "Sambucus canadensis",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Schizachyrium scoparium",
+      "canonicalName": "Schizachyrium scoparium",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Solidago caesia",
+      "canonicalName": "Solidago caesia",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Solidago speciosa",
+      "canonicalName": "Solidago speciosa",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Symphyotrichum novae-angliae",
+      "canonicalName": "Symphyotrichum novae-angliae",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Tiarella cordifolia",
+      "canonicalName": "Tiarella cordifolia",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Vaccinium corymbosum",
+      "canonicalName": "Vaccinium corymbosum",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Veronicastrum virginicum",
+      "canonicalName": "Veronicastrum virginicum",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Viburnum dentatum",
+      "canonicalName": "Viburnum dentatum",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Waldsteinia fragarioides",
+      "canonicalName": "Waldsteinia fragarioides",
+      "note": "Exact printed chart name"
+    },
+    {
+      "sourceName": "Agastache foeniculum",
+      "canonicalName": "Agastache foeniculum",
+      "note": "Printed chart name absent from the comparison NJ occurrence table/current catalog"
+    },
+    {
+      "sourceName": "Zizea aptera",
+      "canonicalName": "Zizia aptera",
+      "note": "Printed guide misspelling; Heart-leaved golden alexander name and correct taxon corroborated by NC State species profile"
+    }
+  ],
+  "coreCheckedCandidateNames": [
+    "Chelone glabra",
+    "Eupatorium perfoliatum",
+    "Heliopsis helianthoides",
+    "Veronicastrum virginicum",
+    "Zizia aptera"
+  ],
+  "candidateLimitations": "Core fields type/height/light/drainage/bloom presence checked on NCSU pages for five; not imported/full-profile audited"
+}

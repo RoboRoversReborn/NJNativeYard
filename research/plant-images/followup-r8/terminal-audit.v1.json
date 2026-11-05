@@ -1,0 +1,1155 @@
+{
+  "checkedOn": "2026-11-04",
+  "publicationChanged": false,
+  "frozenTaxa": 384,
+  "frozenConflictExcludedInFollowup": 1,
+  "previouslyMissingTaxaAssessed": 174,
+  "reconciledAccepted": 12,
+  "actualNewImageAttempts": 25,
+  "actualNewDownloads": 25,
+  "newAcceptedPhotographs": 21,
+  "newVisualHolds": 4,
+  "totalAcceptedAdditions": 33,
+  "projectedOverlayTaxa": 416,
+  "metadataRequests": 2,
+  "host429": [],
+  "minimumAcceptedShortSide": 206,
+  "maximumAcceptedLongSide": 504,
+  "licenseCounts": {
+    "CC BY-SA 2.5": 4,
+    "CC BY-SA 3.0": 14,
+    "Public domain": 11,
+    "CC BY-SA 2.0": 1,
+    "CC BY 3.0": 2,
+    "CC BY-SA 4.0": 1
+  },
+  "dispositionCounts": {
+    "accepted-staged": 33,
+    "no-eligible-cached-commons-candidate": 44,
+    "visual-image-type-held": 4,
+    "eligible-cached-candidate-not-attempted-in-bounded-pass": 93
+  },
+  "alternateSourceDisposition": "iNaturalist official API and reuse documentation reviewed as a candidate alternate; no API/image acquisition attempted because Commons succeeded and this pass hit its bound. No global internet absence claim.",
+  "stopReason": "Completed bounded Commons pass; no active acquisition process.25-download limit was already in flight before narrower12-download followup limit arrived; no additional batch run.",
+  "records": [
+    {
+      "scientificName": "Amelanchier canadensis",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 265,
+      "sha256": "57f94923615c1d6c44a2e0cddc0a7caa5ca77a27e6da85f0780864ed3c9818b2",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Packera aurea",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "non-photograph-held-after-visual-review",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Chrysogonum virginianum",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "non-photograph-held-after-visual-review",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Tiarella cordifolia",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Lobelia siphilitica",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 440,
+      "sha256": "eaaafd8b1d0207f3b3959d6d2810a43831bb0f52cb480bacca8fd7843e3c4f2b",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Zizia aurea",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Hosta spp.",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-exact-taxonomy-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Lavandula angustifolia",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Celastrus orbiculatus",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Phragmites australis",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 433,
+      "sha256": "b4113c4d611b586c6af4c53f3a5e6c4cf9708393b663bfafe3027a165c94670c",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Microstegium vimineum",
+      "status": "visual-image-type-held",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 462,
+      "sha256": "cefe27dbd71fa35b740e2dc970012926ea9e5e5824df580e07403a0d50b38452",
+      "reason": "Visual inspection confirms a botanical line drawing, not a photograph."
+    },
+    {
+      "scientificName": "Ailanthus altissima",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 446,
+      "sha256": "05bb300fa4fb0f733436802e861eb91ce3ce1db1fbb4b16c9ef18992d2dc9e55",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Euonymus fortunei",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 436,
+      "sha256": "ff04ddfd416d6c41bd788a91cee72c5effad4b820f57ca0e0e59e2208d626ba3",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Nandina domestica",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Ulmus pumila",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 440,
+      "sha256": "11e614088972d71c750835e4a5007a50398edad56d8b5fdfd42d691f11584a25",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Miscanthus sinensis",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 247,
+      "sha256": "7457fa606675ad39d79fb03ca643dad84b57c774a35f612e5b454916015becc1",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Forsythia spp.",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-exact-taxonomy-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Ceanothus americanus",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 288,
+      "sha256": "d4ad7185caa4de1678c00e25027734500ead1ea6c1eb76fd7f72c9f73750bd93",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Solidago speciosa",
+      "status": "visual-image-type-held",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 418,
+      "sha256": "261f53f9a790df721424a6f74a70e12667b2f256202746039f18935f9b380ba5",
+      "reason": "Visual inspection confirms a botanical line drawing, not a photograph."
+    },
+    {
+      "scientificName": "Lonicera morrowii",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Wisteria floribunda",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Hosta plantaginea",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 220,
+      "sha256": "9d989dcb915ffbd7e39a587d5f99b0ded00ed653f0fbc9a01013dbf305341e30",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Hosta sieboldiana",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 302,
+      "sha256": "18b368f044c26737f548cbbf79675d0b4b4f6a3ce753b787a4f2c412163b8194",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Buxus microphylla",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Cupressus \u00d7 leylandii",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Forsythia \u00d7 intermedia",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Ilex crenata",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 417,
+      "sha256": "cde5a74199d55f54e80086145ea02df4754029b8f483919d959a94ab878b5456",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Weigela florida",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 247,
+      "sha256": "d2120e8caadd4d0d40fb99bc9fc430e987a0d63097ead00702bc1a95bfc35ccd",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Lolium perenne",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 440,
+      "sha256": "41d96d1feb09f398675afb4eb8dfe9f0156232d09cc8333ba28d7cb15b3aedd0",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Poa pratensis",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 382,
+      "sha256": "3de3f31000e26df23ea332b75fbe22a23413e3afe2aaf40ce6974990bba1a620",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Helianthus annuus",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 440,
+      "sha256": "59c14461eb4abc91001301533383fa9f2467cdb5ec21dc23babf127c8784834f",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Quercus bicolor",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 404,
+      "sha256": "0d2a5439a1a8124fd29c088c1e47104bb76306312a5fdad0906df29d29b69ae0",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Salix nigra",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 440,
+      "sha256": "e39ddd1942c133b56c10977107abec02503684755281151a63d0b672022ad0c2",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Carya ovata",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Malus coronaria",
+      "status": "visual-image-type-held",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 331,
+      "sha256": "86fd76c54614a3c292f51a8854f05c819a1dca7b02fa4e05f45d18eb4c0e1405",
+      "reason": "Historical scanned Keeler1900 fruiting-spray image: source page does not establish photographic origin; conservatively held as image-type uncertain rather than labelled a modern plant photograph."
+    },
+    {
+      "scientificName": "Amelanchier laevis",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 504,
+      "sha256": "7cc2fbda15cb6c4a0dffc8562395bcc609f536c8176cbe98ba1447d907a1acaf",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Sassafras albidum",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 440,
+      "sha256": "9b9e4e2c2c9d1ecdf3d2790ff19f553b48507e7fc9d453e25114a0bd0415223d",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Hamamelis virginiana",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Viburnum prunifolium",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 240,
+      "sha256": "7d86db8eadf77907333585ecac37ad9fb165febc33f3cbc201a3e4b4889f31de",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Aronia arbutifolia",
+      "status": "accepted-staged",
+      "previousStatus": "no-eligible-photo",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Aronia melanocarpa",
+      "status": "accepted-staged",
+      "previousStatus": "no-eligible-photo",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Rhododendron viscosum",
+      "status": "visual-image-type-held",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 435,
+      "sha256": "bac2e5fb7fc296ddc9b2854ce62e8e6491cd0855c7a31dc6a48481fce108a578",
+      "reason": "Visual inspection confirms a historical painted botanical plate, not a photograph."
+    },
+    {
+      "scientificName": "Rhododendron maximum",
+      "status": "accepted-staged",
+      "previousStatus": "no-eligible-photo",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Rhus copallinum",
+      "status": "accepted-staged",
+      "previousStatus": "no-eligible-photo",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Rubus occidentalis",
+      "status": "accepted-staged",
+      "source": "Wikimedia Commons",
+      "width": 330,
+      "height": 247,
+      "sha256": "500afa1011577c274f3a4474b34ae9a83a226e7946dae298e901add384b21716",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Diervilla lonicera",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Solidago nemoralis",
+      "status": "accepted-staged",
+      "previousStatus": "no-eligible-photo",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Solidago caesia",
+      "status": "accepted-staged",
+      "previousStatus": "no-eligible-photo",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Helianthus giganteus",
+      "status": "accepted-staged",
+      "previousStatus": "no-eligible-photo",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Eutrochium fistulosum",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Asclepias syriaca",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Pycnanthemum virginianum",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Rudbeckia laciniata",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Penstemon digitalis",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Lilium superbum",
+      "status": "accepted-staged",
+      "previousStatus": "no-eligible-photo",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Viola sororia",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Andropogon gerardii",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-exact-taxonomy-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Sorghastrum nutans",
+      "status": "accepted-staged",
+      "previousStatus": "no-eligible-photo",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Onoclea sensibilis",
+      "status": "accepted-staged",
+      "previousStatus": "no-eligible-photo",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Dennstaedtia punctilobula",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Aralia elata",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Clematis terniflora",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Myriophyllum spicatum",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Zizia aptera",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Acalypha virginica",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Acer negundo",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Acer pensylvanicum",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Agrostis hyemalis",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Alnus serrulata",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Apios americana",
+      "status": "accepted-staged",
+      "previousStatus": "no-eligible-photo",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Arisaema triphyllum",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Asclepias exaltata",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Asplenium platyneuron",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Asplenium trichomanes",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Baccharis halimifolia",
+      "status": "accepted-staged",
+      "previousStatus": "no-eligible-photo",
+      "acceptedRecord": "accepted.v1.json"
+    },
+    {
+      "scientificName": "Betula alleghaniensis",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Brasenia schreberi",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Carex bromoides",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Carex grayi",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Carex lupulina",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Carex normalis",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Carpinus caroliniana",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Carya glabra",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Chamaecrista fasciculata",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Cirsium discolor",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Collinsonia canadensis",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Cornus alternifolia",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Corylus americana",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Corylus cornuta",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Cystopteris bulbifera",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Deparia acrostichoides",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Dichanthelium clandestinum",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Dryopteris carthusiana",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Dryopteris cristata",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Dryopteris intermedia",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Elymus virginicus",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Eriocaulon decangulare",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Eriophorum virginicum",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Eubotrys racemosa",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Eupatorium rotundifolium",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Eutrochium dubium",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Gaultheria procumbens",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Goodyera pubescens",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Helenium autumnale",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Heracleum maximum",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Hydrocotyle americana",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Hydrophyllum virginianum",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Impatiens capensis",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Isotria verticillata",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Juncus effusus",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Juncus tenuis",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Lemna minor",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Ludwigia alternifolia",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Lyonia mariana",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Melampyrum lineare",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Mitella diphylla",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Muhlenbergia schreberi",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Nyssa biflora",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Oenothera fruticosa",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Osmunda claytoniana",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Ostrya virginiana",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Oxalis stricta",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Pedicularis canadensis",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Platanthera lacera",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Polygonatum pubescens",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Prunus americana",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Pyrola elliptica",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Quercus falcata",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Rubus hispidus",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Sabatia angularis",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Sabatia stellaris",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Sagittaria latifolia",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Sanicula canadensis",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Sarracenia purpurea",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Senna hebecarpa",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Sisyrinchium angustifolium",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Sisyrinchium mucronatum",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Smilax rotundifolia",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Smilax walteri",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Solidago altissima",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Spiranthes cernua",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Spirodela polyrhiza",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Staphylea trifolia",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Symphyotrichum pilosum",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Symplocarpus foetidus",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Thalictrum dioicum",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Tipularia discolor",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Toxicodendron radicans",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Toxicodendron vernix",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Tradescantia virginiana",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Trichostema dichotomum",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Tridens flavus",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Tsuga canadensis",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Ulmus rubra",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Utricularia inflata",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Uvularia sessilifolia",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Vaccinium formosum",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-exact-taxonomy-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Verbesina alternifolia",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Viburnum lentago",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Viola cucullata",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Viola lanceolata",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Viola macloskeyi",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Viola pubescens",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Vitis aestivalis",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Vitis riparia",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Xyris torta",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Phellodendron amurense",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Zelkova serrata",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Eleutherococcus sieboldianus",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Lonicera tatarica",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Viburnum lantana",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Akebia quinata",
+      "status": "no-eligible-cached-commons-candidate",
+      "previousStatus": "no-eligible-photo",
+      "reason": "No candidate passed the selected cached exact-taxonomy/rights/size/image-type path. This does not establish worldwide image absence."
+    },
+    {
+      "scientificName": "Acorus calamus",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "original-image-host-deferred-after-429",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    },
+    {
+      "scientificName": "Lysimachia nummularia",
+      "status": "eligible-cached-candidate-not-attempted-in-bounded-pass",
+      "previousStatus": "no-eligible-photo",
+      "reason": "This pass stopped after25 downloads and2 metadata requests; other candidates were not tested now."
+    }
+  ]
+}

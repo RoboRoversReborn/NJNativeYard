@@ -1,0 +1,16 @@
+Subject: NativeYard app – source package and setup instructions
+
+Hi,
+
+Sharing the latest NativeYard app package for setup and review. The ZIP includes the application source, plant data and images, dependency lockfile, database migrations, installation guide, and a GitHub Copilot setup prompt.
+
+Please extract the ZIP and start with START-HERE.md. Open the application folder in VS Code and follow the included setup guide. You can also give Copilot the included setup prompt to install the required dependencies, configure the environment, and run the app locally.
+
+The package does not include installed dependency folders, API keys, test credentials, or private user data. Please use your own Supabase project and provider credentials, and apply the included database migrations as described in the guide. Keep credentials out of GitHub.
+
+This version includes automatic seasonal yard plans, area-specific photo history, the updated signed-in navigation, HEIC image conversion, and persistent plant-reference lookups. The latest build runs locally; full validation of the newest account and task flows is still pending, so please review those before a production release.
+
+Please confirm once it is running and share any setup issues or feedback.
+
+Thanks,
+Rahul

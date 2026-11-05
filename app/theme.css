@@ -1,0 +1,474 @@
+/* Shared homeowner field-guide theme, across scan, review and account views. */
+.ny-app {
+  --paper: #f7f9f8;
+  --surface: #fff;
+  --ink: #193346;
+  --muted: #596d79;
+  --line: #dce3e5;
+  --forest: #173345;
+  --leaf: #087f6d;
+}
+body {
+  background: #f7f9f8;
+}
+.ny-header {
+  background: #fff;
+}
+.ny-brand > svg {
+  color: #087f6d;
+}
+.ny-app h1 em,
+.ny-app h2 em {
+  color: #087f6d;
+}
+.ny-app .primary:hover {
+  background: #254d61;
+}
+.ny-app .scan-card,
+.ny-app .scope-bar,
+.ny-app .signin-content,
+.ny-app .empty-state,
+.ny-app .inline-form {
+  background: #fff;
+  border-color: #dce3e5;
+}
+.ny-app .signin-art {
+  background: #173345;
+  color: white;
+}
+.ny-app .signin-art p {
+  color: #d1dee6;
+}
+.ny-app .signin-art .eyebrow {
+  color: #8ee1cd !important;
+}
+.ny-app .notice,
+.ny-app .global-message,
+.ny-app .rw-sample-note {
+  background: #edf3f6;
+  border-color: #cbdbe3;
+  color: #314f60;
+}
+.ny-app .account-section,
+.ny-app .scan-page {
+  color: #193346;
+}
+.ny-app .task-list > article,
+.ny-app .zone-card,
+.ny-app .property-card,
+.ny-app .history-grid > article {
+  background: #fff;
+  border-color: #dce3e5;
+}
+.ny-app .history-score,
+.ny-app .scan-timeline article > strong {
+  color: #173345;
+}
+.ny-app .micro,
+.ny-app .feature-line,
+.ny-app .scope-bar label,
+.ny-app .scan-mode label,
+.ny-app .zip-field {
+  font-size: 12px;
+}
+.ny-app .rw-detail-body p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.ny-app .rw-facts dt,
+.ny-app .plant-trait-grid dt {
+  font-size: 12px;
+}
+.ny-app .rw-facts dd,
+.ny-app .plant-trait-grid dd {
+  font-size: 13px;
+}
+.ny-app .rw-selected-nav,
+.ny-app .rw-photo-toolbar small,
+.ny-app .rw-nav-footer {
+  font-size: 12px;
+}
+.ny-app .rw-action-list small,
+.ny-app .rw-plant-page small {
+  font-size: 12px;
+}
+.ny-app .rw-plant-page strong {
+  font-size: 13px;
+}
+.ny-app .icon-button {
+  min-height: 40px;
+  min-width: 40px;
+}
+.ny-app .home-preview-open {
+  width: auto;
+  min-width: 132px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.ny-app .home-preview-switch > button {
+  min-height: 52px;
+  line-height: 1.5;
+}
+.home-photo-pin {
+  pointer-events: none;
+}
+.ecosystem-compact {
+  margin-bottom: 18px;
+}
+.ecosystem-compact .ecosystem-score-main {
+  flex-direction: row;
+  padding: 18px 22px;
+  gap: 20px;
+}
+.ecosystem-compact .ecosystem-score-number {
+  width: 92px;
+  height: 92px;
+  padding: 7px;
+}
+.ecosystem-compact .ecosystem-score-number strong {
+  font-size: 34px;
+  letter-spacing: -1px;
+}
+.ny-app .ecosystem-compact .ecosystem-score-copy h2 {
+  font-size: 27px;
+  margin: 3px 0 7px;
+}
+.ecosystem-compact .ecosystem-score-copy {
+  flex: 1;
+}
+.ny-app .ecosystem-compact .ecosystem-brief {
+  margin: 7px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #d1dee6;
+}
+.ecosystem-compact .ecosystem-composition {
+  padding-top: 14px;
+}
+.ecosystem-compact .ecosystem-counts {
+  padding-top: 11px;
+  padding-bottom: 15px;
+}
+.ecosystem-compact .ecosystem-counts > button {
+  padding: 10px;
+}
+.ecosystem-compact .category-label {
+  grid-column: 1/-1;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+.ecosystem-compact .category-gloss {
+  grid-column: 1/-1;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-top: 3px;
+  font-weight: 400;
+}
+.ecosystem-compact .category-share {
+  font-size: 12px;
+}
+.ecosystem-compact .ecosystem-filter-state {
+  font-size: 12px;
+}
+.ecosystem-score-details {
+  margin: 14px 0;
+  border: 1px solid #dce3e5;
+  border-radius: 8px;
+  background: white;
+}
+.ecosystem-score-details > summary {
+  cursor: pointer;
+  padding: 13px 15px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #193346;
+}
+.ecosystem-score-details > summary > span {
+  font-size: 11px;
+  font-weight: 400;
+  color: #617582;
+  margin-left: 10px;
+}
+.score-details-body {
+  padding: 0 15px 15px;
+}
+.ny-app .score-details-body > p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.score-details-body .category-impact {
+  margin: 12px 0;
+  padding: 14px;
+}
+.score-details-body .category-impact-score strong {
+  font-size: 27px;
+}
+.score-waterfall {
+  margin: 20px 0;
+}
+.score-waterfall-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.score-waterfall-heading > span {
+  color: #617582;
+}
+.score-waterfall-row {
+  display: grid;
+  grid-template-columns: 130px 1fr 48px;
+  gap: 12px;
+  align-items: center;
+  min-height: 33px;
+  font-size: 11px;
+}
+.score-waterfall-row > strong {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.score-waterfall-track {
+  height: 18px;
+  background: #f0f3f5;
+  position: relative;
+  border-radius: 3px;
+}
+.score-waterfall-track > i:not(.score-zero-line) {
+  position: absolute;
+  min-width: 2px;
+  top: 0;
+  bottom: 0;
+  background: var(--status);
+  border-radius: 3px;
+}
+.score-waterfall-track > .score-zero-line {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 1px;
+  background: #7f929e;
+}
+.score-details-body .score-formula {
+  padding: 0;
+  font-size: 12px;
+}
+@media (max-width: 850px) {
+  .ecosystem-compact .ecosystem-score-main {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .ecosystem-compact .ecosystem-score-main > .primary {
+    margin-left: 106px;
+  }
+  .ecosystem-compact .ecosystem-counts {
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .ecosystem-compact .ecosystem-counts > button {
+    flex: 0 0 155px;
+  }
+  .ecosystem-compact .ecosystem-composition {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 540px) {
+  .ecosystem-compact .ecosystem-score-main {
+    padding: 16px;
+    align-items: center;
+  }
+  .ecosystem-compact .ecosystem-score-number {
+    width: 77px;
+    height: 77px;
+  }
+  .ecosystem-compact .ecosystem-score-number strong {
+    font-size: 29px;
+  }
+  .ny-app .ecosystem-compact .ecosystem-score-copy h2 {
+    font-size: 23px;
+  }
+  .ecosystem-compact .ecosystem-score-copy .eyebrow {
+    font-size: 9px;
+  }
+  .ecosystem-compact .ecosystem-score-main > .primary {
+    margin-left: 0;
+    width: 100%;
+  }
+  .ecosystem-compact .ecosystem-counts > button {
+    flex-basis: 145px;
+  }
+  .ecosystem-compact .composition-heading > span {
+    font-size: 11px;
+  }
+  .ecosystem-score-details > summary > span {
+    display: block;
+    margin: 3px 0 0 15px;
+  }
+  .score-waterfall-row {
+    grid-template-columns: 100px 1fr 40px;
+    gap: 7px;
+    font-size: 10px;
+  }
+}
+.ecosystem-uncertainty {
+  display: block;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #bcd0da;
+  margin-top: 5px;
+}
+.ecosystem-filters {
+  margin-top: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+.ecosystem-filters .ecosystem-counts {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  overflow: visible;
+  gap: 8px;
+}
+.ecosystem-filters .ecosystem-counts > button {
+  grid-column: span 2;
+  min-width: 0;
+}
+.ecosystem-filters .ecosystem-counts > button:nth-last-child(-n + 2) {
+  grid-column: span 3;
+}
+@media (max-width: 540px) {
+  .ecosystem-filters .ecosystem-counts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .ecosystem-filters .ecosystem-counts > button,
+  .ecosystem-filters .ecosystem-counts > button:nth-last-child(-n + 2) {
+    grid-column: auto;
+  }
+  .ecosystem-filters .ecosystem-counts > button:last-child {
+    grid-column: 1/-1;
+  }
+}
+.account-availability-note {
+  font-size: 12px;
+  color: #596d79;
+  flex-basis: 100%;
+  margin: 2px 0 !important;
+}
+.plant-action-source {
+  display: block;
+  font-size: 12px;
+  color: #087f6d;
+  margin-top: 10px;
+}
+.plant-discovery-prompt {
+  border-left: 3px solid #159c88;
+  background: #f0f8f7;
+  padding: 14px;
+  margin: 15px 0;
+  border-radius: 0 8px 8px 0;
+}
+.plant-discovery-prompt p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.plant-site-context {
+  border-left: 3px solid #277b95;
+  background: #f1f7fa;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 0 8px 8px 0;
+}
+.plant-site-context p {
+  font-size: 14px;
+  line-height: 1.65;
+}
+.plant-site-context small,
+.plant-site-context a {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+}
+.plant-source-cautions {
+  padding: 14px;
+  border: 1px solid #dcb878;
+  border-radius: 8px;
+  background: #fff8eb;
+  margin: 15px 0;
+}
+.plant-source-cautions h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+.plant-source-cautions dl > div {
+  margin-top: 8px;
+}
+.plant-source-cautions dt {
+  font-size: 12px;
+  font-weight: 650;
+}
+.plant-source-cautions dd {
+  margin: 3px 0 0;
+  font-size: 14px;
+}
+.plant-source-cautions a {
+  display: block;
+  font-size: 12px;
+  margin-top: 12px;
+}
+.ny-app .plant-action-scope {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #637787;
+  margin: 7px 0 12px;
+}
+.plant-action-kind {
+  border: 1px solid #cadbd7;
+  border-radius: 5px;
+  padding: 5px 7px;
+  color: #087f6d;
+  font-size: 11px;
+  font-weight: 700;
+  align-self: start;
+}
+.plant-action-control .plant-action-kind {
+  color: #9c3742;
+  border-color: #e8c9ce;
+}
+.ny-app .plant-action-condition {
+  font-size: 12px;
+  font-weight: 700;
+  color: #74550b;
+}
+.rw-general-actions {
+  margin: 18px 0;
+}
+.rw-general-actions > summary {
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+/* Four ecological categories; unresolved records have a separate review row. */
+.ecosystem-compact .ecosystem-counts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); overflow: visible; }
+.ecosystem-compact .ecosystem-counts > button,
+.ecosystem-filters .ecosystem-counts > button:nth-last-child(-n + 2),
+.ecosystem-filters .ecosystem-counts > button:last-child { grid-column: auto; min-width: 0; }
+.ecosystem-pending-review { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding: 12px 18px; margin: 0 14px 14px; border: 1px dashed #a9bbc2; border-radius: 8px; background: #f6f8f9; color: #405b66; }
+.ecosystem-pending-review p { margin: 5px 0; font-size: 12px; }
+.ecosystem-pending-review small { font-size: 11px; }
+.catalog-pending-filter { margin: 10px 0 18px; font-size: 12px; }
+@media (max-width: 640px) { .ecosystem-compact .ecosystem-counts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

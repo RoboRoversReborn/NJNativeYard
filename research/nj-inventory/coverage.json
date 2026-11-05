@@ -1,0 +1,211 @@
+{
+  "checkedOn": "2026-11-05",
+  "sourceVersion": "2026-11-04.2",
+  "rawFloraRows": 3048,
+  "uniqueFloraNames": 3048,
+  "floraCodes": {
+    "N": 2163,
+    "I": 847,
+    "NI": 38
+  },
+  "nativeReferenceRows": 1519,
+  "nativeProgramRows": 1194,
+  "combinedSourceRows": 5761,
+  "combinedReferenceNames": 3351,
+  "normalizedLookupKeys": 3339,
+  "classificationCounts": {
+    "native": 1656,
+    "keystone": 263,
+    "non-native": 766,
+    "invasive": 84,
+    "unverified": 582
+  },
+  "classificationUniqueKeys": {
+    "native": 1645,
+    "keystone": 262,
+    "non-native": 766,
+    "invasive": 84,
+    "unverified": 582
+  },
+  "conservationRestricted": 582,
+  "explicitAliasRecords": 21,
+  "aliasesMatchingReference": 14,
+  "explicitAliases": [
+    {
+      "from": "Polygonum cuspidatum",
+      "to": "Reynoutria japonica",
+      "source": "https://plants.ces.ncsu.edu/plants/reynoutria-japonica/"
+    },
+    {
+      "from": "Polygonum perfoliatum",
+      "to": "Persicaria perfoliata",
+      "source": "https://plants.ces.ncsu.edu/plants/persicaria-perfoliata/"
+    },
+    {
+      "from": "Ranunculus ficaria",
+      "to": "Ficaria verna",
+      "source": "https://plants.ces.ncsu.edu/plants/ficaria-verna/"
+    },
+    {
+      "from": "Ampelopsis brevipedunculata",
+      "to": "Ampelopsis glandulosa var. brevipedunculata",
+      "source": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:67411-1"
+    },
+    {
+      "from": "Sambucus canadensis",
+      "to": "Sambucus nigra subsp. canadensis",
+      "source": "https://plants.ces.ncsu.edu/plants/sambucus-canadensis/"
+    },
+    {
+      "from": "Carya alba",
+      "to": "Carya tomentosa",
+      "source": "https://plants.ces.ncsu.edu/plants/carya-tomentosa/"
+    },
+    {
+      "from": "Osmunda cinnamomea",
+      "to": "Osmundastrum cinnamomeum",
+      "source": "https://plants.ces.ncsu.edu/plants/osmundastrum-cinnamomeum/"
+    },
+    {
+      "from": "Muenchhusia moscheutos",
+      "to": "Hibiscus moscheutos",
+      "source": "https://plants.ces.ncsu.edu/plants/muenchhusia-moscheutos/"
+    },
+    {
+      "from": "Humulus scandens",
+      "to": "Humulus japonicus",
+      "source": "https://plants.ces.ncsu.edu/plants/humulus-scandens/"
+    },
+    {
+      "from": "Berberis bealei",
+      "to": "Mahonia bealei",
+      "source": "https://plants.ces.ncsu.edu/plants/berberis-bealei/"
+    },
+    {
+      "from": "Onoclea struthiopteris",
+      "to": "Matteuccia struthiopteris",
+      "source": "https://plants.ces.ncsu.edu/plants/onoclea-struthiopteris/"
+    },
+    {
+      "from": "Myrica cerifera",
+      "to": "Morella cerifera",
+      "source": "https://plants.ces.ncsu.edu/plants/myrica-cerifera/"
+    },
+    {
+      "from": "Myrica pensylvanica",
+      "to": "Morella pensylvanica",
+      "source": "https://plants.ces.ncsu.edu/plants/myrica-pensylvanica/"
+    },
+    {
+      "from": "Cenchrus alopecuroides",
+      "to": "Pennisetum alopecuroides",
+      "source": "https://plants.ces.ncsu.edu/plants/cenchrus-alopecuroides/"
+    },
+    {
+      "from": "Pourthiaea villosa",
+      "to": "Photinia villosa",
+      "source": "https://plants.ces.ncsu.edu/plants/pourthiaea-villosa/"
+    },
+    {
+      "from": "Anatherum glomeratum",
+      "to": "Andropogon glomeratus",
+      "source": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A12850-2"
+    },
+    {
+      "from": "Anatherum virginicum",
+      "to": "Andropogon virginicus",
+      "source": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A388740-1"
+    },
+    {
+      "from": "Viburnum opulus subsp. americanum",
+      "to": "Viburnum trilobum",
+      "source": "https://plants.ces.ncsu.edu/plants/viburnum-trilobum/"
+    },
+    {
+      "from": "Viburnum opulus subsp. trilobum",
+      "to": "Viburnum trilobum",
+      "source": "https://plants.ces.ncsu.edu/plants/viburnum-trilobum/"
+    },
+    {
+      "from": "Viburnum opulus var. americanum",
+      "to": "Viburnum trilobum",
+      "source": "https://plants.ces.ncsu.edu/plants/viburnum-trilobum/"
+    },
+    {
+      "from": "Viburnum opulus var. trilobum",
+      "to": "Viburnum trilobum",
+      "source": "https://plants.ces.ncsu.edu/plants/viburnum-trilobum/"
+    }
+  ],
+  "richCatalogSize": 558,
+  "source": {
+    "title": "NPSNJ-hosted USDA NJ vascular-plant report (uploaded 2023)",
+    "url": "https://npsnj.org/wp-content/uploads/2023/01/usda_nj_final2.xlsx",
+    "scope": "NJ occurrence report; N/I origin codes refer to broader USDA native-status jurisdictions, not a guarantee of NJ nativity",
+    "sha256": "c643deec39168775932f1526e398a59df6c7a26c63cc1f1c198ca436cae9acc5"
+  },
+  "nativeSources": {
+    "native": {
+      "title": "NJDEP New Jersey Native Regional Plant List 2022",
+      "url": "https://dspace.njstatelib.org/items/b2543302-7f0b-4cf2-8ed5-e988bd48c10a",
+      "download": "https://dspace.njstatelib.org/server/api/core/bitstreams/cb006c2c-8226-4c31-b510-663c48cd185d/content",
+      "sha256": "e3a45dcccc4aab3bd6aa37f33a5b108fb353e535fde973c01efb94a3eadeaa60"
+    },
+    "nativeProgram": {
+      "title": "NJDA Jersey Native Plants program · published native-species list",
+      "url": "https://nj.gov/agriculture/divisions/md/pdf/Native%20Plant%20Regulations.pdf",
+      "scope": "Listed taxon native to NJ for the published program; source listing does not establish site suitability or conservation safety",
+      "sha256": "d3aa672a0fc5d3deed7fc67a7fef325449dd223c1f43d4133787c1068e9000b4"
+    }
+  },
+  "rawSha256": "c643deec39168775932f1526e398a59df6c7a26c63cc1f1c198ca436cae9acc5",
+  "scope": "Complete imported source snapshot, not an exhaustive current NJ flora. USDA N alone is broader-jurisdiction evidence, not NJ nativity. Source names are retained; lookup keys apply only explicit audited aliases, not a claim of modern accepted taxonomy. Exact lower taxa remain separate from parent species. API-only references never become garden recommendations.",
+  "examples": [
+    {
+      "sourceName": "Abutilon theophrasti",
+      "lookupKey": "abutilon theophrasti",
+      "aliases": [],
+      "floraOriginCode": "I",
+      "classification": "non-native",
+      "conservationRestricted": false,
+      "sourceNativeRecord": null,
+      "sourceFloraRecord": {
+        "scientificName": "Abutilon theophrasti",
+        "commonName": "velvetleaf",
+        "originCode": "I",
+        "family": "Malvaceae",
+        "botanicalCategory": "Dicot",
+        "wetlandIndicators": "UPL, FACU-"
+      }
+    },
+    {
+      "sourceName": "Acalypha gracilens",
+      "lookupKey": "acalypha gracilens",
+      "aliases": [],
+      "floraOriginCode": "N",
+      "classification": "native",
+      "conservationRestricted": false,
+      "sourceNativeRecord": {
+        "scientificName": "Acalypha gracilens",
+        "commonName": "Slender Three-Seed-Mercury",
+        "doNotPlant": false,
+        "conservationNote": "",
+        "ecoregions": [
+          "Northern Highlands",
+          "Mid-Atlantic Coastal Plain",
+          "Northern Piedmont",
+          "Atlantic Coastal Pine Barrens"
+        ],
+        "growthForm": "Forb/herb"
+      },
+      "sourceFloraRecord": {
+        "scientificName": "Acalypha gracilens",
+        "commonName": "slender threeseed mercury",
+        "originCode": "N",
+        "family": "Euphorbiaceae",
+        "botanicalCategory": "Dicot",
+        "wetlandIndicators": ""
+      }
+    }
+  ]
+}

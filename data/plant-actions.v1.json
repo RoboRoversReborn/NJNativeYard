@@ -1,0 +1,813 @@
+{
+  "version": "2026-11-04.1",
+  "checkedOn": "2026-11-04",
+  "reviewStatus": "All 42 actions across 24 profiles independently checked against supporting primary sources",
+  "records": {
+    "berberis-thunbergii": [
+      {
+        "kind": "control",
+        "title": "Address small barberry plants before seed set",
+        "season": "Early growing season, before seed set",
+        "detail": "Once the identification is confirmed, the reference supports whole-plant pulling for small plants before they set seed. Removing only the tops is not reliable because stump tissue can resprout.",
+        "source": {
+          "label": "Penn State Extension \u00b7 Japanese Barberry",
+          "url": "https://extension.psu.edu/japanese-barberry",
+          "checkedOn": "2026-11-04"
+        },
+        "scope": "Pennsylvania management reference; plant stage is more reliable than an assumed NJ date.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Control"
+        },
+        "identificationRequired": true
+      },
+      {
+        "kind": "observe",
+        "title": "Check for persistent red fruit",
+        "season": "Late summer through winter",
+        "detail": "Record whether red fruit remains on the shrub during a return visit. The reference describes birds dispersing these seeds, so fruiting is useful context for a confirmed control plan.",
+        "source": {
+          "label": "Penn State Extension \u00b7 Japanese Barberry",
+          "url": "https://extension.psu.edu/japanese-barberry",
+          "checkedOn": "2026-11-04"
+        },
+        "scope": "Regional reference phenology, not a verified NJ fruiting calendar.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Fruit and dispersal"
+        },
+        "identificationRequired": false
+      }
+    ],
+    "euonymus-alatus": [
+      {
+        "kind": "control",
+        "title": "Catch young burning-bush seedlings",
+        "season": "When young plants are visible; no fixed season supplied",
+        "detail": "After confirming the species, small infestations can be tackled by hand-pulling young plants. The source distinguishes this from larger established shrubs, which need a different control plan.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/euonymus-alatus/",
+          "checkedOn": "2026-11-04",
+          "sha256": "46cba89af16283746181c2068175af31d6d527a2af6dca36aaecf8f07966c687"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      },
+      {
+        "kind": "observe",
+        "title": "Use autumn colour and winged stems to refine the match",
+        "season": "Autumn colour change",
+        "detail": "Photograph the red foliage together with the corky wings on the stems. These source-described features are more useful for checking burning bush than foliage colour alone.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/euonymus-alatus/",
+          "checkedOn": "2026-11-04",
+          "sha256": "46cba89af16283746181c2068175af31d6d527a2af6dca36aaecf8f07966c687"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 stem and autumn foliage traits"
+        },
+        "identificationRequired": false
+      }
+    ],
+    "extended-15": [
+      {
+        "kind": "care",
+        "title": "Remove spent flower stalks",
+        "season": "After flowering",
+        "detail": "For a confirmed plantain lily, cut off the spent flowering stems after blooming. The reference also recommends taking discoloured leaves back to ground level.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/hosta-plantaginea/",
+          "checkedOn": "2026-11-04",
+          "sha256": "6b0f734b027eeaa471bbf3e66a8cf332d405a7ad9396b81505ef23389a43a57d"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      },
+      {
+        "kind": "care",
+        "title": "Divide only when an established clump needs it",
+        "season": "Early spring before leaves unfurl, or fall",
+        "detail": "The source supports division in spring or fall and notes that early spring, before foliage opens, is easiest. Treat this as an optional care task for an existing confirmed clump, not a reason to spread a non-native plant.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/hosta-plantaginea/",
+          "checkedOn": "2026-11-04",
+          "sha256": "6b0f734b027eeaa471bbf3e66a8cf332d405a7ad9396b81505ef23389a43a57d"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      }
+    ],
+    "buxus-sempervirens": [
+      {
+        "kind": "care",
+        "title": "Relieve accumulated snow on boxwood",
+        "season": "Winter snow accumulation",
+        "detail": "For an identified boxwood, remove accumulated snow to help protect the branches. Its evergreen foliage and shallow roots also make exposure to drying winter conditions worth noting.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/buxus-sempervirens/",
+          "checkedOn": "2026-11-04",
+          "sha256": "dc9ec68ed5e3062a5f77a76bfeae8b3c1e6625ab58bee34719b08adec91e77de"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      },
+      {
+        "kind": "care",
+        "title": "Thin rather than follow an invented pruning date",
+        "season": "Annual pruning decision; avoid very early spring and late summer",
+        "detail": "The reference recommends annual thinning for light and airflow but specifically cautions against pruning too early in spring or late in summer. Choose local timing for the confirmed cultivar rather than treating this as a fixed NJ date.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/buxus-sempervirens/",
+          "checkedOn": "2026-11-04",
+          "sha256": "dc9ec68ed5e3062a5f77a76bfeae8b3c1e6625ab58bee34719b08adec91e77de"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      }
+    ],
+    "extended-127": [
+      {
+        "kind": "care",
+        "title": "Choose whether to extend the flower display",
+        "season": "While flowers are fading during the flowering season",
+        "detail": "For a confirmed black-eyed Susan, optional deadheading can prolong the flowering period. This is a biennial or short-lived perennial, so do not assume each individual clump will persist indefinitely.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/rudbeckia-hirta/",
+          "checkedOn": "2026-11-04",
+          "sha256": "904683c027ed7bd4173d6b6a8bdbb385a925ad8b0394338a593d0b180506da97"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      },
+      {
+        "kind": "observe",
+        "title": "Record hairy stems with the flower centre",
+        "season": "During flowering",
+        "detail": "Photograph the short stiff hairs on leaves and stems along with the domed flower centre. These traits help refine the botanical match even while its precise NJ ecological status is unresolved.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/rudbeckia-hirta/",
+          "checkedOn": "2026-11-04",
+          "sha256": "904683c027ed7bd4173d6b6a8bdbb385a925ad8b0394338a593d0b180506da97"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 hairs and flowering traits"
+        },
+        "identificationRequired": false
+      }
+    ],
+    "extended-54": [
+      {
+        "kind": "observe",
+        "title": "Look for a new acorn crop without expecting annual success",
+        "season": "Autumn",
+        "detail": "Track acorn presence and wildlife visits on return scans. Red-oak acorns take two growing seasons to mature, and a young tree can take many years to begin fruiting.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/quercus-rubra/",
+          "checkedOn": "2026-11-04",
+          "sha256": "074530a65e91724d0a46d6c3f480b08178549f4be9b372513a7f9c49dc55b60c"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 fruit development"
+        },
+        "identificationRequired": false
+      },
+      {
+        "kind": "observe",
+        "title": "Photograph bristle-tipped leaf lobes",
+        "season": "Leaf-on growing season",
+        "detail": "Capture a clear leaf showing the pointed, bristle-tipped lobes. The source describes seven to eleven lobes; this offers a more useful identity check than a distant canopy outline.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/quercus-rubra/",
+          "checkedOn": "2026-11-04",
+          "sha256": "074530a65e91724d0a46d6c3f480b08178549f4be9b372513a7f9c49dc55b60c"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 leaf traits"
+        },
+        "identificationRequired": false
+      }
+    ],
+    "acer-palmatum": [
+      {
+        "kind": "observe",
+        "title": "Check new leaves after frost",
+        "season": "Spring leaf-out and any later frost",
+        "detail": "Record how the new foliage looks after a frost before using damaged leaves to judge identity. The source notes that young Japanese-maple leaves are frost-sensitive.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/acer-palmatum/",
+          "checkedOn": "2026-11-04",
+          "sha256": "02e3fa2d381861bea927e704ab4826d6a2d2924cf65787aea93916139f5b9a35"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 frost-sensitive young leaves"
+        },
+        "identificationRequired": false
+      },
+      {
+        "kind": "observe",
+        "title": "Check around the parent tree for self-sown plants",
+        "season": "During the leaf-on growing season",
+        "detail": "Look for nearby seedlings and compare their leaves with the parent tree. The source reports that Japanese maple self-seeds readily; an observation is useful before deciding on any control action.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/acer-palmatum/",
+          "checkedOn": "2026-11-04",
+          "sha256": "02e3fa2d381861bea927e704ab4826d6a2d2924cf65787aea93916139f5b9a35"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 self-seeding"
+        },
+        "identificationRequired": false
+      }
+    ],
+    "hydrangea-macrophylla": [
+      {
+        "kind": "care",
+        "title": "Check the cultivar before pruning flower-bearing wood",
+        "season": "Before pruning; especially after the first flush of flowers",
+        "detail": "For confirmed bigleaf hydrangea, establish whether the cultivar flowers on old wood, new growth, or both before cutting. The source describes old-wood flowering and reblooming cultivars; its North Carolina pruning deadline is not a verified NJ cutoff.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/",
+          "checkedOn": "2026-11-04",
+          "sha256": "646038f6645569926c65c2469fee84945875b9f12ecf67e8cd30e9b2367885d6"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      }
+    ],
+    "extended-123": [
+      {
+        "kind": "observe",
+        "title": "Identify visitors before treating leaf feeding",
+        "season": "During the growing and flowering season",
+        "detail": "Look for and identify caterpillars before interpreting leaf feeding as a pest problem. Swamp milkweed is a monarch caterpillar host, and the reference says several common milkweed visitors are not problematic.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/asclepias-incarnata/",
+          "checkedOn": "2026-11-04",
+          "sha256": "fcad8da95f6a01b6fbc740246ba16df21051b91677e48a138863b3e286a5f006"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 monarch host and common visitors"
+        },
+        "identificationRequired": false
+      },
+      {
+        "kind": "observe",
+        "title": "Check that this is the moisture-loving milkweed",
+        "season": "Dry periods during active growth",
+        "detail": "Compare the bed conditions with the reference preference for wet sites or moist clay and loam. Do not assume swamp milkweed has the same dry-soil needs as every other milkweed.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/asclepias-incarnata/",
+          "checkedOn": "2026-11-04",
+          "sha256": "fcad8da95f6a01b6fbc740246ba16df21051b91677e48a138863b3e286a5f006"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 site moisture"
+        },
+        "identificationRequired": false
+      }
+    ],
+    "solidago-rugosa": [
+      {
+        "kind": "observe",
+        "title": "Keep a late-season flowering record",
+        "season": "Late summer to fall; exact local timing varies",
+        "detail": "Photograph the arching yellow flower spikes, upright hairy stems and rough leaves on a late-season visit. Note visiting insects without turning a brief visit into a measured habitat score.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/solidago-rugosa/",
+          "checkedOn": "2026-11-04",
+          "sha256": "a003407ee4bc5588702d2baec24165291932042e082c15f92f31edb348d49c3e"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description and FlowerBloomTime"
+        },
+        "identificationRequired": false
+      }
+    ],
+    "symphyotrichum-novae-angliae": [
+      {
+        "kind": "care",
+        "title": "Pinch for a bushier aster if desired",
+        "season": "Spring, before flowering",
+        "detail": "For a confirmed New England aster, spring pinching can make the plant bushier. The reference notes that this also delays flowering, so it is an optional shaping choice rather than a required habitat task.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/symphyotrichum-novae-angliae/",
+          "checkedOn": "2026-11-04",
+          "sha256": "6903687b5bdfc6771c4233035ce227d603470c131d27a89b5ec22379b100844c"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      },
+      {
+        "kind": "care",
+        "title": "Assess support for taller stems",
+        "season": "As tall stems develop",
+        "detail": "The source notes that taller New England asters may need staking. Check the actual height and stability of the confirmed plant rather than assuming every cultivar needs a stake.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/symphyotrichum-novae-angliae/",
+          "checkedOn": "2026-11-04",
+          "sha256": "6903687b5bdfc6771c4233035ce227d603470c131d27a89b5ec22379b100844c"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      }
+    ],
+    "vaccinium-corymbosum": [
+      {
+        "kind": "care",
+        "title": "Test the soil before a blueberry planting",
+        "season": "Before planting",
+        "detail": "Use a soil test before establishing highbush blueberry. The source identifies its need for more acidic soil than many other garden plants; do not apply a guessed amendment amount from a photo.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/vaccinium-corymbosum/",
+          "checkedOn": "2026-11-04",
+          "sha256": "8dd64be121d3106967487c9209a6e3565f1d0a07ee464a3895e67f3a4081650b"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      },
+      {
+        "kind": "care",
+        "title": "Use the establishment-stage pruning window",
+        "season": "Late winter, from the third year after planting",
+        "detail": "For a confirmed highbush blueberry that has reached its third year after planting, the reference supports late-winter removal of dead wood and shape maintenance. This is not an instruction to prune a newly planted shrub in the same way.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/vaccinium-corymbosum/",
+          "checkedOn": "2026-11-04",
+          "sha256": "8dd64be121d3106967487c9209a6e3565f1d0a07ee464a3895e67f3a4081650b"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      }
+    ],
+    "hedera-helix": [
+      {
+        "kind": "control",
+        "title": "Separate tree-climbing ivy without pulling it from bark",
+        "season": "When confirmed ivy is climbing a tree; no fixed NJ month given",
+        "detail": "After confirming English ivy, follow the tree-safe method: sever its connection near ground level and leave the upper growth attached to die. Pulling attached vines from the tree can damage bark. Recheck and cut regrowth as it appears; one cut is not complete control.",
+        "source": {
+          "label": "Rutgers Environmental Stewards \u00b7 English Ivy invasive-species sheet",
+          "url": "https://envirostewards.rutgers.edu/wp-content/uploads/2026/02/English-Ivy-ISOM-.pdf",
+          "checkedOn": "2026-11-04"
+        },
+        "scope": "NJ Extension guidance; act on confirmed identity and actual tree/site conditions.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Tree-climbing vines"
+        },
+        "identificationRequired": true
+      },
+      {
+        "kind": "observe",
+        "title": "Distinguish climbing leaves from mature flowering growth",
+        "season": "Early-fall flowering stage in the source reference",
+        "detail": "Look for a change from spreading juvenile stems to shrubby flowering growth. The source describes mature stems flowering and later producing berries; leaf shape alone can vary with life stage.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/hedera-helix/",
+          "checkedOn": "2026-11-04",
+          "sha256": "43f2da8d7310d1ccb404c6c6c69d3c2526a790021cb317b05471bd71314b25d1"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 juvenile and adult phases"
+        },
+        "identificationRequired": false
+      }
+    ],
+    "pyrus-calleryana": [
+      {
+        "kind": "observe",
+        "title": "Use the early white bloom as an identification opportunity",
+        "season": "Early spring flowering",
+        "detail": "Photograph the white flower clusters and branch structure while visible. This is a useful time to refine a possible Callery-pear match before planning treatment.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/pyrus-calleryana/",
+          "checkedOn": "2026-11-04",
+          "sha256": "ad8323a848b5f8e7c16813392eaae85c9a4234dbd53373a1d0a997e25dbccc87"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 early flowering"
+        },
+        "identificationRequired": false
+      },
+      {
+        "kind": "control",
+        "title": "Focus any simple removal plan on small confirmed seedlings",
+        "season": "When seedlings are small and identifiable; no fixed season supplied",
+        "detail": "The reference supports hand-pulling or digging seedlings and small trees. This is not a method for a mature tree; choose a separate tree-care plan for established Callery pears.",
+        "source": {
+          "label": "Penn State Extension \u00b7 Pennsylvania\u2019s Newest Noxious Weeds",
+          "url": "https://extension.psu.edu/pennsylvanias-newest-noxious-weeds",
+          "checkedOn": "2026-11-04"
+        },
+        "scope": "Pennsylvania control reference; this record does not assert Pennsylvania legal status applies in NJ.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Callery pear control"
+        },
+        "identificationRequired": true
+      }
+    ],
+    "extended-2": [
+      {
+        "kind": "control",
+        "title": "Remove the roots of small confirmed privets",
+        "season": "When small plants are identifiable; no calendar window supplied",
+        "detail": "The reference includes border privet among the species it covers. Small plants can be hand-pulled, but remaining roots can resprout; cutting the canopy alone is not reliable control.",
+        "source": {
+          "label": "Penn State Extension \u00b7 The Invasive and Noxious Privet",
+          "url": "https://extension.psu.edu/the-invasive-and-noxious-privet",
+          "checkedOn": "2026-11-04"
+        },
+        "scope": "Mid-Atlantic management reference; no verified NJ treatment date is supplied.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Control"
+        },
+        "identificationRequired": true
+      },
+      {
+        "kind": "observe",
+        "title": "Record both leaf arrangement and the fruit stage",
+        "season": "During flowering or fruiting; source dates are Connecticut-oriented",
+        "detail": "Capture the opposite simple leaves together with white flower panicles or black drupes when present. This helps distinguish a possible border privet from a distant evergreen-shaped shrub.",
+        "source": {
+          "label": "University of Connecticut Plant Database",
+          "url": "https://plantdatabase.uconn.edu/detail.php?pid=254",
+          "checkedOn": "2026-11-04",
+          "sha256": "ff6563add16ee098e910969b86c94d64a21dcb51d9b314a35d932e0a80fa4fbf"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Summer Foliage, Flowers and Fruit"
+        },
+        "identificationRequired": false
+      }
+    ],
+    "rosa-multiflora": [
+      {
+        "kind": "observe",
+        "title": "Look for the fringed leaf-base structures",
+        "season": "Spring leaf-out and flowering",
+        "detail": "Photograph the fringed stipules at the base of a leaf and any small white flowers. The source identifies these as useful distinctions from other roses and brambles before control is considered.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/rosa-multiflora/",
+          "checkedOn": "2026-11-04",
+          "sha256": "939295486b3b0f75077e78e3e5ba296f2d389a3dd8e83eb1d63f92b235680af4"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 distinguishing traits"
+        },
+        "identificationRequired": false
+      },
+      {
+        "kind": "control",
+        "title": "Plan for repeated follow-up, not one clipping",
+        "season": "Across repeated growing seasons after a confirmed control plan",
+        "detail": "The reference describes mechanical control as a repeated, multi-year effort. Its mowing schedule is for open pasture settings, not an automatic recommendation for a planted garden bed.",
+        "source": {
+          "label": "Penn State Extension \u00b7 Multiflora Rose Management in Grass Pastures",
+          "url": "https://extension.psu.edu/multiflora-rose-management-in-grass-pastures-an-integrated-approach",
+          "checkedOn": "2026-11-04"
+        },
+        "scope": "Pasture-management source; garden-bed methods and local timing need a site-specific plan.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Mechanical Control"
+        },
+        "identificationRequired": true
+      }
+    ],
+    "extended-96": [
+      {
+        "kind": "care",
+        "title": "Remove spent flower clusters and keep shaping light",
+        "season": "Immediately after flowering",
+        "detail": "For confirmed mountain laurel, the source recommends removing spent clusters and only light pruning after bloom. Remember that next year\u2019s blossoms develop on old growth.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/kalmia-latifolia/",
+          "checkedOn": "2026-11-04",
+          "sha256": "2d0c6098aa9d4de96fd9f8e87173210e54a8b34b752deb329c3771082e8df298"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      },
+      {
+        "kind": "care",
+        "title": "Keep the shallow root zone cool and moist",
+        "season": "Before and during hot or dry weather",
+        "detail": "The reference recommends mulch to retain moisture and cool the root zone. Compare drainage first: mountain laurel does not perform well in wet or heavy clay soil.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/kalmia-latifolia/",
+          "checkedOn": "2026-11-04",
+          "sha256": "2d0c6098aa9d4de96fd9f8e87173210e54a8b34b752deb329c3771082e8df298"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      }
+    ],
+    "cornus-florida": [
+      {
+        "kind": "care",
+        "title": "Maintain a cooling root-zone mulch layer",
+        "season": "Before and during hot summer weather",
+        "detail": "For a confirmed flowering dogwood, the source supports a 2\u20134-inch mulch layer over the root zone to help keep it cool and moist. This does not replace checking drainage and the actual soil moisture.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/cornus-florida/",
+          "checkedOn": "2026-11-04",
+          "sha256": "69f9632de9aa1d5c9521df5ac43fda4d4613613d51f33320e74bc2f7edf43951"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      },
+      {
+        "kind": "observe",
+        "title": "Photograph the tiny flowers inside the showy bracts",
+        "season": "Spring flowering",
+        "detail": "The large petal-like parts are bracts around a cluster of small true flowers. A close-up of both helps check the flowering-dogwood match.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/cornus-florida/",
+          "checkedOn": "2026-11-04",
+          "sha256": "69f9632de9aa1d5c9521df5ac43fda4d4613613d51f33320e74bc2f7edf43951"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 bracts and true flowers"
+        },
+        "identificationRequired": false
+      }
+    ],
+    "hemerocallis-fulva": [
+      {
+        "kind": "observe",
+        "title": "Watch one flower through its short display",
+        "season": "During flowering",
+        "detail": "Photograph a freshly opened orange flower and revisit it the following day. The source explains that each daylily flower lasts only one day; a faded flower is not, by itself, evidence that the plant is failing.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/hemerocallis-fulva/",
+          "checkedOn": "2026-11-04",
+          "sha256": "4568e8cb34ae6602476afa62084bc39feaa17bd26a3786a3431ee64fd060892f"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 flower duration"
+        },
+        "identificationRequired": false
+      },
+      {
+        "kind": "observe",
+        "title": "Track whether the clump is moving beyond its space",
+        "season": "During the leaf-on growing season",
+        "detail": "Record the clump boundary in repeat photos. Orange daylily spreads rapidly by rhizomes, so a boundary record is more useful than assuming every new shoot is a different species.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/hemerocallis-fulva/",
+          "checkedOn": "2026-11-04",
+          "sha256": "4568e8cb34ae6602476afa62084bc39feaa17bd26a3786a3431ee64fd060892f"
+        },
+        "scope": "General horticultural reference; local NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description \u00b7 rhizomatous spread"
+        },
+        "identificationRequired": false
+      }
+    ],
+    "garden-chelone-glabra": [
+      {
+        "kind": "care",
+        "title": "Pinch for a bushier turtlehead if desired",
+        "season": "Spring, before flowering",
+        "detail": "For a confirmed white turtlehead, the reference supports pinching stem tips in spring for bushier growth. This is optional shaping, not a required habitat task.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/chelone-glabra/",
+          "checkedOn": "2026-11-04",
+          "sha256": "8071a8feb04c7d464d02082ff1d11e404bddb0c024fb4b5202e154f67f864a4b"
+        },
+        "scope": "General NC State horticultural reference; NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      },
+      {
+        "kind": "care",
+        "title": "Help retain moisture at the root zone",
+        "season": "Before or during drying weather",
+        "detail": "The source recommends mulch to retain moisture. Check the existing bed moisture and drainage rather than assuming this moisture-loving plant tolerates a dry site.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/chelone-glabra/",
+          "checkedOn": "2026-11-04",
+          "sha256": "8071a8feb04c7d464d02082ff1d11e404bddb0c024fb4b5202e154f67f864a4b"
+        },
+        "scope": "General NC State horticultural reference; NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      }
+    ],
+    "garden-eupatorium-perfoliatum": [
+      {
+        "kind": "observe",
+        "title": "Watch moisture before interpreting leaf scorch",
+        "season": "Dry periods during active growth",
+        "detail": "Check whether the soil has dried when boneset leaves look scorched. The reference describes a consistent water source and notes that dry soil can scorch foliage; a photo alone cannot identify the cause.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/eupatorium-perfoliatum/",
+          "checkedOn": "2026-11-04",
+          "sha256": "750cb8af7d91c18749a1462658faf66eae6899eda8b3689f87479001d9800951"
+        },
+        "scope": "General NC State horticultural reference; NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description"
+        },
+        "identificationRequired": false
+      }
+    ],
+    "garden-heliopsis-helianthoides": [
+      {
+        "kind": "care",
+        "title": "Deadhead if a longer flower display is desired",
+        "season": "As blooms fade during the flowering season",
+        "detail": "For a confirmed false sunflower, the source supports removing spent blooms to prolong flowering. This is a display choice; it is not a measured increase in the yard ecosystem score.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/heliopsis-helianthoides/",
+          "checkedOn": "2026-11-04",
+          "sha256": "5daa6e8787bdba5a80755149624c91313890e160658be9881bf6411f863076b8"
+        },
+        "scope": "General NC State horticultural reference; NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      }
+    ],
+    "garden-veronicastrum-virginicum": [
+      {
+        "kind": "care",
+        "title": "Consider cutting spent flowers for possible rebloom",
+        "season": "After the initial flowering",
+        "detail": "For confirmed Culver\u2019s root, the reference recommends cutting spent flowers back to the rosette for possible fall rebloom. Rebloom is a possibility, not a guaranteed NJ result.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/veronicastrum-virginicum/",
+          "checkedOn": "2026-11-04",
+          "sha256": "e3994afd5bcb7bc310782a95004794410fd7134c8143766727d94e9f67d8e074"
+        },
+        "scope": "General NC State horticultural reference; NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "explicit-source-advice",
+          "sourceField": "Description"
+        },
+        "identificationRequired": true
+      }
+    ],
+    "garden-zizia-aptera": [
+      {
+        "kind": "observe",
+        "title": "Use the basal leaves to refine the golden-alexander match",
+        "season": "Spring flowering and basal-leaf growth",
+        "detail": "Photograph the simple, heart-shaped basal leaves as well as the yellow flower clusters. The source uses those leaves to distinguish this plant from the similar Zizia aurea.",
+        "source": {
+          "label": "NC State Extension Gardener Plant Toolbox",
+          "url": "https://plants.ces.ncsu.edu/plants/zizia-aptera/",
+          "checkedOn": "2026-11-04",
+          "sha256": "dc8534ffae8a115b0aba2625ec023562ee1a06ead71ec4dac36f4a2bd5413a31"
+        },
+        "scope": "General NC State horticultural reference; NJ timing and cultivar response are not verified.",
+        "evidence": {
+          "basis": "source-phenology",
+          "sourceField": "Description"
+        },
+        "identificationRequired": false
+      }
+    ]
+  },
+  "coverage": {
+    "prioritizedSampleProfiles": 19,
+    "profilesWithActions": 24,
+    "actionCount": 42,
+    "sampleActionCount": 36
+  },
+  "notes": "Only curated plant-specific records. Observation is distinguished from care/control. Uncovered profiles receive no invented seasonal action; the UI may separately label general guidance.",
+  "reviewScope": "Source support, plant identity, season/stage constraints and observation-versus-care/control distinction reviewed; not field validation for a particular NJ garden."
+}

@@ -1,0 +1,1036 @@
+[
+  {
+    "id": "sample-region-1",
+    "suggestion": "Japanese aucuba",
+    "scientificName": "Aucuba japonica",
+    "box": {
+      "x": 56.3,
+      "y": 39.1,
+      "w": 12.299999999999997,
+      "h": 17
+    },
+    "confidence": 0.02647,
+    "reviewed": false,
+    "candidates": [
+      {
+        "scientificName": "Aucuba japonica",
+        "commonName": "Japanese aucuba",
+        "confidence": 0.02647,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/534fd3fb92d6a3f508a0ac047bd06e3868f7de9f",
+            "author": "marianne engard",
+            "license": "cc-by-sa",
+            "citation": "marianne engard / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/a16551ed75c800f82a518299ef3c39768ecb6ba9",
+            "author": "Leigh Perisino \u2212 Tela Botanica",
+            "license": "cc-by-sa",
+            "citation": "Leigh Perisino \u2212 Tela Botanica / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/ff953a77f1aa4688365df3f19fbf5bf9e7ced5da",
+            "author": "MH Monfroy",
+            "license": "cc-by-sa",
+            "citation": "MH Monfroy / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "plantId": "extended-18",
+        "scientificName": "Hydrangea paniculata",
+        "commonName": "Panicled Hydrangea",
+        "confidence": 0.02407,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/225e38ed88e76a11ee0f1ecca0bbe0e1358228a7",
+            "author": "ewelinq",
+            "license": "cc-by-sa",
+            "citation": "ewelinq / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/8e8c6bd892d0065c8b3189695ad8e4280aaa8ded",
+            "author": "ewelinq",
+            "license": "cc-by-sa",
+            "citation": "ewelinq / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/a941b2be0be56557d80b769c7048c6b71e6229d2",
+            "author": "lilibel07",
+            "license": "cc-by-sa",
+            "citation": "lilibel07 / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "plantId": "hydrangea-arborescens",
+        "scientificName": "Hydrangea arborescens",
+        "commonName": "Smooth hydrangea",
+        "confidence": 0.02269,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/381fcf943f11fe386ce081a64a23ddd277d251d6",
+            "author": "Rodrigo Fernandez Rivera",
+            "license": "cc-by-sa",
+            "citation": "Rodrigo Fernandez Rivera / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/bb42dfa8acea6a396bc97829affbee526778e1cc",
+            "author": "Disa Pischinger",
+            "license": "cc-by-sa",
+            "citation": "Disa Pischinger / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "plantId": "acer-palmatum",
+        "scientificName": "Acer palmatum",
+        "commonName": "Japanese Maple"
+      }
+    ],
+    "note": "Pre-recorded sample suggestion. Confirm identity before acting."
+  },
+  {
+    "id": "sample-region-2",
+    "suggestion": "Southern catalpa",
+    "scientificName": "Catalpa bignonioides",
+    "box": {
+      "x": 27.4,
+      "y": 39.6,
+      "w": 12.700000000000003,
+      "h": 16.799999999999997
+    },
+    "confidence": 0.04903,
+    "reviewed": false,
+    "candidates": [
+      {
+        "scientificName": "Catalpa bignonioides",
+        "commonName": "Southern catalpa",
+        "confidence": 0.04903,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/b3659a2d7f31d6fb808e2eb9316de65909598bb5",
+            "author": "Ben Terry",
+            "license": "cc-by-sa",
+            "citation": "Ben Terry / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/1d16b7c8de5fc0b97d3a069d4ebffefff4708355",
+            "author": "matteo fiumene",
+            "license": "cc-by-sa",
+            "citation": "matteo fiumene / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/adda71149cc6429f5985f210191fd6a2d6a9c94c",
+            "author": "christianpierlot2",
+            "license": "cc-by-sa",
+            "citation": "christianpierlot2 / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Acer davidii",
+        "commonName": "Father David's maple",
+        "confidence": 0.02635,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/8f51292c4929c33818ed680beebac594fda1a7fa",
+            "author": "jajab",
+            "license": "cc-by-sa",
+            "citation": "jajab / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/c79b194b4ecab8712195685dd58a574ba16fc34e",
+            "author": "van genugten jose",
+            "license": "cc-by-sa",
+            "citation": "van genugten jose / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "plantId": "cotinus-coggygria",
+        "scientificName": "Cotinus coggygria",
+        "commonName": "Smoketree",
+        "confidence": 0.02605,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/f51b6a601e3fabe8228200170dd67d04c27514b1",
+            "author": "Russell Lake",
+            "license": "cc-by-sa",
+            "citation": "Russell Lake / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/87bc7b16c64014114160e44a5ff0a1c6fddb227d",
+            "author": "S T",
+            "license": "cc-by-sa",
+            "citation": "S T / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/760f7b55de6cc288b02b72ae4345bc654c0ae84c",
+            "author": "rosalue jansen",
+            "license": "cc-by-sa",
+            "citation": "rosalue jansen / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "plantId": "acer-palmatum",
+        "scientificName": "Acer palmatum",
+        "commonName": "Japanese Maple"
+      }
+    ],
+    "note": "Pre-recorded sample suggestion. Confirm identity before acting."
+  },
+  {
+    "id": "sample-region-3",
+    "plantId": "rhododendron-catawbiense",
+    "suggestion": "Catawba rhododendron",
+    "scientificName": "Rhododendron catawbiense",
+    "box": {
+      "x": 42.2,
+      "y": 37,
+      "w": 12,
+      "h": 15.100000000000001
+    },
+    "confidence": 0.40102,
+    "reviewed": false,
+    "candidates": [
+      {
+        "plantId": "rhododendron-catawbiense",
+        "scientificName": "Rhododendron catawbiense",
+        "commonName": "Catawba rhododendron",
+        "confidence": 0.40102,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/1c76bbadd624d51e06c2dd0fa29e27c1ebf2bdb5",
+            "author": "ridgewoodqtee",
+            "license": "cc-by-sa",
+            "citation": "ridgewoodqtee / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/0c3e000f50a659d38873f1d922a06957119189d6",
+            "author": "poonam malhotra",
+            "license": "cc-by-sa",
+            "citation": "poonam malhotra / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/9fad9077c13fbc30d39a95f54707ba56d2cc26ef",
+            "author": "M Curcio",
+            "license": "cc-by-sa",
+            "citation": "M Curcio / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Rhododendron ponticum",
+        "commonName": "Rhododendron",
+        "confidence": 0.37919,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/e3ef0cb45025d1ecffa226b6bd55ad9caaf39006",
+            "author": "Giuliano Giacometti",
+            "license": "cc-by-sa",
+            "citation": "Giuliano Giacometti / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/ea68c8c7da307ec77d6f128d259bdcc5e72394bb",
+            "author": "Julie H",
+            "license": "cc-by-sa",
+            "citation": "Julie H / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/82106d9de450bfd9a7746661269f7a1629c0acda",
+            "author": "GILLES LEYSSALE",
+            "license": "cc-by-sa",
+            "citation": "GILLES LEYSSALE / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Rhododendron prinophyllum",
+        "commonName": "Early azalea",
+        "confidence": 0.02346,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/8d9f7fd371bd70979acdf51b1599f173d459f60a",
+            "author": "Minstrel atHome",
+            "license": "cc-by-sa",
+            "citation": "Minstrel atHome / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/bc7eb4474be444ae68f1b99b268c1009cb551c9b",
+            "author": "Scarlett Pearson",
+            "license": "cc-by-sa",
+            "citation": "Scarlett Pearson / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/d493d5635947a456441ca4d4b018270dcb9dbda3",
+            "author": "Milo",
+            "license": "cc-by-sa",
+            "citation": "Milo / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Rhododendron",
+        "commonName": "Rhododendron"
+      }
+    ],
+    "note": "Pre-recorded sample suggestion. Confirm identity before acting."
+  },
+  {
+    "id": "sample-region-4",
+    "plantId": "extended-36",
+    "suggestion": "Satsuki azalea",
+    "scientificName": "Rhododendron indicum",
+    "box": {
+      "x": 9.0,
+      "y": 61.0,
+      "w": 10.5,
+      "h": 3.5
+    },
+    "confidence": 0.00735,
+    "reviewed": false,
+    "candidates": [
+      {
+        "plantId": "extended-36",
+        "scientificName": "Rhododendron indicum",
+        "commonName": "Satsuki azalea",
+        "confidence": 0.00735,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/73b1ac837d146523aedcd6d74e39a425a85dd631",
+            "author": "iradaska Viki",
+            "license": "cc-by-sa",
+            "citation": "iradaska Viki / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Sedum japonicum",
+        "commonName": "Tokyo Sun",
+        "confidence": 0.00704,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/197a9e047f12aae589ea6f8bde104358914595e5",
+            "author": "Delaney Jones",
+            "license": "cc-by-sa",
+            "citation": "Delaney Jones / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/0b5042cce9d8cffd8d2cb022d0bcb7d6e78adf84",
+            "author": "dude sailaway",
+            "license": "cc-by-sa",
+            "citation": "dude sailaway / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/7302fffee3b2dda09963a987e4627d9b635d7ae2",
+            "author": "ekta Srivastava",
+            "license": "cc-by-sa",
+            "citation": "ekta Srivastava / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Pilea microphylla",
+        "commonName": "Artillery plant",
+        "confidence": 0.00572,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/f52eaf8a3ca613705a2ff23d23281c5d09db27f0",
+            "author": "Tha\u00eds Tha\u00eds",
+            "license": "cc-by-sa",
+            "citation": "Tha\u00eds Tha\u00eds / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/09b669474e7811918b58afe926dcb2510345cb85",
+            "author": "Frances RB",
+            "license": "cc-by-sa",
+            "citation": "Frances RB / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/aead2e332d2f1f425726c6928c7db069e793d863",
+            "author": "Salazar Solange",
+            "license": "cc-by-sa",
+            "citation": "Salazar Solange / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Hosta",
+        "commonName": "Hosta"
+      }
+    ],
+    "note": "Pre-recorded sample suggestion. Confirm identity before acting."
+  },
+  {
+    "id": "sample-region-5",
+    "suggestion": "Lantana",
+    "scientificName": "Lantana camara",
+    "box": {
+      "x": 83.8,
+      "y": 62.6,
+      "w": 10.799999999999997,
+      "h": 6.5
+    },
+    "confidence": 0.15316,
+    "reviewed": false,
+    "candidates": [
+      {
+        "scientificName": "Lantana camara",
+        "commonName": "Lantana",
+        "confidence": 0.15316,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/dff2d67179cf1619b186201db99bd5ca15574bab",
+            "author": "quispe alma",
+            "license": "cc-by-sa",
+            "citation": "quispe alma / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/125ac6a464d4f249d67fcf3d1e4d2e3661304933",
+            "author": "quispe alma",
+            "license": "cc-by-sa",
+            "citation": "quispe alma / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/e7686c71ffda133d09363f5ce535e495af8c14e9",
+            "author": "Simone",
+            "license": "cc-by-sa",
+            "citation": "Simone / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Farfugium japonicum",
+        "commonName": "Leopard plant",
+        "confidence": 0.11189,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/6e77bdebee2dc0f3ac5d6908e9a4ff50869a22e6",
+            "author": "david david",
+            "license": "cc-by-sa",
+            "citation": "david david / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/df37906cfe95ce4b058e715985567f6aceb8504f",
+            "author": "ste76",
+            "license": "cc-by-sa",
+            "citation": "ste76 / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/033a9a239ca966e3182fd3b0d1ed42cd47e6791d",
+            "author": "rodriguez cristian moises",
+            "license": "cc-by-sa",
+            "citation": "rodriguez cristian moises / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Waldsteinia ternata",
+        "commonName": "Barren strawberry",
+        "confidence": 0.0382,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/6f80733af58eed1ed9fcbfe42bd2fd516b26a231",
+            "author": "An R",
+            "license": "cc-by-sa",
+            "citation": "An R / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/c19fa60a32201a1e360d12bae8afd0d3ae508552",
+            "author": "Alex Jenkins",
+            "license": "cc-by-sa",
+            "citation": "Alex Jenkins / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/a17d6bc140f7a79ac1b45e2b6b579a3cd74bd54a",
+            "author": "Ernst F\u00fcrst",
+            "license": "cc-by-sa",
+            "citation": "Ernst F\u00fcrst / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Pelargonium",
+        "commonName": "Geranium"
+      }
+    ],
+    "note": "Pre-recorded sample suggestion. Confirm identity before acting."
+  },
+  {
+    "id": "sample-region-6",
+    "suggestion": "Ming aralia",
+    "scientificName": "Polyscias fruticosa",
+    "box": {
+      "x": 36.2,
+      "y": 59.9,
+      "w": 6.199999999999996,
+      "h": 6.5
+    },
+    "confidence": 0.06925,
+    "reviewed": false,
+    "candidates": [
+      {
+        "scientificName": "Polyscias fruticosa",
+        "commonName": "Ming aralia",
+        "confidence": 0.06925,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/a9717bdfaa86bbf6a7b4bb3f5cb0bd4a106d5201",
+            "author": "quispe arocutipa",
+            "license": "cc-by-sa",
+            "citation": "quispe arocutipa / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/17232ef8298d05525a91b4fe0e929b07a9c716fb",
+            "author": "M P yuri",
+            "license": "cc-by-sa",
+            "citation": "M P yuri / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/ebd44a3f305fb49fc2c4278bc974328260098323",
+            "author": "r0932972238",
+            "license": "cc-by-sa",
+            "citation": "r0932972238 / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "plantId": "buxus-sempervirens",
+        "scientificName": "Buxus sempervirens",
+        "commonName": "Common boxwood",
+        "confidence": 0.05125,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/a0f3029ce9cac799e4041ac9e5a3cb82bbc899c9",
+            "author": "Tanya Prithviraj",
+            "license": "cc-by-sa",
+            "citation": "Tanya Prithviraj / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/d0f512612d3e0ada168e7c6e81fae31254560749",
+            "author": "Simas Savukynas",
+            "license": "cc-by-sa",
+            "citation": "Simas Savukynas / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/dc8290f22ce1799c69159d3e52861a45b59988ed",
+            "author": "Stefan H.",
+            "license": "cc-by-sa",
+            "citation": "Stefan H. / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Plerandra elegantissima",
+        "commonName": "False aralia",
+        "confidence": 0.03451,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/bf483a85aab9c33b3c7765c35e82ed2ed39a489d",
+            "author": "Ma2adid Bendo",
+            "license": "cc-by-sa",
+            "citation": "Ma2adid Bendo / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/f49e468ecee781ab474b390a8d6750a1d4191dad",
+            "author": "buddhas coconut",
+            "license": "cc-by-sa",
+            "citation": "buddhas coconut / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/aa56a7c2512ed5e13f052c45f49b250acafa6e5b",
+            "author": "buddhas coconut",
+            "license": "cc-by-sa",
+            "citation": "buddhas coconut / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Hosta",
+        "commonName": "Hosta"
+      }
+    ],
+    "note": "Pre-recorded sample suggestion. Confirm identity before acting."
+  },
+  {
+    "id": "sample-region-7",
+    "plantId": "extended-108",
+    "suggestion": "Canadian goldenrod",
+    "scientificName": "Solidago canadensis",
+    "box": {
+      "x": 73.3,
+      "y": 50,
+      "w": 8.600000000000009,
+      "h": 7.399999999999999
+    },
+    "confidence": 0.05522,
+    "reviewed": false,
+    "candidates": [
+      {
+        "plantId": "extended-108",
+        "scientificName": "Solidago canadensis",
+        "commonName": "Canadian goldenrod",
+        "confidence": 0.05522,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/9373b2a77564cc78af4fcec9f1d6ef5c44fb5505",
+            "author": "Liz E.",
+            "license": "cc-by-sa",
+            "citation": "Liz E. / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/01f37294d077c0e5a9e8a5ca2c9408ea15b4bd63",
+            "author": "Ravneet Kaur",
+            "license": "cc-by-sa",
+            "citation": "Ravneet Kaur / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/1ff2f0eadb03598efd221483c6dc99ac399a907b",
+            "author": "Piotr P",
+            "license": "cc-by-sa",
+            "citation": "Piotr P / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "plantId": "cotinus-coggygria",
+        "scientificName": "Cotinus coggygria",
+        "commonName": "Smoketree",
+        "confidence": 0.0174,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/87bc7b16c64014114160e44a5ff0a1c6fddb227d",
+            "author": "S T",
+            "license": "cc-by-sa",
+            "citation": "S T / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/8cc4f60cb6aef699b22f1a724f65d4667ad63007",
+            "author": "Kimberly",
+            "license": "cc-by-sa",
+            "citation": "Kimberly / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/f51b6a601e3fabe8228200170dd67d04c27514b1",
+            "author": "Russell Lake",
+            "license": "cc-by-sa",
+            "citation": "Russell Lake / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Sambucus nigra",
+        "commonName": "Common Elder",
+        "confidence": 0.01646,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/6a0ca22acfe396542533e4cdbee8e603a843b602",
+            "author": "Nina Johnson",
+            "license": "cc-by-sa",
+            "citation": "Nina Johnson / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/351c5ccb5a43da76e7a19508dca429fd9c9b85e0",
+            "author": "Mich\u00e8le Marbouty",
+            "license": "cc-by-sa",
+            "citation": "Mich\u00e8le Marbouty / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/1e5ddbe06eca983e353b657c76893998ed86ea3e",
+            "author": "Kai Best",
+            "license": "cc-by-sa",
+            "citation": "Kai Best / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Chamaecyparis pisifera",
+        "commonName": "Gold Mop Cypress"
+      }
+    ],
+    "note": "Pre-recorded sample suggestion. Confirm identity before acting."
+  },
+  {
+    "id": "sample-region-8",
+    "suggestion": "Garden heliotrope",
+    "scientificName": "Valeriana officinalis",
+    "box": {
+      "x": 65.5,
+      "y": 49.6,
+      "w": 6.400000000000006,
+      "h": 7.199999999999996
+    },
+    "confidence": 0.01696,
+    "reviewed": false,
+    "candidates": [
+      {
+        "scientificName": "Valeriana officinalis",
+        "commonName": "Garden heliotrope",
+        "confidence": 0.01696,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/7fce2be8ef5cf2f3d1c9a8aef6383e5e25adafa3",
+            "author": "yf_lelay",
+            "license": "cc-by-sa",
+            "citation": "yf_lelay / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/f040cc7e2503418b3cbae11df5dfed1dab7427e5",
+            "author": "Joe Bu",
+            "license": "cc-by-sa",
+            "citation": "Joe Bu / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/d1c84de484cf8bcb893c10e425c68ba3929f6122",
+            "author": "Joe Bu",
+            "license": "cc-by-sa",
+            "citation": "Joe Bu / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Echium pininana",
+        "commonName": "Giant viper's bugloss",
+        "confidence": 0.01655,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/76984457860eb5fd9754b5c2a25cb0d301492c55",
+            "author": "Lydie Thery",
+            "license": "cc-by-sa",
+            "citation": "Lydie Thery / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/0d644cf929f2b2d94a58a14ccf2c5c66252f84b6",
+            "author": "Edward Wingfield",
+            "license": "cc-by-sa",
+            "citation": "Edward Wingfield / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/1ff7ed3a6dfe80ca81ca83e340e97b233e7b0158",
+            "author": "linzilightlove",
+            "license": "cc-by-sa",
+            "citation": "linzilightlove / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Allium giganteum",
+        "commonName": "Giant onion",
+        "confidence": 0.01423,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/ce0b3c32e990d7d276cb5a1bd13c6f19ffa0f5a1",
+            "author": "bas kortleve",
+            "license": "cc-by-sa",
+            "citation": "bas kortleve / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/64d3b90fa9a165da6137f6e1f0422804a4016599",
+            "author": "Modi Elnadi",
+            "license": "cc-by-sa",
+            "citation": "Modi Elnadi / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/6499c7a85de062b9f3c5953bf798cbc0f8f838f8",
+            "author": "Campos Alexandre",
+            "license": "cc-by-sa",
+            "citation": "Campos Alexandre / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Chamaecyparis pisifera",
+        "commonName": "Gold Mop Cypress"
+      }
+    ],
+    "note": "Pre-recorded sample suggestion. Confirm identity before acting."
+  },
+  {
+    "id": "sample-region-9",
+    "plantId": "berberis-thunbergii",
+    "suggestion": "Japanese barberry",
+    "scientificName": "Berberis thunbergii",
+    "box": {
+      "x": 55.1,
+      "y": 32,
+      "w": 15.600000000000001,
+      "h": 11
+    },
+    "confidence": 0.36158,
+    "reviewed": false,
+    "candidates": [
+      {
+        "plantId": "berberis-thunbergii",
+        "scientificName": "Berberis thunbergii",
+        "commonName": "Japanese barberry",
+        "confidence": 0.36158,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/95f77c9a0901ab47cc5c39f00a5231da51c44d00",
+            "author": "Mart Olga",
+            "license": "cc-by-sa",
+            "citation": "Mart Olga / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/fb80c123551fab24194a84759cd20e7235821169",
+            "author": "Victor Pozdnyakov",
+            "license": "cc-by-sa",
+            "citation": "Victor Pozdnyakov / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/fc0f44b09ccf809550d4f5773726471fedf0e017",
+            "author": "Fern\u00e1ndez Lorena",
+            "license": "cc-by-sa",
+            "citation": "Fern\u00e1ndez Lorena / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "scientificName": "Prunus cerasifera",
+        "commonName": "Cherry plum, myrobalan",
+        "confidence": 0.16325,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/6ed1f2e0e45a58785ef538eace4244162aa5ce80",
+            "author": "Gra\u00e7a Silva",
+            "license": "cc-by-sa",
+            "citation": "Gra\u00e7a Silva / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/5edee5b929f562818ee3992c7b55f4b4c96b4f0d",
+            "author": "martyarbo",
+            "license": "cc-by-sa",
+            "citation": "martyarbo / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/8ab4be2c64df5dac28f8d69171c5d040314ef96a",
+            "author": "Meyer Gerhard",
+            "license": "cc-by-sa",
+            "citation": "Meyer Gerhard / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "plantId": "cotinus-coggygria",
+        "scientificName": "Cotinus coggygria",
+        "commonName": "Smoketree",
+        "confidence": 0.0559,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/ad03ec90a693d589ae8c8987a1a84d50a43b4bbc",
+            "author": "Angie Suarez",
+            "license": "cc-by-sa",
+            "citation": "Angie Suarez / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/ac0791b299e98170052689c64b7bee5e8701db6a",
+            "author": "Elena Giorgi",
+            "license": "cc-by-sa",
+            "citation": "Elena Giorgi / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/1160710074293d8368fe425f449c5d925d7d570e",
+            "author": "dhondt2005",
+            "license": "cc-by-sa",
+            "citation": "dhondt2005 / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "plantId": "acer-palmatum",
+        "scientificName": "Acer palmatum",
+        "commonName": "Japanese Maple"
+      }
+    ],
+    "note": "Pre-recorded sample suggestion. Confirm identity before acting."
+  },
+  {
+    "id": "sample-region-10",
+    "plantId": "acer-palmatum",
+    "suggestion": "Japanese maple",
+    "scientificName": "Acer palmatum",
+    "box": {
+      "x": 27.9,
+      "y": 34.3,
+      "w": 10.100000000000001,
+      "h": 7
+    },
+    "confidence": 0.09498,
+    "reviewed": false,
+    "candidates": [
+      {
+        "plantId": "acer-palmatum",
+        "scientificName": "Acer palmatum",
+        "commonName": "Japanese maple",
+        "confidence": 0.09498,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/9611024a92c87fb4c28599441f7606a6808e2dde",
+            "author": "Jennifer Totton",
+            "license": "cc-by-sa",
+            "citation": "Jennifer Totton / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/907aa25100bc027e8688346a75b00f635ffba372",
+            "author": "oguzhandikmen18",
+            "license": "cc-by-sa",
+            "citation": "oguzhandikmen18 / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/14f0aa3931a51d7e16b1d81db3f402f1ade62677",
+            "author": "John Cosgrove",
+            "license": "cc-by-sa",
+            "citation": "John Cosgrove / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "plantId": "cornus-florida",
+        "scientificName": "Cornus florida",
+        "commonName": "Flowering dogwood",
+        "confidence": 0.03465,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/77f34d85c8de27fd0d47114a6e07447f2ec770d4",
+            "author": "Edo I",
+            "license": "cc-by-sa",
+            "citation": "Edo I / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/597ab9eecc0ae7c7ea4ea043fb06390673b269e5",
+            "author": "David H",
+            "license": "cc-by-sa",
+            "citation": "David H / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/ac556f0bf1b2f64af5211f74e1b9e028a66e6be1",
+            "author": "Kevin Richter",
+            "license": "cc-by-sa",
+            "citation": "Kevin Richter / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "plantId": "extended-7",
+        "scientificName": "Spiraea japonica",
+        "commonName": "Japanese Spiraea",
+        "confidence": 0.02948,
+        "referencePhotos": [
+          {
+            "url": "https://bs.plantnet.org/image/m/756d7b35131f5a6f9b958bc112c336e2f6f0a467",
+            "author": "Subi Hanagal",
+            "license": "cc-by-sa",
+            "citation": "Subi Hanagal / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/62464e42199e07dbc85bfd58aa4de1077ae74b82",
+            "author": "Karla Borecky",
+            "license": "cc-by-sa",
+            "citation": "Karla Borecky / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          },
+          {
+            "url": "https://bs.plantnet.org/image/m/6026e2ebf92e4301cdd7be4f1a03cd1afcfbb55a",
+            "author": "Rybicki Kacper",
+            "license": "cc-by-sa",
+            "citation": "Rybicki Kacper / Pl@ntNet, cc-by-sa",
+            "source": "PlantNet"
+          }
+        ]
+      },
+      {
+        "plantId": "acer-palmatum",
+        "scientificName": "Acer palmatum",
+        "commonName": "Japanese Maple"
+      }
+    ],
+    "note": "Pre-recorded sample suggestion. Confirm identity before acting."
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "checkedOn": "2026-11-04",
+  "revision": "r8-image-followup",
+  "catalogTaxa": 558,
+  "assessedTaxa": 558,
+  "licensedDownloadedTaxa": 416,
+  "coveragePercent": 74.6,
+  "referencedRenditions": 832,
+  "uniqueOptimizedFiles": 832,
+  "optimizedBytes": 79181436,
+  "newLocalCoverageForPreviouslyUnmappedTaxa": 248,
+  "legacyMappedTaxaWithVerifiedReplacement": 168,
+  "legacyMappedTaxaStillWithoutVerifiedDownload": 18,
+  "states": {
+    "no-eligible-cached-commons-candidate": 44,
+    "ready": 416,
+    "source-identity-conflict-held": 1,
+    "visual-image-type-held": 4,
+    "eligible-cached-candidate-not-attempted-in-bounded-pass": 93
+  },
+  "limits": [
+    "33 verified additions and one source-taxonomy conflict removed relative to frozen R7.",
+    "All558 taxa have selected-path dispositions; bounded followup leaves93 eligible cached candidates unattempted,44 without eligible cached candidate,4 visual holds plus one existing identity-conflict hold. This is not global absence of internet imagery.",
+    "Exact-taxonomy source metadata and visual photograph checks are not expert botanical reidentification.",
+    "R7 accepted source ZIP remains unchanged. Current source image revision is separate from that archive.",
+    "No enlargement of source pixels; source/license attribution retained."
+  ],
+  "detailBytes": 64207388,
+  "thumbnailBytes": 14974048
+}

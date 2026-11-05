@@ -1,0 +1,5277 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2026-11-01",
+    "locale": "New Jersey, USA",
+    "ecoregion": "Ecoregion 8 — Eastern Temperate Forests",
+    "sources": [
+      "Native Plant Society of New Jersey (NPSNJ) county lists",
+      "Jersey-Friendly Yards / Barnegat Bay Partnership",
+      "NJDEP and NJDA prohibited invasive species lists",
+      "National Wildlife Federation / Doug Tallamy keystone plant research"
+    ],
+    "notes": "Local seed snapshot for the NativeYard NJ MVP. Status and province assignments are illustrative and should be verified against current NJDEP and NPSNJ sources before regulatory action."
+  },
+  "plants": [
+    {
+      "id": "quercus-alba",
+      "legacyPlantId": "quercus-alba",
+      "scientificName": "Quercus alba",
+      "commonName": "White Oak",
+      "status": "keystone",
+      "njStatus": "NATIVE_KEYSTONE",
+      "type": "Tree",
+      "growthHabit": "CANOPY_TREE",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium–dry",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "Insignificant flowers; acorns in fall",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "50–80 ft",
+      "matureHeightFt": [
+        50,
+        80
+      ],
+      "lepidoptera": 500,
+      "lepidopteraCount": 500,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "The cornerstone of eastern food webs. Supports more caterpillar species than any other local tree and feeds birds, mammals, and fungi."
+    },
+    {
+      "id": "prunus-serotina",
+      "legacyPlantId": "prunus-serotina",
+      "scientificName": "Prunus serotina",
+      "commonName": "Black Cherry",
+      "status": "keystone",
+      "njStatus": "NATIVE_KEYSTONE",
+      "type": "Tree",
+      "growthHabit": "CANOPY_TREE",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White racemes · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "40–70 ft",
+      "matureHeightFt": [
+        40,
+        70
+      ],
+      "lepidoptera": 450,
+      "lepidopteraCount": 450,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES"
+      ],
+      "description": "A larval powerhouse with early nectar, summer fruit for birds, and high wildlife value in hedgerows and woodland edges."
+    },
+    {
+      "id": "solidago-rugosa",
+      "legacyPlantId": "solidago-rugosa",
+      "scientificName": "Solidago rugosa",
+      "commonName": "Wrinkleleaf Goldenrod",
+      "status": "keystone",
+      "njStatus": "NATIVE_KEYSTONE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Golden yellow · September–October",
+      "bloomMonths": [
+        9,
+        10
+      ],
+      "height": "2–4 ft",
+      "matureHeightFt": [
+        2,
+        4
+      ],
+      "lepidoptera": 115,
+      "lepidopteraCount": 115,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [],
+      "description": "A late-season nectar and pollen jackpot. Goldenrods support specialist bees, caterpillars, and migrating monarchs."
+    },
+    {
+      "id": "acer-rubrum",
+      "legacyPlantId": "acer-rubrum",
+      "scientificName": "Acer rubrum",
+      "commonName": "Red Maple",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Tree",
+      "growthHabit": "CANOPY_TREE",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Red flowers · March–April",
+      "bloomMonths": [
+        3,
+        4
+      ],
+      "height": "40–60 ft",
+      "matureHeightFt": [
+        40,
+        60
+      ],
+      "lepidoptera": 285,
+      "lepidopteraCount": 285,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "RED_FALL_FOLIAGE",
+        "SHOWY_BLOOMS"
+      ],
+      "description": "Fast-growing native shade tree with spring flowers, brilliant fall color, and strong caterpillar support."
+    },
+    {
+      "id": "nyssa-sylvatica",
+      "legacyPlantId": "nyssa-sylvatica",
+      "scientificName": "Nyssa sylvatica",
+      "commonName": "Black Gum",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Tree",
+      "growthHabit": "CANOPY_TREE",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Greenish · May–June",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "30–50 ft",
+      "matureHeightFt": [
+        30,
+        50
+      ],
+      "lepidoptera": 28,
+      "lepidopteraCount": 28,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "RED_FALL_FOLIAGE",
+        "WINTER_BERRIES"
+      ],
+      "description": "A long-lived shade tree with glossy foliage, scarlet fall color, and small fruits that disappear quickly into migrating birds."
+    },
+    {
+      "id": "liriodendron-tulipifera",
+      "legacyPlantId": "liriodendron-tulipifera",
+      "scientificName": "Liriodendron tulipifera",
+      "commonName": "Tulip Tree",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Tree",
+      "growthHabit": "CANOPY_TREE",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Yellow-green tulips · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "60–90 ft",
+      "matureHeightFt": [
+        60,
+        90
+      ],
+      "lepidoptera": 21,
+      "lepidopteraCount": 21,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A fast-growing canopy tree with distinctive leaves and flowers. Best for larger yards with room for a 60-foot spread."
+    },
+    {
+      "id": "cercis-canadensis",
+      "legacyPlantId": "cercis-canadensis",
+      "scientificName": "Cercis canadensis",
+      "commonName": "Eastern Redbud",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Tree",
+      "growthHabit": "UNDERSTORY_TREE",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Magenta-pink · March–April",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "20–30 ft",
+      "matureHeightFt": [
+        20,
+        30
+      ],
+      "lepidoptera": 12,
+      "lepidopteraCount": 12,
+      "specialistBeeSupport": false,
+      "deerResistance": "LOW",
+      "ornamentalFeatures": [],
+      "description": "An understory tree with early nectar for bees and a compact form that fits small yards. Hosts several specialist moths."
+    },
+    {
+      "id": "amelanchier-canadensis",
+      "legacyPlantId": "amelanchier-canadensis",
+      "scientificName": "Amelanchier canadensis",
+      "commonName": "Serviceberry",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Tree",
+      "growthHabit": "UNDERSTORY_TREE",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "White · March–April",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "15–25 ft",
+      "matureHeightFt": [
+        15,
+        25
+      ],
+      "lepidoptera": 119,
+      "lepidopteraCount": 119,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "RED_FALL_FOLIAGE",
+        "WINTER_BERRIES"
+      ],
+      "description": "A four-season native: early blossoms, June berries for birds, clean summer foliage, and orange-red fall color."
+    },
+    {
+      "id": "cornus-florida",
+      "legacyPlantId": "cornus-florida",
+      "scientificName": "Cornus florida",
+      "commonName": "Flowering Dogwood",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Tree",
+      "growthHabit": "UNDERSTORY_TREE",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White bracts · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "15–30 ft",
+      "matureHeightFt": [
+        15,
+        30
+      ],
+      "lepidoptera": 118,
+      "lepidopteraCount": 118,
+      "specialistBeeSupport": false,
+      "deerResistance": "LOW",
+      "ornamentalFeatures": [],
+      "description": "An understory beauty that feeds pollinators, birds, and caterpillars. Best with afternoon shade and consistent moisture."
+    },
+    {
+      "id": "ilex-opaca",
+      "legacyPlantId": "ilex-opaca",
+      "scientificName": "Ilex opaca",
+      "commonName": "American Holly",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Tree",
+      "growthHabit": "UNDERSTORY_TREE",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White · April–June",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "15–30 ft",
+      "matureHeightFt": [
+        15,
+        30
+      ],
+      "lepidoptera": 34,
+      "lepidopteraCount": 34,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES",
+        "EVERGREEN"
+      ],
+      "description": "Evergreen structure and winter berries for birds. Plant a male nearby for reliable fruit on female selections."
+    },
+    {
+      "id": "juniperus-virginiana",
+      "legacyPlantId": "juniperus-virginiana",
+      "scientificName": "Juniperus virginiana",
+      "commonName": "Eastern Red Cedar",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Tree",
+      "growthHabit": "CANOPY_TREE",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Dry–medium",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "Insignificant · March–April",
+      "bloomMonths": [
+        3,
+        4
+      ],
+      "height": "30–50 ft",
+      "matureHeightFt": [
+        30,
+        50
+      ],
+      "lepidoptera": 37,
+      "lepidopteraCount": 37,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "EVERGREEN"
+      ],
+      "description": "A tough evergreen that shelters birds in winter and provides dense cover. Great for windy or dry edges."
+    },
+    {
+      "id": "rhododendron-catawbiense",
+      "legacyPlantId": "rhododendron-catawbiense",
+      "scientificName": "Rhododendron catawbiense",
+      "commonName": "Catawba Rhododendron",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Purple-pink · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "4–8 ft",
+      "matureHeightFt": [
+        4,
+        8
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "EVERGREEN"
+      ],
+      "description": "A native evergreen shrub with spring nectar and year-round cover. Keep it mulched and protected from afternoon sun."
+    },
+    {
+      "id": "thuja-occidentalis",
+      "legacyPlantId": "thuja-occidentalis",
+      "scientificName": "Thuja occidentalis",
+      "commonName": "Eastern Arborvitae",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Tree",
+      "growthHabit": "CANOPY_TREE",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Insignificant · March–April",
+      "bloomMonths": [
+        3,
+        4
+      ],
+      "height": "20–40 ft",
+      "matureHeightFt": [
+        20,
+        40
+      ],
+      "lepidoptera": 15,
+      "lepidopteraCount": 15,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "EVERGREEN"
+      ],
+      "description": "A native evergreen screen that provides nesting and winter cover. Better than most exotic hedges for local birds."
+    },
+    {
+      "id": "ilex-verticillata",
+      "legacyPlantId": "ilex-verticillata",
+      "scientificName": "Ilex verticillata",
+      "commonName": "Winterberry",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Wet–medium",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "White · June–July",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "6–10 ft",
+      "matureHeightFt": [
+        6,
+        10
+      ],
+      "lepidoptera": 3,
+      "lepidopteraCount": 3,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES"
+      ],
+      "description": "A deciduous holly that lights up winter with red fruit for robins and waxwings. Needs a male pollinator."
+    },
+    {
+      "id": "vaccinium-corymbosum",
+      "legacyPlantId": "vaccinium-corymbosum",
+      "scientificName": "Vaccinium corymbosum",
+      "commonName": "Highbush Blueberry",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "White bells · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "6–12 ft",
+      "matureHeightFt": [
+        6,
+        12
+      ],
+      "lepidoptera": 211,
+      "lepidopteraCount": 211,
+      "specialistBeeSupport": true,
+      "deerResistance": "LOW",
+      "ornamentalFeatures": [
+        "RED_FALL_FOLIAGE",
+        "WINTER_BERRIES"
+      ],
+      "description": "A productive native shrub for people and wildlife: spring nectar, summer berries, fall color, and strong caterpillar support."
+    },
+    {
+      "id": "vaccinium-angustifolium",
+      "legacyPlantId": "vaccinium-angustifolium",
+      "scientificName": "Vaccinium angustifolium",
+      "commonName": "Lowbush Blueberry",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Groundcover",
+      "growthHabit": "GROUNDCOVER",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Dry–medium",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "White · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "1–2 ft",
+      "matureHeightFt": [
+        1,
+        2
+      ],
+      "lepidoptera": 211,
+      "lepidopteraCount": 211,
+      "specialistBeeSupport": true,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES"
+      ],
+      "description": "A low, spreading blueberry for sunny edges. Adds nectar, fruit, and caterpillar habitat without needing a big footprint."
+    },
+    {
+      "id": "rhus-aromatica",
+      "legacyPlantId": "rhus-aromatica",
+      "scientificName": "Rhus aromatica",
+      "commonName": "Fragrant Sumac",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Dry–medium",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "Yellow-green · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "2–6 ft",
+      "matureHeightFt": [
+        2,
+        6
+      ],
+      "lepidoptera": 58,
+      "lepidopteraCount": 58,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "RED_FALL_FOLIAGE",
+        "WINTER_BERRIES"
+      ],
+      "description": "A tough, low shrub with glossy leaves, red fall color, and berry-like fruit for birds. Excellent on slopes and dry edges."
+    },
+    {
+      "id": "physocarpus-opulifolius",
+      "legacyPlantId": "physocarpus-opulifolius",
+      "scientificName": "Physocarpus opulifolius",
+      "commonName": "Ninebark",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "5–10 ft",
+      "matureHeightFt": [
+        5,
+        10
+      ],
+      "lepidoptera": 41,
+      "lepidopteraCount": 41,
+      "specialistBeeSupport": true,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A durable native shrub with peeling bark, pollinator-friendly flowers, and excellent erosion control."
+    },
+    {
+      "id": "viburnum-dentatum",
+      "legacyPlantId": "viburnum-dentatum",
+      "scientificName": "Viburnum dentatum",
+      "commonName": "Arrowwood Viburnum",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "6–10 ft",
+      "matureHeightFt": [
+        6,
+        10
+      ],
+      "lepidoptera": 97,
+      "lepidopteraCount": 97,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES",
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A bird-friendly shrub with spring flowers, blue-black fruit, and dense cover. A strong replacement for exotic hedges."
+    },
+    {
+      "id": "lindera-benzoin",
+      "legacyPlantId": "lindera-benzoin",
+      "scientificName": "Lindera benzoin",
+      "commonName": "Spicebush",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Yellow · March–April",
+      "bloomMonths": [
+        3,
+        4
+      ],
+      "height": "6–12 ft",
+      "matureHeightFt": [
+        6,
+        12
+      ],
+      "lepidoptera": 3,
+      "lepidopteraCount": 3,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "RED_FALL_FOLIAGE",
+        "WINTER_BERRIES"
+      ],
+      "description": "An early-season woodland shrub and host for spicebush swallowtails. Plant a male and female for red fall berries."
+    },
+    {
+      "id": "clethra-alnifolia",
+      "legacyPlantId": "clethra-alnifolia",
+      "scientificName": "Clethra alnifolia",
+      "commonName": "Summersweet",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Wet–medium",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "White spikes · July–August",
+      "bloomMonths": [
+        7,
+        8
+      ],
+      "height": "4–8 ft",
+      "matureHeightFt": [
+        4,
+        8
+      ],
+      "lepidoptera": 5,
+      "lepidopteraCount": 5,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "FRAGRANT",
+        "SHOWY_BLOOMS"
+      ],
+      "description": "Fragrant summer flowers feed bees and butterflies when little else is blooming. Tolerates wet soils and shade."
+    },
+    {
+      "id": "hydrangea-quercifolia",
+      "legacyPlantId": "hydrangea-quercifolia",
+      "scientificName": "Hydrangea quercifolia",
+      "commonName": "Oakleaf Hydrangea",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White · May–July",
+      "bloomMonths": [
+        6,
+        7
+      ],
+      "height": "4–8 ft",
+      "matureHeightFt": [
+        4,
+        8
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "RED_FALL_FOLIAGE",
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A native hydrangea with oak-shaped leaves, long-lasting blooms, and burgundy fall color. More ecological value than mophead hydrangeas."
+    },
+    {
+      "id": "morella-cerifera",
+      "legacyPlantId": "morella-cerifera",
+      "scientificName": "Morella cerifera",
+      "commonName": "Wax Myrtle",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Insignificant · March–April",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "6–12 ft",
+      "matureHeightFt": [
+        6,
+        12
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES",
+        "EVERGREEN"
+      ],
+      "description": "A fast evergreen screen for coastal and warm-edge gardens. Provides cover and waxy berries for birds."
+    },
+    {
+      "id": "ilex-glabra",
+      "legacyPlantId": "ilex-glabra",
+      "scientificName": "Ilex glabra",
+      "commonName": "Inkberry",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Wet–medium",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "White · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "4–8 ft",
+      "matureHeightFt": [
+        4,
+        8
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "EVERGREEN"
+      ],
+      "description": "A native evergreen holly that makes a dense, low-maintenance hedge and supports pollinators and birds."
+    },
+    {
+      "id": "packera-aurea",
+      "legacyPlantId": "packera-aurea",
+      "scientificName": "Packera aurea",
+      "commonName": "Golden Groundsel",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Groundcover",
+      "growthHabit": "GROUNDCOVER",
+      "sun": "Part shade–shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Yellow · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "1–2 ft",
+      "matureHeightFt": [
+        1,
+        2
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "EVERGREEN",
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A vigorous native groundcover for shade. Evergreen foliage suppresses weeds and early flowers feed newly emerged bees."
+    },
+    {
+      "id": "asarum-canadense",
+      "legacyPlantId": "asarum-canadense",
+      "scientificName": "Asarum canadense",
+      "commonName": "Wild Ginger",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Groundcover",
+      "growthHabit": "GROUNDCOVER",
+      "sun": "Part shade–shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Maroon · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "6–12 in",
+      "matureHeightFt": [
+        0.5,
+        1
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A low woodland groundcover with heart-shaped leaves and hidden flowers. Spreads slowly to form a weed-resistant carpet."
+    },
+    {
+      "id": "chrysogonum-virginianum",
+      "legacyPlantId": "chrysogonum-virginianum",
+      "scientificName": "Chrysogonum virginianum",
+      "commonName": "Green-and-Gold",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Groundcover",
+      "growthHabit": "GROUNDCOVER",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Yellow · April–June",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "6–12 in",
+      "matureHeightFt": [
+        0.5,
+        1
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A cheerful native groundcover for shade edges. Blooms over a long season and slowly knits the garden floor together."
+    },
+    {
+      "id": "carex-pensylvanica",
+      "legacyPlantId": "carex-pensylvanica",
+      "scientificName": "Carex pensylvanica",
+      "commonName": "Pennsylvania Sedge",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Grass",
+      "growthHabit": "GRAMINOID",
+      "sun": "Part shade–shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Dry–medium",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "Greenish · April–May",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "6–12 in",
+      "matureHeightFt": [
+        0.5,
+        1
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [],
+      "description": "A soft, lawn-like native sedge for dry shade. A low-input alternative to turfgrass under trees."
+    },
+    {
+      "id": "panicum-virgatum",
+      "legacyPlantId": "panicum-virgatum",
+      "scientificName": "Panicum virgatum",
+      "commonName": "Switchgrass",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Grass",
+      "growthHabit": "GRAMINOID",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Airy panicles · July–September",
+      "bloomMonths": [
+        8,
+        9
+      ],
+      "height": "3–6 ft",
+      "matureHeightFt": [
+        3,
+        6
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [],
+      "description": "A sturdy native grass with airy seed heads, winter structure, and bird cover. Replaces invasive reed canary grass and miscanthus."
+    },
+    {
+      "id": "schizachyrium-scoparium",
+      "legacyPlantId": "schizachyrium-scoparium",
+      "scientificName": "Schizachyrium scoparium",
+      "commonName": "Little Bluestem",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Grass",
+      "growthHabit": "GRAMINOID",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Dry–medium",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "Purple-green · August–October",
+      "bloomMonths": [
+        8,
+        9
+      ],
+      "height": "2–4 ft",
+      "matureHeightFt": [
+        2,
+        4
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "RED_FALL_FOLIAGE"
+      ],
+      "description": "A drought-tough native grass with blue-green summer foliage and copper fall color. Excellent for sunny, low-water borders."
+    },
+    {
+      "id": "rudbeckia-fulgida",
+      "legacyPlantId": "rudbeckia-fulgida",
+      "scientificName": "Rudbeckia fulgida",
+      "commonName": "Orange Coneflower",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Orange-yellow · July–October",
+      "bloomMonths": [
+        7,
+        9
+      ],
+      "height": "2–3 ft",
+      "matureHeightFt": [
+        2,
+        3
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": true,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A long-blooming native perennial with nectar and seed for wildlife. A direct replacement for daylily mass plantings."
+    },
+    {
+      "id": "geranium-maculatum",
+      "legacyPlantId": "geranium-maculatum",
+      "scientificName": "Geranium maculatum",
+      "commonName": "Wild Geranium",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Lavender-pink · April–June",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "1–2 ft",
+      "matureHeightFt": [
+        1,
+        2
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [],
+      "description": "A woodland perennial with early nectar and caterpillar support. Forms a tidy clump and tolerates dry shade once established."
+    },
+    {
+      "id": "osmundastrum-cinnamomeum",
+      "legacyPlantId": "osmundastrum-cinnamomeum",
+      "scientificName": "Osmundastrum cinnamomeum",
+      "commonName": "Cinnamon Fern",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Fern",
+      "growthHabit": "FERN",
+      "sun": "Part shade–shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Wet–medium",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Cinnamon fertile fronds · spring",
+      "bloomMonths": [],
+      "height": "2–4 ft",
+      "matureHeightFt": [
+        2,
+        4
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [],
+      "description": "A sculptural native fern for moist shade. Provides cover for amphibians and insects and replaces hosta clumps gracefully."
+    },
+    {
+      "id": "athyrium-filix-femina",
+      "legacyPlantId": "athyrium-filix-femina",
+      "scientificName": "Athyrium filix-femina",
+      "commonName": "Lady Fern",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Fern",
+      "growthHabit": "FERN",
+      "sun": "Part shade–shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Insignificant · summer",
+      "bloomMonths": [],
+      "height": "2–3 ft",
+      "matureHeightFt": [
+        2,
+        3
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A graceful, easy fern for shade gardens. Its fine texture pairs well with foamflower and wild ginger."
+    },
+    {
+      "id": "tiarella-cordifolia",
+      "legacyPlantId": "tiarella-cordifolia",
+      "scientificName": "Tiarella cordifolia",
+      "commonName": "Foamflower",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Part shade–shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White foam · April–June",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "6–12 in",
+      "matureHeightFt": [
+        0.5,
+        1
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "EVERGREEN",
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A native shade perennial with foamy spring flowers and semi-evergreen foliage. Spreads gently into a groundcover."
+    },
+    {
+      "id": "heuchera-americana",
+      "legacyPlantId": "heuchera-americana",
+      "scientificName": "Heuchera americana",
+      "commonName": "Alumroot",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Dry–medium",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "Greenish-white · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "1–2 ft",
+      "matureHeightFt": [
+        1,
+        2
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "EVERGREEN",
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A native coralbell with mottled evergreen leaves and tiny pollinator-friendly flowers. Tough in dry shade."
+    },
+    {
+      "id": "lobelia-siphilitica",
+      "legacyPlantId": "lobelia-siphilitica",
+      "scientificName": "Lobelia siphilitica",
+      "commonName": "Great Blue Lobelia",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Wet–medium",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Blue · July–September",
+      "bloomMonths": [
+        8,
+        9
+      ],
+      "height": "2–3 ft",
+      "matureHeightFt": [
+        2,
+        3
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": true,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A late-summer blue flower for wet spots. Feeds bumblebees and hummingbirds and replaces purple loosestrife in rain gardens."
+    },
+    {
+      "id": "parthenocissus-quinquefolia",
+      "legacyPlantId": "parthenocissus-quinquefolia",
+      "scientificName": "Parthenocissus quinquefolia",
+      "commonName": "Virginia Creeper",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Vine",
+      "growthHabit": "VINE",
+      "sun": "Full sun–shade",
+      "lightRange": [
+        "FULL_SUN",
+        "FULL_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Greenish · June–July",
+      "bloomMonths": [
+        6,
+        7
+      ],
+      "height": "30–50 ft",
+      "matureHeightFt": [
+        30,
+        50
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "RED_FALL_FOLIAGE",
+        "WINTER_BERRIES"
+      ],
+      "description": "A vigorous native vine with blue berries for birds and scarlet fall color. Use it where it has room to roam, not on fragile structures."
+    },
+    {
+      "id": "lonicera-sempervirens",
+      "legacyPlantId": "lonicera-sempervirens",
+      "scientificName": "Lonicera sempervirens",
+      "commonName": "Trumpet Honeysuckle",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Vine",
+      "growthHabit": "VINE",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Coral-red · April–September",
+      "bloomMonths": [
+        6,
+        7
+      ],
+      "height": "10–20 ft",
+      "matureHeightFt": [
+        10,
+        20
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A well-behaved native vine with tubular flowers for hummingbirds. Far better than invasive Japanese honeysuckle."
+    },
+    {
+      "id": "wisteria-frutescens",
+      "legacyPlantId": "wisteria-frutescens",
+      "scientificName": "Wisteria frutescens",
+      "commonName": "American Wisteria",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Vine",
+      "growthHabit": "VINE",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Lavender · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "15–25 ft",
+      "matureHeightFt": [
+        15,
+        25
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A restrained native wisteria that flowers on new wood and supports pollinators. Still needs a strong trellis."
+    },
+    {
+      "id": "rosa-carolina",
+      "legacyPlantId": "rosa-carolina",
+      "scientificName": "Rosa carolina",
+      "commonName": "Carolina Rose",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Dry–medium",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "Pink · May–July",
+      "bloomMonths": [
+        6,
+        7
+      ],
+      "height": "2–4 ft",
+      "matureHeightFt": [
+        2,
+        4
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "LOW",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A native rose with single pink flowers, rose hips for birds, and none of the thuggish spread of multiflora rose."
+    },
+    {
+      "id": "iris-versicolor",
+      "legacyPlantId": "iris-versicolor",
+      "scientificName": "Iris versicolor",
+      "commonName": "Blue Flag Iris",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Wet–medium",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Blue-purple · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "2–3 ft",
+      "matureHeightFt": [
+        2,
+        3
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A native iris for rain gardens and wet edges. Provides early nectar and replaces invasive yellow flag iris."
+    },
+    {
+      "id": "echinacea-purpurea",
+      "legacyPlantId": "echinacea-purpurea",
+      "scientificName": "Echinacea purpurea",
+      "commonName": "Purple Coneflower",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Purple-pink · June–September",
+      "bloomMonths": [
+        6,
+        8
+      ],
+      "height": "2–4 ft",
+      "matureHeightFt": [
+        2,
+        4
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A pollinator favorite with long bloom and seed for finches. Drought-tolerant once established."
+    },
+    {
+      "id": "asclepias-tuberosa",
+      "legacyPlantId": "asclepias-tuberosa",
+      "scientificName": "Asclepias tuberosa",
+      "commonName": "Butterfly Milkweed",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Dry–medium",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "Orange · June–August",
+      "bloomMonths": [
+        6,
+        8
+      ],
+      "height": "1–2 ft",
+      "matureHeightFt": [
+        1,
+        2
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A monarch host plant with brilliant orange flowers. Needs well-drained soil and room for its taproot."
+    },
+    {
+      "id": "monarda-fistulosa",
+      "legacyPlantId": "monarda-fistulosa",
+      "scientificName": "Monarda fistulosa",
+      "commonName": "Wild Bergamot",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Lavender · June–August",
+      "bloomMonths": [
+        7,
+        8
+      ],
+      "height": "2–4 ft",
+      "matureHeightFt": [
+        2,
+        4
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [],
+      "description": "A mint-family native that feeds long-tongued bees, butterflies, and hummingbirds. Mildew-resistant with good airflow."
+    },
+    {
+      "id": "symphyotrichum-novae-angliae",
+      "legacyPlantId": "symphyotrichum-novae-angliae",
+      "scientificName": "Symphyotrichum novae-angliae",
+      "commonName": "New England Aster",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Purple · August–October",
+      "bloomMonths": [
+        9,
+        10
+      ],
+      "height": "3–6 ft",
+      "matureHeightFt": [
+        3,
+        6
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [],
+      "description": "A late-season nectar source that keeps pollinators fed into frost. Pinch in early summer for a compact habit."
+    },
+    {
+      "id": "eutrochium-purpureum",
+      "legacyPlantId": "eutrochium-purpureum",
+      "scientificName": "Eutrochium purpureum",
+      "commonName": "Joe-Pye Weed",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Wet–medium",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Mauve · July–September",
+      "bloomMonths": [
+        7,
+        9
+      ],
+      "height": "4–7 ft",
+      "matureHeightFt": [
+        4,
+        7
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [],
+      "description": "A tall, architectural native that draws butterflies and native bees. Ideal for rain gardens and wet back borders."
+    },
+    {
+      "id": "zizia-aurea",
+      "legacyPlantId": "zizia-aurea",
+      "scientificName": "Zizia aurea",
+      "commonName": "Golden Alexanders",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Yellow · April–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "1–3 ft",
+      "matureHeightFt": [
+        1,
+        3
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [],
+      "description": "An early-season umbel that supports short-tongued bees and serves as a host for black swallowtails."
+    },
+    {
+      "id": "acer-palmatum",
+      "legacyPlantId": "acer-palmatum",
+      "scientificName": "Acer palmatum",
+      "commonName": "Japanese Maple",
+      "status": "non-native",
+      "njStatus": "NON_NATIVE_BENIGN",
+      "type": "Tree",
+      "growthHabit": "UNDERSTORY_TREE",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Insignificant · spring",
+      "bloomMonths": [],
+      "height": "10–25 ft",
+      "matureHeightFt": [
+        10,
+        25
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "LOW",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES"
+      ],
+      "description": "A beautiful but non-native understory tree. It offers little caterpillar food compared with serviceberry or dogwood."
+    },
+    {
+      "id": "hosta",
+      "legacyPlantId": "hosta",
+      "scientificName": "Hosta spp.",
+      "commonName": "Hosta",
+      "status": "non-native",
+      "njStatus": "NON_NATIVE_BENIGN",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Part shade–shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Lavender · June–August",
+      "bloomMonths": [
+        6,
+        7,
+        8
+      ],
+      "height": "1–3 ft",
+      "matureHeightFt": [
+        1,
+        3
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "LOW",
+      "ornamentalFeatures": [],
+      "description": "A shade-garden staple from East Asia. It is not invasive in most gardens, but it replaces native groundcover that supports insects."
+    },
+    {
+      "id": "hydrangea-macrophylla",
+      "legacyPlantId": "hydrangea-macrophylla",
+      "scientificName": "Hydrangea macrophylla",
+      "commonName": "Bigleaf Hydrangea",
+      "status": "non-native",
+      "njStatus": "NON_NATIVE_BENIGN",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Pink/blue · June–August",
+      "bloomMonths": [
+        6,
+        7,
+        8
+      ],
+      "height": "3–6 ft",
+      "matureHeightFt": [
+        3,
+        6
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "LOW",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A popular ornamental with showy mophead flowers. Native oakleaf hydrangea and summersweet offer more pollinator value."
+    },
+    {
+      "id": "buxus-sempervirens",
+      "legacyPlantId": "buxus-sempervirens",
+      "scientificName": "Buxus sempervirens",
+      "commonName": "Boxwood",
+      "status": "non-native",
+      "njStatus": "NON_NATIVE_BENIGN",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Insignificant · spring",
+      "bloomMonths": [],
+      "height": "3–8 ft",
+      "matureHeightFt": [
+        3,
+        8
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES",
+        "EVERGREEN"
+      ],
+      "description": "A clipped evergreen hedge from Europe. It provides structure but little food; native inkberry and wax myrtle do both."
+    },
+    {
+      "id": "paeonia-lactiflora",
+      "legacyPlantId": "paeonia-lactiflora",
+      "scientificName": "Paeonia lactiflora",
+      "commonName": "Garden Peony",
+      "status": "non-native",
+      "njStatus": "NON_NATIVE_BENIGN",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Pink/white · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "2–3 ft",
+      "matureHeightFt": [
+        2,
+        3
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "LOW",
+      "ornamentalFeatures": [],
+      "description": "A beloved old-fashioned ornamental. Keep it if you love it, but pair it with native perennials that carry the food web."
+    },
+    {
+      "id": "lavandula-angustifolia",
+      "legacyPlantId": "lavandula-angustifolia",
+      "scientificName": "Lavandula angustifolia",
+      "commonName": "English Lavender",
+      "status": "non-native",
+      "njStatus": "NON_NATIVE_BENIGN",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Dry",
+      "moistureRange": [
+        "DRY"
+      ],
+      "bloom": "Purple · June–August",
+      "bloomMonths": [
+        6,
+        7,
+        8
+      ],
+      "height": "1–2 ft",
+      "matureHeightFt": [
+        1,
+        2
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A drought-tolerant Mediterranean plant that feeds some generalist bees. Not a substitute for regionally native nectar plants."
+    },
+    {
+      "id": "liriope-muscari",
+      "legacyPlantId": "liriope-muscari",
+      "scientificName": "Liriope muscari",
+      "commonName": "Lilyturf",
+      "status": "non-native",
+      "njStatus": "NON_NATIVE_BENIGN",
+      "type": "Groundcover",
+      "growthHabit": "GROUNDCOVER",
+      "sun": "Part shade–shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Purple · August–September",
+      "bloomMonths": [
+        8,
+        9
+      ],
+      "height": "1–2 ft",
+      "matureHeightFt": [
+        1,
+        2
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "LOW",
+      "ornamentalFeatures": [],
+      "description": "A tough edging plant from East Asia. Native sedge and green-and-gold provide similar texture with more ecological value."
+    },
+    {
+      "id": "narcissus-pseudonarcissus",
+      "legacyPlantId": "narcissus-pseudonarcissus",
+      "scientificName": "Narcissus pseudonarcissus",
+      "commonName": "Daffodil",
+      "status": "non-native",
+      "njStatus": "NON_NATIVE_BENIGN",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Yellow · March–April",
+      "bloomMonths": [
+        3,
+        4
+      ],
+      "height": "1–2 ft",
+      "matureHeightFt": [
+        1,
+        2
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "An early spring bulb that is not invasive. Enjoy it, but add native spring ephemerals for early pollinators."
+    },
+    {
+      "id": "tulipa-gesneriana",
+      "legacyPlantId": "tulipa-gesneriana",
+      "scientificName": "Tulipa gesneriana",
+      "commonName": "Garden Tulip",
+      "status": "non-native",
+      "njStatus": "NON_NATIVE_BENIGN",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Mixed · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "1–2 ft",
+      "matureHeightFt": [
+        1,
+        2
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "LOW",
+      "ornamentalFeatures": [],
+      "description": "A classic spring bulb with limited value for local pollinators. Treat as seasonal color, not habitat."
+    },
+    {
+      "id": "acer-platanoides",
+      "legacyPlantId": "acer-platanoides",
+      "scientificName": "Acer platanoides",
+      "commonName": "Norway Maple",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Tree",
+      "growthHabit": "CANOPY_TREE",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Yellow-green · April",
+      "bloomMonths": [
+        4
+      ],
+      "height": "40–60 ft",
+      "matureHeightFt": [
+        40,
+        60
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A dense, shade-casting tree that seeds prolifically into woodlands. Its roots and leaf litter suppress native understory plants.",
+      "removalProtocolId": "removal-acer-platanoides"
+    },
+    {
+      "id": "euonymus-alatus",
+      "legacyPlantId": "euonymus-alatus",
+      "scientificName": "Euonymus alatus",
+      "commonName": "Burning Bush",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–shade",
+      "lightRange": [
+        "FULL_SUN",
+        "FULL_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Greenish · May",
+      "bloomMonths": [
+        5
+      ],
+      "height": "6–15 ft",
+      "matureHeightFt": [
+        6,
+        15
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "RED_FALL_FOLIAGE",
+        "WINTER_BERRIES"
+      ],
+      "description": "Bird-dispersed berries move this shrub into forests, where dense thickets crowd out native regeneration. Its fall color is not worth the ecological cost.",
+      "removalProtocolId": "removal-euonymus-alatus"
+    },
+    {
+      "id": "berberis-thunbergii",
+      "legacyPlantId": "berberis-thunbergii",
+      "scientificName": "Berberis thunbergii",
+      "commonName": "Japanese Barberry",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Dry–medium",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "Yellow · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "3–6 ft",
+      "matureHeightFt": [
+        3,
+        6
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A thorny shrub that spreads by seed and root fragments. Dense thickets alter soil chemistry and create tick-friendly habitat.",
+      "removalProtocolId": "removal-berberis-thunbergii"
+    },
+    {
+      "id": "hedera-helix",
+      "legacyPlantId": "hedera-helix",
+      "scientificName": "Hedera helix",
+      "commonName": "English Ivy",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Vine",
+      "growthHabit": "VINE",
+      "sun": "Full sun–shade",
+      "lightRange": [
+        "FULL_SUN",
+        "FULL_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Greenish · September",
+      "bloomMonths": [
+        9
+      ],
+      "height": "Climbs 50+ ft",
+      "matureHeightFt": [
+        0,
+        0
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A smothering vine that climbs trees, weighs down limbs, and creates a monoculture on the forest floor. It also harbors pests and disease.",
+      "removalProtocolId": "removal-hedera-helix"
+    },
+    {
+      "id": "hemerocallis-fulva",
+      "legacyPlantId": "hemerocallis-fulva",
+      "scientificName": "Hemerocallis fulva",
+      "commonName": "Orange Daylily",
+      "status": "non-native",
+      "njStatus": "NON_NATIVE_BENIGN",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Orange · June–July",
+      "bloomMonths": [
+        6,
+        7
+      ],
+      "height": "2–3 ft",
+      "matureHeightFt": [
+        2,
+        3
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "LOW",
+      "ornamentalFeatures": [],
+      "description": "A tough spreader that forms dense tuber mats and escapes into roadsides and woodland edges. Often confused with native lilies.",
+      "removalProtocolId": "removal-hemerocallis-fulva"
+    },
+    {
+      "id": "vinca-minor",
+      "legacyPlantId": "vinca-minor",
+      "scientificName": "Vinca minor",
+      "commonName": "Periwinkle",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Groundcover",
+      "growthHabit": "GROUNDCOVER",
+      "sun": "Part shade–shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Blue-purple · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "6–12 in",
+      "matureHeightFt": [
+        0.5,
+        1
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A shade groundcover that forms dense mats and spreads into forests. It suppresses native spring ephemerals and tree seedlings.",
+      "removalProtocolId": "removal-vinca-minor"
+    },
+    {
+      "id": "ligustrum-sinense",
+      "legacyPlantId": "ligustrum-sinense",
+      "scientificName": "Ligustrum sinense",
+      "commonName": "Chinese Privet",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–shade",
+      "lightRange": [
+        "FULL_SUN",
+        "FULL_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "6–15 ft",
+      "matureHeightFt": [
+        6,
+        15
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A bird-dispersed shrub that forms dense thickets in forests and edges. Its spring flowers are mostly ignored by native specialists.",
+      "removalProtocolId": "removal-ligustrum-sinense"
+    },
+    {
+      "id": "lonicera-japonica",
+      "legacyPlantId": "lonicera-japonica",
+      "scientificName": "Lonicera japonica",
+      "commonName": "Japanese Honeysuckle",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Vine",
+      "growthHabit": "VINE",
+      "sun": "Full sun–shade",
+      "lightRange": [
+        "FULL_SUN",
+        "FULL_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White-yellow · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "Climbs 30+ ft",
+      "matureHeightFt": [
+        0,
+        0
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES"
+      ],
+      "description": "A fast vine that smothers shrubs and small trees. It spreads by runners and bird-dispersed fruit and is a major forest threat.",
+      "removalProtocolId": "removal-lonicera-japonica"
+    },
+    {
+      "id": "wisteria-sinensis",
+      "legacyPlantId": "wisteria-sinensis",
+      "scientificName": "Wisteria sinensis",
+      "commonName": "Chinese Wisteria",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Vine",
+      "growthHabit": "VINE",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Lavender · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "Climbs 30+ ft",
+      "matureHeightFt": [
+        0,
+        0
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A vigorous vine that girdles trees and spreads by runners. Its spectacular flowers hide a serious woodland impact.",
+      "removalProtocolId": "removal-wisteria-sinensis"
+    },
+    {
+      "id": "celastrus-orbiculatus",
+      "legacyPlantId": "celastrus-orbiculatus",
+      "scientificName": "Celastrus orbiculatus",
+      "commonName": "Oriental Bittersweet",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Vine",
+      "growthHabit": "VINE",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Greenish · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "Climbs 60+ ft",
+      "matureHeightFt": [
+        0,
+        0
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES"
+      ],
+      "description": "A aggressive vine that strangles trees and hybridizes with native bittersweet. Its orange berries are spread by birds.",
+      "removalProtocolId": "removal-celastrus-orbiculatus"
+    },
+    {
+      "id": "rosa-multiflora",
+      "legacyPlantId": "rosa-multiflora",
+      "scientificName": "Rosa multiflora",
+      "commonName": "Multiflora Rose",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "6–15 ft",
+      "matureHeightFt": [
+        6,
+        15
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A thorny shrub that forms impenetrable thickets in pastures and woodland edges. It spreads by seed and rooting stems.",
+      "removalProtocolId": "removal-rosa-multiflora"
+    },
+    {
+      "id": "lythrum-salicaria",
+      "legacyPlantId": "lythrum-salicaria",
+      "scientificName": "Lythrum salicaria",
+      "commonName": "Purple Loosestrife",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Wet",
+      "moistureRange": [
+        "WET"
+      ],
+      "bloom": "Magenta · July–September",
+      "bloomMonths": [
+        7,
+        8,
+        9
+      ],
+      "height": "3–6 ft",
+      "matureHeightFt": [
+        3,
+        6
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A wetland invader that forms dense stands and displaces native marsh plants. It produces millions of seeds and spreads by fragments.",
+      "removalProtocolId": "removal-lythrum-salicaria"
+    },
+    {
+      "id": "phragmites-australis",
+      "legacyPlantId": "phragmites-australis",
+      "scientificName": "Phragmites australis",
+      "commonName": "Common Reed",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Grass",
+      "growthHabit": "GRAMINOID",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Wet",
+      "moistureRange": [
+        "WET"
+      ],
+      "bloom": "Purple-brown plumes · August–September",
+      "bloomMonths": [
+        8,
+        9
+      ],
+      "height": "6–15 ft",
+      "matureHeightFt": [
+        6,
+        15
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A tall wetland grass that forms monocultures, alters hydrology, and displaces native marsh habitat. A serious restoration challenge.",
+      "removalProtocolId": "removal-phragmites-australis"
+    },
+    {
+      "id": "microstegium-vimineum",
+      "legacyPlantId": "microstegium-vimineum",
+      "scientificName": "Microstegium vimineum",
+      "commonName": "Japanese Stiltgrass",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Grass",
+      "growthHabit": "GRAMINOID",
+      "sun": "Part shade–shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium–wet",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "Delicate spikes · August–September",
+      "bloomMonths": [
+        8,
+        9
+      ],
+      "height": "1–3 ft",
+      "matureHeightFt": [
+        1,
+        3
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "An annual grass that carpets forest floors and lawns, outcompeting native seedlings. It spreads by tiny seeds on shoes, tires, and water.",
+      "removalProtocolId": "removal-microstegium-vimineum"
+    },
+    {
+      "id": "alliaria-petiolata",
+      "legacyPlantId": "alliaria-petiolata",
+      "scientificName": "Alliaria petiolata",
+      "commonName": "Garlic Mustard",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Part shade–shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White · April–June",
+      "bloomMonths": [
+        4,
+        5,
+        6
+      ],
+      "height": "1–3 ft",
+      "matureHeightFt": [
+        1,
+        3
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A shade invader that releases chemicals that suppress native plants and mycorrhizal fungi. It spreads rapidly by seed.",
+      "removalProtocolId": "removal-alliaria-petiolata"
+    },
+    {
+      "id": "ailanthus-altissima",
+      "legacyPlantId": "ailanthus-altissima",
+      "scientificName": "Ailanthus altissima",
+      "commonName": "Tree of Heaven",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Tree",
+      "growthHabit": "CANOPY_TREE",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Dry–medium",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "Greenish · June–July",
+      "bloomMonths": [
+        6,
+        7
+      ],
+      "height": "40–80 ft",
+      "matureHeightFt": [
+        40,
+        80
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A fast-growing tree that spreads by seed and root suckers. It is the preferred host of spotted lanternfly and damages pavement and foundations.",
+      "removalProtocolId": "removal-ailanthus-altissima"
+    },
+    {
+      "id": "elaeagnus-umbellata",
+      "legacyPlantId": "elaeagnus-umbellata",
+      "scientificName": "Elaeagnus umbellata",
+      "commonName": "Autumn Olive",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Dry–medium",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "Silver-white · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "10–20 ft",
+      "matureHeightFt": [
+        10,
+        20
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES"
+      ],
+      "description": "A nitrogen-fixing shrub that alters soil and outcompetes native plants. Its abundant red berries are spread widely by birds.",
+      "removalProtocolId": "removal-elaeagnus-umbellata"
+    },
+    {
+      "id": "euonymus-fortunei",
+      "legacyPlantId": "euonymus-fortunei",
+      "scientificName": "Euonymus fortunei",
+      "commonName": "Wintercreeper",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Vine",
+      "growthHabit": "VINE",
+      "sun": "Full sun–shade",
+      "lightRange": [
+        "FULL_SUN",
+        "FULL_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Greenish · June–July",
+      "bloomMonths": [
+        6,
+        7
+      ],
+      "height": "Climbs 40+ ft",
+      "matureHeightFt": [
+        0,
+        0
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "EVERGREEN"
+      ],
+      "description": "An evergreen vine and groundcover that smothers native plants and climbs trees. It spreads by rooting stems and bird-dispersed seed.",
+      "removalProtocolId": "removal-euonymus-fortunei"
+    },
+    {
+      "id": "iris-pseudacorus",
+      "legacyPlantId": "iris-pseudacorus",
+      "scientificName": "Iris pseudacorus",
+      "commonName": "Yellow Flag Iris",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Wet",
+      "moistureRange": [
+        "WET"
+      ],
+      "bloom": "Yellow · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "3–5 ft",
+      "matureHeightFt": [
+        3,
+        5
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A wetland iris that spreads by rhizomes and seeds, forming dense stands that displace native marsh vegetation.",
+      "removalProtocolId": "removal-iris-pseudacorus"
+    },
+    {
+      "id": "pueraria-montana",
+      "legacyPlantId": "pueraria-montana",
+      "scientificName": "Pueraria montana",
+      "commonName": "Kudzu",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Vine",
+      "growthHabit": "VINE",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Purple · July–September",
+      "bloomMonths": [
+        7,
+        8,
+        9
+      ],
+      "height": "Climbs 60+ ft",
+      "matureHeightFt": [
+        0,
+        0
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A fast-growing vine that blankets trees, buildings, and roadsides. Eradication usually requires a multi-year professional plan.",
+      "removalProtocolId": "removal-pueraria-montana"
+    },
+    {
+      "id": "rhamnus-cathartica",
+      "legacyPlantId": "rhamnus-cathartica",
+      "scientificName": "Rhamnus cathartica",
+      "commonName": "Common Buckthorn",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Greenish · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "10–20 ft",
+      "matureHeightFt": [
+        10,
+        20
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES"
+      ],
+      "description": "A shrub or small tree that spreads into forests and alters soil. Its berries are laxative to birds and its dense shade suppresses regeneration.",
+      "removalProtocolId": "removal-rhamnus-cathartica"
+    },
+    {
+      "id": "nandina-domestica",
+      "legacyPlantId": "nandina-domestica",
+      "scientificName": "Nandina domestica",
+      "commonName": "Heavenly Bamboo",
+      "status": "invasive",
+      "njStatus": "INVASIVE_WATCHLIST",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White · June–July",
+      "bloomMonths": [
+        6,
+        7
+      ],
+      "height": "4–8 ft",
+      "matureHeightFt": [
+        4,
+        8
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES"
+      ],
+      "description": "A popular ornamental that spreads by seed and root suckers. Its berries can be toxic to pets and birds, and it invades forests in warmer regions.",
+      "removalProtocolId": "removal-nandina-domestica"
+    },
+    {
+      "id": "mahonia-bealei",
+      "legacyPlantId": "mahonia-bealei",
+      "scientificName": "Mahonia bealei",
+      "commonName": "Leatherleaf Mahonia",
+      "status": "invasive",
+      "njStatus": "INVASIVE_WATCHLIST",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Yellow · February–March",
+      "bloomMonths": [
+        2,
+        3
+      ],
+      "height": "4–10 ft",
+      "matureHeightFt": [
+        4,
+        10
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "EVERGREEN"
+      ],
+      "description": "An evergreen shrub that spreads by bird-dispersed seed into forests. It can form dense understories that crowd out native plants.",
+      "removalProtocolId": "removal-mahonia-bealei"
+    },
+    {
+      "id": "pyrus-calleryana",
+      "legacyPlantId": "pyrus-calleryana",
+      "scientificName": "Pyrus calleryana",
+      "commonName": "Callery Pear",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Tree",
+      "growthHabit": "CANOPY_TREE",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White · March–April",
+      "bloomMonths": [
+        3,
+        4
+      ],
+      "height": "30–50 ft",
+      "matureHeightFt": [
+        30,
+        50
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A brittle ornamental tree that spreads into roadsides and old fields. Its early flowers offer little to native pollinators, and its structure fails in storms.",
+      "removalProtocolId": "removal-pyrus-calleryana"
+    },
+    {
+      "id": "morus-alba",
+      "legacyPlantId": "morus-alba",
+      "scientificName": "Morus alba",
+      "commonName": "White Mulberry",
+      "status": "invasive",
+      "njStatus": "INVASIVE_WATCHLIST",
+      "type": "Tree",
+      "growthHabit": "CANOPY_TREE",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Greenish · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "30–50 ft",
+      "matureHeightFt": [
+        30,
+        50
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES"
+      ],
+      "description": "A fast-growing tree that hybridizes with native red mulberry and spreads into forests. Its pollen is a common allergen.",
+      "removalProtocolId": "removal-morus-alba"
+    },
+    {
+      "id": "ulmus-pumila",
+      "legacyPlantId": "ulmus-pumila",
+      "scientificName": "Ulmus pumila",
+      "commonName": "Siberian Elm",
+      "status": "invasive",
+      "njStatus": "INVASIVE_WATCHLIST",
+      "type": "Tree",
+      "growthHabit": "CANOPY_TREE",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Dry–medium",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "Greenish · March–April",
+      "bloomMonths": [
+        3,
+        4
+      ],
+      "height": "40–60 ft",
+      "matureHeightFt": [
+        40,
+        60
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [],
+      "description": "A fast-growing tree that spreads by seed into disturbed areas and outcompetes native trees. It is brittle and short-lived.",
+      "removalProtocolId": "removal-ulmus-pumila"
+    },
+    {
+      "id": "miscanthus-sinensis",
+      "legacyPlantId": "miscanthus-sinensis",
+      "scientificName": "Miscanthus sinensis",
+      "commonName": "Chinese Silvergrass",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Grass",
+      "growthHabit": "GRAMINOID",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Silver plumes · August–October",
+      "bloomMonths": [
+        8,
+        9,
+        10
+      ],
+      "height": "5–8 ft",
+      "matureHeightFt": [
+        5,
+        8
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A popular ornamental grass that seeds into meadows and roadsides, forming dense stands that crowd out native warm-season grasses.",
+      "removalProtocolId": "removal-miscanthus-sinensis"
+    },
+    {
+      "id": "forsythia-spp",
+      "legacyPlantId": "forsythia-spp",
+      "scientificName": "Forsythia spp.",
+      "commonName": "Forsythia",
+      "status": "non-native",
+      "njStatus": "NON_NATIVE_BENIGN",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "Yellow · March–April",
+      "bloomMonths": [
+        3,
+        4
+      ],
+      "height": "6–10 ft",
+      "matureHeightFt": [
+        6,
+        10
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "MODERATE",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "An early yellow-flowered shrub with little caterpillar value. Northern spicebush offers the same early-season yellow glow and hosts the spicebush swallowtail."
+    },
+    {
+      "id": "pachysandra-terminalis",
+      "legacyPlantId": "pachysandra-terminalis",
+      "scientificName": "Pachysandra terminalis",
+      "commonName": "Japanese Spurge",
+      "status": "invasive",
+      "njStatus": "INVASIVE_WATCHLIST",
+      "type": "Groundcover",
+      "growthHabit": "GROUNDCOVER",
+      "sun": "Part shade–shade",
+      "lightRange": [
+        "PART_SHADE",
+        "FULL_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "0.5–1 ft",
+      "matureHeightFt": [
+        0.5,
+        1
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "EVERGREEN"
+      ],
+      "description": "A shade-tolerant evergreen groundcover that forms a sterile carpet. Native golden ragwort and green-and-gold support early pollinators instead.",
+      "removalProtocolId": "removal-pachysandra-terminalis"
+    },
+    {
+      "id": "lonicera-maackii",
+      "legacyPlantId": "lonicera-maackii",
+      "scientificName": "Lonicera maackii",
+      "commonName": "Amur Honeysuckle",
+      "status": "invasive",
+      "njStatus": "INVASIVE_REGULATED",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM"
+      ],
+      "bloom": "White–yellow · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "6–15 ft",
+      "matureHeightFt": [
+        6,
+        15
+      ],
+      "lepidoptera": 0,
+      "lepidopteraCount": 0,
+      "specialistBeeSupport": false,
+      "deerResistance": "LOW",
+      "ornamentalFeatures": [
+        "FRAGRANT",
+        "WINTER_BERRIES"
+      ],
+      "description": "A shade-tolerant shrub that leafs out early and holds leaves late, suppressing native understory plants and spreading bird-dispersed fruit.",
+      "removalProtocolId": "removal-lonicera-maackii"
+    },
+    {
+      "id": "fragaria-virginiana",
+      "legacyPlantId": "fragaria-virginiana",
+      "scientificName": "Fragaria virginiana",
+      "commonName": "Wild Strawberry",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Groundcover",
+      "growthHabit": "GROUNDCOVER",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "White · April–May",
+      "bloomMonths": [
+        4,
+        5
+      ],
+      "height": "0.5–1 ft",
+      "matureHeightFt": [
+        0.5,
+        1
+      ],
+      "lepidoptera": 30,
+      "lepidopteraCount": 30,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "WINTER_BERRIES"
+      ],
+      "description": "A low, fast-spreading native groundcover with spring flowers and small edible fruit. It supports early bees and birds."
+    },
+    {
+      "id": "ceanothus-americanus",
+      "legacyPlantId": "ceanothus-americanus",
+      "scientificName": "Ceanothus americanus",
+      "commonName": "New Jersey Tea",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium–dry",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "White · May–June",
+      "bloomMonths": [
+        5,
+        6
+      ],
+      "height": "2–3 ft",
+      "matureHeightFt": [
+        2,
+        3
+      ],
+      "lepidoptera": 45,
+      "lepidopteraCount": 45,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A compact native shrub with frothy white flowers that feed bees and beneficial insects. It is a strong replacement for barberry in sunny beds."
+    },
+    {
+      "id": "hydrangea-arborescens",
+      "legacyPlantId": "hydrangea-arborescens",
+      "scientificName": "Hydrangea arborescens",
+      "commonName": "Smooth Hydrangea",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Shrub",
+      "growthHabit": "SHRUB",
+      "sun": "Part shade",
+      "lightRange": [
+        "PART_SHADE",
+        "FULL_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "White · June–July",
+      "bloomMonths": [
+        6,
+        7
+      ],
+      "height": "3–5 ft",
+      "matureHeightFt": [
+        3,
+        5
+      ],
+      "lepidoptera": 20,
+      "lepidopteraCount": 20,
+      "specialistBeeSupport": false,
+      "deerResistance": "LOW",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A native hydrangea with white flower clusters and good shade tolerance. It offers more pollinator value than bigleaf hydrangea."
+    },
+    {
+      "id": "solidago-speciosa",
+      "legacyPlantId": "solidago-speciosa",
+      "scientificName": "Solidago speciosa",
+      "commonName": "Showy Goldenrod",
+      "status": "keystone",
+      "njStatus": "NATIVE_KEYSTONE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun",
+      "lightRange": [
+        "FULL_SUN"
+      ],
+      "moisture": "Medium–dry",
+      "moistureRange": [
+        "DRY",
+        "MEDIUM"
+      ],
+      "bloom": "Golden yellow · August–September",
+      "bloomMonths": [
+        8,
+        9
+      ],
+      "height": "2–4 ft",
+      "matureHeightFt": [
+        2,
+        4
+      ],
+      "lepidoptera": 100,
+      "lepidopteraCount": 100,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A clump-forming goldenrod with showy plumes that feed late-season bees, butterflies, and migrating monarchs."
+    },
+    {
+      "id": "pycnanthemum-muticum",
+      "legacyPlantId": "pycnanthemum-muticum",
+      "scientificName": "Pycnanthemum muticum",
+      "commonName": "Mountain Mint",
+      "status": "native",
+      "njStatus": "NATIVE",
+      "type": "Perennial",
+      "growthHabit": "PERENNIAL_FORB",
+      "sun": "Full sun–part shade",
+      "lightRange": [
+        "FULL_SUN",
+        "PART_SHADE"
+      ],
+      "moisture": "Medium",
+      "moistureRange": [
+        "MEDIUM",
+        "WET"
+      ],
+      "bloom": "White–pale purple · July–September",
+      "bloomMonths": [
+        7,
+        9
+      ],
+      "height": "2–3 ft",
+      "matureHeightFt": [
+        2,
+        3
+      ],
+      "lepidoptera": 20,
+      "lepidopteraCount": 20,
+      "specialistBeeSupport": true,
+      "deerResistance": "HIGH",
+      "ornamentalFeatures": [
+        "FRAGRANT",
+        "SHOWY_BLOOMS"
+      ],
+      "description": "A pollinator magnet with silvery bracts and a long bloom window. It is deer-resistant and tolerates average to moist soil."
+    }
+  ],
+  "removalProtocols": [
+    {
+      "id": "removal-acer-platanoides",
+      "plantId": "acer-platanoides",
+      "method": "Cut the tree low and treat the stump immediately with a targeted cut-stump herbicide applied by a licensed professional. For small saplings, hand-pull after rain.",
+      "timing": "Late summer to early fall, when the tree is moving sugars to its roots. Avoid spring sap flow.",
+      "safety": "Wear eye protection and gloves. Do not use herbicide near waterways or on windy days. Follow the label exactly.",
+      "disposal": "Bag seed-bearing branches and send to municipal yard waste. Do not compost viable seeds."
+    },
+    {
+      "id": "removal-euonymus-alatus",
+      "plantId": "euonymus-alatus",
+      "method": "Cut-stump or root-wrench small plants. For larger shrubs, cut stems and treat the cambium ring with a targeted herbicide. Revisit for root sprouts.",
+      "timing": "Late summer through fall. Remove before berries ripen to prevent bird dispersal.",
+      "safety": "Bag berries and stems. Wear gloves; the sap can irritate skin. Avoid herbicide near desirable plants.",
+      "disposal": "Double-bag fruit-bearing material and send to landfill or municipal yard waste. Never dump in a woodland."
+    },
+    {
+      "id": "removal-berberis-thunbergii",
+      "plantId": "berberis-thunbergii",
+      "method": "Use a root wrench or mattock to remove the crown and major roots. For large infestations, cut and treat the stump; monitor for resprouts.",
+      "timing": "Early spring before fruit set or fall after seed dispersal. Remove fruit-bearing stems first.",
+      "safety": "Wear heavy gloves and eye protection. Avoid disturbing soil more than necessary to limit seed germination.",
+      "disposal": "Bag all root crowns and fruit. Do not compost; root fragments can resprout."
+    },
+    {
+      "id": "removal-hedera-helix",
+      "plantId": "hedera-helix",
+      "method": "Cut a 3-foot gap in every vine around the tree trunk, then hand-pull the ground mat after rain. Solarize dense patches with clear plastic for one growing season.",
+      "timing": "Late fall through early spring, when native wildlife is less active and soil is workable.",
+      "safety": "Do not pull ivy off a tree canopy; cut at the base and let it dry. Wear gloves and long sleeves.",
+      "disposal": "Bag vines and roots. Do not compost or leave piles on site—fragments can root."
+    },
+    {
+      "id": "removal-hemerocallis-fulva",
+      "plantId": "hemerocallis-fulva",
+      "method": "Dig the entire tuber mass with a garden fork. Sift the soil and remove every finger-like tuber; any fragment can regenerate.",
+      "timing": "Spring before flowering or late summer after bloom. Repeat for two seasons.",
+      "safety": "Lift with your legs and wear gloves. Mark the area so you can catch resprouts.",
+      "disposal": "Bag tubers and send to municipal yard waste. Do not compost."
+    },
+    {
+      "id": "removal-vinca-minor",
+      "plantId": "vinca-minor",
+      "method": "Hand-pull or rake out runners after rain. For dense mats, solarize or smother with cardboard and 3–4 inches of mulch for a full season.",
+      "timing": "Early spring before new growth or fall. Revisit monthly for resprouts.",
+      "safety": "Avoid burying desirable plants under cardboard. Keep plastic sheeting secure and remove it before summer heat.",
+      "disposal": "Bag runners and roots. Do not compost."
+    },
+    {
+      "id": "removal-ligustrum-sinense",
+      "plantId": "ligustrum-sinense",
+      "method": "Cut-stump treatment or repeated cutting. Pull seedlings by hand. Remove before berries ripen to reduce spread.",
+      "timing": "Late summer to fall. Follow up in spring for root sprouts.",
+      "safety": "Wear gloves and eye protection. Treat stumps immediately; privet resprouts vigorously.",
+      "disposal": "Bag fruit and roots. Do not compost."
+    },
+    {
+      "id": "removal-lonicera-japonica",
+      "plantId": "lonicera-japonica",
+      "method": "Cut vines at the base and unwind them from trunks. Pull runners by hand after rain. Repeat cutting every few weeks.",
+      "timing": "Spring through fall, before fruit ripens. Persistence matters more than a single pass.",
+      "safety": "Do not yank vines from tree canopies; cut and let them dry. Wear gloves.",
+      "disposal": "Bag vines and roots. Do not compost or leave on site."
+    },
+    {
+      "id": "removal-wisteria-sinensis",
+      "plantId": "wisteria-sinensis",
+      "method": "Cut all stems at ground level, then dig out the root crown and runners. Treat resprouts with a targeted cut-stump method.",
+      "timing": "Late summer to fall. Remove seed pods before they open.",
+      "safety": "Wear eye protection. Do not let vines pull down structures. Work with a partner for large crowns.",
+      "disposal": "Bag seed pods and roots. Do not compost."
+    },
+    {
+      "id": "removal-celastrus-orbiculatus",
+      "plantId": "celastrus-orbiculatus",
+      "method": "Cut vines at the base and remove the root crown. Pull seedlings. Revisit for resprouts and remove fruit before it ripens.",
+      "timing": "Late summer to fall. Cut before berries turn orange.",
+      "safety": "Do not pull vines from the canopy. Wear gloves and eye protection.",
+      "disposal": "Bag fruit and roots. Do not compost."
+    },
+    {
+      "id": "removal-rosa-multiflora",
+      "plantId": "rosa-multiflora",
+      "method": "Cut the crown and treat the stump, or use a root wrench for small plants. Repeated cutting weakens large stands.",
+      "timing": "Late summer to fall. Remove rose hips to reduce bird dispersal.",
+      "safety": "Wear heavy leather gloves and eye protection. Avoid herbicide near waterways.",
+      "disposal": "Bag roots and hips. Do not compost."
+    },
+    {
+      "id": "removal-lythrum-salicaria",
+      "plantId": "lythrum-salicaria",
+      "method": "Hand-pull small plants before seed set, removing the entire root. For large stands, cut flower spikes and use targeted aquatic-approved treatment with a professional.",
+      "timing": "Early summer before flowering, then again before seed set.",
+      "safety": "Do not use ordinary herbicides near water. Use only aquatic-approved products applied by a licensed professional.",
+      "disposal": "Bag flower spikes and roots. Do not compost or move fragments to other waterways."
+    },
+    {
+      "id": "removal-phragmites-australis",
+      "plantId": "phragmites-australis",
+      "method": "Small patches: cut repeatedly and smother. Large stands require a professional integrated plan with aquatic-approved treatment and native replanting.",
+      "timing": "Late summer to early fall, before seed dispersal. Coordinate with local land managers.",
+      "safety": "Do not attempt large-scale herbicide work yourself. Protect waterways and use permitted methods only.",
+      "disposal": "Bag seed heads. Do not move rhizomes to other sites."
+    },
+    {
+      "id": "removal-microstegium-vimineum",
+      "plantId": "microstegium-vimineum",
+      "method": "Hand-pull or mow before seed set in late summer. Repeat for 3–5 years to exhaust the seed bank. Clean boots and tools afterward.",
+      "timing": "Late summer before seed heads form. A second pass in early fall.",
+      "safety": "Avoid walking through seed heads. Clean gear before leaving the site.",
+      "disposal": "Bag pulled plants. Do not compost."
+    },
+    {
+      "id": "removal-alliaria-petiolata",
+      "plantId": "alliaria-petiolata",
+      "method": "Hand-pull before flowering, getting the taproot. For dense patches, cut flower stalks and bag them. Repeat for several years.",
+      "timing": "Early spring before seed set. Revisit in late spring for missed plants.",
+      "safety": "Wear gloves. Clean boots and tools to avoid spreading seed.",
+      "disposal": "Bag all flowering plants. Do not compost."
+    },
+    {
+      "id": "removal-ailanthus-altissima",
+      "plantId": "ailanthus-altissima",
+      "method": "Do not simply cut it—root suckers explode. Use a professional cut-stump or basal treatment plan, then remove suckers. For small seedlings, pull after rain.",
+      "timing": "Late summer to early fall, when roots are storing reserves.",
+      "safety": "This species needs a multi-year plan. Avoid cutting without treatment; it can make the infestation worse.",
+      "disposal": "Bag seed clusters. Do not move roots or soil containing root fragments."
+    },
+    {
+      "id": "removal-elaeagnus-umbellata",
+      "plantId": "elaeagnus-umbellata",
+      "method": "Cut-stump treatment or root-wrench small plants. Remove before fruit ripens. Expect resprouts and monitor for several years.",
+      "timing": "Late summer to fall, before berries are fully ripe.",
+      "safety": "Wear gloves and eye protection. Avoid disturbing soil; it stimulates seed germination.",
+      "disposal": "Bag fruit and roots. Do not compost."
+    },
+    {
+      "id": "removal-euonymus-fortunei",
+      "plantId": "euonymus-fortunei",
+      "method": "Cut vines at the base and pull the ground mat after rain. Solarize dense patches. Revisit for resprouts.",
+      "timing": "Late fall through early spring.",
+      "safety": "Do not pull from tree canopies. Wear gloves and long sleeves.",
+      "disposal": "Bag vines and roots. Do not compost."
+    },
+    {
+      "id": "removal-iris-pseudacorus",
+      "plantId": "iris-pseudacorus",
+      "method": "Dig the rhizome mass with a fork, removing all fragments. Cut seed pods before they open. Repeat for several years.",
+      "timing": "Late summer to early fall, after flowering but before seed release.",
+      "safety": "Wear gloves. Work carefully in wet soils and avoid spreading fragments downstream.",
+      "disposal": "Bag rhizomes and seed pods. Do not compost or dump near water."
+    },
+    {
+      "id": "removal-pueraria-montana",
+      "plantId": "pueraria-montana",
+      "method": "Do not attempt to dig large crowns alone. Cut vines and coordinate with a professional for repeated treatment and native replanting.",
+      "timing": "Late summer to fall. Remove before seed pods mature.",
+      "safety": "Wear protective clothing. Large infestations can hide hazards and should be handled by professionals.",
+      "disposal": "Bag roots and seed pods. Do not move plant material off-site."
+    },
+    {
+      "id": "removal-rhamnus-cathartica",
+      "plantId": "rhamnus-cathartica",
+      "method": "Cut-stump treatment for larger plants; hand-pull seedlings. Remove before fruit ripens. Monitor for resprouts.",
+      "timing": "Late summer to fall.",
+      "safety": "Wear gloves. Treat stumps immediately to prevent resprouting.",
+      "disposal": "Bag fruit and roots. Do not compost."
+    },
+    {
+      "id": "removal-nandina-domestica",
+      "plantId": "nandina-domestica",
+      "method": "Dig out the root crown and remove all suckers. Cut-stump treatment for large plants. Remove berry clusters before they ripen.",
+      "timing": "Late summer to fall.",
+      "safety": "Wear gloves. Keep berries away from pets and children.",
+      "disposal": "Bag berries and roots. Do not compost."
+    },
+    {
+      "id": "removal-mahonia-bealei",
+      "plantId": "mahonia-bealei",
+      "method": "Cut-stump treatment or dig out the root crown. Remove fruit before it ripens. Monitor for seedlings.",
+      "timing": "Late winter to early spring, before fruit set, or fall.",
+      "safety": "Wear gloves; the leaves are spiny.",
+      "disposal": "Bag fruit and roots. Do not compost."
+    },
+    {
+      "id": "removal-pyrus-calleryana",
+      "plantId": "pyrus-calleryana",
+      "method": "Cut-stump treatment or remove the entire root crown. Remove before fruit ripens. Monitor for suckers.",
+      "timing": "Late summer to fall.",
+      "safety": "Wear eye protection. Do not leave cut branches with fruit on site.",
+      "disposal": "Bag fruit. Do not compost."
+    },
+    {
+      "id": "removal-morus-alba",
+      "plantId": "morus-alba",
+      "method": "Cut-stump treatment or remove the root crown. Remove fruit before it ripens. Monitor for root suckers.",
+      "timing": "Late summer to fall.",
+      "safety": "Wear gloves; the milky sap can irritate skin.",
+      "disposal": "Bag fruit and roots. Do not compost."
+    },
+    {
+      "id": "removal-ulmus-pumila",
+      "plantId": "ulmus-pumila",
+      "method": "Cut-stump treatment or remove the root crown. Remove seed-bearing branches. Monitor for resprouts.",
+      "timing": "Late summer to fall.",
+      "safety": "Wear eye protection. Avoid working near utility lines.",
+      "disposal": "Bag seed-bearing material. Do not compost."
+    },
+    {
+      "id": "removal-miscanthus-sinensis",
+      "plantId": "miscanthus-sinensis",
+      "method": "Dig out the entire clump before seed heads mature. Remove the crown and root mass; bag seed-bearing stems.",
+      "timing": "Late summer before seed set, or early spring.",
+      "safety": "Wear gloves and eye protection. Avoid disturbing wet soils or steep banks.",
+      "disposal": "Bag seed heads and send to municipal yard waste. Do not compost."
+    },
+    {
+      "id": "removal-pachysandra-terminalis",
+      "plantId": "pachysandra-terminalis",
+      "method": "Cut and roll back the mat, then sheet-mulch or hand-pull resprouts. Replant immediately with a native groundcover to suppress reinvasion.",
+      "timing": "Spring or early fall while soil is workable.",
+      "safety": "Wear gloves. Work in sections and keep roots out of storm drains.",
+      "disposal": "Bag roots and stems. Do not compost or dump near woodlands."
+    },
+    {
+      "id": "removal-lonicera-maackii",
+      "plantId": "lonicera-maackii",
+      "method": "Cut-stump treatment or pull seedlings when soil is moist. Remove root crowns and bag fruit-bearing branches.",
+      "timing": "Late summer to early fall, before fruit ripens.",
+      "safety": "Wear gloves and eye protection. Treat cut stumps according to local guidance.",
+      "disposal": "Bag fruit and roots. Do not compost or leave cut stems on site."
+    }
+  ],
+  "replacements": [
+    {
+      "mappingId": "map-acer-palmatum-amelanchier-canadensis",
+      "targetPlantId": "acer-palmatum",
+      "substitutePlantId": "amelanchier-canadensis",
+      "matchReason": "Serviceberry gives you spring blossoms, summer berries, and fall color while hosting 100+ caterpillars.",
+      "removalProtocolId": null,
+      "priority": "medium",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-acer-palmatum-cornus-florida",
+      "targetPlantId": "acer-palmatum",
+      "substitutePlantId": "cornus-florida",
+      "matchReason": "Serviceberry gives you spring blossoms, summer berries, and fall color while hosting 100+ caterpillars.",
+      "removalProtocolId": null,
+      "priority": "medium",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-hosta-tiarella-cordifolia",
+      "targetPlantId": "hosta",
+      "substitutePlantId": "tiarella-cordifolia",
+      "matchReason": "Foamflower and alumroot bring native groundcover diversity to shade—and support specialist bees.",
+      "removalProtocolId": null,
+      "priority": "medium",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-hosta-heuchera-americana",
+      "targetPlantId": "hosta",
+      "substitutePlantId": "heuchera-americana",
+      "matchReason": "Foamflower and alumroot bring native groundcover diversity to shade—and support specialist bees.",
+      "removalProtocolId": null,
+      "priority": "medium",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-hosta-athyrium-filix-femina",
+      "targetPlantId": "hosta",
+      "substitutePlantId": "athyrium-filix-femina",
+      "matchReason": "Foamflower and alumroot bring native groundcover diversity to shade—and support specialist bees.",
+      "removalProtocolId": null,
+      "priority": "medium",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-hydrangea-macrophylla-hydrangea-quercifolia",
+      "targetPlantId": "hydrangea-macrophylla",
+      "substitutePlantId": "hydrangea-quercifolia",
+      "matchReason": "Oakleaf hydrangea and summersweet deliver native nectar, longer bloom, and better wildlife value.",
+      "removalProtocolId": null,
+      "priority": "medium",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-hydrangea-macrophylla-clethra-alnifolia",
+      "targetPlantId": "hydrangea-macrophylla",
+      "substitutePlantId": "clethra-alnifolia",
+      "matchReason": "Oakleaf hydrangea and summersweet deliver native nectar, longer bloom, and better wildlife value.",
+      "removalProtocolId": null,
+      "priority": "medium",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-buxus-sempervirens-ilex-glabra",
+      "targetPlantId": "buxus-sempervirens",
+      "substitutePlantId": "ilex-glabra",
+      "matchReason": "Inkberry and wax myrtle make dense evergreen hedges that also feed pollinators and birds.",
+      "removalProtocolId": null,
+      "priority": "medium",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-buxus-sempervirens-morella-cerifera",
+      "targetPlantId": "buxus-sempervirens",
+      "substitutePlantId": "morella-cerifera",
+      "matchReason": "Inkberry and wax myrtle make dense evergreen hedges that also feed pollinators and birds.",
+      "removalProtocolId": null,
+      "priority": "medium",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-buxus-sempervirens-juniperus-virginiana",
+      "targetPlantId": "buxus-sempervirens",
+      "substitutePlantId": "juniperus-virginiana",
+      "matchReason": "Inkberry and wax myrtle make dense evergreen hedges that also feed pollinators and birds.",
+      "removalProtocolId": null,
+      "priority": "medium",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-liriope-muscari-carex-pensylvanica",
+      "targetPlantId": "liriope-muscari",
+      "substitutePlantId": "carex-pensylvanica",
+      "matchReason": "Pennsylvania sedge and green-and-gold give you a soft, shade-tolerant edge without the exotic monoculture.",
+      "removalProtocolId": null,
+      "priority": "medium",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-liriope-muscari-chrysogonum-virginianum",
+      "targetPlantId": "liriope-muscari",
+      "substitutePlantId": "chrysogonum-virginianum",
+      "matchReason": "Pennsylvania sedge and green-and-gold give you a soft, shade-tolerant edge without the exotic monoculture.",
+      "removalProtocolId": null,
+      "priority": "medium",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-acer-platanoides-quercus-alba",
+      "targetPlantId": "acer-platanoides",
+      "substitutePlantId": "quercus-alba",
+      "matchReason": "White Oak anchors the food web: 500+ caterpillar species, acorns for wildlife, and a 100-year canopy.",
+      "removalProtocolId": "removal-acer-platanoides",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-acer-platanoides-acer-rubrum",
+      "targetPlantId": "acer-platanoides",
+      "substitutePlantId": "acer-rubrum",
+      "matchReason": "White Oak anchors the food web: 500+ caterpillar species, acorns for wildlife, and a 100-year canopy.",
+      "removalProtocolId": "removal-acer-platanoides",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-acer-platanoides-nyssa-sylvatica",
+      "targetPlantId": "acer-platanoides",
+      "substitutePlantId": "nyssa-sylvatica",
+      "matchReason": "White Oak anchors the food web: 500+ caterpillar species, acorns for wildlife, and a 100-year canopy.",
+      "removalProtocolId": "removal-acer-platanoides",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-euonymus-alatus-ilex-verticillata",
+      "targetPlantId": "euonymus-alatus",
+      "substitutePlantId": "ilex-verticillata",
+      "matchReason": "Winterberry and highbush blueberry feed pollinators in spring and birds in fall—without bird-dispersed invasions.",
+      "removalProtocolId": "removal-euonymus-alatus",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-euonymus-alatus-vaccinium-corymbosum",
+      "targetPlantId": "euonymus-alatus",
+      "substitutePlantId": "vaccinium-corymbosum",
+      "matchReason": "Winterberry and highbush blueberry feed pollinators in spring and birds in fall—without bird-dispersed invasions.",
+      "removalProtocolId": "removal-euonymus-alatus",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-euonymus-alatus-rhus-aromatica",
+      "targetPlantId": "euonymus-alatus",
+      "substitutePlantId": "rhus-aromatica",
+      "matchReason": "Winterberry and highbush blueberry feed pollinators in spring and birds in fall—without bird-dispersed invasions.",
+      "removalProtocolId": "removal-euonymus-alatus",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-berberis-thunbergii-rhus-aromatica",
+      "targetPlantId": "berberis-thunbergii",
+      "substitutePlantId": "rhus-aromatica",
+      "matchReason": "Fragrant sumac restores structure, erosion control, and berry forage while removing tick-harboring thickets.",
+      "removalProtocolId": "removal-berberis-thunbergii",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-berberis-thunbergii-physocarpus-opulifolius",
+      "targetPlantId": "berberis-thunbergii",
+      "substitutePlantId": "physocarpus-opulifolius",
+      "matchReason": "Fragrant sumac restores structure, erosion control, and berry forage while removing tick-harboring thickets.",
+      "removalProtocolId": "removal-berberis-thunbergii",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-berberis-thunbergii-vaccinium-angustifolium",
+      "targetPlantId": "berberis-thunbergii",
+      "substitutePlantId": "vaccinium-angustifolium",
+      "matchReason": "Fragrant sumac restores structure, erosion control, and berry forage while removing tick-harboring thickets.",
+      "removalProtocolId": "removal-berberis-thunbergii",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-hedera-helix-packera-aurea",
+      "targetPlantId": "hedera-helix",
+      "substitutePlantId": "packera-aurea",
+      "matchReason": "Golden groundsel forms a dense, weed-suppressing native mat and feeds early bees before most perennials wake up.",
+      "removalProtocolId": "removal-hedera-helix",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-hedera-helix-asarum-canadense",
+      "targetPlantId": "hedera-helix",
+      "substitutePlantId": "asarum-canadense",
+      "matchReason": "Golden groundsel forms a dense, weed-suppressing native mat and feeds early bees before most perennials wake up.",
+      "removalProtocolId": "removal-hedera-helix",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-hedera-helix-parthenocissus-quinquefolia",
+      "targetPlantId": "hedera-helix",
+      "substitutePlantId": "parthenocissus-quinquefolia",
+      "matchReason": "Golden groundsel forms a dense, weed-suppressing native mat and feeds early bees before most perennials wake up.",
+      "removalProtocolId": "removal-hedera-helix",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-hemerocallis-fulva-rudbeckia-fulgida",
+      "targetPlantId": "hemerocallis-fulva",
+      "substitutePlantId": "rudbeckia-fulgida",
+      "matchReason": "Orange coneflower delivers late-summer nectar and seed for goldfinches with far less maintenance.",
+      "removalProtocolId": "removal-hemerocallis-fulva",
+      "priority": "medium",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-hemerocallis-fulva-geranium-maculatum",
+      "targetPlantId": "hemerocallis-fulva",
+      "substitutePlantId": "geranium-maculatum",
+      "matchReason": "Orange coneflower delivers late-summer nectar and seed for goldfinches with far less maintenance.",
+      "removalProtocolId": "removal-hemerocallis-fulva",
+      "priority": "medium",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-hemerocallis-fulva-osmundastrum-cinnamomeum",
+      "targetPlantId": "hemerocallis-fulva",
+      "substitutePlantId": "osmundastrum-cinnamomeum",
+      "matchReason": "Orange coneflower delivers late-summer nectar and seed for goldfinches with far less maintenance.",
+      "removalProtocolId": "removal-hemerocallis-fulva",
+      "priority": "medium",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-vinca-minor-packera-aurea",
+      "targetPlantId": "vinca-minor",
+      "substitutePlantId": "packera-aurea",
+      "matchReason": "Golden groundsel and wild ginger create a native shade carpet that supports early pollinators.",
+      "removalProtocolId": "removal-vinca-minor",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-vinca-minor-asarum-canadense",
+      "targetPlantId": "vinca-minor",
+      "substitutePlantId": "asarum-canadense",
+      "matchReason": "Golden groundsel and wild ginger create a native shade carpet that supports early pollinators.",
+      "removalProtocolId": "removal-vinca-minor",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-ligustrum-sinense-ilex-verticillata",
+      "targetPlantId": "ligustrum-sinense",
+      "substitutePlantId": "ilex-verticillata",
+      "matchReason": "Winterberry, arrowwood viburnum, and spicebush provide berries, nectar, and caterpillar host leaves.",
+      "removalProtocolId": "removal-ligustrum-sinense",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-ligustrum-sinense-viburnum-dentatum",
+      "targetPlantId": "ligustrum-sinense",
+      "substitutePlantId": "viburnum-dentatum",
+      "matchReason": "Winterberry, arrowwood viburnum, and spicebush provide berries, nectar, and caterpillar host leaves.",
+      "removalProtocolId": "removal-ligustrum-sinense",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-ligustrum-sinense-lindera-benzoin",
+      "targetPlantId": "ligustrum-sinense",
+      "substitutePlantId": "lindera-benzoin",
+      "matchReason": "Winterberry, arrowwood viburnum, and spicebush provide berries, nectar, and caterpillar host leaves.",
+      "removalProtocolId": "removal-ligustrum-sinense",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-lonicera-japonica-lonicera-sempervirens",
+      "targetPlantId": "lonicera-japonica",
+      "substitutePlantId": "lonicera-sempervirens",
+      "matchReason": "Trumpet honeysuckle feeds hummingbirds and offers the same twining habit without smothering the forest.",
+      "removalProtocolId": "removal-lonicera-japonica",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-lonicera-japonica-parthenocissus-quinquefolia",
+      "targetPlantId": "lonicera-japonica",
+      "substitutePlantId": "parthenocissus-quinquefolia",
+      "matchReason": "Trumpet honeysuckle feeds hummingbirds and offers the same twining habit without smothering the forest.",
+      "removalProtocolId": "removal-lonicera-japonica",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-wisteria-sinensis-wisteria-frutescens",
+      "targetPlantId": "wisteria-sinensis",
+      "substitutePlantId": "wisteria-frutescens",
+      "matchReason": "American wisteria gives you lavender blooms on a better-behaved native vine.",
+      "removalProtocolId": "removal-wisteria-sinensis",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-wisteria-sinensis-lonicera-sempervirens",
+      "targetPlantId": "wisteria-sinensis",
+      "substitutePlantId": "lonicera-sempervirens",
+      "matchReason": "American wisteria gives you lavender blooms on a better-behaved native vine.",
+      "removalProtocolId": "removal-wisteria-sinensis",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-celastrus-orbiculatus-parthenocissus-quinquefolia",
+      "targetPlantId": "celastrus-orbiculatus",
+      "substitutePlantId": "parthenocissus-quinquefolia",
+      "matchReason": "Virginia creeper provides bird fruit and fall color without strangling the canopy.",
+      "removalProtocolId": "removal-celastrus-orbiculatus",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-rosa-multiflora-rosa-carolina",
+      "targetPlantId": "rosa-multiflora",
+      "substitutePlantId": "rosa-carolina",
+      "matchReason": "Carolina rose gives you pink blooms, rose hips, and none of the thuggish spread.",
+      "removalProtocolId": "removal-rosa-multiflora",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-rosa-multiflora-rhus-aromatica",
+      "targetPlantId": "rosa-multiflora",
+      "substitutePlantId": "rhus-aromatica",
+      "matchReason": "Carolina rose gives you pink blooms, rose hips, and none of the thuggish spread.",
+      "removalProtocolId": "removal-rosa-multiflora",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-lythrum-salicaria-lobelia-siphilitica",
+      "targetPlantId": "lythrum-salicaria",
+      "substitutePlantId": "lobelia-siphilitica",
+      "matchReason": "Great blue lobelia and blue flag iris bring native color and nectar to wet edges.",
+      "removalProtocolId": "removal-lythrum-salicaria",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-lythrum-salicaria-iris-versicolor",
+      "targetPlantId": "lythrum-salicaria",
+      "substitutePlantId": "iris-versicolor",
+      "matchReason": "Great blue lobelia and blue flag iris bring native color and nectar to wet edges.",
+      "removalProtocolId": "removal-lythrum-salicaria",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-lythrum-salicaria-eutrochium-purpureum",
+      "targetPlantId": "lythrum-salicaria",
+      "substitutePlantId": "eutrochium-purpureum",
+      "matchReason": "Great blue lobelia and blue flag iris bring native color and nectar to wet edges.",
+      "removalProtocolId": "removal-lythrum-salicaria",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-phragmites-australis-panicum-virgatum",
+      "targetPlantId": "phragmites-australis",
+      "substitutePlantId": "panicum-virgatum",
+      "matchReason": "Switchgrass and little bluestem rebuild native structure and bird cover in wet meadows.",
+      "removalProtocolId": "removal-phragmites-australis",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-phragmites-australis-schizachyrium-scoparium",
+      "targetPlantId": "phragmites-australis",
+      "substitutePlantId": "schizachyrium-scoparium",
+      "matchReason": "Switchgrass and little bluestem rebuild native structure and bird cover in wet meadows.",
+      "removalProtocolId": "removal-phragmites-australis",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-microstegium-vimineum-carex-pensylvanica",
+      "targetPlantId": "microstegium-vimineum",
+      "substitutePlantId": "carex-pensylvanica",
+      "matchReason": "Pennsylvania sedge and little bluestem can reclaim the ground layer from stiltgrass.",
+      "removalProtocolId": "removal-microstegium-vimineum",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-microstegium-vimineum-schizachyrium-scoparium",
+      "targetPlantId": "microstegium-vimineum",
+      "substitutePlantId": "schizachyrium-scoparium",
+      "matchReason": "Pennsylvania sedge and little bluestem can reclaim the ground layer from stiltgrass.",
+      "removalProtocolId": "removal-microstegium-vimineum",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-alliaria-petiolata-packera-aurea",
+      "targetPlantId": "alliaria-petiolata",
+      "substitutePlantId": "packera-aurea",
+      "matchReason": "Golden groundsel and green-and-gold fill the shade niche with native early-season flowers.",
+      "removalProtocolId": "removal-alliaria-petiolata",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-alliaria-petiolata-chrysogonum-virginianum",
+      "targetPlantId": "alliaria-petiolata",
+      "substitutePlantId": "chrysogonum-virginianum",
+      "matchReason": "Golden groundsel and green-and-gold fill the shade niche with native early-season flowers.",
+      "removalProtocolId": "removal-alliaria-petiolata",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-ailanthus-altissima-quercus-alba",
+      "targetPlantId": "ailanthus-altissima",
+      "substitutePlantId": "quercus-alba",
+      "matchReason": "White Oak and tulip tree restore a long-lived native canopy and its food web.",
+      "removalProtocolId": "removal-ailanthus-altissima",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-ailanthus-altissima-liriodendron-tulipifera",
+      "targetPlantId": "ailanthus-altissima",
+      "substitutePlantId": "liriodendron-tulipifera",
+      "matchReason": "White Oak and tulip tree restore a long-lived native canopy and its food web.",
+      "removalProtocolId": "removal-ailanthus-altissima",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-elaeagnus-umbellata-morella-cerifera",
+      "targetPlantId": "elaeagnus-umbellata",
+      "substitutePlantId": "morella-cerifera",
+      "matchReason": "Wax myrtle, winterberry, and fragrant sumac provide bird fruit without altering the soil.",
+      "removalProtocolId": "removal-elaeagnus-umbellata",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-elaeagnus-umbellata-ilex-verticillata",
+      "targetPlantId": "elaeagnus-umbellata",
+      "substitutePlantId": "ilex-verticillata",
+      "matchReason": "Wax myrtle, winterberry, and fragrant sumac provide bird fruit without altering the soil.",
+      "removalProtocolId": "removal-elaeagnus-umbellata",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-elaeagnus-umbellata-rhus-aromatica",
+      "targetPlantId": "elaeagnus-umbellata",
+      "substitutePlantId": "rhus-aromatica",
+      "matchReason": "Wax myrtle, winterberry, and fragrant sumac provide bird fruit without altering the soil.",
+      "removalProtocolId": "removal-elaeagnus-umbellata",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-euonymus-fortunei-parthenocissus-quinquefolia",
+      "targetPlantId": "euonymus-fortunei",
+      "substitutePlantId": "parthenocissus-quinquefolia",
+      "matchReason": "Virginia creeper and wild ginger offer native cover without smothering trees.",
+      "removalProtocolId": "removal-euonymus-fortunei",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-euonymus-fortunei-asarum-canadense",
+      "targetPlantId": "euonymus-fortunei",
+      "substitutePlantId": "asarum-canadense",
+      "matchReason": "Virginia creeper and wild ginger offer native cover without smothering trees.",
+      "removalProtocolId": "removal-euonymus-fortunei",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-iris-pseudacorus-iris-versicolor",
+      "targetPlantId": "iris-pseudacorus",
+      "substitutePlantId": "iris-versicolor",
+      "matchReason": "Blue flag iris and great blue lobelia bring native blue blooms to the water's edge.",
+      "removalProtocolId": "removal-iris-pseudacorus",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-iris-pseudacorus-lobelia-siphilitica",
+      "targetPlantId": "iris-pseudacorus",
+      "substitutePlantId": "lobelia-siphilitica",
+      "matchReason": "Blue flag iris and great blue lobelia bring native blue blooms to the water's edge.",
+      "removalProtocolId": "removal-iris-pseudacorus",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-pueraria-montana-lonicera-sempervirens",
+      "targetPlantId": "pueraria-montana",
+      "substitutePlantId": "lonicera-sempervirens",
+      "matchReason": "Trumpet honeysuckle gives you a vigorous native vine that stays in bounds with management.",
+      "removalProtocolId": "removal-pueraria-montana",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-pueraria-montana-parthenocissus-quinquefolia",
+      "targetPlantId": "pueraria-montana",
+      "substitutePlantId": "parthenocissus-quinquefolia",
+      "matchReason": "Trumpet honeysuckle gives you a vigorous native vine that stays in bounds with management.",
+      "removalProtocolId": "removal-pueraria-montana",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-rhamnus-cathartica-rhus-aromatica",
+      "targetPlantId": "rhamnus-cathartica",
+      "substitutePlantId": "rhus-aromatica",
+      "matchReason": "Fragrant sumac and arrowwood viburnum restore shrub structure and bird forage.",
+      "removalProtocolId": "removal-rhamnus-cathartica",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-rhamnus-cathartica-viburnum-dentatum",
+      "targetPlantId": "rhamnus-cathartica",
+      "substitutePlantId": "viburnum-dentatum",
+      "matchReason": "Fragrant sumac and arrowwood viburnum restore shrub structure and bird forage.",
+      "removalProtocolId": "removal-rhamnus-cathartica",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-rhamnus-cathartica-ilex-verticillata",
+      "targetPlantId": "rhamnus-cathartica",
+      "substitutePlantId": "ilex-verticillata",
+      "matchReason": "Fragrant sumac and arrowwood viburnum restore shrub structure and bird forage.",
+      "removalProtocolId": "removal-rhamnus-cathartica",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-nandina-domestica-ilex-verticillata",
+      "targetPlantId": "nandina-domestica",
+      "substitutePlantId": "ilex-verticillata",
+      "matchReason": "Winterberry and oakleaf hydrangea provide safer berries and native flowers.",
+      "removalProtocolId": "removal-nandina-domestica",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-nandina-domestica-hydrangea-quercifolia",
+      "targetPlantId": "nandina-domestica",
+      "substitutePlantId": "hydrangea-quercifolia",
+      "matchReason": "Winterberry and oakleaf hydrangea provide safer berries and native flowers.",
+      "removalProtocolId": "removal-nandina-domestica",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-mahonia-bealei-ilex-glabra",
+      "targetPlantId": "mahonia-bealei",
+      "substitutePlantId": "ilex-glabra",
+      "matchReason": "Inkberry and fragrant sumac create evergreen structure without bird-dispersed spread.",
+      "removalProtocolId": "removal-mahonia-bealei",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-mahonia-bealei-rhus-aromatica",
+      "targetPlantId": "mahonia-bealei",
+      "substitutePlantId": "rhus-aromatica",
+      "matchReason": "Inkberry and fragrant sumac create evergreen structure without bird-dispersed spread.",
+      "removalProtocolId": "removal-mahonia-bealei",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-pyrus-calleryana-amelanchier-canadensis",
+      "targetPlantId": "pyrus-calleryana",
+      "substitutePlantId": "amelanchier-canadensis",
+      "matchReason": "Serviceberry and flowering dogwood give you spring bloom, fall color, and caterpillar food.",
+      "removalProtocolId": "removal-pyrus-calleryana",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-pyrus-calleryana-cornus-florida",
+      "targetPlantId": "pyrus-calleryana",
+      "substitutePlantId": "cornus-florida",
+      "matchReason": "Serviceberry and flowering dogwood give you spring bloom, fall color, and caterpillar food.",
+      "removalProtocolId": "removal-pyrus-calleryana",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-pyrus-calleryana-quercus-alba",
+      "targetPlantId": "pyrus-calleryana",
+      "substitutePlantId": "quercus-alba",
+      "matchReason": "Serviceberry and flowering dogwood give you spring bloom, fall color, and caterpillar food.",
+      "removalProtocolId": "removal-pyrus-calleryana",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-morus-alba-prunus-serotina",
+      "targetPlantId": "morus-alba",
+      "substitutePlantId": "prunus-serotina",
+      "matchReason": "Black cherry and white oak restore native canopy food webs without hybridizing native mulberry.",
+      "removalProtocolId": "removal-morus-alba",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-morus-alba-quercus-alba",
+      "targetPlantId": "morus-alba",
+      "substitutePlantId": "quercus-alba",
+      "matchReason": "Black cherry and white oak restore native canopy food webs without hybridizing native mulberry.",
+      "removalProtocolId": "removal-morus-alba",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-ulmus-pumila-quercus-alba",
+      "targetPlantId": "ulmus-pumila",
+      "substitutePlantId": "quercus-alba",
+      "matchReason": "White Oak and black gum build a long-lived native canopy with far more ecological value.",
+      "removalProtocolId": "removal-ulmus-pumila",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-ulmus-pumila-nyssa-sylvatica",
+      "targetPlantId": "ulmus-pumila",
+      "substitutePlantId": "nyssa-sylvatica",
+      "matchReason": "White Oak and black gum build a long-lived native canopy with far more ecological value.",
+      "removalProtocolId": "removal-ulmus-pumila",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-miscanthus-sinensis-panicum-virgatum",
+      "targetPlantId": "miscanthus-sinensis",
+      "substitutePlantId": "panicum-virgatum",
+      "matchReason": "panicum virgatum adds native structure, nectar, and caterpillar host value.",
+      "removalProtocolId": "removal-miscanthus-sinensis",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-miscanthus-sinensis-schizachyrium-scoparium",
+      "targetPlantId": "miscanthus-sinensis",
+      "substitutePlantId": "schizachyrium-scoparium",
+      "matchReason": "schizachyrium scoparium adds native structure, nectar, and caterpillar host value.",
+      "removalProtocolId": "removal-miscanthus-sinensis",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-forsythia-spp-lindera-benzoin",
+      "targetPlantId": "forsythia-spp",
+      "substitutePlantId": "lindera-benzoin",
+      "matchReason": "lindera benzoin adds native structure, nectar, and caterpillar host value.",
+      "removalProtocolId": null,
+      "priority": "medium",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-pachysandra-terminalis-packera-aurea",
+      "targetPlantId": "pachysandra-terminalis",
+      "substitutePlantId": "packera-aurea",
+      "matchReason": "packera aurea adds native structure, nectar, and caterpillar host value.",
+      "removalProtocolId": "removal-pachysandra-terminalis",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-pachysandra-terminalis-chrysogonum-virginianum",
+      "targetPlantId": "pachysandra-terminalis",
+      "substitutePlantId": "chrysogonum-virginianum",
+      "matchReason": "chrysogonum virginianum adds native structure, nectar, and caterpillar host value.",
+      "removalProtocolId": "removal-pachysandra-terminalis",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-lonicera-maackii-lindera-benzoin",
+      "targetPlantId": "lonicera-maackii",
+      "substitutePlantId": "lindera-benzoin",
+      "matchReason": "lindera benzoin adds native structure, nectar, and caterpillar host value.",
+      "removalProtocolId": "removal-lonicera-maackii",
+      "priority": "high",
+      "isPrimary": true
+    },
+    {
+      "mappingId": "map-lonicera-maackii-viburnum-dentatum",
+      "targetPlantId": "lonicera-maackii",
+      "substitutePlantId": "viburnum-dentatum",
+      "matchReason": "viburnum dentatum adds native structure, nectar, and caterpillar host value.",
+      "removalProtocolId": "removal-lonicera-maackii",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-berberis-thunbergii-ceanothus-americanus",
+      "targetPlantId": "berberis-thunbergii",
+      "substitutePlantId": "ceanothus-americanus",
+      "matchReason": "New Jersey tea gives you a compact, sunny shrub with white flowers and pollinator value instead of tick-harboring thickets.",
+      "removalProtocolId": "removal-berberis-thunbergii",
+      "priority": "high",
+      "isPrimary": false
+    },
+    {
+      "mappingId": "map-pachysandra-terminalis-fragaria-virginiana",
+      "targetPlantId": "pachysandra-terminalis",
+      "substitutePlantId": "fragaria-virginiana",
+      "matchReason": "Wild strawberry forms a low native groundcover with spring flowers and fruit instead of a sterile evergreen mat.",
+      "removalProtocolId": "removal-pachysandra-terminalis",
+      "priority": "high",
+      "isPrimary": false
+    }
+  ],
+  "regions": [
+    {
+      "zip": "07645",
+      "city": "Montvale",
+      "county": "Bergen",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07652",
+      "city": "Paramus",
+      "county": "Bergen",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07601",
+      "city": "Hackensack",
+      "county": "Bergen",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07450",
+      "city": "Ridgewood",
+      "county": "Bergen",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07631",
+      "city": "Englewood",
+      "county": "Bergen",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07675",
+      "city": "Westwood",
+      "county": "Bergen",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07030",
+      "city": "Hoboken",
+      "county": "Hudson",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07302",
+      "city": "Jersey City",
+      "county": "Hudson",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07042",
+      "city": "Montclair",
+      "county": "Essex",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07017",
+      "city": "East Orange",
+      "county": "Essex",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07078",
+      "city": "Short Hills",
+      "county": "Essex",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07055",
+      "city": "Passaic",
+      "county": "Passaic",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07501",
+      "city": "Paterson",
+      "county": "Passaic",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07960",
+      "city": "Morristown",
+      "county": "Morris",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07940",
+      "city": "Madison",
+      "county": "Morris",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07901",
+      "city": "Summit",
+      "county": "Union",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07090",
+      "city": "Westfield",
+      "county": "Union",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08840",
+      "city": "Metuchen",
+      "county": "Middlesex",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08901",
+      "city": "New Brunswick",
+      "county": "Middlesex",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08540",
+      "city": "Princeton",
+      "county": "Mercer",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08550",
+      "city": "Princeton Junction",
+      "county": "Mercer",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08608",
+      "city": "Trenton",
+      "county": "Mercer",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08876",
+      "city": "Somerville",
+      "county": "Somerset",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07920",
+      "city": "Basking Ridge",
+      "county": "Somerset",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07840",
+      "city": "Hackettstown",
+      "county": "Warren",
+      "province": "RIDGE_AND_VALLEY",
+      "zone": "6b",
+      "ecoregion": "Ridge and Valley",
+      "ecoregionCode": "EPA Level III 67",
+      "soilPh": "Limestone-influenced valley soils",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07825",
+      "city": "Blairstown",
+      "county": "Warren",
+      "province": "RIDGE_AND_VALLEY",
+      "zone": "6a",
+      "ecoregion": "Ridge and Valley",
+      "ecoregionCode": "EPA Level III 67",
+      "soilPh": "Limestone-influenced valley soils",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07801",
+      "city": "Dover",
+      "county": "Morris",
+      "province": "HIGHLANDS",
+      "zone": "6b",
+      "ecoregion": "Northeastern Highlands",
+      "ecoregionCode": "EPA Level III 58",
+      "soilPh": "Acidic glacial till and rocky loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07419",
+      "city": "Hamburg",
+      "county": "Sussex",
+      "province": "HIGHLANDS",
+      "zone": "6a",
+      "ecoregion": "Northeastern Highlands",
+      "ecoregionCode": "EPA Level III 58",
+      "soilPh": "Acidic glacial till and rocky loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07460",
+      "city": "Stockholm",
+      "county": "Sussex",
+      "province": "HIGHLANDS",
+      "zone": "6a",
+      "ecoregion": "Northeastern Highlands",
+      "ecoregionCode": "EPA Level III 58",
+      "soilPh": "Acidic glacial till and rocky loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07701",
+      "city": "Red Bank",
+      "county": "Monmouth",
+      "province": "INNER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Coastal plain sandy loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07728",
+      "city": "Freehold",
+      "county": "Monmouth",
+      "province": "INNER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Coastal plain sandy loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "07748",
+      "city": "Middletown",
+      "county": "Monmouth",
+      "province": "INNER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Coastal plain sandy loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08701",
+      "city": "Lakewood",
+      "county": "Ocean",
+      "province": "OUTER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Atlantic Coastal Pine Barrens",
+      "ecoregionCode": "EPA Level III 84",
+      "soilPh": "Acidic sandy Pinelands soil",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08753",
+      "city": "Toms River",
+      "county": "Ocean",
+      "province": "OUTER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Atlantic Coastal Pine Barrens",
+      "ecoregionCode": "EPA Level III 84",
+      "soilPh": "Acidic sandy Pinelands soil",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08527",
+      "city": "Jackson",
+      "county": "Ocean",
+      "province": "OUTER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Atlantic Coastal Pine Barrens",
+      "ecoregionCode": "EPA Level III 84",
+      "soilPh": "Acidic sandy Pinelands soil",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08002",
+      "city": "Cherry Hill",
+      "county": "Camden",
+      "province": "INNER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Coastal plain sandy loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08043",
+      "city": "Voorhees",
+      "county": "Camden",
+      "province": "INNER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Coastal plain sandy loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08033",
+      "city": "Haddonfield",
+      "county": "Camden",
+      "province": "INNER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Coastal plain sandy loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08016",
+      "city": "Burlington",
+      "county": "Burlington",
+      "province": "INNER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Coastal plain sandy loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08054",
+      "city": "Mount Laurel",
+      "county": "Burlington",
+      "province": "INNER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Coastal plain sandy loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08053",
+      "city": "Marlton",
+      "county": "Burlington",
+      "province": "INNER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Coastal plain sandy loam",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08302",
+      "city": "Bridgeton",
+      "county": "Cumberland",
+      "province": "OUTER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Atlantic Coastal Pine Barrens",
+      "ecoregionCode": "EPA Level III 84",
+      "soilPh": "Acidic sandy Pinelands soil",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08360",
+      "city": "Vineland",
+      "county": "Cumberland",
+      "province": "OUTER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Atlantic Coastal Pine Barrens",
+      "ecoregionCode": "EPA Level III 84",
+      "soilPh": "Acidic sandy Pinelands soil",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08215",
+      "city": "Egg Harbor City",
+      "county": "Atlantic",
+      "province": "OUTER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Atlantic Coastal Pine Barrens",
+      "ecoregionCode": "EPA Level III 84",
+      "soilPh": "Acidic sandy Pinelands soil",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08037",
+      "city": "Hammonton",
+      "county": "Atlantic",
+      "province": "OUTER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Atlantic Coastal Pine Barrens",
+      "ecoregionCode": "EPA Level III 84",
+      "soilPh": "Acidic sandy Pinelands soil",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08202",
+      "city": "Avalon",
+      "county": "Cape May",
+      "province": "COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Sandy barrier island soil",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08204",
+      "city": "Cape May",
+      "county": "Cape May",
+      "province": "COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Sandy barrier island soil",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    },
+    {
+      "zip": "08226",
+      "city": "Ocean City",
+      "county": "Cape May",
+      "province": "COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Sandy barrier island soil",
+      "state": "NJ",
+      "isNj": true,
+      "isEstimate": false
+    }
+  ],
+  "counties": [
+    {
+      "name": "Atlantic",
+      "province": "OUTER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Atlantic Coastal Pine Barrens",
+      "ecoregionCode": "EPA Level III 84",
+      "soilPh": "Acidic sandy Pinelands soil"
+    },
+    {
+      "name": "Bergen",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam"
+    },
+    {
+      "name": "Burlington",
+      "province": "INNER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Coastal plain sandy loam"
+    },
+    {
+      "name": "Camden",
+      "province": "INNER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Coastal plain sandy loam"
+    },
+    {
+      "name": "Cape May",
+      "province": "COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Sandy barrier island soil"
+    },
+    {
+      "name": "Cumberland",
+      "province": "OUTER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Atlantic Coastal Pine Barrens",
+      "ecoregionCode": "EPA Level III 84",
+      "soilPh": "Acidic sandy Pinelands soil"
+    },
+    {
+      "name": "Essex",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam"
+    },
+    {
+      "name": "Gloucester",
+      "province": "INNER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Coastal plain sandy loam"
+    },
+    {
+      "name": "Hudson",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam"
+    },
+    {
+      "name": "Hunterdon",
+      "province": "RIDGE_AND_VALLEY",
+      "zone": "6b",
+      "ecoregion": "Ridge and Valley",
+      "ecoregionCode": "EPA Level III 67",
+      "soilPh": "Limestone-influenced valley soils"
+    },
+    {
+      "name": "Mercer",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam"
+    },
+    {
+      "name": "Middlesex",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam"
+    },
+    {
+      "name": "Monmouth",
+      "province": "INNER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Middle Atlantic Coastal Plain",
+      "ecoregionCode": "EPA Level III 63",
+      "soilPh": "Coastal plain sandy loam"
+    },
+    {
+      "name": "Morris",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam"
+    },
+    {
+      "name": "Ocean",
+      "province": "OUTER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Atlantic Coastal Pine Barrens",
+      "ecoregionCode": "EPA Level III 84",
+      "soilPh": "Acidic sandy Pinelands soil"
+    },
+    {
+      "name": "Passaic",
+      "province": "PIEDMONT",
+      "zone": "7a",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam"
+    },
+    {
+      "name": "Salem",
+      "province": "OUTER_COASTAL",
+      "zone": "7a",
+      "ecoregion": "Atlantic Coastal Pine Barrens",
+      "ecoregionCode": "EPA Level III 84",
+      "soilPh": "Acidic sandy Pinelands soil"
+    },
+    {
+      "name": "Somerset",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam"
+    },
+    {
+      "name": "Sussex",
+      "province": "HIGHLANDS",
+      "zone": "6a",
+      "ecoregion": "Northeastern Highlands",
+      "ecoregionCode": "EPA Level III 58",
+      "soilPh": "Acidic glacial till and rocky loam"
+    },
+    {
+      "name": "Union",
+      "province": "PIEDMONT",
+      "zone": "6b",
+      "ecoregion": "Northern Piedmont",
+      "ecoregionCode": "EPA Level III 64",
+      "soilPh": "Piedmont clay/shale loam"
+    },
+    {
+      "name": "Warren",
+      "province": "RIDGE_AND_VALLEY",
+      "zone": "6b",
+      "ecoregion": "Ridge and Valley",
+      "ecoregionCode": "EPA Level III 67",
+      "soilPh": "Limestone-influenced valley soils"
+    }
+  ],
+  "nurseries": [
+    {
+      "id": "toadshade",
+      "name": "Toadshade Wildflower Farm",
+      "county": "Hunterdon",
+      "location": "Frenchtown, NJ",
+      "note": "Native perennials and local-ecotype seed; mail order and nursery visits.",
+      "url": "https://www.toadshade.com/",
+      "lastVerified": "2026-11-01"
+    },
+    {
+      "id": "wild-ridge",
+      "name": "Wild Ridge Plants",
+      "county": "Warren",
+      "location": "Alpha, NJ",
+      "note": "Native plants propagated from local seed; restoration and garden sales.",
+      "url": "https://www.wildridgeplants.com/",
+      "lastVerified": "2026-11-01"
+    },
+    {
+      "id": "pinelands-direct",
+      "name": "Pinelands Direct",
+      "county": "Burlington",
+      "location": "Chatsworth, NJ",
+      "note": "Pinelands-adapted native plants and landscape guidance.",
+      "url": "https://www.pinelandsdirect.com/",
+      "lastVerified": "2026-11-01"
+    },
+    {
+      "id": "earth-first",
+      "name": "Earth First Native Plant Nursery",
+      "county": "Atlantic",
+      "location": "Egg Harbor City, NJ",
+      "note": "Native trees, shrubs, and perennials for South Jersey gardens.",
+      "url": "https://www.earthfirstnativeplantnursery.com/",
+      "lastVerified": "2026-11-01"
+    },
+    {
+      "id": "npsnj",
+      "name": "Native Plant Society of New Jersey",
+      "county": "Statewide",
+      "location": "Statewide chapter sales",
+      "note": "Chapter plant sales and native-plant education across New Jersey.",
+      "url": "https://www.npsnj.org/",
+      "lastVerified": "2026-11-01"
+    },
+    {
+      "id": "bowmans-hill",
+      "name": "Bowman's Hill Wildflower Preserve",
+      "county": "Regional",
+      "location": "New Hope, PA",
+      "note": "Regional native plant nursery and wildflower preserve near the Delaware.",
+      "url": "https://bhwp.org/",
+      "lastVerified": "2026-11-01"
+    }
+  ],
+  "synonyms": [
+    {
+      "synonym": "Aster novae-angliae",
+      "acceptedPlantId": "symphyotrichum-novae-angliae"
+    },
+    {
+      "synonym": "Aster novae angliae",
+      "acceptedPlantId": "symphyotrichum-novae-angliae"
+    },
+    {
+      "synonym": "Euonymus alata",
+      "acceptedPlantId": "euonymus-alatus"
+    },
+    {
+      "synonym": "Euonymus alatus",
+      "acceptedPlantId": "euonymus-alatus"
+    },
+    {
+      "synonym": "Hemerocallis fulva",
+      "acceptedPlantId": "hemerocallis-fulva"
+    },
+    {
+      "synonym": "Miscanthus sinensis",
+      "acceptedPlantId": "miscanthus-sinensis"
+    },
+    {
+      "synonym": "Pachysandra terminalis",
+      "acceptedPlantId": "pachysandra-terminalis"
+    },
+    {
+      "synonym": "Lonicera maackii",
+      "acceptedPlantId": "lonicera-maackii"
+    },
+    {
+      "synonym": "Forsythia",
+      "acceptedPlantId": "forsythia-spp"
+    },
+    {
+      "synonym": "Hydrangea",
+      "acceptedPlantId": "hydrangea-arborescens"
+    },
+    {
+      "synonym": "Acer",
+      "acceptedPlantId": "acer-rubrum"
+    },
+    {
+      "synonym": "Cornus",
+      "acceptedPlantId": "cornus-florida"
+    },
+    {
+      "synonym": "Viburnum",
+      "acceptedPlantId": "viburnum-dentatum"
+    },
+    {
+      "synonym": "Ilex",
+      "acceptedPlantId": "ilex-verticillata"
+    },
+    {
+      "synonym": "Solidago",
+      "acceptedPlantId": "solidago-rugosa"
+    },
+    {
+      "synonym": "Symphyotrichum",
+      "acceptedPlantId": "symphyotrichum-novae-angliae"
+    }
+  ]
+}

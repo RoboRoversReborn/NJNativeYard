@@ -1,0 +1,893 @@
+[
+  {
+    "id": "front-yard",
+    "title": "Mixed foundation garden",
+    "description": "A planned mixed garden with one native keystone, one other native, ornamentals and an invasive shrub. Explore the intended plants and practical opportunities to improve the mix.",
+    "photo": "/samples/mixed-garden-starting-v4.png",
+    "sourceUrl": "/samples/mixed-garden-starting-v4.png",
+    "credit": "Generated garden illustration · authored sample plant map",
+    "fixtureVersion": 4,
+    "imageKind": "generated-illustration",
+    "plants": [
+      {
+        "id": "front-yard-v4-1",
+        "plantId": "quercus-alba",
+        "suggestion": "White Oak",
+        "scientificName": "Quercus alba",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 14,
+          "h": 67
+        },
+        "reviewed": false,
+        "note": "Intended species in an illustrative planting plan. This image is not a real garden photograph or an AI botanical identification; compare the source-backed plant profile before acting.",
+        "candidates": [
+          {
+            "plantId": "quercus-alba",
+            "scientificName": "Quercus alba",
+            "commonName": "White Oak",
+            "clue": "Intended planting-plan label; not a photographic identification"
+          }
+        ]
+      },
+      {
+        "id": "front-yard-v4-2",
+        "plantId": "clethra-alnifolia",
+        "suggestion": "Summersweet",
+        "scientificName": "Clethra alnifolia",
+        "box": {
+          "x": 14,
+          "y": 24,
+          "w": 43,
+          "h": 44
+        },
+        "reviewed": false,
+        "note": "Intended species in an illustrative planting plan. This image is not a real garden photograph or an AI botanical identification; compare the source-backed plant profile before acting.",
+        "candidates": [
+          {
+            "plantId": "clethra-alnifolia",
+            "scientificName": "Clethra alnifolia",
+            "commonName": "Summersweet",
+            "clue": "Intended planting-plan label; not a photographic identification"
+          }
+        ]
+      },
+      {
+        "id": "front-yard-v4-3",
+        "plantId": "extended-15",
+        "suggestion": "Hosta",
+        "scientificName": "Hosta plantaginea",
+        "box": {
+          "x": 0,
+          "y": 54,
+          "w": 41,
+          "h": 35
+        },
+        "reviewed": false,
+        "note": "Intended species in an illustrative planting plan. This image is not a real garden photograph or an AI botanical identification; compare the source-backed plant profile before acting.",
+        "candidates": [
+          {
+            "plantId": "extended-15",
+            "scientificName": "Hosta plantaginea",
+            "commonName": "Hosta",
+            "clue": "Intended planting-plan label; not a photographic identification"
+          }
+        ]
+      },
+      {
+        "id": "front-yard-v4-4",
+        "plantId": "hydrangea-macrophylla",
+        "suggestion": "Bigleaf Hydrangea",
+        "scientificName": "Hydrangea macrophylla",
+        "box": {
+          "x": 61,
+          "y": 17,
+          "w": 39,
+          "h": 42
+        },
+        "reviewed": false,
+        "note": "Intended species in an illustrative planting plan. This image is not a real garden photograph or an AI botanical identification; compare the source-backed plant profile before acting.",
+        "candidates": [
+          {
+            "plantId": "hydrangea-macrophylla",
+            "scientificName": "Hydrangea macrophylla",
+            "commonName": "Bigleaf Hydrangea",
+            "clue": "Intended planting-plan label; not a photographic identification"
+          }
+        ]
+      },
+      {
+        "id": "front-yard-v4-5",
+        "plantId": "buxus-sempervirens",
+        "suggestion": "Boxwood",
+        "scientificName": "Buxus sempervirens",
+        "box": {
+          "x": 55,
+          "y": 39,
+          "w": 29,
+          "h": 27
+        },
+        "reviewed": false,
+        "note": "Intended species in an illustrative planting plan. This image is not a real garden photograph or an AI botanical identification; compare the source-backed plant profile before acting.",
+        "candidates": [
+          {
+            "plantId": "buxus-sempervirens",
+            "scientificName": "Buxus sempervirens",
+            "commonName": "Boxwood",
+            "clue": "Intended planting-plan label; not a photographic identification"
+          }
+        ]
+      },
+      {
+        "id": "front-yard-v4-6",
+        "plantId": "berberis-thunbergii",
+        "suggestion": "Japanese Barberry",
+        "scientificName": "Berberis thunbergii",
+        "box": {
+          "x": 53,
+          "y": 60,
+          "w": 47,
+          "h": 33
+        },
+        "reviewed": false,
+        "note": "Intended species in an illustrative planting plan. This image is not a real garden photograph or an AI botanical identification; compare the source-backed plant profile before acting.",
+        "candidates": [
+          {
+            "plantId": "berberis-thunbergii",
+            "scientificName": "Berberis thunbergii",
+            "commonName": "Japanese Barberry",
+            "clue": "Intended planting-plan label; not a photographic identification"
+          }
+        ]
+      }
+    ],
+    "evidence": {
+      "origin": "planned-illustration",
+      "intendedSpeciesNotIdentifications": true,
+      "generationStatus": "Root-generated image visually inspected; six intended plant regions manually annotated",
+      "imageSha256": "025fe6d462d4fa594b936bf839b5ebc8f4f54cc3eb4682f44f971538d3604523",
+      "providerCalls": 0,
+      "successfulPhotographicAnalyses": 0,
+      "catalogVersion": "2026-11-04.2/horticulture:2026-11-04.2",
+      "scoreVersion": "species-mix-v4-mild-nonnative",
+      "computedScore": 25,
+      "rawScore": 25,
+      "counts": {
+        "keystone": 1,
+        "native": 1,
+        "non-native": 3,
+        "invasive": 1,
+        "unverified": 0
+      },
+      "provisional": true,
+      "userReviewed": false,
+      "photoEstimateOnly": false,
+      "illustrativePlanEstimateOnly": true,
+      "ownershipClaim": false,
+      "sourceNotes": "Taxa/categories are selected from the current NJ catalog as an intended garden composition. Visual representations are illustrative. No Google/model botanical agreement is asserted.",
+      "intendedSpeciesEvidence": [
+        {
+          "plantId": "quercus-alba",
+          "scientificName": "Quercus alba",
+          "category": "keystone",
+          "njSources": [
+            {
+              "label": "NJDEP New Jersey Native Regional Plant List 2022",
+              "url": "https://dspace.njstatelib.org/items/b2543302-7f0b-4cf2-8ed5-e988bd48c10a"
+            },
+            {
+              "label": "NJDA Jersey Native Plants program · published native-species list",
+              "url": "https://nj.gov/agriculture/divisions/md/pdf/Native%20Plant%20Regulations.pdf"
+            },
+            {
+              "label": "NPSNJ-hosted USDA NJ vascular-plant report (uploaded 2023)",
+              "url": "https://npsnj.org/wp-content/uploads/2023/01/usda_nj_final2.xlsx"
+            },
+            {
+              "label": "NWF Eastern Temperate Forests · Ecoregion 8 keystone genera",
+              "url": "https://www.nwf.org/-/media/Documents/PDFs/Garden-for-Wildlife/Keystone-Plants/NWF-GFW-keystone-plant-list-ecoregion-8-eastern-temperate-forests.pdf"
+            }
+          ],
+          "horticultureSource": {
+            "label": "NC State Extension Gardener Plant Toolbox",
+            "url": "https://plants.ces.ncsu.edu/plants/quercus-alba/",
+            "checkedOn": "2026-11-04",
+            "sha256": "44c1b5c0c601ebe552cca9fecfa6bdf01666f9c8e802eae4668c8f51e4f2d32a",
+            "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+          }
+        },
+        {
+          "plantId": "clethra-alnifolia",
+          "scientificName": "Clethra alnifolia",
+          "category": "native",
+          "njSources": [
+            {
+              "label": "NJDEP New Jersey Native Regional Plant List 2022",
+              "url": "https://dspace.njstatelib.org/items/b2543302-7f0b-4cf2-8ed5-e988bd48c10a"
+            },
+            {
+              "label": "NJDA Jersey Native Plants program · published native-species list",
+              "url": "https://nj.gov/agriculture/divisions/md/pdf/Native%20Plant%20Regulations.pdf"
+            },
+            {
+              "label": "NPSNJ-hosted USDA NJ vascular-plant report (uploaded 2023)",
+              "url": "https://npsnj.org/wp-content/uploads/2023/01/usda_nj_final2.xlsx"
+            }
+          ],
+          "horticultureSource": {
+            "label": "NC State Extension Gardener Plant Toolbox",
+            "url": "https://plants.ces.ncsu.edu/plants/clethra-alnifolia/",
+            "checkedOn": "2026-11-04",
+            "sha256": "321a24c8c28c2ef247693220939a063b8999a2c45ca99614b91727c8260f13f7",
+            "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+          }
+        },
+        {
+          "plantId": "extended-15",
+          "scientificName": "Hosta plantaginea",
+          "category": "non-native",
+          "njSources": [
+            {
+              "label": "NC State Extension Gardener Plant Toolbox · explicit foreign origin",
+              "url": "https://plants.ces.ncsu.edu/plants/hosta-plantaginea/"
+            }
+          ],
+          "horticultureSource": {
+            "label": "NC State Extension Gardener Plant Toolbox",
+            "url": "https://plants.ces.ncsu.edu/plants/hosta-plantaginea/",
+            "checkedOn": "2026-11-04",
+            "sha256": "6b0f734b027eeaa471bbf3e66a8cf332d405a7ad9396b81505ef23389a43a57d",
+            "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+          }
+        },
+        {
+          "plantId": "hydrangea-macrophylla",
+          "scientificName": "Hydrangea macrophylla",
+          "category": "non-native",
+          "njSources": [
+            {
+              "label": "NC State Extension Gardener Plant Toolbox · explicit foreign origin",
+              "url": "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/"
+            }
+          ],
+          "horticultureSource": {
+            "label": "NC State Extension Gardener Plant Toolbox",
+            "url": "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/",
+            "checkedOn": "2026-11-04",
+            "sha256": "646038f6645569926c65c2469fee84945875b9f12ecf67e8cd30e9b2367885d6",
+            "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+          }
+        },
+        {
+          "plantId": "buxus-sempervirens",
+          "scientificName": "Buxus sempervirens",
+          "category": "non-native",
+          "njSources": [
+            {
+              "label": "NC State Extension Gardener Plant Toolbox · explicit foreign origin",
+              "url": "https://plants.ces.ncsu.edu/plants/buxus-sempervirens/"
+            }
+          ],
+          "horticultureSource": {
+            "label": "NC State Extension Gardener Plant Toolbox",
+            "url": "https://plants.ces.ncsu.edu/plants/buxus-sempervirens/",
+            "checkedOn": "2026-11-04",
+            "sha256": "dc9ec68ed5e3062a5f77a76bfeae8b3c1e6625ab58bee34719b08adec91e77de",
+            "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+          }
+        },
+        {
+          "plantId": "berberis-thunbergii",
+          "scientificName": "Berberis thunbergii",
+          "category": "invasive",
+          "njSources": [
+            {
+              "label": "NPSNJ-hosted USDA NJ vascular-plant report (uploaded 2023)",
+              "url": "https://npsnj.org/wp-content/uploads/2023/01/usda_nj_final2.xlsx"
+            },
+            {
+              "label": "NJ Invasive Species Strike Team · 2025 Do Not Plant List",
+              "url": "https://www.fohvos.info/wp-content/uploads/2025_Strike_Team_Do_Not_Plant_List_Scientific_Name_Sort_2025_03_14.pdf"
+            },
+            {
+              "label": "NJ Department of Agriculture · Invasive Species",
+              "url": "https://nj.gov/agriculture/divisions/pi/prog/InvasivePlants.shtml"
+            },
+            {
+              "label": "NC State Extension Gardener Plant Toolbox · explicit foreign origin",
+              "url": "https://plants.ces.ncsu.edu/plants/berberis-thunbergii/"
+            }
+          ],
+          "horticultureSource": {
+            "label": "NC State Extension Gardener Plant Toolbox",
+            "url": "https://plants.ces.ncsu.edu/plants/berberis-thunbergii/",
+            "checkedOn": "2026-11-04",
+            "sha256": "20f12b61e5b277bbca61744e11fddc481cdfde75dcdef0b47efafcf3d5d7b01b",
+            "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+          }
+        }
+      ],
+      "generationProvider": "OpenAI image generation",
+      "generationModelVersion": "Not reported; no model version invented",
+      "generationPromptOwner": "Root coordinated the generation from the six-species planting plan",
+      "visualReview": "Generated illustration inspected for intended region placement. Stylized/approximate morphology is not independent botanical identification or a recognition benchmark.",
+      "regionAnnotationOrigin": "Manual intended planting-plan regions, not Google boxes",
+      "regionAnnotationScope": "Tree boxes may select representative visible trunk/canopy rather than a segmentation mask; no background ownership claim.",
+      "generationTool": "image_gen.imagegen",
+      "createdOn": "2026-11-04"
+    },
+    "photoWidth": 1536,
+    "photoHeight": 1024,
+    "photoAlt": "AI-generated illustration of the intended mixed foundation garden planting plan"
+  },
+  {
+    "id": "back-yard",
+    "title": "Pollinator Backyard",
+    "photo": "/samples/back-yard.jpg",
+    "description": "A mixed garden border: explore the native suggestions, ornamentals and possible invasives.",
+    "sourceUrl": "https://native-yard-1.vercel.app/",
+    "credit": "NativeYard reference samples",
+    "plants": [
+      {
+        "id": "back-yard-v2-1",
+        "plantId": "acer-palmatum",
+        "suggestion": "Japanese Maple",
+        "scientificName": "Acer palmatum",
+        "box": {
+          "x": 11.4,
+          "y": 0.4,
+          "w": 43.1,
+          "h": 47.800000000000004
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "acer-palmatum",
+            "scientificName": "Acer palmatum",
+            "commonName": "Japanese Maple",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-2",
+        "plantId": "extended-123",
+        "suggestion": "Swamp Milkweed",
+        "scientificName": "Asclepias incarnata",
+        "box": {
+          "x": 31.3,
+          "y": 24,
+          "w": 20.7,
+          "h": 65.3
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "extended-123",
+            "scientificName": "Asclepias incarnata",
+            "commonName": "Swamp Milkweed",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-3",
+        "plantId": "solidago-rugosa",
+        "suggestion": "Goldenrod",
+        "scientificName": "Solidago rugosa",
+        "box": {
+          "x": 43.9,
+          "y": 40.4,
+          "w": 20.1,
+          "h": 23.4
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "solidago-rugosa",
+            "scientificName": "Solidago rugosa",
+            "commonName": "Goldenrod",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-4",
+        "plantId": "symphyotrichum-novae-angliae",
+        "suggestion": "New England Aster",
+        "scientificName": "Symphyotrichum novae-angliae",
+        "box": {
+          "x": 51.3,
+          "y": 54.8,
+          "w": 25.10000000000001,
+          "h": 38.8
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "symphyotrichum-novae-angliae",
+            "scientificName": "Symphyotrichum novae-angliae",
+            "commonName": "New England Aster",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-5",
+        "plantId": "hydrangea-macrophylla",
+        "suggestion": "Bigleaf Hydrangea",
+        "scientificName": "Hydrangea macrophylla",
+        "box": {
+          "x": 13.1,
+          "y": 39.2,
+          "w": 18,
+          "h": 21.099999999999994
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "hydrangea-macrophylla",
+            "scientificName": "Hydrangea macrophylla",
+            "commonName": "Bigleaf Hydrangea",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-6",
+        "plantId": "vaccinium-corymbosum",
+        "suggestion": "Highbush Blueberry",
+        "scientificName": "Vaccinium corymbosum",
+        "box": {
+          "x": 55.1,
+          "y": 24.7,
+          "w": 28.800000000000004,
+          "h": 42.39999999999999
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "vaccinium-corymbosum",
+            "scientificName": "Vaccinium corymbosum",
+            "commonName": "Highbush Blueberry",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-7",
+        "plantId": "recognition-parthenocissus-tricuspidata",
+        "suggestion": "Boston Ivy",
+        "scientificName": "Parthenocissus tricuspidata",
+        "box": {
+          "x": 70.5,
+          "y": 8.2,
+          "w": 29.299999999999997,
+          "h": 72.2
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "recognition-parthenocissus-tricuspidata",
+            "scientificName": "Parthenocissus tricuspidata",
+            "commonName": "Boston Ivy",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-8",
+        "plantId": "extended-131",
+        "suggestion": "Garden Phlox",
+        "scientificName": "Phlox paniculata",
+        "box": {
+          "x": 82.9,
+          "y": 84.3,
+          "w": 13,
+          "h": 15.5
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "extended-131",
+            "scientificName": "Phlox paniculata",
+            "commonName": "Garden Phlox",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-9",
+        "plantId": "extended-143",
+        "suggestion": "Ostrich Fern",
+        "scientificName": "Matteuccia struthiopteris",
+        "box": {
+          "x": 76.1,
+          "y": 65.6,
+          "w": 17.80000000000001,
+          "h": 18.700000000000003
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "extended-143",
+            "scientificName": "Matteuccia struthiopteris",
+            "commonName": "Ostrich Fern",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      }
+    ],
+    "fixtureVersion": 3,
+    "evidence": {
+      "imageSha256": "15f6bc254466d0e953d4680878d3206f0ff6cc2d35918c86ce11f0b148ff97ae",
+      "provider": "Google Gemini",
+      "modelVersion": "gemini-3.6-flash",
+      "promptVersion": "sha256:76a85422684e5294dba9c650c4426d746a949512ffed802ebc80e5d0745dca1b",
+      "analyzedAt": "2026-11-05T01:25:07.046Z",
+      "fixtureVersion": 3,
+      "catalogVersion": "2026-11-04.2/horticulture:2026-11-04.2",
+      "scoreVersion": "species-mix-v4-mild-nonnative",
+      "computedScore": 56,
+      "rawScore": 55.625,
+      "counts": {
+        "keystone": 3,
+        "native": 2,
+        "non-native": 1,
+        "invasive": 2,
+        "unverified": 1
+      },
+      "provisional": true,
+      "userReviewed": false,
+      "photoEstimateOnly": true,
+      "regionCoverage": {
+        "assessed": 8,
+        "total": 9
+      },
+      "successfulAnalyses": 1,
+      "providerRequestAttempts": 1,
+      "reviewDecisionsFile": "research/sample-refresh/review-decisions.v3.json",
+      "identityLimit": "Google species suggestions remain unreviewed; exact catalog and PlantNet membership do not prove image identity."
+    }
+  },
+  {
+    "id": "side-yard",
+    "title": "Native-rich mixed garden",
+    "description": "A planned garden with native trees, shrubs and milkweed, plus one non-native hosta. Compare a richer native mix while exploring the next improvement.",
+    "photo": "/samples/native-rich-mixed-garden-v4.png",
+    "sourceUrl": "/samples/native-rich-mixed-garden-v4.png",
+    "credit": "Generated garden illustration · authored sample plant map",
+    "fixtureVersion": 4,
+    "imageKind": "generated-illustration",
+    "plants": [
+      {
+        "id": "side-yard-v4-1",
+        "plantId": "quercus-alba",
+        "suggestion": "White Oak",
+        "scientificName": "Quercus alba",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 15,
+          "h": 77
+        },
+        "reviewed": false,
+        "note": "Intended species in an illustrative planting plan. This image is not a real garden photograph or an AI botanical identification; compare the source-backed plant profile before acting.",
+        "candidates": [
+          {
+            "plantId": "quercus-alba",
+            "scientificName": "Quercus alba",
+            "commonName": "White Oak",
+            "clue": "Intended planting-plan label; not a photographic identification"
+          }
+        ]
+      },
+      {
+        "id": "side-yard-v4-2",
+        "plantId": "cornus-florida",
+        "suggestion": "Flowering Dogwood",
+        "scientificName": "Cornus florida",
+        "box": {
+          "x": 55,
+          "y": 0,
+          "w": 45,
+          "h": 46
+        },
+        "reviewed": false,
+        "note": "Intended species in an illustrative planting plan. This image is not a real garden photograph or an AI botanical identification; compare the source-backed plant profile before acting.",
+        "candidates": [
+          {
+            "plantId": "cornus-florida",
+            "scientificName": "Cornus florida",
+            "commonName": "Flowering Dogwood",
+            "clue": "Intended planting-plan label; not a photographic identification"
+          }
+        ]
+      },
+      {
+        "id": "side-yard-v4-3",
+        "plantId": "viburnum-dentatum",
+        "suggestion": "Arrowwood Viburnum",
+        "scientificName": "Viburnum dentatum",
+        "box": {
+          "x": 10,
+          "y": 27,
+          "w": 41,
+          "h": 32
+        },
+        "reviewed": false,
+        "note": "Intended species in an illustrative planting plan. This image is not a real garden photograph or an AI botanical identification; compare the source-backed plant profile before acting.",
+        "candidates": [
+          {
+            "plantId": "viburnum-dentatum",
+            "scientificName": "Viburnum dentatum",
+            "commonName": "Arrowwood Viburnum",
+            "clue": "Intended planting-plan label; not a photographic identification"
+          }
+        ]
+      },
+      {
+        "id": "side-yard-v4-4",
+        "plantId": "ilex-verticillata",
+        "suggestion": "Winterberry",
+        "scientificName": "Ilex verticillata",
+        "box": {
+          "x": 49,
+          "y": 36,
+          "w": 40,
+          "h": 38
+        },
+        "reviewed": false,
+        "note": "Intended species in an illustrative planting plan. This image is not a real garden photograph or an AI botanical identification; compare the source-backed plant profile before acting.",
+        "candidates": [
+          {
+            "plantId": "ilex-verticillata",
+            "scientificName": "Ilex verticillata",
+            "commonName": "Winterberry",
+            "clue": "Intended planting-plan label; not a photographic identification"
+          }
+        ]
+      },
+      {
+        "id": "side-yard-v4-5",
+        "plantId": "extended-123",
+        "suggestion": "Swamp Milkweed",
+        "scientificName": "Asclepias incarnata",
+        "box": {
+          "x": 5,
+          "y": 52,
+          "w": 60,
+          "h": 45
+        },
+        "reviewed": false,
+        "note": "Intended species in an illustrative planting plan. This image is not a real garden photograph or an AI botanical identification; compare the source-backed plant profile before acting.",
+        "candidates": [
+          {
+            "plantId": "extended-123",
+            "scientificName": "Asclepias incarnata",
+            "commonName": "Swamp Milkweed",
+            "clue": "Intended planting-plan label; not a photographic identification"
+          }
+        ]
+      },
+      {
+        "id": "side-yard-v4-6",
+        "plantId": "extended-15",
+        "suggestion": "Hosta",
+        "scientificName": "Hosta plantaginea",
+        "box": {
+          "x": 66,
+          "y": 60,
+          "w": 34,
+          "h": 30
+        },
+        "reviewed": false,
+        "note": "Intended species in an illustrative planting plan. This image is not a real garden photograph or an AI botanical identification; compare the source-backed plant profile before acting.",
+        "candidates": [
+          {
+            "plantId": "extended-15",
+            "scientificName": "Hosta plantaginea",
+            "commonName": "Hosta",
+            "clue": "Intended planting-plan label; not a photographic identification"
+          }
+        ]
+      }
+    ],
+    "evidence": {
+      "origin": "planned-illustration",
+      "intendedSpeciesNotIdentifications": true,
+      "generationStatus": "Root-generated image visually inspected; six intended plant regions manually annotated",
+      "imageSha256": "9b5e1ede6353b5c123c53b425aa8977a9f9ff3c7f69fe259973bbeac95744729",
+      "providerCalls": 0,
+      "successfulPhotographicAnalyses": 0,
+      "catalogVersion": "2026-11-04.2/horticulture:2026-11-04.2",
+      "scoreVersion": "species-mix-v4-mild-nonnative",
+      "computedScore": 85,
+      "rawScore": 85,
+      "counts": {
+        "keystone": 2,
+        "native": 3,
+        "non-native": 1,
+        "invasive": 0,
+        "unverified": 0
+      },
+      "provisional": true,
+      "userReviewed": false,
+      "photoEstimateOnly": false,
+      "illustrativePlanEstimateOnly": true,
+      "ownershipClaim": false,
+      "sourceNotes": "Taxa/categories are selected from the current NJ catalog as an intended garden composition. Visual representations are illustrative. No Google/model botanical agreement is asserted.",
+      "intendedSpeciesEvidence": [
+        {
+          "plantId": "quercus-alba",
+          "scientificName": "Quercus alba",
+          "category": "keystone",
+          "njSources": [
+            {
+              "label": "NJDEP New Jersey Native Regional Plant List 2022",
+              "url": "https://dspace.njstatelib.org/items/b2543302-7f0b-4cf2-8ed5-e988bd48c10a"
+            },
+            {
+              "label": "NJDA Jersey Native Plants program · published native-species list",
+              "url": "https://nj.gov/agriculture/divisions/md/pdf/Native%20Plant%20Regulations.pdf"
+            },
+            {
+              "label": "NPSNJ-hosted USDA NJ vascular-plant report (uploaded 2023)",
+              "url": "https://npsnj.org/wp-content/uploads/2023/01/usda_nj_final2.xlsx"
+            },
+            {
+              "label": "NWF Eastern Temperate Forests · Ecoregion 8 keystone genera",
+              "url": "https://www.nwf.org/-/media/Documents/PDFs/Garden-for-Wildlife/Keystone-Plants/NWF-GFW-keystone-plant-list-ecoregion-8-eastern-temperate-forests.pdf"
+            }
+          ],
+          "horticultureSource": {
+            "label": "NC State Extension Gardener Plant Toolbox",
+            "url": "https://plants.ces.ncsu.edu/plants/quercus-alba/",
+            "checkedOn": "2026-11-04",
+            "sha256": "44c1b5c0c601ebe552cca9fecfa6bdf01666f9c8e802eae4668c8f51e4f2d32a",
+            "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+          }
+        },
+        {
+          "plantId": "cornus-florida",
+          "scientificName": "Cornus florida",
+          "category": "keystone",
+          "njSources": [
+            {
+              "label": "NJDEP New Jersey Native Regional Plant List 2022",
+              "url": "https://dspace.njstatelib.org/items/b2543302-7f0b-4cf2-8ed5-e988bd48c10a"
+            },
+            {
+              "label": "NJDA Jersey Native Plants program · published native-species list",
+              "url": "https://nj.gov/agriculture/divisions/md/pdf/Native%20Plant%20Regulations.pdf"
+            },
+            {
+              "label": "NPSNJ-hosted USDA NJ vascular-plant report (uploaded 2023)",
+              "url": "https://npsnj.org/wp-content/uploads/2023/01/usda_nj_final2.xlsx"
+            },
+            {
+              "label": "NWF Eastern Temperate Forests · Ecoregion 8 keystone genera",
+              "url": "https://www.nwf.org/-/media/Documents/PDFs/Garden-for-Wildlife/Keystone-Plants/NWF-GFW-keystone-plant-list-ecoregion-8-eastern-temperate-forests.pdf"
+            }
+          ],
+          "horticultureSource": {
+            "label": "NC State Extension Gardener Plant Toolbox",
+            "url": "https://plants.ces.ncsu.edu/plants/cornus-florida/",
+            "checkedOn": "2026-11-04",
+            "sha256": "69f9632de9aa1d5c9521df5ac43fda4d4613613d51f33320e74bc2f7edf43951",
+            "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+          }
+        },
+        {
+          "plantId": "viburnum-dentatum",
+          "scientificName": "Viburnum dentatum",
+          "category": "native",
+          "njSources": [
+            {
+              "label": "NJDEP New Jersey Native Regional Plant List 2022",
+              "url": "https://dspace.njstatelib.org/items/b2543302-7f0b-4cf2-8ed5-e988bd48c10a"
+            },
+            {
+              "label": "NPSNJ-hosted USDA NJ vascular-plant report (uploaded 2023)",
+              "url": "https://npsnj.org/wp-content/uploads/2023/01/usda_nj_final2.xlsx"
+            }
+          ],
+          "horticultureSource": {
+            "label": "NC State Extension Gardener Plant Toolbox",
+            "url": "https://plants.ces.ncsu.edu/plants/viburnum-dentatum/",
+            "checkedOn": "2026-11-04",
+            "sha256": "5d4b05b9bf5efdda6ab8e235738613ad1b8b449d8306a7d392d8ac2fc2b8cef5",
+            "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+          }
+        },
+        {
+          "plantId": "ilex-verticillata",
+          "scientificName": "Ilex verticillata",
+          "category": "native",
+          "njSources": [
+            {
+              "label": "NJDEP New Jersey Native Regional Plant List 2022",
+              "url": "https://dspace.njstatelib.org/items/b2543302-7f0b-4cf2-8ed5-e988bd48c10a"
+            },
+            {
+              "label": "NJDA Jersey Native Plants program · published native-species list",
+              "url": "https://nj.gov/agriculture/divisions/md/pdf/Native%20Plant%20Regulations.pdf"
+            },
+            {
+              "label": "NPSNJ-hosted USDA NJ vascular-plant report (uploaded 2023)",
+              "url": "https://npsnj.org/wp-content/uploads/2023/01/usda_nj_final2.xlsx"
+            }
+          ],
+          "horticultureSource": {
+            "label": "NC State Extension Gardener Plant Toolbox",
+            "url": "https://plants.ces.ncsu.edu/plants/ilex-verticillata/",
+            "checkedOn": "2026-11-04",
+            "sha256": "bf7b8e0bb2b7c0832cb524a5a4f0c37fe04127bab62fb9fce61aa788ec4cf1ea",
+            "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+          }
+        },
+        {
+          "plantId": "extended-123",
+          "scientificName": "Asclepias incarnata",
+          "category": "native",
+          "njSources": [
+            {
+              "label": "NJDEP New Jersey Native Regional Plant List 2022",
+              "url": "https://dspace.njstatelib.org/items/b2543302-7f0b-4cf2-8ed5-e988bd48c10a"
+            },
+            {
+              "label": "NPSNJ-hosted USDA NJ vascular-plant report (uploaded 2023)",
+              "url": "https://npsnj.org/wp-content/uploads/2023/01/usda_nj_final2.xlsx"
+            }
+          ],
+          "horticultureSource": {
+            "label": "NC State Extension Gardener Plant Toolbox",
+            "url": "https://plants.ces.ncsu.edu/plants/asclepias-incarnata/",
+            "checkedOn": "2026-11-04",
+            "sha256": "fcad8da95f6a01b6fbc740246ba16df21051b91677e48a138863b3e286a5f006",
+            "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+          }
+        },
+        {
+          "plantId": "extended-15",
+          "scientificName": "Hosta plantaginea",
+          "category": "non-native",
+          "njSources": [
+            {
+              "label": "NC State Extension Gardener Plant Toolbox · explicit foreign origin",
+              "url": "https://plants.ces.ncsu.edu/plants/hosta-plantaginea/"
+            }
+          ],
+          "horticultureSource": {
+            "label": "NC State Extension Gardener Plant Toolbox",
+            "url": "https://plants.ces.ncsu.edu/plants/hosta-plantaginea/",
+            "checkedOn": "2026-11-04",
+            "sha256": "6b0f734b027eeaa471bbf3e66a8cf332d405a7ad9396b81505ef23389a43a57d",
+            "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+          }
+        }
+      ],
+      "generationProvider": "OpenAI image generation",
+      "generationModelVersion": "Not reported; no model version invented",
+      "generationPromptOwner": "Root coordinated the generation from the six-species planting plan",
+      "visualReview": "Generated illustration inspected for intended region placement. Stylized/approximate morphology is not independent botanical identification or a recognition benchmark.",
+      "regionAnnotationOrigin": "Manual intended planting-plan regions, not Google boxes",
+      "regionAnnotationScope": "Tree boxes may select representative visible trunk/canopy rather than a segmentation mask; no background ownership claim.",
+      "generationTool": "image_gen.imagegen",
+      "createdOn": "2026-11-04"
+    },
+    "photoWidth": 1536,
+    "photoHeight": 1024,
+    "photoAlt": "AI-generated illustration of the intended native-rich mixed garden planting plan"
+  }
+]

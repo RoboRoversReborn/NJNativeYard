@@ -1,0 +1,169 @@
+{
+  "version": "2026-11-04.1",
+  "checkedOn": "2026-11-04",
+  "coverage": {
+    "profiles": 4
+  },
+  "records": {
+    "quercus-alba": {
+      "sourceTaxon": "Quercus alba",
+      "opening": "A large, spreading tree whose seasonal story runs from spring flowers to autumn acorns.",
+      "recognitionCue": "Look for lobed leaves. A clear leaf photo is more useful for checking the match than a distant canopy.",
+      "nextObservation": "On an autumn visit, look for acorns and record what you actually see.",
+      "source": {
+        "label": "NC State Extension Gardener Plant Toolbox",
+        "url": "https://plants.ces.ncsu.edu/plants/quercus-alba/",
+        "checkedOn": "2026-11-04",
+        "sha256": "44c1b5c0c601ebe552cca9fecfa6bdf01666f9c8e802eae4668c8f51e4f2d32a",
+        "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+      },
+      "scope": "Curated paraphrase of this exact horticultural reference; not identity confirmation, NJ status evidence or a fixed NJ calendar.",
+      "evidence": [
+        {
+          "field": "PlantType",
+          "values": ["Tree"]
+        },
+        {
+          "field": "GrowthHabit",
+          "values": ["Spreading"]
+        },
+        {
+          "field": "FruitDisplayTime",
+          "values": ["Fall"]
+        },
+        {
+          "field": "FruitType",
+          "values": ["Nut"]
+        },
+        {
+          "field": "FlowerBloomTime",
+          "values": ["Spring"]
+        },
+        {
+          "field": "LeafMargin",
+          "values": ["Lobed"]
+        }
+      ]
+    },
+    "vaccinium-corymbosum": {
+      "sourceTaxon": "Vaccinium corymbosum",
+      "opening": "Spring flowers, summer berries and changing autumn leaves give this shrub several moments to notice.",
+      "recognitionCue": "Look for bell-shaped flowers and oval leaves, then compare the fruit when present.",
+      "nextObservation": "Revisit the same shrub as flowers give way to fruit; note the plant\u2019s stage rather than assuming a fixed date.",
+      "source": {
+        "label": "NC State Extension Gardener Plant Toolbox",
+        "url": "https://plants.ces.ncsu.edu/plants/vaccinium-corymbosum/",
+        "checkedOn": "2026-11-04",
+        "sha256": "8dd64be121d3106967487c9209a6e3565f1d0a07ee464a3895e67f3a4081650b",
+        "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+      },
+      "scope": "Curated paraphrase of this exact horticultural reference; not identity confirmation, NJ status evidence or a fixed NJ calendar.",
+      "evidence": [
+        {
+          "field": "PlantType",
+          "values": ["Shrub"]
+        },
+        {
+          "field": "FlowerBloomTime",
+          "values": ["Spring"]
+        },
+        {
+          "field": "FlowerShape",
+          "values": ["Bell"]
+        },
+        {
+          "field": "FruitDisplayTime",
+          "values": ["Summer"]
+        },
+        {
+          "field": "FruitType",
+          "values": ["Berry"]
+        },
+        {
+          "field": "LeafShape",
+          "values": ["Ovate"]
+        },
+        {
+          "field": "LeafFallColor",
+          "values": ["Orange", "Red/Burgundy"]
+        }
+      ]
+    },
+    "symphyotrichum-novae-angliae": {
+      "sourceTaxon": "Symphyotrichum novae-angliae",
+      "opening": "Summer-to-autumn flowers make this upright perennial worth revisiting as the season changes.",
+      "recognitionCue": "Look for purple or lavender flowers with yellow centres, rough leaves and upright clumps.",
+      "nextObservation": "Take a flower close-up and a leaf photo during bloom to help check the match.",
+      "source": {
+        "label": "NC State Extension Gardener Plant Toolbox",
+        "url": "https://plants.ces.ncsu.edu/plants/symphyotrichum-novae-angliae/",
+        "checkedOn": "2026-11-04",
+        "sha256": "6903687b5bdfc6771c4233035ce227d603470c131d27a89b5ec22379b100844c",
+        "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+      },
+      "scope": "Curated paraphrase of this exact horticultural reference; not identity confirmation, NJ status evidence or a fixed NJ calendar.",
+      "evidence": [
+        {
+          "field": "LifeCycle",
+          "values": ["Perennial"]
+        },
+        {
+          "field": "FlowerBloomTime",
+          "values": ["Fall", "Summer"]
+        },
+        {
+          "field": "FlowerColor",
+          "values": ["Gold/Yellow", "Purple/Lavender"]
+        },
+        {
+          "field": "LeafFeel",
+          "values": ["Rough"]
+        },
+        {
+          "field": "GrowthHabit",
+          "values": ["Clumping", "Erect"]
+        }
+      ]
+    },
+    "berberis-thunbergii": {
+      "sourceTaxon": "Berberis thunbergii",
+      "opening": "This dense, thorny shrub can carry red berries into winter\u2014a useful feature to notice when checking its identity.",
+      "recognitionCue": "Compare the small leaves and red fruit without handling the thorny stems.",
+      "nextObservation": "Photograph leaves, stems and any fruit before deciding whether this is the invasive species.",
+      "source": {
+        "label": "NC State Extension Gardener Plant Toolbox",
+        "url": "https://plants.ces.ncsu.edu/plants/berberis-thunbergii/",
+        "checkedOn": "2026-11-04",
+        "sha256": "20f12b61e5b277bbca61744e11fddc481cdfde75dcdef0b47efafcf3d5d7b01b",
+        "scope": "General horticultural attributes; source seasons and hardiness are not an NJ-specific bloom calendar or proof of NJ nativity"
+      },
+      "scope": "Curated paraphrase of this exact horticultural reference; not identity confirmation, NJ status evidence or a fixed NJ calendar.",
+      "evidence": [
+        {
+          "field": "PlantType",
+          "values": ["Shrub"]
+        },
+        {
+          "field": "GrowthHabit",
+          "values": ["Dense"]
+        },
+        {
+          "field": "Appendage",
+          "values": ["Thorns"]
+        },
+        {
+          "field": "FruitColor",
+          "values": ["Red/Burgundy"]
+        },
+        {
+          "field": "FruitDisplayTime",
+          "values": ["Winter"]
+        },
+        {
+          "field": "LeafLength",
+          "values": ["1-3 inches"]
+        }
+      ]
+    }
+  }
+}

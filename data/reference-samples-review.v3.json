@@ -1,0 +1,492 @@
+{
+  "status": "Root integration review candidate; research only",
+  "version": 3,
+  "productionFormulaUnchanged": true,
+  "runtimeCalls": 0,
+  "canopySourceFile": "research/sample-refresh/native-dogwood-candidate-0.jpg",
+  "canopyImageSha256": "65ba90a7d9225a7e39071b7828c16ff8690976a5c397f2a0ef3acc665f67c5cb",
+  "records": [
+    {
+      "sampleId": "front-yard",
+      "before": {
+        "score": 1,
+        "counts": {
+          "keystone": 1,
+          "native": 0,
+          "non-native": 2,
+          "invasive": 2,
+          "unverified": 1
+        }
+      },
+      "after": {
+        "score": 0,
+        "counts": {
+          "keystone": 0,
+          "native": 0,
+          "non-native": 0,
+          "invasive": 2,
+          "unverified": 5
+        }
+      },
+      "mapping": [
+        {
+          "regionId": "front-yard-v2-1",
+          "scientificName": "Quercus",
+          "plantId": null,
+          "category": "unverified",
+          "rawCatalogCategory": null,
+          "box": {
+            "x": 67.2,
+            "y": 4,
+            "w": 27.39999999999999,
+            "h": 64
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "status": "no-exact-taxon-match-in-snapshot"
+          }
+        },
+        {
+          "regionId": "front-yard-v2-2",
+          "scientificName": "Berberis thunbergii",
+          "plantId": "berberis-thunbergii",
+          "category": "invasive",
+          "rawCatalogCategory": "invasive",
+          "box": {
+            "x": 8.7,
+            "y": 41.9,
+            "w": 18.2,
+            "h": 23.699999999999996
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "provider": "PlantNet",
+            "project": "k-world-flora",
+            "id": "1400119",
+            "scientificName": "Berberis thunbergii",
+            "checkedOn": "2026-11-04",
+            "sourceFile": "docs/evidence/plantnet-k-world-flora-inventory.v1.json.gz",
+            "sourceSha256": "282618cbc8b6757163cac7488030480087527eff146d8bf436309ba3c2fe2a97",
+            "meaning": "Provider inventory includes exact taxon; not a photograph identification or NJ native-status decision"
+          }
+        },
+        {
+          "regionId": "front-yard-v2-3",
+          "scientificName": "Spiraea",
+          "plantId": null,
+          "category": "unverified",
+          "rawCatalogCategory": null,
+          "box": {
+            "x": 25.2,
+            "y": 43.3,
+            "w": 15.2,
+            "h": 20.900000000000006
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "status": "no-exact-taxon-match-in-snapshot"
+          }
+        },
+        {
+          "regionId": "front-yard-v2-4",
+          "scientificName": "Hosta",
+          "plantId": null,
+          "category": "unverified",
+          "rawCatalogCategory": null,
+          "box": {
+            "x": 35.9,
+            "y": 53.6,
+            "w": 16.4,
+            "h": 14.499999999999993
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "status": "no-exact-taxon-match-in-snapshot"
+          }
+        },
+        {
+          "regionId": "front-yard-v2-5",
+          "scientificName": "Buxus",
+          "plantId": null,
+          "category": "unverified",
+          "rawCatalogCategory": null,
+          "box": {
+            "x": 49.8,
+            "y": 48.2,
+            "w": 14,
+            "h": 17.599999999999994
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "status": "no-exact-taxon-match-in-snapshot"
+          }
+        },
+        {
+          "regionId": "front-yard-v2-6",
+          "scientificName": null,
+          "plantId": null,
+          "category": "unverified",
+          "rawCatalogCategory": null,
+          "box": {
+            "x": 59.7,
+            "y": 51.7,
+            "w": 17.799999999999997,
+            "h": 20.299999999999997
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "status": "no-exact-taxon-match-in-snapshot"
+          }
+        },
+        {
+          "regionId": "front-yard-v2-7",
+          "scientificName": "Acer palmatum",
+          "plantId": "acer-palmatum",
+          "category": "invasive",
+          "rawCatalogCategory": "invasive",
+          "box": {
+            "x": 57,
+            "y": 44.8,
+            "w": 9.299999999999997,
+            "h": 6.900000000000006
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "provider": "PlantNet",
+            "project": "k-world-flora",
+            "id": "1390731",
+            "scientificName": "Acer palmatum",
+            "checkedOn": "2026-11-04",
+            "sourceFile": "docs/evidence/plantnet-k-world-flora-inventory.v1.json.gz",
+            "sourceSha256": "282618cbc8b6757163cac7488030480087527eff146d8bf436309ba3c2fe2a97",
+            "meaning": "Provider inventory includes exact taxon; not a photograph identification or NJ native-status decision"
+          }
+        }
+      ]
+    },
+    {
+      "sampleId": "back-yard",
+      "before": {
+        "score": 49,
+        "counts": {
+          "keystone": 3,
+          "native": 1,
+          "non-native": 1,
+          "invasive": 2,
+          "unverified": 0
+        }
+      },
+      "after": {
+        "score": 55,
+        "counts": {
+          "keystone": 3,
+          "native": 2,
+          "non-native": 1,
+          "invasive": 2,
+          "unverified": 1
+        }
+      },
+      "mapping": [
+        {
+          "regionId": "back-yard-v2-1",
+          "scientificName": "Acer palmatum",
+          "plantId": "acer-palmatum",
+          "category": "invasive",
+          "rawCatalogCategory": "invasive",
+          "box": {
+            "x": 11.4,
+            "y": 0.4,
+            "w": 43.1,
+            "h": 47.800000000000004
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "provider": "PlantNet",
+            "project": "k-world-flora",
+            "id": "1390731",
+            "scientificName": "Acer palmatum",
+            "checkedOn": "2026-11-04",
+            "sourceFile": "docs/evidence/plantnet-k-world-flora-inventory.v1.json.gz",
+            "sourceSha256": "282618cbc8b6757163cac7488030480087527eff146d8bf436309ba3c2fe2a97",
+            "meaning": "Provider inventory includes exact taxon; not a photograph identification or NJ native-status decision"
+          }
+        },
+        {
+          "regionId": "back-yard-v2-2",
+          "scientificName": "Asclepias incarnata",
+          "plantId": "extended-123",
+          "category": "native",
+          "rawCatalogCategory": "native",
+          "box": {
+            "x": 31.3,
+            "y": 24,
+            "w": 20.7,
+            "h": 65.3
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "provider": "PlantNet",
+            "project": "k-world-flora",
+            "id": "1413787",
+            "scientificName": "Asclepias incarnata",
+            "checkedOn": "2026-11-04",
+            "sourceFile": "docs/evidence/plantnet-k-world-flora-inventory.v1.json.gz",
+            "sourceSha256": "282618cbc8b6757163cac7488030480087527eff146d8bf436309ba3c2fe2a97",
+            "meaning": "Provider inventory includes exact taxon; not a photograph identification or NJ native-status decision"
+          }
+        },
+        {
+          "regionId": "back-yard-v2-3",
+          "scientificName": "Solidago rugosa",
+          "plantId": "solidago-rugosa",
+          "category": "keystone",
+          "rawCatalogCategory": "keystone",
+          "box": {
+            "x": 43.9,
+            "y": 40.4,
+            "w": 20.1,
+            "h": 23.4
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "provider": "PlantNet",
+            "project": "k-world-flora",
+            "id": "1396340",
+            "scientificName": "Solidago rugosa",
+            "checkedOn": "2026-11-04",
+            "sourceFile": "docs/evidence/plantnet-k-world-flora-inventory.v1.json.gz",
+            "sourceSha256": "282618cbc8b6757163cac7488030480087527eff146d8bf436309ba3c2fe2a97",
+            "meaning": "Provider inventory includes exact taxon; not a photograph identification or NJ native-status decision"
+          }
+        },
+        {
+          "regionId": "back-yard-v2-4",
+          "scientificName": "Symphyotrichum novae-angliae",
+          "plantId": "symphyotrichum-novae-angliae",
+          "category": "keystone",
+          "rawCatalogCategory": "keystone",
+          "box": {
+            "x": 51.3,
+            "y": 54.8,
+            "w": 25.10000000000001,
+            "h": 38.8
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "provider": "PlantNet",
+            "project": "k-world-flora",
+            "id": "1396486",
+            "scientificName": "Symphyotrichum novae-angliae",
+            "checkedOn": "2026-11-04",
+            "sourceFile": "docs/evidence/plantnet-k-world-flora-inventory.v1.json.gz",
+            "sourceSha256": "282618cbc8b6757163cac7488030480087527eff146d8bf436309ba3c2fe2a97",
+            "meaning": "Provider inventory includes exact taxon; not a photograph identification or NJ native-status decision"
+          }
+        },
+        {
+          "regionId": "back-yard-v2-5",
+          "scientificName": "Hydrangea macrophylla",
+          "plantId": "hydrangea-macrophylla",
+          "category": "non-native",
+          "rawCatalogCategory": "non-native",
+          "box": {
+            "x": 13.1,
+            "y": 39.2,
+            "w": 18,
+            "h": 21.099999999999994
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "provider": "PlantNet",
+            "project": "k-world-flora",
+            "id": "1361819",
+            "scientificName": "Hydrangea macrophylla",
+            "checkedOn": "2026-11-04",
+            "sourceFile": "docs/evidence/plantnet-k-world-flora-inventory.v1.json.gz",
+            "sourceSha256": "282618cbc8b6757163cac7488030480087527eff146d8bf436309ba3c2fe2a97",
+            "meaning": "Provider inventory includes exact taxon; not a photograph identification or NJ native-status decision"
+          }
+        },
+        {
+          "regionId": "back-yard-v2-6",
+          "scientificName": "Vaccinium corymbosum",
+          "plantId": "vaccinium-corymbosum",
+          "category": "keystone",
+          "rawCatalogCategory": "keystone",
+          "box": {
+            "x": 55.1,
+            "y": 24.7,
+            "w": 28.800000000000004,
+            "h": 42.39999999999999
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "provider": "PlantNet",
+            "project": "k-world-flora",
+            "id": "1396966",
+            "scientificName": "Vaccinium corymbosum",
+            "checkedOn": "2026-11-04",
+            "sourceFile": "docs/evidence/plantnet-k-world-flora-inventory.v1.json.gz",
+            "sourceSha256": "282618cbc8b6757163cac7488030480087527eff146d8bf436309ba3c2fe2a97",
+            "meaning": "Provider inventory includes exact taxon; not a photograph identification or NJ native-status decision"
+          }
+        },
+        {
+          "regionId": "back-yard-v2-7",
+          "scientificName": "Parthenocissus tricuspidata",
+          "plantId": "recognition-parthenocissus-tricuspidata",
+          "category": "invasive",
+          "rawCatalogCategory": "invasive",
+          "box": {
+            "x": 70.5,
+            "y": 8.2,
+            "w": 29.299999999999997,
+            "h": 72.2
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "provider": "PlantNet",
+            "project": "k-world-flora",
+            "id": "1360884",
+            "scientificName": "Parthenocissus tricuspidata",
+            "checkedOn": "2026-11-04",
+            "sourceFile": "docs/evidence/plantnet-k-world-flora-inventory.v1.json.gz",
+            "sourceSha256": "282618cbc8b6757163cac7488030480087527eff146d8bf436309ba3c2fe2a97",
+            "meaning": "Provider inventory includes exact taxon; not a photograph identification or NJ native-status decision"
+          }
+        },
+        {
+          "regionId": "back-yard-v2-8",
+          "scientificName": "Phlox paniculata",
+          "plantId": "extended-131",
+          "category": "unverified",
+          "rawCatalogCategory": "native",
+          "box": {
+            "x": 82.9,
+            "y": 84.3,
+            "w": 13,
+            "h": 15.5
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "provider": "PlantNet",
+            "project": "k-world-flora",
+            "id": "1394721",
+            "scientificName": "Phlox paniculata",
+            "checkedOn": "2026-11-04",
+            "sourceFile": "docs/evidence/plantnet-k-world-flora-inventory.v1.json.gz",
+            "sourceSha256": "282618cbc8b6757163cac7488030480087527eff146d8bf436309ba3c2fe2a97",
+            "meaning": "Provider inventory includes exact taxon; not a photograph identification or NJ native-status decision"
+          }
+        },
+        {
+          "regionId": "back-yard-v2-9",
+          "scientificName": "Matteuccia struthiopteris",
+          "plantId": "extended-143",
+          "category": "native",
+          "rawCatalogCategory": "native",
+          "box": {
+            "x": 76.1,
+            "y": 65.6,
+            "w": 17.80000000000001,
+            "h": 18.700000000000003
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "status": "no-exact-taxon-match-in-snapshot"
+          }
+        }
+      ]
+    },
+    {
+      "sampleId": "side-yard",
+      "before": {
+        "score": 9,
+        "counts": {
+          "keystone": 1,
+          "native": 1,
+          "non-native": 1,
+          "invasive": 3,
+          "unverified": 0
+        }
+      },
+      "after": {
+        "score": 100,
+        "counts": {
+          "keystone": 2,
+          "native": 0,
+          "non-native": 0,
+          "invasive": 0,
+          "unverified": 1
+        }
+      },
+      "mapping": [
+        {
+          "regionId": "native-canopy-v3-1",
+          "scientificName": "Cornus florida",
+          "plantId": "cornus-florida",
+          "category": "keystone",
+          "rawCatalogCategory": "keystone",
+          "box": {
+            "x": 5,
+            "y": 7.6,
+            "w": 93.9,
+            "h": 90.10000000000001
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "provider": "PlantNet",
+            "project": "k-world-flora",
+            "id": "1397618",
+            "scientificName": "Cornus florida",
+            "checkedOn": "2026-11-04",
+            "sourceFile": "docs/evidence/plantnet-k-world-flora-inventory.v1.json.gz",
+            "sourceSha256": "282618cbc8b6757163cac7488030480087527eff146d8bf436309ba3c2fe2a97",
+            "meaning": "Provider inventory includes exact taxon; not a photograph identification or NJ native-status decision"
+          }
+        },
+        {
+          "regionId": "native-canopy-v3-2",
+          "scientificName": "Acer saccharum",
+          "plantId": "extended-63",
+          "category": "keystone",
+          "rawCatalogCategory": "keystone",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 39.6,
+            "h": 96
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "provider": "PlantNet",
+            "project": "k-world-flora",
+            "id": "1390591",
+            "scientificName": "Acer saccharum",
+            "checkedOn": "2026-11-04",
+            "sourceFile": "docs/evidence/plantnet-k-world-flora-inventory.v1.json.gz",
+            "sourceSha256": "282618cbc8b6757163cac7488030480087527eff146d8bf436309ba3c2fe2a97",
+            "meaning": "Provider inventory includes exact taxon; not a photograph identification or NJ native-status decision"
+          }
+        },
+        {
+          "regionId": "native-canopy-v3-3",
+          "scientificName": "Quercus",
+          "plantId": null,
+          "category": "unverified",
+          "rawCatalogCategory": null,
+          "box": {
+            "x": 68,
+            "y": 0,
+            "w": 32,
+            "h": 72.5
+          },
+          "userReviewed": false,
+          "providerMembership": {
+            "status": "no-exact-taxon-match-in-snapshot"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "releaseId": "r22-20261105",
+  "buildId": "ObXO_WyiXf2AyVLtIvPDd",
+  "releaseDate": "2026-11-05",
+  "sourceRelease": "R22",
+  "node": {
+    "sender": "25.2.1",
+    "recipient": "24.x or newer; recipient install not verified"
+  },
+  "dependencies": {
+    "installation": "npm ci from package-lock.json",
+    "libheif-js": "1.23.5",
+    "exifr": "7.1.3",
+    "installedBinaries": "excluded; install for recipient platform"
+  },
+  "validation": {
+    "scope": "Packaging integrity only in this pass: allowlist, credential scan, manifest hashes and extracted-file verification.",
+    "limitations": "No fresh dependency installation, rebuild, full suite, provider call or authenticated UI check during packaging."
+  },
+  "features": [
+    "Automatic yard plans with stable tasks, seasonal windows, checklist completion and undo",
+    "Selected-area photo, assessment, history and guarded comparisons",
+    "Personal signed-in header and accessible profile menu",
+    "Local HEIC/HEIF conversion with bundled WASM and capture metadata",
+    "Source-based botanical classification and shared server-written cache",
+    "Upload/save feedback, focused plant details and layout fixes"
+  ],
+  "migrations": [
+    "Apply supabase/schema.sql then all supabase/migrations files in filename order.",
+    "20261105_auto_yard_plan.sql",
+    "20261105_species_reference_cache.sql"
+  ],
+  "tests": "Full R22 acceptance deferred at owner request. No application tests run during packaging.",
+  "build": "Production build passed before packaging; minimal localhost HTTP200 and exact build identity verified.",
+  "qaStatus": "Further browser QA paused; authenticated personal plan generation/checkoff not live verified.",
+  "deployment": "Localhost only. No remote deployment performed."
+}

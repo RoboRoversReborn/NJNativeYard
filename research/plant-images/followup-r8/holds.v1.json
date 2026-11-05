@@ -1,0 +1,61 @@
+{
+  "checkedOn": "2026-11-04",
+  "records": [
+    {
+      "scientificName": "Tulipa gesneriana",
+      "reason": "Source description identifies Tulipa schrenkii. Kew POWO places T.schrenkii in accepted T.suaveolens, while T.gesneriana is a separate accepted species. No authoritative whole-taxon synonym equivalence supports this image for T.gesneriana.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tulipa_gesneriana_001.jpg",
+      "excludeFromOverlay": true,
+      "evidence": [
+        {
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:543099-1",
+          "supports": "Accepted Tulipa suaveolens, with Tulipa schrenkii listed among heterotypic synonyms."
+        },
+        {
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:542923-1",
+          "supports": "Separate accepted Tulipa gesneriana."
+        }
+      ]
+    },
+    {
+      "scientificName": "Microstegium vimineum",
+      "reason": "Visual inspection confirms a botanical line drawing, not a photograph.",
+      "excludeFromOverlay": false,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Microstegium_vimineum_USDA.jpg",
+      "rawPath": "research/plant-images/followup-r8/raw/cefe27dbd71fa35b740e2dc970012926ea9e5e5824df580e07403a0d50b38452.image",
+      "downloadSha256": "cefe27dbd71fa35b740e2dc970012926ea9e5e5824df580e07403a0d50b38452",
+      "actualWidth": 330,
+      "actualHeight": 462
+    },
+    {
+      "scientificName": "Solidago speciosa",
+      "reason": "Visual inspection confirms a botanical line drawing, not a photograph.",
+      "excludeFromOverlay": false,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Solidago_speciosa02.jpg",
+      "rawPath": "research/plant-images/followup-r8/raw/261f53f9a790df721424a6f74a70e12667b2f256202746039f18935f9b380ba5.image",
+      "downloadSha256": "261f53f9a790df721424a6f74a70e12667b2f256202746039f18935f9b380ba5",
+      "actualWidth": 330,
+      "actualHeight": 418
+    },
+    {
+      "scientificName": "Malus coronaria",
+      "reason": "Historical scanned Keeler1900 fruiting-spray image: source page does not establish photographic origin; conservatively held as image-type uncertain rather than labelled a modern plant photograph.",
+      "excludeFromOverlay": false,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Crabapple_fruiting_spray_Keeler.png",
+      "rawPath": "research/plant-images/followup-r8/raw/86fd76c54614a3c292f51a8854f05c819a1dca7b02fa4e05f45d18eb4c0e1405.image",
+      "downloadSha256": "86fd76c54614a3c292f51a8854f05c819a1dca7b02fa4e05f45d18eb4c0e1405",
+      "actualWidth": 330,
+      "actualHeight": 331
+    },
+    {
+      "scientificName": "Rhododendron viscosum",
+      "reason": "Visual inspection confirms a historical painted botanical plate, not a photograph.",
+      "excludeFromOverlay": false,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rhododendron_viscosum_1.jpg",
+      "rawPath": "research/plant-images/followup-r8/raw/bac2e5fb7fc296ddc9b2854ce62e8e6491cd0855c7a31dc6a48481fce108a578.image",
+      "downloadSha256": "bac2e5fb7fc296ddc9b2854ce62e8e6491cd0855c7a31dc6a48481fce108a578",
+      "actualWidth": 330,
+      "actualHeight": 435
+    }
+  ]
+}

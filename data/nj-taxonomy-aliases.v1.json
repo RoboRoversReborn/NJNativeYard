@@ -1,0 +1,111 @@
+{
+  "version": "2026-11-04.3",
+  "notes": "Explicit whole-taxon equivalents only. Species and native subspecies remain distinct. Names absent here are not fuzzily merged.",
+  "aliases": [
+    {
+      "from": "Polygonum cuspidatum",
+      "to": "Reynoutria japonica",
+      "source": "https://plants.ces.ncsu.edu/plants/reynoutria-japonica/"
+    },
+    {
+      "from": "Polygonum perfoliatum",
+      "to": "Persicaria perfoliata",
+      "source": "https://plants.ces.ncsu.edu/plants/persicaria-perfoliata/"
+    },
+    {
+      "from": "Ranunculus ficaria",
+      "to": "Ficaria verna",
+      "source": "https://plants.ces.ncsu.edu/plants/ficaria-verna/"
+    },
+    {
+      "from": "Ampelopsis brevipedunculata",
+      "to": "Ampelopsis glandulosa var. brevipedunculata",
+      "source": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:67411-1"
+    },
+    {
+      "from": "Sambucus canadensis",
+      "to": "Sambucus nigra subsp. canadensis",
+      "source": "https://plants.ces.ncsu.edu/plants/sambucus-canadensis/"
+    },
+    {
+      "from": "Carya alba",
+      "to": "Carya tomentosa",
+      "source": "https://plants.ces.ncsu.edu/plants/carya-tomentosa/"
+    },
+    {
+      "from": "Osmunda cinnamomea",
+      "to": "Osmundastrum cinnamomeum",
+      "source": "https://plants.ces.ncsu.edu/plants/osmundastrum-cinnamomeum/"
+    },
+    {
+      "from": "Muenchhusia moscheutos",
+      "to": "Hibiscus moscheutos",
+      "source": "https://plants.ces.ncsu.edu/plants/muenchhusia-moscheutos/"
+    },
+    {
+      "from": "Humulus scandens",
+      "to": "Humulus japonicus",
+      "source": "https://plants.ces.ncsu.edu/plants/humulus-scandens/"
+    },
+    {
+      "from": "Berberis bealei",
+      "to": "Mahonia bealei",
+      "source": "https://plants.ces.ncsu.edu/plants/berberis-bealei/"
+    },
+    {
+      "from": "Onoclea struthiopteris",
+      "to": "Matteuccia struthiopteris",
+      "source": "https://plants.ces.ncsu.edu/plants/onoclea-struthiopteris/"
+    },
+    {
+      "from": "Myrica cerifera",
+      "to": "Morella cerifera",
+      "source": "https://plants.ces.ncsu.edu/plants/myrica-cerifera/"
+    },
+    {
+      "from": "Myrica pensylvanica",
+      "to": "Morella pensylvanica",
+      "source": "https://plants.ces.ncsu.edu/plants/myrica-pensylvanica/"
+    },
+    {
+      "from": "Cenchrus alopecuroides",
+      "to": "Pennisetum alopecuroides",
+      "source": "https://plants.ces.ncsu.edu/plants/cenchrus-alopecuroides/"
+    },
+    {
+      "from": "Pourthiaea villosa",
+      "to": "Photinia villosa",
+      "source": "https://plants.ces.ncsu.edu/plants/pourthiaea-villosa/"
+    },
+    {
+      "from": "Anatherum glomeratum",
+      "to": "Andropogon glomeratus",
+      "source": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A12850-2"
+    },
+    {
+      "from": "Anatherum virginicum",
+      "to": "Andropogon virginicus",
+      "source": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A388740-1"
+    },
+    {
+      "from": "Viburnum opulus subsp. americanum",
+      "to": "Viburnum trilobum",
+      "source": "https://plants.ces.ncsu.edu/plants/viburnum-trilobum/"
+    },
+    {
+      "from": "Viburnum opulus subsp. trilobum",
+      "to": "Viburnum trilobum",
+      "source": "https://plants.ces.ncsu.edu/plants/viburnum-trilobum/"
+    },
+    {
+      "from": "Viburnum opulus var. americanum",
+      "to": "Viburnum trilobum",
+      "source": "https://plants.ces.ncsu.edu/plants/viburnum-trilobum/"
+    },
+    {
+      "from": "Viburnum opulus var. trilobum",
+      "to": "Viburnum trilobum",
+      "source": "https://plants.ces.ncsu.edu/plants/viburnum-trilobum/"
+    }
+  ]
+}

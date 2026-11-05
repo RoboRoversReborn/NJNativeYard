@@ -1,0 +1,520 @@
+{
+  "revision": "r8-image-followup",
+  "status": "verified overlay; not applied to R7 or localhost",
+  "baselineManifestSha256": "bc009ab1fc575ec1b4125b62b401663681f0a8f6ce4f86cc903bde053203c1a2",
+  "baselineTaxa": 384,
+  "addedTaxa": [
+    "Aronia arbutifolia",
+    "Aronia melanocarpa",
+    "Rhododendron maximum",
+    "Rhus copallinum",
+    "Solidago nemoralis",
+    "Solidago caesia",
+    "Helianthus giganteus",
+    "Lilium superbum",
+    "Sorghastrum nutans",
+    "Onoclea sensibilis",
+    "Apios americana",
+    "Baccharis halimifolia",
+    "Amelanchier canadensis",
+    "Lobelia siphilitica",
+    "Phragmites australis",
+    "Ailanthus altissima",
+    "Euonymus fortunei",
+    "Ulmus pumila",
+    "Miscanthus sinensis",
+    "Ceanothus americanus",
+    "Hosta plantaginea",
+    "Hosta sieboldiana",
+    "Ilex crenata",
+    "Weigela florida",
+    "Lolium perenne",
+    "Poa pratensis",
+    "Helianthus annuus",
+    "Quercus bicolor",
+    "Salix nigra",
+    "Amelanchier laevis",
+    "Sassafras albidum",
+    "Viburnum prunifolium",
+    "Rubus occidentalis"
+  ],
+  "removedTaxa": [
+    {
+      "scientificName": "Tulipa gesneriana",
+      "reason": "Source description identifies Tulipa schrenkii. Kew POWO places T.schrenkii in accepted T.suaveolens, while T.gesneriana is a separate accepted species. No authoritative whole-taxon synonym equivalence supports this image for T.gesneriana."
+    }
+  ],
+  "totalTaxa": 416,
+  "catalogTaxa": 558,
+  "referencesVerified": 832,
+  "noUpscaling": true,
+  "files": [
+    {
+      "path": "public/references/f650b0d0fae09cf590b8a8064a7bf1737d9941ba21dbd912c264a86002c9765b.webp",
+      "sha256": "f650b0d0fae09cf590b8a8064a7bf1737d9941ba21dbd912c264a86002c9765b",
+      "bytes": 31646,
+      "width": 330,
+      "height": 220
+    },
+    {
+      "path": "public/references/3e553181800a1b556cb8f3610b080af9e246ce1549ae3aff0f65b3e5010f3c5f.webp",
+      "sha256": "3e553181800a1b556cb8f3610b080af9e246ce1549ae3aff0f65b3e5010f3c5f",
+      "bytes": 26762,
+      "width": 330,
+      "height": 220
+    },
+    {
+      "path": "public/references/98b3f64d5802242b313db977773f00fbfb4dde40a64d9d8f367ae77312857efe.webp",
+      "sha256": "98b3f64d5802242b313db977773f00fbfb4dde40a64d9d8f367ae77312857efe",
+      "bytes": 10472,
+      "width": 330,
+      "height": 206
+    },
+    {
+      "path": "public/references/08de2fdd1c5d98a47aed4bb7706414c6984984cbef9c156228da77a2880fd1d5.webp",
+      "sha256": "08de2fdd1c5d98a47aed4bb7706414c6984984cbef9c156228da77a2880fd1d5",
+      "bytes": 8388,
+      "width": 330,
+      "height": 206
+    },
+    {
+      "path": "public/references/9e2d9a323466d6cbedb3a85bb130519e254316b33a33d09facb0345ae48c3ece.webp",
+      "sha256": "9e2d9a323466d6cbedb3a85bb130519e254316b33a33d09facb0345ae48c3ece",
+      "bytes": 23296,
+      "width": 330,
+      "height": 264
+    },
+    {
+      "path": "public/references/4a36a6eafcaf3afd2bdc65ebf22810999e393a3e8810c275cb9625eee8332260.webp",
+      "sha256": "4a36a6eafcaf3afd2bdc65ebf22810999e393a3e8810c275cb9625eee8332260",
+      "bytes": 19046,
+      "width": 330,
+      "height": 264
+    },
+    {
+      "path": "public/references/1b67a5d505349941d294748637e2d49c364ae9b239addc651fa7013aaccfda22.webp",
+      "sha256": "1b67a5d505349941d294748637e2d49c364ae9b239addc651fa7013aaccfda22",
+      "bytes": 31758,
+      "width": 330,
+      "height": 469
+    },
+    {
+      "path": "public/references/6588ce10b4e30c0e6a0b07ec9ed584580e435b7d9aaf999f678b6ea8565dfbac.webp",
+      "sha256": "6588ce10b4e30c0e6a0b07ec9ed584580e435b7d9aaf999f678b6ea8565dfbac",
+      "bytes": 25034,
+      "width": 330,
+      "height": 469
+    },
+    {
+      "path": "public/references/7873711f5030c964709c7c2616152801f9e8a6a33b175bc3ebced9bb50f3eca5.webp",
+      "sha256": "7873711f5030c964709c7c2616152801f9e8a6a33b175bc3ebced9bb50f3eca5",
+      "bytes": 65720,
+      "width": 330,
+      "height": 500
+    },
+    {
+      "path": "public/references/1ee8df4126fb7f826e50d009892b31a45ad53d8848357f20226a886f2290527e.webp",
+      "sha256": "1ee8df4126fb7f826e50d009892b31a45ad53d8848357f20226a886f2290527e",
+      "bytes": 50544,
+      "width": 317,
+      "height": 480
+    },
+    {
+      "path": "public/references/5268436a9d10175d79e7c3e4b52eddd23aae7127510b2cd14b34dd1ef5e8d8f8.webp",
+      "sha256": "5268436a9d10175d79e7c3e4b52eddd23aae7127510b2cd14b34dd1ef5e8d8f8",
+      "bytes": 7650,
+      "width": 330,
+      "height": 220
+    },
+    {
+      "path": "public/references/a8d7a7c7611f5d1d97c6a80181e1275485445be708d0fbe4716f8f04f00fe290.webp",
+      "sha256": "a8d7a7c7611f5d1d97c6a80181e1275485445be708d0fbe4716f8f04f00fe290",
+      "bytes": 5942,
+      "width": 330,
+      "height": 220
+    },
+    {
+      "path": "public/references/7f955715535b308fe244cc814212516dcdb7b256a5ef95403de4d7ef185f4dec.webp",
+      "sha256": "7f955715535b308fe244cc814212516dcdb7b256a5ef95403de4d7ef185f4dec",
+      "bytes": 26138,
+      "width": 330,
+      "height": 264
+    },
+    {
+      "path": "public/references/80684daf3710f058cdd3fdf57df9e9b97ac27582df9b0e8a38b5bb1e98997002.webp",
+      "sha256": "80684daf3710f058cdd3fdf57df9e9b97ac27582df9b0e8a38b5bb1e98997002",
+      "bytes": 21852,
+      "width": 330,
+      "height": 264
+    },
+    {
+      "path": "public/references/864398864c1768321a7037144210e405cb110aec906f4c720642072700c853ba.webp",
+      "sha256": "864398864c1768321a7037144210e405cb110aec906f4c720642072700c853ba",
+      "bytes": 33510,
+      "width": 330,
+      "height": 295
+    },
+    {
+      "path": "public/references/a25dd3554fd571e3dcb4d843b5e398c24c4df0296a4508686b934c452ab1879c.webp",
+      "sha256": "a25dd3554fd571e3dcb4d843b5e398c24c4df0296a4508686b934c452ab1879c",
+      "bytes": 27534,
+      "width": 330,
+      "height": 295
+    },
+    {
+      "path": "public/references/1a20ac4042245aa315bc75a7bf0691f2c3975342ad3808830d933b1a34927ebc.webp",
+      "sha256": "1a20ac4042245aa315bc75a7bf0691f2c3975342ad3808830d933b1a34927ebc",
+      "bytes": 36960,
+      "width": 330,
+      "height": 495
+    },
+    {
+      "path": "public/references/151b3d9fcf3f1cf8c81e47cc03e82ba0a7dc23ac9708a86dc9a4c64454e13ece.webp",
+      "sha256": "151b3d9fcf3f1cf8c81e47cc03e82ba0a7dc23ac9708a86dc9a4c64454e13ece",
+      "bytes": 27024,
+      "width": 320,
+      "height": 480
+    },
+    {
+      "path": "public/references/8996489a1ea1a2e333f08da116372449c6559281ac66d2430ce3755aba081953.webp",
+      "sha256": "8996489a1ea1a2e333f08da116372449c6559281ac66d2430ce3755aba081953",
+      "bytes": 38782,
+      "width": 330,
+      "height": 247
+    },
+    {
+      "path": "public/references/a9c602486504e8486e01c6a770c18e5c5da8143477cd41a689a9ee1ffcbdf79e.webp",
+      "sha256": "a9c602486504e8486e01c6a770c18e5c5da8143477cd41a689a9ee1ffcbdf79e",
+      "bytes": 33150,
+      "width": 330,
+      "height": 247
+    },
+    {
+      "path": "public/references/39325f989cd58b866da0537debc13d16bef4c0ed0233a1139a82492bbd09fc40.webp",
+      "sha256": "39325f989cd58b866da0537debc13d16bef4c0ed0233a1139a82492bbd09fc40",
+      "bytes": 17968,
+      "width": 330,
+      "height": 212
+    },
+    {
+      "path": "public/references/3c97d5b14512623c3929edf316a8123eea899306e34b91d36c4ebd32e7d73000.webp",
+      "sha256": "3c97d5b14512623c3929edf316a8123eea899306e34b91d36c4ebd32e7d73000",
+      "bytes": 14370,
+      "width": 330,
+      "height": 212
+    },
+    {
+      "path": "public/references/f729dc3146b6d88307de4a1e89a5db0a329d69876303910dd956eeea80c8aa57.webp",
+      "sha256": "f729dc3146b6d88307de4a1e89a5db0a329d69876303910dd956eeea80c8aa57",
+      "bytes": 46782,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/d2c44db2258a324221e676dc262c9142d636b45fc8d3393ec7a3bb9563f31fde.webp",
+      "sha256": "d2c44db2258a324221e676dc262c9142d636b45fc8d3393ec7a3bb9563f31fde",
+      "bytes": 38778,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/2c466abebdf4a810152f1baef90c96f9388c4b9f4b87c5b5ea126b34a7b5b06e.webp",
+      "sha256": "2c466abebdf4a810152f1baef90c96f9388c4b9f4b87c5b5ea126b34a7b5b06e",
+      "bytes": 24114,
+      "width": 330,
+      "height": 265
+    },
+    {
+      "path": "public/references/280dc1dca0aa330ce2b5cc82c211bd1c854336feb6b12cfbd1c78c23404cbc56.webp",
+      "sha256": "280dc1dca0aa330ce2b5cc82c211bd1c854336feb6b12cfbd1c78c23404cbc56",
+      "bytes": 19476,
+      "width": 330,
+      "height": 265
+    },
+    {
+      "path": "public/references/bbd6a06fcd0f6e8fbdb475bfb7515eb52b220e307b08426e0186e69f81020f7c.webp",
+      "sha256": "bbd6a06fcd0f6e8fbdb475bfb7515eb52b220e307b08426e0186e69f81020f7c",
+      "bytes": 47486,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/63644a2698529ec8520a19e3f52eebbbb9cf63d88864349d41cdb1d610b5b946.webp",
+      "sha256": "63644a2698529ec8520a19e3f52eebbbb9cf63d88864349d41cdb1d610b5b946",
+      "bytes": 39944,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/6fcb6858dd5eadcb07c623ca957a01ec9a32c4c836a9b6dcafd6a57a411f9f13.webp",
+      "sha256": "6fcb6858dd5eadcb07c623ca957a01ec9a32c4c836a9b6dcafd6a57a411f9f13",
+      "bytes": 30246,
+      "width": 330,
+      "height": 433
+    },
+    {
+      "path": "public/references/4edf8acb46d46763cbbeb3f1df78c60e338d892dcfbda74af525b23c5e1ccf13.webp",
+      "sha256": "4edf8acb46d46763cbbeb3f1df78c60e338d892dcfbda74af525b23c5e1ccf13",
+      "bytes": 24450,
+      "width": 330,
+      "height": 433
+    },
+    {
+      "path": "public/references/036d7a63f2836694eab385d92bd55fcb98712ec06fcb388c79bed72d49ec572e.webp",
+      "sha256": "036d7a63f2836694eab385d92bd55fcb98712ec06fcb388c79bed72d49ec572e",
+      "bytes": 71452,
+      "width": 330,
+      "height": 446
+    },
+    {
+      "path": "public/references/04a4e2f997af739cf9418a2146133120689f08fd45e8d97bbe91ed56e8934faa.webp",
+      "sha256": "04a4e2f997af739cf9418a2146133120689f08fd45e8d97bbe91ed56e8934faa",
+      "bytes": 62008,
+      "width": 330,
+      "height": 446
+    },
+    {
+      "path": "public/references/1e1990edae6854be4c19fbafb0ae0b567327feca76cb338614756a8007584dea.webp",
+      "sha256": "1e1990edae6854be4c19fbafb0ae0b567327feca76cb338614756a8007584dea",
+      "bytes": 43882,
+      "width": 330,
+      "height": 436
+    },
+    {
+      "path": "public/references/81d42ecd87b0fa9cf86c6a92aa3efbca2dbba18fd6bd86434a09098bdc6d2ed5.webp",
+      "sha256": "81d42ecd87b0fa9cf86c6a92aa3efbca2dbba18fd6bd86434a09098bdc6d2ed5",
+      "bytes": 35386,
+      "width": 330,
+      "height": 436
+    },
+    {
+      "path": "public/references/66d9de87da1dbaac782f71694d8a08d82a6f1cba884ecccad46e9f29b4bd3f9b.webp",
+      "sha256": "66d9de87da1dbaac782f71694d8a08d82a6f1cba884ecccad46e9f29b4bd3f9b",
+      "bytes": 74898,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/04cd50b730fe5d549b5fe6aa1b2a6c585a4a9da1d0c85e65b25ee9c4532c25e3.webp",
+      "sha256": "04cd50b730fe5d549b5fe6aa1b2a6c585a4a9da1d0c85e65b25ee9c4532c25e3",
+      "bytes": 64878,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/48fc313f02ebf21865164ea796f72180cf9143cceb49e0f87292c77902dbb603.webp",
+      "sha256": "48fc313f02ebf21865164ea796f72180cf9143cceb49e0f87292c77902dbb603",
+      "bytes": 37172,
+      "width": 330,
+      "height": 247
+    },
+    {
+      "path": "public/references/5ea7c6b6a9ac0aac25739d98634b8d3c5e01e43c6c08fcdb7da0a71f0fd99981.webp",
+      "sha256": "5ea7c6b6a9ac0aac25739d98634b8d3c5e01e43c6c08fcdb7da0a71f0fd99981",
+      "bytes": 31628,
+      "width": 330,
+      "height": 247
+    },
+    {
+      "path": "public/references/d09da246a3e58ad7d1ab2464f91a6d929c7cf1ef8aba2f6b8d6b076d1d501d26.webp",
+      "sha256": "d09da246a3e58ad7d1ab2464f91a6d929c7cf1ef8aba2f6b8d6b076d1d501d26",
+      "bytes": 33334,
+      "width": 330,
+      "height": 288
+    },
+    {
+      "path": "public/references/2fd9ae074fc8b291e2477387ab5ee422a200ec3c510a98e04465bce093471283.webp",
+      "sha256": "2fd9ae074fc8b291e2477387ab5ee422a200ec3c510a98e04465bce093471283",
+      "bytes": 27630,
+      "width": 330,
+      "height": 288
+    },
+    {
+      "path": "public/references/529d2be4b553b14bf17823960c15c697b2597f37fb7b3f90cae24701394ac112.webp",
+      "sha256": "529d2be4b553b14bf17823960c15c697b2597f37fb7b3f90cae24701394ac112",
+      "bytes": 43000,
+      "width": 330,
+      "height": 220
+    },
+    {
+      "path": "public/references/3b9734a4c0519890b7041568b35a096a050227c25ac09650232e6c7d2895f5f8.webp",
+      "sha256": "3b9734a4c0519890b7041568b35a096a050227c25ac09650232e6c7d2895f5f8",
+      "bytes": 37982,
+      "width": 330,
+      "height": 220
+    },
+    {
+      "path": "public/references/c045fb4f66114fac23a2f3695d812cc970a5d1188f6e22880249d6b959803b20.webp",
+      "sha256": "c045fb4f66114fac23a2f3695d812cc970a5d1188f6e22880249d6b959803b20",
+      "bytes": 47952,
+      "width": 330,
+      "height": 302
+    },
+    {
+      "path": "public/references/0772b6e84b69fbe864a48466edefdd33a13e99923d9a580da869bff2dcd23e7b.webp",
+      "sha256": "0772b6e84b69fbe864a48466edefdd33a13e99923d9a580da869bff2dcd23e7b",
+      "bytes": 41496,
+      "width": 330,
+      "height": 302
+    },
+    {
+      "path": "public/references/55060f17801d55f0229cc98ced3a78f825f5b6a99e781597054ef44ff5c3565f.webp",
+      "sha256": "55060f17801d55f0229cc98ced3a78f825f5b6a99e781597054ef44ff5c3565f",
+      "bytes": 16860,
+      "width": 330,
+      "height": 417
+    },
+    {
+      "path": "public/references/43fb4ab19b44264c136245acbb7584a5ec304334b162087a2eb46003639778e8.webp",
+      "sha256": "43fb4ab19b44264c136245acbb7584a5ec304334b162087a2eb46003639778e8",
+      "bytes": 12650,
+      "width": 330,
+      "height": 417
+    },
+    {
+      "path": "public/references/d767480cf5576b3cf375a8156e2d34f4be52d8476a4df0f78244a5bcc8bec505.webp",
+      "sha256": "d767480cf5576b3cf375a8156e2d34f4be52d8476a4df0f78244a5bcc8bec505",
+      "bytes": 27226,
+      "width": 330,
+      "height": 247
+    },
+    {
+      "path": "public/references/4d9a2e549fe44e2d2912887d7b34a58ab4fe225aa7feb39f1313f115802be662.webp",
+      "sha256": "4d9a2e549fe44e2d2912887d7b34a58ab4fe225aa7feb39f1313f115802be662",
+      "bytes": 22116,
+      "width": 330,
+      "height": 247
+    },
+    {
+      "path": "public/references/df897732334bbbfa4631cb144a1771c3d1ccba85e7be55adce7dcd9f5fee2125.webp",
+      "sha256": "df897732334bbbfa4631cb144a1771c3d1ccba85e7be55adce7dcd9f5fee2125",
+      "bytes": 69392,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/fd89da30007d348ba9d877ab4e27cb465148eaf58fc7731bde1e0b8344df716f.webp",
+      "sha256": "fd89da30007d348ba9d877ab4e27cb465148eaf58fc7731bde1e0b8344df716f",
+      "bytes": 58754,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/c4581c4e12b33d796e77bd2ae31ecf615370cbaee4ac476677dc6075e109e990.webp",
+      "sha256": "c4581c4e12b33d796e77bd2ae31ecf615370cbaee4ac476677dc6075e109e990",
+      "bytes": 71778,
+      "width": 330,
+      "height": 382
+    },
+    {
+      "path": "public/references/3668c2c5232b24e0af69e2a1e44689f8785827420272e862275c51f26a2e957c.webp",
+      "sha256": "3668c2c5232b24e0af69e2a1e44689f8785827420272e862275c51f26a2e957c",
+      "bytes": 62728,
+      "width": 330,
+      "height": 382
+    },
+    {
+      "path": "public/references/343d320815b9806cfe6340e9ec6c9777435c1868b9d2c7fbbc47436a5698ced7.webp",
+      "sha256": "343d320815b9806cfe6340e9ec6c9777435c1868b9d2c7fbbc47436a5698ced7",
+      "bytes": 30768,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/436c0a3d1f38f695a980a9f789ed88277f50fda4b1f1c1b4b9b4788f3c4c339a.webp",
+      "sha256": "436c0a3d1f38f695a980a9f789ed88277f50fda4b1f1c1b4b9b4788f3c4c339a",
+      "bytes": 24736,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/4dad84f9781144fa28770fbb8b387580d8b88a0ad39c04296bf91f371c30852a.webp",
+      "sha256": "4dad84f9781144fa28770fbb8b387580d8b88a0ad39c04296bf91f371c30852a",
+      "bytes": 67544,
+      "width": 330,
+      "height": 404
+    },
+    {
+      "path": "public/references/ee8676a858d751748c3262229c637a0af0a084b4c5eb0495050130f2c7076403.webp",
+      "sha256": "ee8676a858d751748c3262229c637a0af0a084b4c5eb0495050130f2c7076403",
+      "bytes": 58748,
+      "width": 330,
+      "height": 404
+    },
+    {
+      "path": "public/references/4a9247847d810b8e5d7450f0226fb33f307053b642eeecdb88d60b48047e1c5d.webp",
+      "sha256": "4a9247847d810b8e5d7450f0226fb33f307053b642eeecdb88d60b48047e1c5d",
+      "bytes": 74310,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/0715a83600a381acb9e6e90af94eced0ec59df30c03097542f344cc1575b8795.webp",
+      "sha256": "0715a83600a381acb9e6e90af94eced0ec59df30c03097542f344cc1575b8795",
+      "bytes": 64006,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/721deb2af8450312ece182649813df190a8042b0da5a17f7952fa4ed9bd41490.webp",
+      "sha256": "721deb2af8450312ece182649813df190a8042b0da5a17f7952fa4ed9bd41490",
+      "bytes": 56620,
+      "width": 330,
+      "height": 504
+    },
+    {
+      "path": "public/references/11e218aff65427a6cb631e86bd33cf7051183a6c0ad428e7d8ccd07cf481f860.webp",
+      "sha256": "11e218aff65427a6cb631e86bd33cf7051183a6c0ad428e7d8ccd07cf481f860",
+      "bytes": 40960,
+      "width": 314,
+      "height": 480
+    },
+    {
+      "path": "public/references/987948047907729a7aefbb593344984a6fc784ee9bd40ba2688021f5423e7746.webp",
+      "sha256": "987948047907729a7aefbb593344984a6fc784ee9bd40ba2688021f5423e7746",
+      "bytes": 48720,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/b2ca5334d7918c54beaafd802d7246c9516258755a96e97df2d500fe966ecff5.webp",
+      "sha256": "b2ca5334d7918c54beaafd802d7246c9516258755a96e97df2d500fe966ecff5",
+      "bytes": 39446,
+      "width": 330,
+      "height": 440
+    },
+    {
+      "path": "public/references/afb2b1181c257547b76fff7ca8b90392bae75d4d1f68f0a7aca295c5070628a2.webp",
+      "sha256": "afb2b1181c257547b76fff7ca8b90392bae75d4d1f68f0a7aca295c5070628a2",
+      "bytes": 13700,
+      "width": 330,
+      "height": 240
+    },
+    {
+      "path": "public/references/75506090467b7c85db44db47994b4521bc98aa7e263bf35b6b9de72de2628448.webp",
+      "sha256": "75506090467b7c85db44db47994b4521bc98aa7e263bf35b6b9de72de2628448",
+      "bytes": 10830,
+      "width": 330,
+      "height": 240
+    },
+    {
+      "path": "public/references/5e0f707ae79f32742f54084203a9726d3f260c334d0bbd519ce18d36ba775b37.webp",
+      "sha256": "5e0f707ae79f32742f54084203a9726d3f260c334d0bbd519ce18d36ba775b37",
+      "bytes": 27156,
+      "width": 330,
+      "height": 247
+    },
+    {
+      "path": "public/references/04cdb85a9a53b7392e9c3b5afef4d7e7b7011a8ee7421e5ffa54e3ae6cba5699.webp",
+      "sha256": "04cdb85a9a53b7392e9c3b5afef4d7e7b7011a8ee7421e5ffa54e3ae6cba5699",
+      "bytes": 22330,
+      "width": 330,
+      "height": 247
+    },
+    {
+      "path": "data/reference-photos.downloaded.v1.json",
+      "sha256": "0a70a7e3fd87ed2be6afd326a9b97f9bd808b2ffb46e37cf936e6acf7cef84ac",
+      "bytes": 831928
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "sampleId": "front-yard",
+    "regionId": "front-yard-v2-6",
+    "rawScientificName": "Echinacea purpurea",
+    "decision": "Unresolved mixed-flower region",
+    "reason": "Raw Google rectangle visibly contains separate yellow and purple flowering clumps; exact single species would overstate this region. Rectangle retained as unresolved review region; no new species or native credit added."
+  },
+  {
+    "sampleId": "side-yard",
+    "regionId": "native-canopy-v3-1",
+    "decision": "Retain unreviewed Cornus florida suggestion",
+    "reason": "Google visual suggestion independently aligns with source-caption/category identifying cultivated flowering Cornus florida in NJ; user review is still false."
+  },
+  {
+    "sampleId": "side-yard",
+    "regionId": "native-canopy-v3-2",
+    "decision": "Retain unreviewed Acer saccharum suggestion",
+    "reason": "Google-only species hypothesis, not independently established by source caption. Native role applies if identity is correct; compare maple species before acting."
+  },
+  {
+    "sampleId": "side-yard",
+    "regionId": "native-canopy-v3-3",
+    "decision": "Keep Quercus genus unresolved",
+    "reason": "No species-level match inferred from genus; no assigned native/keystone credit."
+  },
+  {
+    "sampleId": "side-yard",
+    "decision": "Provisional photo estimate, not ownership/whole-yard health",
+    "reason": "All regions are sample image observations. Species suggestions and yard ownership are not verified; native canopy sample does not claim dense native perennial garden or measured ecosystem health."
+  }
+]

@@ -1,0 +1,450 @@
+[
+  {
+    "id": "front-yard",
+    "title": "Suburban Front Yard",
+    "photo": "/samples/front-yard.jpg",
+    "description": "Classic New Jersey front foundation planting with a mix of invasives, ornamentals, and native keystones.",
+    "sourceUrl": "https://native-yard-1.vercel.app/",
+    "credit": "NativeYard reference samples",
+    "plants": [
+      {
+        "id": "fy-1",
+        "plantId": "berberis-thunbergii",
+        "suggestion": "Japanese Barberry",
+        "scientificName": "Berberis thunbergii",
+        "box": {
+          "x": 8.5,
+          "y": 41.5,
+          "w": 19,
+          "h": 23.5
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "berberis-thunbergii",
+            "scientificName": "Berberis thunbergii",
+            "commonName": "Japanese Barberry",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "fy-2",
+        "plantId": "euonymus-alatus",
+        "suggestion": "Burning Bush",
+        "scientificName": "Euonymus alatus",
+        "box": {
+          "x": 25.5,
+          "y": 43,
+          "w": 15.5,
+          "h": 20.5
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "euonymus-alatus",
+            "scientificName": "Euonymus alatus",
+            "commonName": "Burning Bush",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "fy-3",
+        "plantId": "extended-15",
+        "suggestion": "Hosta",
+        "scientificName": "Hosta plantaginea",
+        "box": {
+          "x": 35.5,
+          "y": 52,
+          "w": 16.5,
+          "h": 16
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "extended-15",
+            "scientificName": "Hosta plantaginea",
+            "commonName": "Hosta",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "fy-4",
+        "plantId": "buxus-sempervirens",
+        "suggestion": "Boxwood",
+        "scientificName": "Buxus sempervirens",
+        "box": {
+          "x": 49.8,
+          "y": 48,
+          "w": 14.200000000000003,
+          "h": 18
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "buxus-sempervirens",
+            "scientificName": "Buxus sempervirens",
+            "commonName": "Boxwood",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "fy-5",
+        "plantId": "extended-127",
+        "suggestion": "Black-eyed Susan & Coneflowers",
+        "scientificName": "Rudbeckia hirta",
+        "box": {
+          "x": 59.5,
+          "y": 51.5,
+          "w": 18,
+          "h": 20
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "extended-127",
+            "scientificName": "Rudbeckia hirta",
+            "commonName": "Black-eyed Susan & Coneflowers",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "fy-6",
+        "plantId": "extended-54",
+        "suggestion": "Northern Red Oak",
+        "scientificName": "Quercus rubra",
+        "box": {
+          "x": 67,
+          "y": 4,
+          "w": 28.5,
+          "h": 63.5
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "extended-54",
+            "scientificName": "Quercus rubra",
+            "commonName": "Northern Red Oak",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      }
+    ]
+  },
+  {
+    "id": "back-yard",
+    "title": "Pollinator Backyard",
+    "photo": "/samples/back-yard.jpg",
+    "description": "Vibrant garden border along a wooden fence featuring keystone perennials, shrubs, and an ivy-covered fence.",
+    "sourceUrl": "https://native-yard-1.vercel.app/",
+    "credit": "NativeYard reference samples",
+    "plants": [
+      {
+        "id": "by-1",
+        "plantId": "acer-palmatum",
+        "suggestion": "Japanese Maple",
+        "scientificName": "Acer palmatum",
+        "box": {
+          "x": 12,
+          "y": 3,
+          "w": 38,
+          "h": 43.5
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "acer-palmatum",
+            "scientificName": "Acer palmatum",
+            "commonName": "Japanese Maple",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "by-2",
+        "plantId": "hydrangea-macrophylla",
+        "suggestion": "Bigleaf Hydrangea",
+        "scientificName": "Hydrangea macrophylla",
+        "box": {
+          "x": 13,
+          "y": 39,
+          "w": 14,
+          "h": 21
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "hydrangea-macrophylla",
+            "scientificName": "Hydrangea macrophylla",
+            "commonName": "Bigleaf Hydrangea",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "by-3",
+        "plantId": "extended-123",
+        "suggestion": "Swamp Milkweed",
+        "scientificName": "Asclepias incarnata",
+        "box": {
+          "x": 33.5,
+          "y": 24,
+          "w": 18.5,
+          "h": 67.5
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "extended-123",
+            "scientificName": "Asclepias incarnata",
+            "commonName": "Swamp Milkweed",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "by-4",
+        "plantId": "solidago-rugosa",
+        "suggestion": "Wrinkleleaf Goldenrod",
+        "scientificName": "Solidago rugosa",
+        "box": {
+          "x": 43.5,
+          "y": 40.5,
+          "w": 20,
+          "h": 21.5
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "solidago-rugosa",
+            "scientificName": "Solidago rugosa",
+            "commonName": "Wrinkleleaf Goldenrod",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "by-5",
+        "plantId": "symphyotrichum-novae-angliae",
+        "suggestion": "New England Aster",
+        "scientificName": "Symphyotrichum novae-angliae",
+        "box": {
+          "x": 52,
+          "y": 54.5,
+          "w": 25,
+          "h": 38.5
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "symphyotrichum-novae-angliae",
+            "scientificName": "Symphyotrichum novae-angliae",
+            "commonName": "New England Aster",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "by-6",
+        "plantId": "vaccinium-corymbosum",
+        "suggestion": "Highbush Blueberry",
+        "scientificName": "Vaccinium corymbosum",
+        "box": {
+          "x": 56,
+          "y": 25,
+          "w": 27.5,
+          "h": 42
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "vaccinium-corymbosum",
+            "scientificName": "Vaccinium corymbosum",
+            "commonName": "Highbush Blueberry",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "by-7",
+        "plantId": "hedera-helix",
+        "suggestion": "English Ivy",
+        "scientificName": "Hedera helix",
+        "box": {
+          "x": 82.5,
+          "y": 8,
+          "w": 17.5,
+          "h": 63
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "hedera-helix",
+            "scientificName": "Hedera helix",
+            "commonName": "English Ivy",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      }
+    ]
+  },
+  {
+    "id": "side-yard",
+    "title": "Woodland Edge Side Yard",
+    "photo": "/samples/side-yard.jpg",
+    "description": "Side property boundary with overgrown invasive hedgerows mixed with native understory trees.",
+    "sourceUrl": "https://native-yard-1.vercel.app/",
+    "credit": "NativeYard reference samples",
+    "plants": [
+      {
+        "id": "sy-1",
+        "plantId": "pyrus-calleryana",
+        "suggestion": "Callery (Bradford) Pear",
+        "scientificName": "Pyrus calleryana",
+        "box": {
+          "x": 13,
+          "y": 10,
+          "w": 39,
+          "h": 43.5
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "pyrus-calleryana",
+            "scientificName": "Pyrus calleryana",
+            "commonName": "Callery (Bradford) Pear",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "sy-2",
+        "plantId": "extended-2",
+        "suggestion": "Border Privet",
+        "scientificName": "Ligustrum obtusifolium",
+        "box": {
+          "x": 27.5,
+          "y": 51,
+          "w": 20,
+          "h": 27.5
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "extended-2",
+            "scientificName": "Ligustrum obtusifolium",
+            "commonName": "Border Privet",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "sy-3",
+        "plantId": "rosa-multiflora",
+        "suggestion": "Multiflora Rose",
+        "scientificName": "Rosa multiflora",
+        "box": {
+          "x": 42,
+          "y": 49,
+          "w": 17.5,
+          "h": 31
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "rosa-multiflora",
+            "scientificName": "Rosa multiflora",
+            "commonName": "Multiflora Rose",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "sy-4",
+        "plantId": "extended-96",
+        "suggestion": "Mountain Laurel",
+        "scientificName": "Kalmia latifolia",
+        "box": {
+          "x": 53,
+          "y": 56,
+          "w": 23.5,
+          "h": 36
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "extended-96",
+            "scientificName": "Kalmia latifolia",
+            "commonName": "Mountain Laurel",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "sy-5",
+        "plantId": "cornus-florida",
+        "suggestion": "Flowering Dogwood",
+        "scientificName": "Cornus florida",
+        "box": {
+          "x": 54.5,
+          "y": 22.5,
+          "w": 41,
+          "h": 45.5
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "cornus-florida",
+            "scientificName": "Cornus florida",
+            "commonName": "Flowering Dogwood",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      },
+      {
+        "id": "sy-6",
+        "plantId": "hemerocallis-fulva",
+        "suggestion": "Orange Daylily",
+        "scientificName": "Hemerocallis fulva",
+        "box": {
+          "x": 76,
+          "y": 68.5,
+          "w": 23.5,
+          "h": 31
+        },
+        "reviewed": false,
+        "candidates": [
+          {
+            "plantId": "hemerocallis-fulva",
+            "scientificName": "Hemerocallis fulva",
+            "commonName": "Orange Daylily",
+            "clue": "Illustrative reference sample match"
+          }
+        ],
+        "note": "Illustrative sample match. Use the same review tools to compare and correct it."
+      }
+    ]
+  }
+]

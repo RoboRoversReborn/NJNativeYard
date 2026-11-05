@@ -1,0 +1,27 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { actionWindow, generateAutoYardPlan, njDate, planTaskState } from '../lib/auto-yard-plan';
+import type { Property } from '../lib/account/repository';
+import type { Survey, SurveyPlant } from '../lib/survey';
+const now=new Date('2026-11-05T16:00:00Z');
+const property: Property={id:'p',name:'Home',zip:'08902',yard_areas:[{id:'a',property_id:'p',name:'Front'}]};
+const region: SurveyPlant={id:'r',plantId:'hedera-helix',scientificName:'Hedera helix',suggestion:'English ivy',box:{x:0,y:0,w:10,h:10},reviewed:true,yardScope:'yard',candidates:[]};
+const survey=(plants:SurveyPlant[], extras:Partial<Survey>={}):Survey=>({id:'s',createdAt:'2026-11-01',source:'upload',photo:'',photoPath:'owner/s.jpg',zip:'08902',areaId:'a',plants,...extras});
+test('zero observations only suggests a real initial scan',()=>{const rows=generateAutoYardPlan(property,[],now);assert.equal(rows.length,1);assert.match(rows[0].title,/first yard observation/);assert.equal(rows[0].due_end,null);});
+test('only property-owned saved real uploads contribute',()=>{for(const extras of [{areaId:'other'},{source:'sample' as const},{photoPath:undefined}]) assert.match(generateAutoYardPlan(property,[survey([region],extras)],now)[0].title,/first yard observation/);});
+test('latest observation supersedes old plants and background never acts',()=>{assert.equal(generateAutoYardPlan(property,[survey([region]),survey([{...region,yardScope:'background'}],{id:'new',createdAt:'2026-11-02'})],now).length,0);});
+test('unreviewed and uncertain yard scope yield review only',()=>{for(const edits of [{reviewed:false},{yardScope:undefined},{scientificName:'Hedera sp.'}]) {const rows=generateAutoYardPlan(property,[survey([{...region,...edits}])],now);assert.equal(rows.length,1);assert.equal(rows[0].stage,'Review');assert.equal(rows[0].due_end,null);}});
+test('reviewed exact species uses sourced actions and deduplicates regions',()=>{const a=generateAutoYardPlan(property,[survey([region])],now);const b=generateAutoYardPlan(property,[survey([region,{...region,id:'r2'}])],now);assert.ok(a.length);assert.deepEqual(a,b);assert.ok(a.every(t=>t.stage==='Do'&&t.source_details?.includes('https://')));assert.deepEqual(a,generateAutoYardPlan(property,[survey([region])],now));});
+test('explicit windows honor NJ local year and do not invent phenology dates',()=>{assert.equal(njDate(new Date('2027-01-01T02:00:00Z')),'2026-12-31');assert.equal(actionWindow('Autumn',now).plan_year,2026);assert.equal(actionWindow('Spring flowering',now).plan_year,2027);assert.equal(actionWindow('After flowering',now).due_end,null);assert.equal(actionWindow('Late summer through winter',now).due_end,null);});
+test('done takes precedence; undated is never overdue',()=>{assert.equal(planTaskState({done:false,due_end:null},now),'pending');assert.equal(planTaskState({done:false,due_end:'2026-11-04'},now),'overdue');assert.equal(planTaskState({done:false,due_start:'2027-03-01'},now),'upcoming');assert.equal(planTaskState({done:true,due_end:'2026-11-04'},now),'done');});
+test('stable keys separate property and area and omit observation ids',()=>{
+ const a=generateAutoYardPlan(property,[survey([region])],now);
+ const same=generateAutoYardPlan(property,[survey([region],{id:'resaved',createdAt:'2026-11-04'})],now);
+ assert.deepEqual(a.map(t=>t.auto_key),same.map(t=>t.auto_key));
+ const otherProperty={...property,id:'p2',yard_areas:[{id:'a',property_id:'p2',name:'Other'}]};
+ const other=generateAutoYardPlan(otherProperty,[survey([region])],now);
+ assert.ok(other.every(t=>!a.some(old=>old.auto_key===t.auto_key)));
+ const two={...property,yard_areas:[...property.yard_areas,{id:'b',property_id:'p',name:'Back'}]};
+ const areas=generateAutoYardPlan(two,[survey([region]),survey([region],{areaId:'b',id:'s2'})],now);
+ assert.equal(areas.length,a.length*2);assert.equal(new Set(areas.map(t=>t.auto_key)).size,areas.length);
+});

@@ -1,0 +1,13 @@
+{
+  "revision": "r8-image-followup",
+  "catalogTaxa": 558,
+  "publishedSourceTaxa": 416,
+  "referencedFiles": 832,
+  "hashDimensionErrors": [],
+  "acceptedR7ArchiveUnchanged": true,
+  "liveR7BuildUnchanged": true,
+  "noUpscaling": true,
+  "newAdditions": 33,
+  "identityConflictRemovals": 1,
+  "verification": "followup-r8/overlay-verification.v1.json"
+}

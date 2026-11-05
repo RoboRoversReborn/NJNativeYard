@@ -1,0 +1,533 @@
+[
+  {
+    "id": "front-yard",
+    "title": "Suburban Front Yard",
+    "photo": "/samples/front-yard.jpg",
+    "description": "An ornamental foundation planting with uncertain identities and suggested invasives to review.",
+    "sourceUrl": "https://native-yard-1.vercel.app/",
+    "credit": "NativeYard reference samples",
+    "plants": [
+      {
+        "id": "front-yard-v2-1",
+        "suggestion": "Oak",
+        "scientificName": "Quercus",
+        "box": {
+          "x": 67.2,
+          "y": 4,
+          "w": 27.39999999999999,
+          "h": 64
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "scientificName": "Quercus",
+            "commonName": "Oak",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "front-yard-v2-2",
+        "plantId": "berberis-thunbergii",
+        "suggestion": "Japanese Barberry",
+        "scientificName": "Berberis thunbergii",
+        "box": {
+          "x": 8.7,
+          "y": 41.9,
+          "w": 18.2,
+          "h": 23.699999999999996
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "berberis-thunbergii",
+            "scientificName": "Berberis thunbergii",
+            "commonName": "Japanese Barberry",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "front-yard-v2-3",
+        "suggestion": "Spirea",
+        "scientificName": "Spiraea",
+        "box": {
+          "x": 25.2,
+          "y": 43.3,
+          "w": 15.2,
+          "h": 20.900000000000006
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "scientificName": "Spiraea",
+            "commonName": "Spirea",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "front-yard-v2-4",
+        "suggestion": "Hosta",
+        "scientificName": "Hosta",
+        "box": {
+          "x": 35.9,
+          "y": 53.6,
+          "w": 16.4,
+          "h": 14.499999999999993
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "scientificName": "Hosta",
+            "commonName": "Hosta",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "front-yard-v2-5",
+        "suggestion": "Boxwood",
+        "scientificName": "Buxus",
+        "box": {
+          "x": 49.8,
+          "y": 48.2,
+          "w": 14,
+          "h": 17.599999999999994
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "scientificName": "Buxus",
+            "commonName": "Boxwood",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "front-yard-v2-6",
+        "suggestion": "Mixed flowering clumps \u2014 review",
+        "scientificName": "",
+        "box": {
+          "x": 59.7,
+          "y": 51.7,
+          "w": 17.799999999999997,
+          "h": 20.299999999999997
+        },
+        "reviewed": false,
+        "note": "This region contains more than one flowering clump. Review plants individually; no single-species match is assigned.",
+        "candidates": []
+      },
+      {
+        "id": "front-yard-v2-7",
+        "plantId": "acer-palmatum",
+        "suggestion": "Japanese Maple",
+        "scientificName": "Acer palmatum",
+        "box": {
+          "x": 57,
+          "y": 44.8,
+          "w": 9.299999999999997,
+          "h": 6.900000000000006
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "acer-palmatum",
+            "scientificName": "Acer palmatum",
+            "commonName": "Japanese Maple",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      }
+    ],
+    "fixtureVersion": 3,
+    "evidence": {
+      "imageSha256": "7cef1a3c0e246b5515f6e10399e52debbc9fb25ca35156d2bf584270eb5d40cf",
+      "provider": "Google Gemini",
+      "modelVersion": "gemini-3.6-flash",
+      "promptVersion": "sha256:76a85422684e5294dba9c650c4426d746a949512ffed802ebc80e5d0745dca1b",
+      "analyzedAt": "2026-11-05T01:24:53.032Z",
+      "fixtureVersion": 3,
+      "catalogVersion": "2026-11-04.2/horticulture:2026-11-04.2",
+      "scoreVersion": "species-mix-v3-signed",
+      "computedScore": 0,
+      "rawScore": -50,
+      "counts": {
+        "keystone": 0,
+        "native": 0,
+        "non-native": 0,
+        "invasive": 2,
+        "unverified": 5
+      },
+      "provisional": true,
+      "userReviewed": false,
+      "photoEstimateOnly": true,
+      "regionCoverage": {
+        "assessed": 2,
+        "total": 7
+      },
+      "successfulAnalyses": 1,
+      "providerRequestAttempts": 1,
+      "reviewDecisionsFile": "research/sample-refresh/review-decisions.v3.json",
+      "identityLimit": "Google species suggestions remain unreviewed; exact catalog and PlantNet membership do not prove image identity."
+    }
+  },
+  {
+    "id": "back-yard",
+    "title": "Pollinator Backyard",
+    "photo": "/samples/back-yard.jpg",
+    "description": "A mixed garden border: explore the native suggestions, ornamentals and possible invasives.",
+    "sourceUrl": "https://native-yard-1.vercel.app/",
+    "credit": "NativeYard reference samples",
+    "plants": [
+      {
+        "id": "back-yard-v2-1",
+        "plantId": "acer-palmatum",
+        "suggestion": "Japanese Maple",
+        "scientificName": "Acer palmatum",
+        "box": {
+          "x": 11.4,
+          "y": 0.4,
+          "w": 43.1,
+          "h": 47.800000000000004
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "acer-palmatum",
+            "scientificName": "Acer palmatum",
+            "commonName": "Japanese Maple",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-2",
+        "plantId": "extended-123",
+        "suggestion": "Swamp Milkweed",
+        "scientificName": "Asclepias incarnata",
+        "box": {
+          "x": 31.3,
+          "y": 24,
+          "w": 20.7,
+          "h": 65.3
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "extended-123",
+            "scientificName": "Asclepias incarnata",
+            "commonName": "Swamp Milkweed",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-3",
+        "plantId": "solidago-rugosa",
+        "suggestion": "Goldenrod",
+        "scientificName": "Solidago rugosa",
+        "box": {
+          "x": 43.9,
+          "y": 40.4,
+          "w": 20.1,
+          "h": 23.4
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "solidago-rugosa",
+            "scientificName": "Solidago rugosa",
+            "commonName": "Goldenrod",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-4",
+        "plantId": "symphyotrichum-novae-angliae",
+        "suggestion": "New England Aster",
+        "scientificName": "Symphyotrichum novae-angliae",
+        "box": {
+          "x": 51.3,
+          "y": 54.8,
+          "w": 25.10000000000001,
+          "h": 38.8
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "symphyotrichum-novae-angliae",
+            "scientificName": "Symphyotrichum novae-angliae",
+            "commonName": "New England Aster",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-5",
+        "plantId": "hydrangea-macrophylla",
+        "suggestion": "Bigleaf Hydrangea",
+        "scientificName": "Hydrangea macrophylla",
+        "box": {
+          "x": 13.1,
+          "y": 39.2,
+          "w": 18,
+          "h": 21.099999999999994
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "hydrangea-macrophylla",
+            "scientificName": "Hydrangea macrophylla",
+            "commonName": "Bigleaf Hydrangea",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-6",
+        "plantId": "vaccinium-corymbosum",
+        "suggestion": "Highbush Blueberry",
+        "scientificName": "Vaccinium corymbosum",
+        "box": {
+          "x": 55.1,
+          "y": 24.7,
+          "w": 28.800000000000004,
+          "h": 42.39999999999999
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "vaccinium-corymbosum",
+            "scientificName": "Vaccinium corymbosum",
+            "commonName": "Highbush Blueberry",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-7",
+        "plantId": "recognition-parthenocissus-tricuspidata",
+        "suggestion": "Boston Ivy",
+        "scientificName": "Parthenocissus tricuspidata",
+        "box": {
+          "x": 70.5,
+          "y": 8.2,
+          "w": 29.299999999999997,
+          "h": 72.2
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "recognition-parthenocissus-tricuspidata",
+            "scientificName": "Parthenocissus tricuspidata",
+            "commonName": "Boston Ivy",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-8",
+        "plantId": "extended-131",
+        "suggestion": "Garden Phlox",
+        "scientificName": "Phlox paniculata",
+        "box": {
+          "x": 82.9,
+          "y": 84.3,
+          "w": 13,
+          "h": 15.5
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "extended-131",
+            "scientificName": "Phlox paniculata",
+            "commonName": "Garden Phlox",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      },
+      {
+        "id": "back-yard-v2-9",
+        "plantId": "extended-143",
+        "suggestion": "Ostrich Fern",
+        "scientificName": "Matteuccia struthiopteris",
+        "box": {
+          "x": 76.1,
+          "y": 65.6,
+          "w": 17.80000000000001,
+          "h": 18.700000000000003
+        },
+        "reviewed": false,
+        "note": "Cached Google image suggestion; identity and region boundary need review. NJ role comes from the local source-backed catalog, not Google.",
+        "candidates": [
+          {
+            "plantId": "extended-143",
+            "scientificName": "Matteuccia struthiopteris",
+            "commonName": "Ostrich Fern",
+            "clue": "Google visual suggestion; not independently verified"
+          }
+        ]
+      }
+    ],
+    "fixtureVersion": 3,
+    "evidence": {
+      "imageSha256": "15f6bc254466d0e953d4680878d3206f0ff6cc2d35918c86ce11f0b148ff97ae",
+      "provider": "Google Gemini",
+      "modelVersion": "gemini-3.6-flash",
+      "promptVersion": "sha256:76a85422684e5294dba9c650c4426d746a949512ffed802ebc80e5d0745dca1b",
+      "analyzedAt": "2026-11-05T01:25:07.046Z",
+      "fixtureVersion": 3,
+      "catalogVersion": "2026-11-04.2/horticulture:2026-11-04.2",
+      "scoreVersion": "species-mix-v3-signed",
+      "computedScore": 55,
+      "rawScore": 55,
+      "counts": {
+        "keystone": 3,
+        "native": 2,
+        "non-native": 1,
+        "invasive": 2,
+        "unverified": 1
+      },
+      "provisional": true,
+      "userReviewed": false,
+      "photoEstimateOnly": true,
+      "regionCoverage": {
+        "assessed": 8,
+        "total": 9
+      },
+      "successfulAnalyses": 1,
+      "providerRequestAttempts": 1,
+      "reviewDecisionsFile": "research/sample-refresh/review-decisions.v3.json",
+      "identityLimit": "Google species suggestions remain unreviewed; exact catalog and PlantNet membership do not prove image identity."
+    }
+  },
+  {
+    "id": "side-yard",
+    "title": "Native tree canopy",
+    "description": "A real New Jersey flowering-dogwood yard. Explore the native canopy and review the other suggestions. This provisional photo estimate covers visible plant regions, not the whole yard\u2019s ecosystem health.",
+    "photo": "/samples/native-tree-canopy-v3.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023-05-06_12_34_28_A_white_flowering_dogwood_blooming_along_Willis_Drive_in_the_Mountainview_section_of_Ewing_Township,_Mercer_County,_New_Jersey.jpg",
+    "credit": "Famartin / Wikimedia Commons \u00b7 CC BY-SA4.0",
+    "plants": [
+      {
+        "id": "native-canopy-v3-1",
+        "plantId": "cornus-florida",
+        "scientificName": "Cornus florida",
+        "suggestion": "Flowering dogwood",
+        "box": {
+          "x": 5,
+          "y": 7.6,
+          "w": 93.9,
+          "h": 90.10000000000001
+        },
+        "reviewed": false,
+        "note": "Cached Google visual suggestion. Source identifies the flowering dogwood scene, not every plant; review identity, region and ownership.",
+        "candidates": [
+          {
+            "plantId": "cornus-florida",
+            "scientificName": "Cornus florida",
+            "commonName": "Flowering dogwood",
+            "clue": "Google image suggestion; catalog/provider presence is not botanical identification proof"
+          }
+        ]
+      },
+      {
+        "id": "native-canopy-v3-2",
+        "plantId": "extended-63",
+        "scientificName": "Acer saccharum",
+        "suggestion": "Sugar maple",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 39.6,
+          "h": 96
+        },
+        "reviewed": false,
+        "note": "Cached Google visual suggestion. Source identifies the flowering dogwood scene, not every plant; review identity, region and ownership.",
+        "candidates": [
+          {
+            "plantId": "extended-63",
+            "scientificName": "Acer saccharum",
+            "commonName": "Sugar maple",
+            "clue": "Google image suggestion; catalog/provider presence is not botanical identification proof"
+          }
+        ]
+      },
+      {
+        "id": "native-canopy-v3-3",
+        "scientificName": "Quercus",
+        "suggestion": "Oak",
+        "box": {
+          "x": 68,
+          "y": 0,
+          "w": 32,
+          "h": 72.5
+        },
+        "reviewed": false,
+        "note": "Cached Google visual suggestion. Source identifies the flowering dogwood scene, not every plant; review identity, region and ownership.",
+        "candidates": [
+          {
+            "scientificName": "Quercus",
+            "commonName": "Oak",
+            "clue": "Google image suggestion; catalog/provider presence is not botanical identification proof"
+          }
+        ]
+      }
+    ],
+    "fixtureVersion": 3,
+    "evidence": {
+      "imageSha256": "65ba90a7d9225a7e39071b7828c16ff8690976a5c397f2a0ef3acc665f67c5cb",
+      "provider": "Google Gemini",
+      "requestedModel": "gemini-3.5-flash",
+      "modelVersion": "gemini-3.6-flash",
+      "promptVersion": "sha256:76a85422684e5294dba9c650c4426d746a949512ffed802ebc80e5d0745dca1b",
+      "analyzedAt": "2026-11-05T02:33:03.419Z",
+      "fixtureVersion": 3,
+      "catalogVersion": "2026-11-04.2/horticulture:2026-11-04.2",
+      "scoreVersion": "species-mix-v3-signed",
+      "computedScore": 100,
+      "rawScore": 105,
+      "counts": {
+        "keystone": 2,
+        "native": 0,
+        "non-native": 0,
+        "invasive": 0,
+        "unverified": 1
+      },
+      "provisional": true,
+      "userReviewed": false,
+      "photoEstimateOnly": true,
+      "regionCoverage": {
+        "assessed": 2,
+        "total": 3
+      },
+      "successfulAnalyses": 1,
+      "providerRequestAttempts": 2,
+      "reviewDecisionsFile": "research/sample-refresh/review-decisions.v3.json",
+      "sourcePermissionFile": "research/sample-refresh/native-canopy-source-permission.v1.json",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Famartin",
+      "identityLimit": "Google species suggestions remain unreviewed; exact catalog and PlantNet membership do not prove image identity."
+    },
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "photoWidth": 1920,
+    "photoHeight": 1440
+  }
+]

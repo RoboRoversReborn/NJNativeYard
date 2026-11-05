@@ -1,0 +1,540 @@
+.ny-app .ny-container.home-container {
+  max-width: none;
+  padding: 0;
+}
+.home-experience {
+  --ink: #193346;
+  --muted: #61727e;
+  --forest: #173345;
+  --line: #dce3e5;
+  --surface: #fff;
+  background: #fff;
+  color: var(--ink);
+}
+.home-hero {
+  max-width: 1272px;
+  margin: auto;
+  padding: 54px 36px 58px;
+  display: grid;
+  grid-template-columns: 1fr 1.08fr;
+  align-items: center;
+  gap: 58px;
+}
+.ny-app .home-hero h1 {
+  font-size: clamp(48px, 5vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -2.8px;
+  margin: 22px 0;
+}
+.ny-app .home-hero h1 em,
+.ny-app .home-discovery-heading h2 em,
+.ny-app .home-studio-heading h2 em {
+  color: #087f6d;
+}
+.home-hero-copy .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  letter-spacing: 1.6px;
+}
+.home-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #087f6d;
+  flex-shrink: 0;
+}
+.ny-app .home-intro {
+  font-size: 17px;
+  line-height: 1.75;
+  max-width: 465px;
+  margin: 0 0 25px;
+}
+.home-experience .primary {
+  background: #173345;
+  border-color: #173345;
+  color: #fff;
+  min-height: 48px;
+}
+.home-experience .primary:hover {
+  background: #244c60;
+}
+.home-hero .actions {
+  gap: 18px;
+}
+.home-how-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #173345;
+  text-decoration: none;
+  padding: 12px 0;
+  border-bottom: 1px solid #b5c8d1;
+}
+.home-reassurance {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 20px;
+  color: #61727e;
+  font-size: 12px;
+}
+.home-reassurance > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.home-reassurance svg {
+  color: #087f6d;
+}
+.home-field-view {
+  margin: 0;
+  position: relative;
+  min-width: 0;
+  height: 480px;
+  border-radius: 125px 16px 16px 16px;
+  overflow: hidden;
+  background: #173345;
+  isolation: isolate;
+}
+.home-field-view > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home-field-view::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 35%, #102a32e8 100%);
+  z-index: 0;
+}
+.home-field-view figcaption {
+  position: absolute;
+  left: 32px;
+  bottom: 27px;
+  right: 24px;
+  z-index: 1;
+  color: #fff;
+}
+.home-field-kicker {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 9px;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #c3f1dd;
+}
+.home-field-view figcaption > strong {
+  display: block;
+  font:
+    40px/1.12 Georgia,
+    serif;
+  letter-spacing: -0.8px;
+  margin: 12px 0 19px;
+}
+.home-field-caption {
+  font-size: 11px;
+  color: #e2eae6;
+}
+.home-discovery {
+  padding: 38px max(36px, calc((100vw - 1200px) / 2)) 42px;
+  background: #f0f5f4;
+  display: grid;
+  grid-template-columns: 0.85fr 2.3fr;
+  gap: 40px;
+  align-items: start;
+  scroll-margin-top: 24px;
+}
+.ny-app .home-discovery-heading .eyebrow {
+  font-size: 9px;
+  line-height: 1.7;
+  letter-spacing: 1.2px;
+}
+.ny-app .home-discovery-heading h2 {
+  font-size: 31px;
+  line-height: 1.18;
+  margin: 13px 0 0;
+}
+.home-discovery-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+.home-discovery-steps > li {
+  min-width: 0;
+}
+.home-discovery-step-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: #087f6d;
+}
+.home-discovery-step-top > span {
+  font-size: 11px;
+  font-weight: 700;
+}
+.home-discovery-arrow {
+  margin-left: auto;
+  color: #8ba8a2;
+}
+.home-discovery-steps > li:last-child .home-discovery-arrow {
+  visibility: hidden;
+}
+.ny-app .home-discovery-steps h3 {
+  font-size: 17px;
+  line-height: 1.35;
+  margin: 0 0 9px;
+  color: #193346;
+}
+.ny-app .home-discovery-steps p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+  color: #4b646b;
+}
+.home-sample-studio {
+  max-width: 1272px;
+  margin: auto;
+  padding: 54px 36px 25px;
+  scroll-margin-top: 24px;
+}
+.home-studio-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+.ny-app .home-studio-heading h2 {
+  font-size: 37px;
+  line-height: 1.12;
+  margin: 12px 0 0;
+  letter-spacing: -1px;
+}
+.ny-app .home-studio-heading > p {
+  max-width: 385px;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+.home-yard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.home-yard-card {
+  min-width: 0;
+  border: 1px solid #dce3e5;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+.home-yard-photo {
+  border: 0;
+  display: block;
+  width: 100%;
+  height: 202px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  background: #e9f0ec;
+  text-align: left;
+}
+.home-yard-photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+.home-yard-photo:hover > img {
+  transform: scale(1.035);
+}
+.home-yard-score {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: absolute;
+  left: 13px;
+  bottom: 13px;
+  padding: 9px 12px;
+  background: #173345f2;
+  border-radius: 7px;
+  color: #fff;
+}
+.home-yard-score > strong {
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+}
+.home-yard-score > span {
+  font-size: 11px;
+}
+.home-yard-score small {
+  display: block;
+  font-size: 9px;
+  color: #d7e6ea;
+  margin-top: 1px;
+}
+.home-yard-open {
+  position: absolute;
+  right: 13px;
+  bottom: 13px;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  color: #173345;
+}
+.home-yard-copy {
+  padding: 18px 18px 14px;
+}
+.ny-app .home-yard-copy h3 {
+  font:
+    23px/1.2 Georgia,
+    serif;
+  margin: 0 0 9px;
+  letter-spacing: -0.4px;
+}
+.ny-app .home-yard-copy > p {
+  font-size: 12px;
+  line-height: 1.65;
+  margin: 0;
+  min-height: 60px;
+}
+.home-yard-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 12px;
+}
+.home-yard-footer > span {
+  font-size: 11px;
+  color: #61727e;
+}
+.home-yard-footer > button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 40px;
+  font-size: 12px;
+  color: #173345;
+}
+.home-yard-copy .sample-credit {
+  display: inline-block;
+  margin-top: 7px;
+  font-size: 10px;
+}
+.ny-app .home-sample-note {
+  font-size: 11px;
+  margin: 15px 0 29px;
+  line-height: 1.6;
+}
+.home-account-invitation {
+  border-top: 1px solid #dce3e5;
+  padding: 25px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.home-account-invitation strong {
+  font:
+    23px/1.25 Georgia,
+    serif;
+  color: #173345;
+}
+.ny-app .home-account-invitation p {
+  font-size: 12px;
+  line-height: 1.65;
+  margin: 7px 0 0;
+  max-width: 630px;
+}
+.home-account-invitation > button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+  min-height: 46px;
+}
+.home-experience a:focus-visible,
+.home-experience button:focus-visible {
+  outline: 3px solid #087f6d;
+  outline-offset: 3px;
+}
+.home-yard-photo:focus-visible {
+  outline-offset: -4px;
+}
+@media (max-width: 1100px) {
+  .home-hero {
+    gap: 32px;
+    padding-top: 40px;
+  }
+  .home-field-view {
+    height: 450px;
+  }
+  .home-discovery {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .ny-app .home-discovery-heading h2 {
+    font-size: 30px;
+  }
+  .home-discovery-heading h2 br {
+    display: none;
+  }
+  .home-discovery-heading h2 em::before {
+    content: " ";
+  }
+  .home-yard-cards {
+    gap: 16px;
+  }
+  .home-yard-copy {
+    padding: 16px 14px 12px;
+  }
+  .ny-app .home-yard-copy h3 {
+    font-size: 21px;
+  }
+}
+@media (max-width: 760px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 35px 24px;
+  }
+  .ny-app .home-hero h1 {
+    font-size: 58px;
+  }
+  .ny-app .home-hero h1 em br {
+    display: none;
+  }
+  .ny-app .home-intro {
+    max-width: 560px;
+  }
+  .home-field-view {
+    height: 300px;
+    border-top-left-radius: 72px;
+  }
+  .home-field-view figcaption > strong {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+  .home-discovery {
+    padding: 30px 24px;
+  }
+  .home-discovery-steps {
+    gap: 22px;
+  }
+  .home-sample-studio {
+    padding: 37px 24px 25px;
+  }
+  .home-studio-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .ny-app .home-studio-heading > p {
+    max-width: 100%;
+  }
+  .home-yard-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .home-yard-card {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+  }
+  .home-yard-photo {
+    height: 100%;
+    min-height: 230px;
+  }
+  .ny-app .home-yard-copy > p {
+    min-height: 0;
+  }
+  .home-account-invitation {
+    align-items: start;
+    flex-direction: column;
+    gap: 17px;
+  }
+}
+@media (max-width: 540px) {
+  .ny-app .home-hero h1 {
+    font-size: 48px;
+    letter-spacing: -1.9px;
+  }
+  .ny-app .home-intro {
+    font-size: 15px;
+  }
+  .home-hero .actions {
+    gap: 10px;
+  }
+  .home-hero-copy .eyebrow {
+    font-size: 9px;
+  }
+  .home-field-view {
+    height: 260px;
+  }
+  .home-field-view figcaption {
+    left: 23px;
+    bottom: 22px;
+  }
+  .home-discovery-steps {
+    grid-template-columns: 1fr;
+    gap: 23px;
+  }
+  .home-discovery-steps > li {
+    padding-left: 40px;
+    position: relative;
+  }
+  .home-discovery-step-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .home-discovery-arrow {
+    display: none;
+  }
+  .ny-app .home-discovery-steps h3 {
+    font-size: 18px;
+  }
+  .ny-app .home-discovery-heading h2 {
+    font-size: 29px;
+  }
+  .ny-app .home-studio-heading h2 {
+    font-size: 32px;
+  }
+  .home-yard-card {
+    grid-template-columns: 1fr;
+  }
+  .home-yard-photo {
+    height: 190px;
+    min-height: 0;
+  }
+  .ny-app .home-yard-copy h3 {
+    font-size: 24px;
+  }
+  .home-yard-copy {
+    padding: 18px 18px 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-yard-photo > img {
+    transition: none;
+  }
+}
+
+.home-field-view .sample-credit{color:#fff;font-size:11px;text-decoration:underline}.rw-sample-note .sample-photo-credit{display:block;margin-top:8px}

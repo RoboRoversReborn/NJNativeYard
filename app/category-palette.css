@@ -1,0 +1,17 @@
+/* Single category palette for metadata, charts, filters, markers and profiles. */
+:root {
+  --category-keystone: #007f68;
+  --category-native: #185ac6;
+  --category-non-native: #9a5200;
+  --category-invasive: #a51d46;
+  --category-unverified: #475569;
+  --category-on-color: #ffffff;
+}
+.status-keystone { --status: var(--category-keystone); }
+.status-native { --status: var(--category-native); }
+.status-non-native { --status: var(--category-non-native); }
+.status-invasive { --status: var(--category-invasive); }
+.status-unverified { --status: var(--category-unverified); }
+:is(.status-keystone, .status-native, .status-non-native, .status-invasive, .status-unverified) {
+  --status-bg: color-mix(in srgb, var(--status) 6%, white);
+}

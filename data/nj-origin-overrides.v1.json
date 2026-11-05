@@ -1,0 +1,75 @@
+{
+  "version": "2026-11-05.2",
+  "records": [
+    {
+      "scientificName": "Phlox paniculata",
+      "njOrigin": "native",
+      "checkedOn": "2026-11-05",
+      "source": {
+        "label": "Kew Plants of the World Online · Phlox paniculata · Native to New Jersey",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:193615-2"
+      },
+      "evidence": "Accepted species; Distribution > Native to explicitly includes New Jersey. Exact species only; no inference from USDA N or genus range."
+    },
+    {
+      "scientificName": "Paeonia lactiflora",
+      "njOrigin": "non-native",
+      "checkedOn": "2026-11-05",
+      "source": {
+        "label": "ITIS · Paeonia lactiflora · Continental US introduced",
+        "url": "https://itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=504091"
+      },
+      "evidence": "Accepted species; Geographic Information explicitly reports Continental US Introduced. Does not establish invasiveness or NJ naturalization."
+    },
+    {
+      "scientificName": "Hosta sieboldiana",
+      "njOrigin": "non-native",
+      "checkedOn": "2026-11-05",
+      "source": {
+        "label": "Kew POWO · Hosta sieboldiana · native range Japan",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:536637-1"
+      },
+      "evidence": "Accepted species; native range and Native to list Japan only. Positive foreign-origin evidence, not absence from NJ inventory."
+    },
+    {
+      "scientificName": "Rhododendron simsii",
+      "njOrigin": "non-native",
+      "checkedOn": "2026-11-05",
+      "source": {
+        "label": "UF/IFAS · Rhododendron simsii · origin Asia",
+        "url": "https://assessment.ifas.ufl.edu/assessments/rhododendron-simsii/"
+      },
+      "evidence": "Exact species Origin is Asia Temperate, Asia Tropical. Florida assessment recommendations are not transferred to NJ."
+    },
+    {
+      "scientificName": "Rudbeckia hirta",
+      "njOrigin": "native",
+      "checkedOn": "2026-11-05",
+      "source": {
+        "label": "USDA ARS GRIN · Rudbeckia hirta · Native to New Jersey",
+        "url": "https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomydetail?id=32495"
+      },
+      "evidence": "Exact accepted species native distribution explicitly includes New Jersey."
+    },
+    {
+      "scientificName": "Penstemon digitalis",
+      "njOrigin": "non-native",
+      "checkedOn": "2026-11-05",
+      "source": {
+        "label": "Kew POWO · Penstemon digitalis · Introduced into New Jersey",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:808077-1"
+      },
+      "evidence": "Exact accepted species distribution explicitly lists New Jersey under Introduced into, not Native to. USDA broader N is not NJ-specific nativity."
+    },
+    {
+      "scientificName": "Prunus × subhirtella",
+      "njOrigin": "non-native",
+      "checkedOn": "2026-11-05",
+      "source": {
+        "label": "Kew POWO · Prunus × subhirtella · native range Japan",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:730318-1"
+      },
+      "evidence": "Accepted exact hybrid; native range and Native to list Japan. Positive foreign-origin evidence, corroborated by NC State Extension Prunus x subhirtella (Country Or Region Of Origin: Japan). Does not establish NJ naturalization, invasiveness or safety; no parent or cultivar inference."
+    }
+  ]
+}

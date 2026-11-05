@@ -1,0 +1,23 @@
+# Copy this into GitHub Copilot Agent
+
+You are setting up the NativeYard R22 source handoff in this extracted workspace. Work locally first. Do not deploy, push, send messages, modify an existing service, or reuse the sender's accounts/credentials.
+
+Read START-HERE.md, RELEASE-RECEIPT.json, SOURCE-MANIFEST.json, AGENTS.md, and docs/PRODUCTION-HANDOFF.md before editing. Run `node scripts/verify-handoff.mjs` before edits and report any mismatch. Read the relevant installed Next guide under node_modules/next/dist/docs before changing Next application code.
+
+Use Node 24.x or newer and npm; the sender used Node 25.2.1. Inspect package.json and package-lock.json, then run npm ci. Preserve the lockfile. This archive contains source and public media, not installed dependencies or a compiled app. npm ci supplies platform-specific Sharp dependencies and the pinned libheif-js 1.23.5 bundled WASM decoder plus exifr 7.1.3. Preserve Next externalization/output tracing for these assets. Do not use a system HEIC codec or an external image-conversion service, copy another platform's binaries, or bypass enterprise package/TLS policies.
+
+Inspect port ownership before starting. Run the guest experience on localhost:3100 if free; preserve existing services and ask the recipient about a collision. Catalog and illustrative samples can be explored without provider keys. Explain exactly which configured feature is unavailable rather than inventing successful provider calls.
+
+Copy the names-only .env.example to .env.local, keep it ignored, and have the recipient enter their own values locally. Never request secrets in chat, print them, commit them, or place them in NEXT_PUBLIC variables except the intended public Supabase URL/anon key. Use the setup guide's environment table for Gemini, Pl@ntNet, Supabase and optional email delivery. A Gemini key cannot configure Google OAuth.
+
+For private saved properties/areas/history, use the recipient's own Supabase project. Apply supabase/schema.sql and every supabase/migrations SQL file in filename order, including 20261105_auto_yard_plan.sql and 20261105_species_reference_cache.sql. Inspect existing schema before applying changes. Retain owner RLS and the private nativeyard-surveys storage bucket. Keep the shared botanical cache separate from private user records: browser clients cannot write it; use a server-only service-role credential or the documented administrative management fallback. Do not expose either credential to the browser.
+
+For optional Google sign-in, configure the recipient's Google OAuth web client and Supabase Google provider. Google's authorized redirect is https://YOUR_PROJECT_REF.supabase.co/auth/v1/callback. Supabase must allow the actual local application's /auth/callback URL, including localhost:3100 and 127.0.0.1:3100 when used. The sender's OAuth client is not shipped. Configure email sign-in with the recipient's delivery setup; keep QA authentication switches disabled in a deployed environment.
+
+Preserve guest-first scanning, private account isolation, automatic yard-plan generation and stable insert-ignore task keys, complete/undo behavior, selected-area history and comparison guards, signed-in navigation, capture metadata, local HEIC conversion limits, source-based botanical classifications, and provisional scoring. A corrected identity or checked task is not proof of ecosystem improvement. Samples remain illustrative and separate from private observations.
+
+Validation limits: the sender's R22 production build and minimal HTTP/build identity check passed before packaging. Full R22 acceptance, personal authenticated plan generation/checkoff, and additional browser QA were deferred by the owner. Earlier passing checks belong to earlier revisions; do not describe them as complete R22 acceptance. Packaging verification only proves source integrity. Follow the recipient's instructions about when to run application tests, browser checks, provider calls, and production builds; report pass/fail/blocked separately with exact scope.
+
+If the recipient authorizes production setup later, follow docs/PRODUCTION-HANDOFF.md using a Next-capable host and their own services/secrets/callbacks. Use npm ci, build, and start; do not static-export this API-backed app or copy the sender's .next output. Request explicit deployment authorization before creating or changing a remote deployment.
+
+Finish with the local URL, commands performed, files changed, services configured by name only, and honest remaining validation. Never claim a clean install, provider response, authenticated session, migration, or deployment was verified unless you actually verified it in this recipient environment.

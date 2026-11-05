@@ -1,0 +1,73 @@
+{
+  "fixtureVersion": 4,
+  "factorySampleVersion": 6,
+  "scoreVersion": "species-mix-v3-signed",
+  "formulaChanged": false,
+  "providerCallsForGeneratedSamples": 0,
+  "scope": "Authored intended planting compositions represented by generated illustrations; no photographic botanical identification claim",
+  "samples": [
+    {
+      "id": "front-yard",
+      "title": "Mixed foundation garden",
+      "imageKind": "generated-illustration",
+      "photo": "/samples/mixed-garden-starting-v4.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "025fe6d462d4fa594b936bf839b5ebc8f4f54cc3eb4682f44f971538d3604523",
+      "score": 23,
+      "counts": {
+        "keystone": 1,
+        "native": 1,
+        "non-native": 3,
+        "invasive": 1,
+        "unverified": 0
+      },
+      "regions": 6,
+      "reviewed": 0
+    },
+    {
+      "id": "back-yard",
+      "title": "Pollinator Backyard",
+      "imageKind": "prior-reference-sample",
+      "photo": "/samples/back-yard.jpg",
+      "dimensions": [
+        null,
+        null
+      ],
+      "sha256": "15f6bc254466d0e953d4680878d3206f0ff6cc2d35918c86ce11f0b148ff97ae",
+      "score": 55,
+      "counts": {
+        "keystone": 3,
+        "native": 2,
+        "non-native": 1,
+        "invasive": 2,
+        "unverified": 1
+      },
+      "regions": 9,
+      "reviewed": 0
+    },
+    {
+      "id": "side-yard",
+      "title": "Native-rich mixed garden",
+      "imageKind": "generated-illustration",
+      "photo": "/samples/native-rich-mixed-garden-v4.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "9b5e1ede6353b5c123c53b425aa8977a9f9ff3c7f69fe259973bbeac95744729",
+      "score": 84,
+      "counts": {
+        "keystone": 2,
+        "native": 3,
+        "non-native": 1,
+        "invasive": 0,
+        "unverified": 0
+      },
+      "regions": 6,
+      "reviewed": 0
+    }
+  ]
+}

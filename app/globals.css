@@ -1,0 +1,215 @@
+@import "./category-palette.css";
+@import "./journey.css";
+@import "./review.css";
+@import "./samples.css";
+@import "./assessment.css";
+@import "./home.css";
+@import "./theme.css";
+@import "./garden.css";
+@import "./area-overview.css";
+@import "./plant-depth.css";
+@import "./task-events.css";
+@import "./save-feedback.css";
+@import "./auto-yard-plan.css";
+@import "./personal-header-nav.css";
+:root {
+  color-scheme: light;
+  --font-dm-sans: Arial, sans-serif;
+  --font-fraunces: Georgia, serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #f8f7f0;
+}
+* {
+  box-sizing: border-box;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button {
+  color: inherit;
+}
+::selection {
+  background: #d9e5bf;
+  color: #203c2b;
+}
+
+.comparison-photos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.comparison-photos article {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid #cbd5df;
+  border-radius: 16px;
+}
+.comparison-photos img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  background: #eff3f6;
+}
+.observation-compare select {
+  width: 100%;
+  min-height: 44px;
+}
+.observation-compare label {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.observation-compare li {
+  margin: 1rem 0;
+}
+.observation-compare small {
+  overflow-wrap: anywhere;
+}
+.unsaved-backdrop {
+  position: fixed;
+  inset: 0;
+  background: #10253c99;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+.unsaved-dialog {
+  background: white;
+  padding: 2rem;
+  border-radius: 18px;
+  max-width: 600px;
+}
+.unsaved-dialog button {
+  min-height: 44px;
+}
+@media (max-width: 650px) {
+  .comparison-photos {
+    grid-template-columns: 1fr;
+  }
+}
+@media print {
+  .observation-compare select,
+  .observation-compare button,
+  .ny-header,
+  .ny-footer {
+    display: none;
+  }
+  .comparison-photos img {
+    height: 220px;
+  }
+  .observation-compare li {
+    break-inside: avoid;
+  }
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.catalog-grid article {
+  min-width: 0;
+  border: 1px solid #cbd5df;
+  border-radius: 14px;
+  padding: 1rem;
+  background: white;
+}
+.catalog-grid h2 {
+  font-size: 1.3rem;
+}
+.catalog-grid figure {
+  margin: 0;
+}
+.plant-catalog nav,
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+.category-filters button {
+  padding: 0.7rem 1rem;
+  border: 1px solid #adbfce;
+  border-radius: 999px;
+  background: white;
+  min-height: 44px;
+}
+.category-filters button[aria-pressed="true"] {
+  background: #123952;
+  color: white;
+}
+.plant-catalog input {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  max-width: 450px;
+}
+.catalog-detail {
+  max-width: 900px;
+  margin: auto;
+}
+.capture-context {
+  padding: 1.2rem;
+  border: 1px solid #cbd5df;
+  border-radius: 14px;
+  background: white;
+  margin: 1rem 0;
+}
+.capture-context label {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.capture-context input,
+.capture-context select,
+.capture-context textarea {
+  min-height: 44px;
+  width: 100%;
+  max-width: 600px;
+}
+@media (max-width: 900px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 550px) {
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.garden-breadcrumbs,
+.area-tabs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+.garden-breadcrumbs button,
+.area-tabs button {
+  min-height: 44px;
+}
+.area-tabs button {
+  border: 1px solid #adbfce;
+  background: white;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+}
+.area-tabs button[aria-current="page"] {
+  background: #123952;
+  color: white;
+}
+[hidden] {
+  display: none !important;
+}
