@@ -3,11 +3,31 @@ import { createClient } from "./account/client";
 import * as account from "./account/repository";
 import * as drafts from "./account/draft";
 import type { User } from "@supabase/supabase-js";
+import {
+  isFirebaseConfigured,
+  getFirebaseAuth,
+} from "./firebase/client";
+import {
+  GoogleAuthProvider,
+  signInWithPopup,
+  signOut as firebaseSignOut,
+  onAuthStateChanged,
+  sendSignInLinkToEmail,
+  isSignInWithEmailLink,
+  signInWithEmailLink,
+} from "firebase/auth";
+import { mapFirebaseUser, type AppUser } from "./firebase/auth-user";
+
 export const appServices = {
   account,
   drafts,
   auth: {
-    async currentUser() {
+    async currentUser(): Promise<User | null> {
+      if (isFirebaseConfigured()) {
+        const auth = getFirebaseAuth();
+        if (!auth) return null;
+        return (mapFirebaseUser(auth.currentUser) as unknown as User) || null;
+      }
       const client = createClient();
       if (!client) return null;
       const { data, error } = await client.auth.getUser();
@@ -16,6 +36,15 @@ export const appServices = {
       return data.user;
     },
     subscribe(callback: (user: User | null) => void) {
+      if (isFirebaseConfigured()) {
+        const auth = getFirebaseAuth();
+        if (auth) {
+          const unsub = onAuthStateChanged(auth, (fbUser) => {
+            callback((mapFirebaseUser(fbUser) as unknown as User) || null);
+          });
+          return unsub;
+        }
+      }
       const sub = createClient()?.auth.onAuthStateChange((_event, session) =>
         callback(session?.user || null),
       );
@@ -33,6 +62,13 @@ export const appServices = {
       };
     },
     async signIn() {
+      if (isFirebaseConfigured()) {
+        const auth = getFirebaseAuth();
+        if (!auth) throw new Error("Firebase Authentication is not configured.");
+        const provider = new GoogleAuthProvider();
+        await signInWithPopup(auth, provider);
+        return;
+      }
       const client = createClient();
       if (!client) throw new Error("Google sign-in is not configured.");
       const { error } = await client.auth.signInWithOAuth({
@@ -42,11 +78,25 @@ export const appServices = {
       if (error) throw error;
     },
     async sendEmailCode(email: string) {
-      const client = createClient();
-      if (!client) throw new Error("Email sign-in is not configured.");
       email = email.trim().toLowerCase();
       if (email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
         throw new Error("Enter a valid email address.");
+
+      if (isFirebaseConfigured()) {
+        const auth = getFirebaseAuth();
+        if (!auth) throw new Error("Email sign-in is not configured.");
+        await sendSignInLinkToEmail(auth, email, {
+          url: `${location.origin}/?view=home`,
+          handleCodeInApp: true,
+        });
+        if (typeof window !== "undefined") {
+          window.localStorage.setItem("nativeyard_email_for_signin", email);
+        }
+        return;
+      }
+
+      const client = createClient();
+      if (!client) throw new Error("Email sign-in is not configured.");
       const { error } = await client.auth.signInWithOtp({
         email,
         options: {
@@ -57,10 +107,21 @@ export const appServices = {
       if (error) throw emailAuthError(error, "send");
     },
     async verifyEmailCode(email: string, token: string) {
-      const client = createClient();
-      if (!client) throw new Error("Email sign-in is not configured.");
       email = email.trim().toLowerCase();
       token = token.trim();
+
+      if (isFirebaseConfigured()) {
+        const auth = getFirebaseAuth();
+        if (!auth) throw new Error("Email sign-in is not configured.");
+        if (isSignInWithEmailLink(auth, window.location.href)) {
+          await signInWithEmailLink(auth, email, window.location.href);
+          window.localStorage.removeItem("nativeyard_email_for_signin");
+          return;
+        }
+      }
+
+      const client = createClient();
+      if (!client) throw new Error("Email sign-in is not configured.");
       if (
         email.length > 254 ||
         !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
@@ -81,6 +142,12 @@ export const appServices = {
         );
     },
     async signOut() {
+      if (isFirebaseConfigured()) {
+        const auth = getFirebaseAuth();
+        if (auth) {
+          await firebaseSignOut(auth);
+        }
+      }
       const client = createClient();
       if (!client) return;
       void client.auth.stopAutoRefresh();

@@ -3,9 +3,10 @@ import assert from 'node:assert/strict';
 import * as nodeModule from 'node:module';
 import { pathToFileURL } from 'node:url';
 import type { Plant } from '../lib/types';
-// Next's server-only marker is a bundler boundary; stub only in this isolated Node test process.
-const {registerHooks}=nodeModule as typeof nodeModule & {registerHooks:(hooks:{resolve:(specifier:string,context:unknown,next:(specifier:string,context:unknown)=>unknown)=>unknown})=>unknown};
-registerHooks({resolve(specifier,context,next){return specifier==='server-only'?{url:pathToFileURL(require.resolve('next/dist/compiled/server-only/empty.js')).href,shortCircuit:true}:next(specifier,context);}});
+const {registerHooks}=(nodeModule as any);
+if (typeof registerHooks === 'function') {
+  registerHooks({resolve(specifier: string, context: unknown, next: (s: string, c: unknown) => unknown){return specifier==='server-only'?{url:pathToFileURL(require.resolve('next/dist/compiled/server-only/empty.js')).href,shortCircuit:true}:next(specifier,context);}});
+}
 const profile={id:'api-fixture',scientificName:'Prunus × yedoensis',commonName:'Yoshino cherry',status:'non-native',type:'Tree',sun:'',moisture:'',bloom:'',height:'',description:'A botanical test fixture.',referenceSource:{label:'Botanical fixture',url:'https://example.org/botany',checkedOn:'2026-11-05'},referenceIdentity:{provider:'iNaturalist',taxonId:'1',scientificName:'Prunus × yedoensis'},referenceVersion:'test-v1'} as Plant;
 test('durable adapter allowlists nested botanical data, validates identity, handles expiry/failures, and preserves hybrid equivalence',async()=>{
  const {readSpeciesReference,writeSpeciesReference}=await import('../lib/species-reference-cache');

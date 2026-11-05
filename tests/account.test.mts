@@ -772,7 +772,7 @@ test("history suppresses numeric change when photo and confirmed-yard assessment
   assert.equal(screen.queryByText(/Estimate change:/), null);
   assert.ok(screen.getByText(/Numeric change is withheld/));
   assert.equal(
-    screen.getAllByRole("button", { name: /Open saved analysis/ }).length,
+    screen.getAllByRole("button", { name: /Open (?:saved analysis|survey)/ }).length,
     2,
   );
 });
