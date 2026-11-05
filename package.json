@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "node --import tsx --import ./tests/server-only-loader.mjs --test --test-concurrency=4 tests/*.test.ts tests/*.test.mts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "sync:secrets": "node scripts/sync-firebase-secrets.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
