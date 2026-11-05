@@ -63,6 +63,11 @@ export function _clearSpeciesReferenceCache() {
   fallbackStore.clear();
 }
 
+function isFirestoreEnabled(): boolean {
+  if (process.env.NODE_ENV === 'test' || process.env.npm_lifecycle_event === 'test') return false;
+  return isFirebaseConfigured();
+}
+
 export function _getFallbackStore() {
   return fallbackStore;
 }
@@ -73,7 +78,7 @@ export async function readSpeciesReference(canonicalTaxon: string, version: stri
     if (!validKey(name, version)) return undefined;
 
     // Firebase Firestore cache
-    if (isFirebaseConfigured()) {
+    if (isFirestoreEnabled()) {
       try {
         const db = getAdminDb();
         const docRef = db.collection('species_reference_cache').doc(firestoreDocId(name, version));
@@ -114,7 +119,7 @@ export async function writeSpeciesReference(canonicalTaxon: string, version: str
     const expiry = new Date(Date.now() + TTL_MS).toISOString();
 
     // Firebase Firestore cache
-    if (isFirebaseConfigured()) {
+    if (isFirestoreEnabled()) {
       try {
         const db = getAdminDb();
         await db.collection('species_reference_cache').doc(firestoreDocId(name, version)).set({

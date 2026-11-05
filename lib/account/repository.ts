@@ -107,8 +107,8 @@ export async function loadAccount(): Promise<{
   const surveys: Survey[] = await Promise.all(
     surveysSnap.docs.map(async (d) => {
       const row = d.data();
-      let photoUrl = "";
-      if (row.photo_path) {
+      let photoUrl = row.photo_url || row.payload?.photo || "";
+      if (!photoUrl && row.photo_path) {
         try {
           photoUrl = await getDownloadURL(ref(storage, row.photo_path));
         } catch {
@@ -118,9 +118,9 @@ export async function loadAccount(): Promise<{
       return {
         ...(row.payload || {}),
         id: d.id,
-        areaId: row.yard_area_id,
-        createdAt: row.created_at,
-        photoPath: row.photo_path,
+        areaId: row.yard_area_id || row.areaId || row.payload?.areaId,
+        createdAt: row.created_at || row.payload?.createdAt,
+        photoPath: row.photo_path || row.photoPath || row.payload?.photoPath,
         photo: photoUrl,
       } as Survey;
     }),
@@ -247,7 +247,8 @@ export async function saveSurvey(
     throw new Error("Firebase database or storage not configured.");
 
   let photoPath = survey.photoPath;
-  if (photoPath && !photoPath.startsWith(`surveys/${user.uid}/`) && !photoPath.startsWith(`${user.uid}/`))
+  const cleanPath = photoPath ? photoPath.replace(/^\/+/, "") : "";
+  if (cleanPath && !cleanPath.startsWith(`surveys/${user.uid}/`) && !cleanPath.startsWith(`${user.uid}/`))
     throw new Error("This saved photo belongs to another account.");
 
   let photoUrl = survey.photo;
@@ -255,7 +256,7 @@ export async function saveSurvey(
     const photoResponse = await fetch(survey.photo);
     if (!photoResponse.ok) throw new Error("Survey photo could not be read.");
     const blob = await photoResponse.blob();
-    photoPath = `surveys/${user.uid}/${survey.id}.jpg`;
+    photoPath = `${user.uid}/${survey.id}.jpg`;
     const storageRef = ref(storage, photoPath);
     await uploadBytes(storageRef, blob, { contentType: "image/jpeg" });
     photoUrl = await getDownloadURL(storageRef);
@@ -277,7 +278,13 @@ export async function saveSurvey(
     yard_area_id: areaId,
     userId: user.uid,
     photo_path: photoPath,
-    payload,
+    photo_url: photoUrl,
+    payload: {
+      ...payload,
+      photo: photoUrl,
+      photoPath,
+      areaId,
+    },
     created_at: survey.createdAt || new Date().toISOString(),
     updated_at: new Date().toISOString(),
   }, { merge: true });

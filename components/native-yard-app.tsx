@@ -826,18 +826,21 @@ export function NativeYardApp({
     navigate("analysis", false, { sample: sampleId });
   }
   function open(s: Survey) {
-    const ownerId = identity.current.ownerId;
-    if (s.photoPath && (!ownerId || !s.photoPath.startsWith(`${ownerId}/`)))
-      return;
+    const ownerId = identity.current.ownerId || user?.id;
+    const cleanPhotoPath = s.photoPath ? s.photoPath.replace(/^\/+/, "") : "";
     if (
-      s.areaId &&
-      !accountData.current.properties.some((p) =>
-        p.yard_areas.some((a) => a.id === s.areaId),
-      )
+      cleanPhotoPath &&
+      (!ownerId ||
+        (!cleanPhotoPath.startsWith(`${ownerId}/`) &&
+          !cleanPhotoPath.startsWith(`surveys/${ownerId}/`)))
     )
       return;
+    const allProps =
+      accountData.current.properties.length > 0
+        ? accountData.current.properties
+        : properties;
     s = refreshSampleSurvey(s);
-    const property = accountData.current.properties.find((p) =>
+    const property = allProps.find((p) =>
       p.yard_areas.some((a) => a.id === s.areaId),
     );
     if (property) setPropertyId(property.id);
