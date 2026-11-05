@@ -1,68 +1,72 @@
 /* Shared homeowner field-guide theme, across scan, review and account views. */
 .ny-app {
-  --paper: #f7f9f8;
-  --surface: #fff;
-  --ink: #193346;
-  --muted: #596d79;
-  --line: #dce3e5;
-  --forest: #173345;
-  --leaf: #087f6d;
+  --paper: #f6f4ed;
+  --surface: #faf9f5;
+  --surface-warm: #ece8dc;
+  --ink: #18221b;
+  --muted: #546356;
+  --line: #ded8ca;
+  --forest: #1e402c;
+  --leaf: #2d6342;
+  --terracotta: #a15738;
+  --ochre: #bf8738;
 }
 body {
-  background: #f7f9f8;
+  background: #f6f4ed;
 }
 .ny-header {
-  background: #fff;
+  background: #faf9f5;
+  border-bottom: 1px solid #ded8ca;
 }
 .ny-brand > svg {
-  color: #087f6d;
+  color: #2d6342;
 }
 .ny-app h1 em,
 .ny-app h2 em {
-  color: #087f6d;
+  color: #2d6342;
 }
 .ny-app .primary:hover {
-  background: #254d61;
+  background: #2a553c;
 }
 .ny-app .scan-card,
 .ny-app .scope-bar,
 .ny-app .signin-content,
 .ny-app .empty-state,
 .ny-app .inline-form {
-  background: #fff;
-  border-color: #dce3e5;
+  background: #faf9f5;
+  border-color: #ded8ca;
 }
 .ny-app .signin-art {
-  background: #173345;
-  color: white;
+  background: #1e402c;
+  color: #faf9f5;
 }
 .ny-app .signin-art p {
-  color: #d1dee6;
+  color: #dbe4dc;
 }
 .ny-app .signin-art .eyebrow {
-  color: #8ee1cd !important;
+  color: #cfdfcb !important;
 }
 .ny-app .notice,
 .ny-app .global-message,
 .ny-app .rw-sample-note {
-  background: #edf3f6;
-  border-color: #cbdbe3;
-  color: #314f60;
+  background: #ede9dc;
+  border-color: #ded7c6;
+  color: #283a2d;
 }
 .ny-app .account-section,
 .ny-app .scan-page {
-  color: #193346;
+  color: #18221b;
 }
 .ny-app .task-list > article,
 .ny-app .zone-card,
 .ny-app .property-card,
 .ny-app .history-grid > article {
-  background: #fff;
-  border-color: #dce3e5;
+  background: #faf9f5;
+  border-color: #ded8ca;
 }
 .ny-app .history-score,
 .ny-app .scan-timeline article > strong {
-  color: #173345;
+  color: #1e402c;
 }
 .ny-app .micro,
 .ny-app .feature-line,

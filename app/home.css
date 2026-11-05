@@ -3,103 +3,194 @@
   padding: 0;
 }
 .home-experience {
-  --ink: #193346;
-  --muted: #61727e;
-  --forest: #173345;
-  --line: #dce3e5;
-  --surface: #fff;
-  background: #fff;
+  --ink: #18221b;
+  --muted: #546356;
+  --forest: #1e402c;
+  --leaf: #2d6342;
+  --terracotta: #a15738;
+  --ochre: #bf8738;
+  --line: #ded8ca;
+  --surface: #faf9f5;
+  --surface-warm: #ede9dc;
+  --surface-plate: #f3efe4;
+  --paper: #f6f4ed;
+  background: var(--paper);
   color: var(--ink);
 }
+
+/* ==========================================================================
+   HERO: Anti-SaaS Editorial Field-Guide Architecture
+   ========================================================================== */
 .home-hero {
-  max-width: 1272px;
+  max-width: 1280px;
   margin: auto;
-  padding: 54px 36px 58px;
+  padding: 56px 40px 64px;
   display: grid;
-  grid-template-columns: 1fr 1.08fr;
+  grid-template-columns: 1.05fr 1fr;
   align-items: center;
-  gap: 58px;
+  gap: 56px;
 }
+
+.home-field-stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 11px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface-warm);
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.home-field-stamp svg {
+  color: var(--leaf);
+}
+
 .ny-app .home-hero h1 {
-  font-size: clamp(48px, 5vw, 72px);
-  line-height: 1.02;
-  letter-spacing: -2.8px;
-  margin: 22px 0;
+  font-family: Georgia, serif;
+  font-size: clamp(46px, 5.2vw, 68px);
+  line-height: 1.04;
+  letter-spacing: -2px;
+  margin: 16px 0 20px;
+  color: var(--ink);
+  font-weight: 400;
 }
 .ny-app .home-hero h1 em,
 .ny-app .home-discovery-heading h2 em,
 .ny-app .home-studio-heading h2 em {
-  color: #087f6d;
+  font-style: italic;
+  color: var(--forest);
+  font-weight: 400;
 }
+
 .home-hero-copy .eyebrow {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 10px;
   letter-spacing: 1.6px;
+  color: var(--muted);
+  font-weight: 700;
 }
 .home-live-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #087f6d;
+  background: var(--leaf);
   flex-shrink: 0;
 }
+
 .ny-app .home-intro {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.75;
-  max-width: 465px;
-  margin: 0 0 25px;
+  max-width: 500px;
+  margin: 0 0 28px;
+  color: var(--muted);
 }
-.home-experience .primary {
-  background: #173345;
-  border-color: #173345;
-  color: #fff;
-  min-height: 48px;
-}
-.home-experience .primary:hover {
-  background: #244c60;
-}
+
 .home-hero .actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 18px;
 }
+.home-experience .primary {
+  background: var(--forest);
+  border: 1px solid var(--forest);
+  color: #faf9f5;
+  min-height: 48px;
+  padding: 12px 22px;
+  font-weight: 600;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.home-experience .primary:hover {
+  background: #2a553c;
+  border-color: #2a553c;
+}
+.home-experience .primary:active {
+  transform: translateY(1px);
+}
+
 .home-how-link {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 8px;
   font-size: 13px;
   font-weight: 700;
-  color: #173345;
+  color: var(--forest);
   text-decoration: none;
   padding: 12px 0;
-  border-bottom: 1px solid #b5c8d1;
+  border-bottom: 2px solid var(--terracotta);
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
+.home-how-link:hover {
+  color: var(--terracotta);
+}
+
 .home-reassurance {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 18px;
-  margin-top: 20px;
-  color: #61727e;
+  gap: 12px 22px;
+  margin-top: 26px;
+  color: var(--muted);
   font-size: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
 }
 .home-reassurance > span {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
 }
 .home-reassurance svg {
-  color: #087f6d;
+  color: var(--leaf);
 }
+
+/* Archival Specimen Plate Framing */
 .home-field-view {
   margin: 0;
   position: relative;
   min-width: 0;
-  height: 480px;
-  border-radius: 125px 16px 16px 16px;
+  height: 500px;
+  border-radius: 6px;
   overflow: hidden;
-  background: #173345;
+  background: var(--surface-warm);
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 20px -4px rgba(24, 34, 27, 0.08);
   isolation: isolate;
 }
+.home-plate-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  background: rgba(250, 249, 245, 0.94);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 5px 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: var(--ink);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.home-plate-badge small {
+  font-size: 8px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .home-field-view > img {
   width: 100%;
   height: 100%;
@@ -109,14 +200,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 35%, #102a32e8 100%);
+  background: linear-gradient(180deg, transparent 40%, rgba(19, 36, 27, 0.92) 100%);
   z-index: 0;
 }
 .home-field-view figcaption {
   position: absolute;
-  left: 32px;
-  bottom: 27px;
-  right: 24px;
+  left: 28px;
+  bottom: 26px;
+  right: 28px;
   z-index: 1;
   color: #fff;
 }
@@ -125,241 +216,354 @@
   align-items: center;
   gap: 7px;
   font-size: 9px;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.4px;
   font-weight: 700;
-  color: #c3f1dd;
+  color: #d6e8db;
+  text-transform: uppercase;
 }
 .home-field-view figcaption > strong {
   display: block;
-  font:
-    40px/1.12 Georgia,
-    serif;
-  letter-spacing: -0.8px;
-  margin: 12px 0 19px;
+  font-family: Georgia, serif;
+  font-size: 38px;
+  line-height: 1.14;
+  letter-spacing: -0.6px;
+  margin: 10px 0 16px;
+  font-weight: 400;
 }
 .home-field-caption {
   font-size: 11px;
-  color: #e2eae6;
+  color: #e5ece6;
 }
+
+/* ==========================================================================
+   DISCOVERY: Asymmetric Progressive Field Track (#how)
+   ========================================================================== */
 .home-discovery {
-  padding: 38px max(36px, calc((100vw - 1200px) / 2)) 42px;
-  background: #f0f5f4;
+  padding: 48px max(40px, calc((100vw - 1280px) / 2)) 54px;
+  background: var(--surface-warm);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   display: grid;
-  grid-template-columns: 0.85fr 2.3fr;
-  gap: 40px;
+  grid-template-columns: 0.88fr 2.12fr;
+  gap: 48px;
   align-items: start;
   scroll-margin-top: 24px;
 }
 .ny-app .home-discovery-heading .eyebrow {
   font-size: 9px;
-  line-height: 1.7;
-  letter-spacing: 1.2px;
+  line-height: 1.6;
+  letter-spacing: 1.4px;
+  color: var(--muted);
+  font-weight: 700;
 }
 .ny-app .home-discovery-heading h2 {
-  font-size: 31px;
-  line-height: 1.18;
-  margin: 13px 0 0;
+  font-family: Georgia, serif;
+  font-size: 33px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  color: var(--ink);
+  font-weight: 400;
 }
+
 .home-discovery-steps {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 28px;
+  gap: 24px;
 }
 .home-discovery-steps > li {
   min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 24px 20px 22px;
+  display: flex;
+  flex-direction: column;
 }
 .home-discovery-step-top {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 15px;
-  color: #087f6d;
+  margin-bottom: 16px;
+  color: var(--leaf);
 }
 .home-discovery-step-top > span {
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  color: var(--forest);
+  background: var(--surface-warm);
+  padding: 3px 7px;
+  border-radius: 3px;
+  border: 1px solid var(--line);
 }
 .home-discovery-arrow {
   margin-left: auto;
-  color: #8ba8a2;
+  color: #a4b5a8;
 }
 .home-discovery-steps > li:last-child .home-discovery-arrow {
   visibility: hidden;
 }
 .ny-app .home-discovery-steps h3 {
-  font-size: 17px;
-  line-height: 1.35;
-  margin: 0 0 9px;
-  color: #193346;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  line-height: 1.3;
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-weight: 600;
 }
 .ny-app .home-discovery-steps p {
   font-size: 13px;
   line-height: 1.7;
   margin: 0;
-  color: #4b646b;
+  color: var(--muted);
 }
+
+/* ==========================================================================
+   SAMPLE STUDIO: Grounded Field Collection (#examples)
+   ========================================================================== */
 .home-sample-studio {
-  max-width: 1272px;
+  max-width: 1280px;
   margin: auto;
-  padding: 54px 36px 25px;
+  padding: 58px 40px 32px;
   scroll-margin-top: 24px;
 }
 .home-studio-heading {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+}
+.ny-app .home-studio-heading .eyebrow {
+  font-size: 9px;
+  letter-spacing: 1.4px;
+  color: var(--muted);
+  font-weight: 700;
 }
 .ny-app .home-studio-heading h2 {
-  font-size: 37px;
+  font-family: Georgia, serif;
+  font-size: 38px;
   line-height: 1.12;
-  margin: 12px 0 0;
-  letter-spacing: -1px;
+  margin: 10px 0 0;
+  letter-spacing: -0.8px;
+  color: var(--ink);
+  font-weight: 400;
 }
 .ny-app .home-studio-heading > p {
-  max-width: 385px;
+  max-width: 420px;
   font-size: 14px;
   line-height: 1.7;
   margin: 0;
+  color: var(--muted);
 }
+
 .home-yard-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
+  gap: 24px;
 }
 .home-yard-card {
   min-width: 0;
-  border: 1px solid #dce3e5;
-  border-radius: 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
   overflow: hidden;
-  background: #fff;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
 }
 .home-yard-photo {
   border: 0;
   display: block;
   width: 100%;
-  height: 202px;
+  height: 215px;
   padding: 0;
   position: relative;
   overflow: hidden;
-  background: #e9f0ec;
+  background: var(--surface-warm);
   text-align: left;
+  cursor: pointer;
 }
 .home-yard-photo > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.2s ease;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .home-yard-photo:hover > img {
-  transform: scale(1.035);
+  transform: scale(1.025);
 }
+
+.home-yard-tag-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(250, 249, 245, 0.94);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 3px 8px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
 .home-yard-score {
   display: flex;
   align-items: center;
   gap: 6px;
   position: absolute;
-  left: 13px;
-  bottom: 13px;
-  padding: 9px 12px;
-  background: #173345f2;
-  border-radius: 7px;
-  color: #fff;
+  left: 12px;
+  bottom: 12px;
+  padding: 7px 11px;
+  background: rgba(30, 64, 44, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  color: #faf9f5;
 }
 .home-yard-score > strong {
-  font-size: 28px;
+  font-family: Georgia, serif;
+  font-size: 26px;
   line-height: 1;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
 }
 .home-yard-score > span {
   font-size: 11px;
+  color: #e5ece6;
 }
 .home-yard-score small {
   display: block;
-  font-size: 9px;
-  color: #d7e6ea;
+  font-size: 8.5px;
+  color: #c9dbcc;
   margin-top: 1px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 .home-yard-open {
   position: absolute;
-  right: 13px;
-  bottom: 13px;
-  width: 37px;
-  height: 37px;
-  border-radius: 50%;
+  right: 12px;
+  bottom: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
   display: grid;
   place-items: center;
-  background: #fff;
-  color: #173345;
+  background: var(--surface);
+  color: var(--forest);
+  border: 1px solid var(--line);
 }
+
 .home-yard-copy {
-  padding: 18px 18px 14px;
+  padding: 20px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
+
+.home-yard-meta-line {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+.home-yard-region-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--terracotta);
+  text-transform: uppercase;
+}
+.home-yard-soil-label {
+  font-size: 11px;
+  color: var(--muted);
+  font-style: italic;
+}
+
 .ny-app .home-yard-copy h3 {
-  font:
-    23px/1.2 Georgia,
-    serif;
-  margin: 0 0 9px;
-  letter-spacing: -0.4px;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  line-height: 1.25;
+  margin: 0 0 10px;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+  font-weight: 400;
 }
 .ny-app .home-yard-copy > p {
-  font-size: 12px;
+  font-size: 12.5px;
   line-height: 1.65;
   margin: 0;
-  min-height: 60px;
+  color: var(--muted);
+  flex: 1;
 }
 .home-yard-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding-top: 12px;
+  padding-top: 16px;
+  margin-top: 14px;
+  border-top: 1px solid var(--line);
 }
 .home-yard-footer > span {
   font-size: 11px;
-  color: #61727e;
+  color: var(--muted);
+  font-weight: 500;
 }
 .home-yard-footer > button {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  min-height: 40px;
+  min-height: 38px;
   font-size: 12px;
-  color: #173345;
+  font-weight: 700;
+  color: var(--forest);
+  cursor: pointer;
 }
+.home-yard-footer > button:hover {
+  color: var(--terracotta);
+}
+
 .home-yard-copy .sample-credit {
   display: inline-block;
-  margin-top: 7px;
+  margin-top: 8px;
   font-size: 10px;
 }
 .ny-app .home-sample-note {
-  font-size: 11px;
-  margin: 15px 0 29px;
-  line-height: 1.6;
+  font-size: 11.5px;
+  margin: 18px 0 32px;
+  line-height: 1.65;
+  color: var(--muted);
 }
+
+/* Grounded Profile Invitation Bar */
 .home-account-invitation {
-  border-top: 1px solid #dce3e5;
-  padding: 25px 0 0;
+  border: 1px solid var(--line);
+  background: var(--surface-warm);
+  border-radius: 6px;
+  padding: 28px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 36px;
 }
 .home-account-invitation strong {
-  font:
-    23px/1.25 Georgia,
-    serif;
-  color: #173345;
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 23px;
+  line-height: 1.25;
+  color: var(--ink);
+  font-weight: 400;
 }
 .ny-app .home-account-invitation p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.65;
-  margin: 7px 0 0;
-  max-width: 630px;
+  margin: 8px 0 0;
+  max-width: 640px;
+  color: var(--muted);
 }
 .home-account-invitation > button {
   display: inline-flex;
@@ -368,29 +572,43 @@
   gap: 8px;
   flex-shrink: 0;
   min-height: 46px;
+  padding: 11px 20px;
+  font-weight: 600;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--forest);
+  cursor: pointer;
 }
+.home-account-invitation > button:hover {
+  background: #ede8dc;
+  border-color: var(--forest);
+}
+
+/* Accessibility Focus States */
 .home-experience a:focus-visible,
 .home-experience button:focus-visible {
-  outline: 3px solid #087f6d;
+  outline: 2px solid var(--forest);
   outline-offset: 3px;
 }
 .home-yard-photo:focus-visible {
   outline-offset: -4px;
 }
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT BREAKPOINTS
+   ========================================================================== */
 @media (max-width: 1100px) {
   .home-hero {
-    gap: 32px;
+    gap: 36px;
     padding-top: 40px;
   }
   .home-field-view {
-    height: 450px;
+    height: 460px;
   }
   .home-discovery {
     grid-template-columns: 1fr;
-    gap: 26px;
-  }
-  .ny-app .home-discovery-heading h2 {
-    font-size: 30px;
+    gap: 28px;
   }
   .home-discovery-heading h2 br {
     display: none;
@@ -399,49 +617,43 @@
     content: " ";
   }
   .home-yard-cards {
-    gap: 16px;
-  }
-  .home-yard-copy {
-    padding: 16px 14px 12px;
-  }
-  .ny-app .home-yard-copy h3 {
-    font-size: 21px;
+    gap: 18px;
   }
 }
+
 @media (max-width: 760px) {
   .home-hero {
     grid-template-columns: 1fr;
-    gap: 28px;
-    padding: 35px 24px;
+    gap: 32px;
+    padding: 36px 20px;
   }
   .ny-app .home-hero h1 {
-    font-size: 58px;
+    font-size: 54px;
   }
   .ny-app .home-hero h1 em br {
     display: none;
   }
   .ny-app .home-intro {
-    max-width: 560px;
+    max-width: 100%;
   }
   .home-field-view {
-    height: 300px;
-    border-top-left-radius: 72px;
+    height: 320px;
   }
   .home-field-view figcaption > strong {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 12px;
   }
   .home-discovery {
-    padding: 30px 24px;
+    padding: 34px 20px;
   }
   .home-discovery-steps {
-    gap: 22px;
+    gap: 18px;
   }
   .home-sample-studio {
-    padding: 37px 24px 25px;
+    padding: 38px 20px 28px;
   }
   .home-studio-heading {
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
     gap: 16px;
   }
@@ -450,91 +662,45 @@
   }
   .home-yard-cards {
     grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .home-yard-card {
-    display: grid;
-    grid-template-columns: 1fr 1.05fr;
-  }
-  .home-yard-photo {
-    height: 100%;
-    min-height: 230px;
-  }
-  .ny-app .home-yard-copy > p {
-    min-height: 0;
+    gap: 22px;
   }
   .home-account-invitation {
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
-    gap: 17px;
+    gap: 20px;
+    padding: 24px 20px;
   }
 }
+
 @media (max-width: 540px) {
   .ny-app .home-hero h1 {
-    font-size: 48px;
-    letter-spacing: -1.9px;
+    font-size: 42px;
+    letter-spacing: -1.2px;
   }
   .ny-app .home-intro {
     font-size: 15px;
   }
-  .home-hero .actions {
-    gap: 10px;
-  }
-  .home-hero-copy .eyebrow {
-    font-size: 9px;
-  }
   .home-field-view {
-    height: 260px;
-  }
-  .home-field-view figcaption {
-    left: 23px;
-    bottom: 22px;
+    height: 280px;
   }
   .home-discovery-steps {
     grid-template-columns: 1fr;
-    gap: 23px;
-  }
-  .home-discovery-steps > li {
-    padding-left: 40px;
-    position: relative;
-  }
-  .home-discovery-step-top {
-    position: absolute;
-    left: 0;
-    top: 0;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .home-discovery-arrow {
-    display: none;
-  }
-  .ny-app .home-discovery-steps h3 {
-    font-size: 18px;
-  }
-  .ny-app .home-discovery-heading h2 {
-    font-size: 29px;
-  }
-  .ny-app .home-studio-heading h2 {
-    font-size: 32px;
-  }
-  .home-yard-card {
-    grid-template-columns: 1fr;
-  }
-  .home-yard-photo {
-    height: 190px;
-    min-height: 0;
-  }
-  .ny-app .home-yard-copy h3 {
-    font-size: 24px;
-  }
-  .home-yard-copy {
-    padding: 18px 18px 13px;
+    gap: 18px;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .home-yard-photo > img {
     transition: none;
   }
 }
 
-.home-field-view .sample-credit{color:#fff;font-size:11px;text-decoration:underline}.rw-sample-note .sample-photo-credit{display:block;margin-top:8px}
+.home-field-view .sample-credit {
+  color: #fff;
+  font-size: 11px;
+  text-decoration: underline;
+}
+.rw-sample-note .sample-photo-credit {
+  display: block;
+  margin-top: 8px;
+}

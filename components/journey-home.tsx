@@ -4,6 +4,7 @@ import {
   ArrowUpRight,
   Camera,
   Check,
+  Compass,
   Leaf,
   ScanLine,
   Sprout,
@@ -33,6 +34,10 @@ export function JourneyHome({
     <div className="home-experience">
       <section className="home-hero" aria-labelledby="home-title">
         <div className="home-hero-copy">
+          <div className="home-field-stamp">
+            <Compass size={13} aria-hidden="true" />
+            <span>LAT 40°13′N · ECOREGION 64/84 · NJ NATIVE HABITAT ARCHIVE</span>
+          </div>
           <p className="eyebrow">
             <span className="home-live-dot" /> NATURE STARTS RIGHT OUTSIDE
           </p>
@@ -45,8 +50,9 @@ export function JourneyHome({
             </em>
           </h1>
           <p className="home-intro">
-            The plants outside your door shape the life around them. Get to know
-            what’s growing—and find one small change that makes room for more.
+            The plants outside your door shape the life around them. Grounded in
+            New Jersey native flora and keystone ecology, learn what is growing
+            in your soil and uncover one high-impact change that welcomes life back.
           </p>
           <div className="actions">
             <button className="primary" onClick={onScan}>
@@ -64,8 +70,6 @@ export function JourneyHome({
                   onExamples();
                   return;
                 }
-                // Native fragment navigation emits popstate, which the app uses
-                // for route restoration and can scroll back to the page top.
                 const examples = document.getElementById("examples");
                 if (!examples) return;
                 event.preventDefault();
@@ -91,9 +95,16 @@ export function JourneyHome({
             <span>
               <Check size={14} /> Made for New Jersey
             </span>
+            <span>
+              <Check size={14} /> Douglas Tallamy Keystone Science
+            </span>
           </div>
         </div>
         <figure className="home-field-view">
+          <div className="home-plate-badge" aria-hidden="true">
+            <span>PLATE 01</span>
+            <small>IN SITU HABITAT</small>
+          </div>
           <img
             src={heroSample.photo}
             alt={`${heroSample.imageKind === "generated-illustration" ? "Generated garden illustration" : "Illustrative garden photo"}: ${heroSample.title}`}
@@ -190,14 +201,20 @@ export function JourneyHome({
         <div className="home-yard-cards">
           {sampleYards.map((sample) => {
             const stats = summary(sample);
+            const meta = sample.id === "front-yard"
+              ? { region: "Piedmont Glacial Till", soil: "Silt Loam · Sun & Partial Shade", plate: "SPECIMEN A" }
+              : sample.id === "back-yard"
+              ? { region: "Highlands Understory", soil: "Acidic Rocky Soil · Canopy Shade", plate: "SPECIMEN B" }
+              : { region: "Inner Coastal Plain", soil: "Sandy Loam · Full Sun Corridor", plate: "SPECIMEN C" };
             return (
-              <article className="home-yard-card" key={sample.id}>
+              <article className={`home-yard-card home-yard-card--${sample.id}`} key={sample.id}>
                 <button
                   className="home-yard-photo"
                   aria-label={`Explore ${sample.title}`}
                   onClick={() => onExample(sample.id)}
                 >
                   <img src={sample.photo} alt={sample.title} loading="lazy" />
+                  <span className="home-yard-tag-badge">{meta.plate}</span>
                   <span className="home-yard-score">
                     <strong>{stats.score ?? "—"}</strong>
                     <span>
@@ -209,6 +226,10 @@ export function JourneyHome({
                   </span>
                 </button>
                 <div className="home-yard-copy">
+                  <div className="home-yard-meta-line">
+                    <span className="home-yard-region-label">{meta.region}</span>
+                    <span className="home-yard-soil-label">{meta.soil}</span>
+                  </div>
                   <h3>{sample.title}</h3>
                   <p>{sample.description}</p>
                   <div className="home-yard-footer">
