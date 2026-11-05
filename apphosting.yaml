@@ -16,6 +16,24 @@ env:
     value: production
   - variable: ENABLE_PUBLIC_EMAIL_AUTH
     value: "false"
+
+  # Firebase Client Configuration (Public Web App Config)
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: AIzaSyDrO2hoqpX1Zxlsc-fvQ5w9buXe45qHQn0
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: nativeyard-nj.firebaseapp.com
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: nativeyard-nj
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    value: nativeyard-nj.firebasestorage.app
+  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    value: "1023167847300"
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: 1:1023167847300:web:97226bab4d0c84c64a1bd1
+  - variable: NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+    value: G-CLFQ5CXCC0
+
+  # Secret Manager References
   - variable: GEMINI_API_KEY
     secret: geminiApiKey
   - variable: PLANTNET_API_KEY
