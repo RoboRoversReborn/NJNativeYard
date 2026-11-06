@@ -7,6 +7,17 @@ service cloud.firestore {
     function isOwner(userId) {
       return isAuthenticated() && request.auth.uid == userId;
     }
+    function isCurator() {
+      return isAuthenticated() && (
+        request.auth.token.role == 'curator' ||
+        request.auth.token.role == 'admin' ||
+        request.auth.token.admin == true ||
+        request.auth.token.curator == true ||
+        request.auth.token.email == "niravgadhia@gmail.com" ||
+        exists(/databases/$(database)/documents/curators/$(request.auth.uid)) ||
+        exists(/databases/$(database)/documents/curators/$(request.auth.token.email))
+      );
+    }
 
     match /properties/{propId} {
       allow read, delete: if isOwner(resource.data.userId);
@@ -35,6 +46,16 @@ service cloud.firestore {
     match /species_reference_cache/{taxaId} {
       allow read: if true;
       allow write: if false; // Only server (Firebase Admin SDK) can write
+    }
+
+    match /curated_plants/{plantId} {
+      allow read: if true;
+      allow create, update, delete: if isCurator();
+    }
+
+    match /curators/{userId} {
+      allow read: if true;
+      allow write: if isCurator();
     }
   }
 }

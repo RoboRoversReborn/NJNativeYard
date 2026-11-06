@@ -9,6 +9,7 @@ import { AreaOverview } from "./area-overview";
 import { PersonalHeaderNav } from "./personal-header-nav";
 import { AreaBaseline } from "./area-baseline";
 import { PlantCatalog } from "./plant-catalog";
+import { PlantCatalogView } from "./plant-catalog-view";
 import { CaptureContext } from "./capture-context";
 import { SaveToast } from "./save-toast";
 import { ObservationCompare } from "./observation-compare";
@@ -1100,11 +1101,13 @@ export function NativeYardApp({
               </span>
             </button>
             {user ? <PersonalHeaderNav user={user}
-              active={view === "welcome" ? "home" : contentView === "garden" || ["properties","analysis","scan","roadmap","compare"].includes(view) ? "yard" : null}
+              active={view === "welcome" ? "home" : view === "explore" ? "explore" : contentView === "garden" || ["properties","analysis","scan","roadmap","compare"].includes(view) ? "yard" : null}
               onHome={()=>navigate("welcome")}
               onYard={()=>{setAreaId("");navigate("home");}}
+              onExplore={()=>navigate("explore")}
               onSettings={()=>navigate("profile")} onSignOut={()=>void signOut()} signingOut={signingOut} /> : (
               <nav aria-label="Main navigation">
+                <button aria-current={view === "explore" ? "page" : undefined} onClick={()=>navigate("explore")}>Flora Catalog</button>
                 <button aria-current={view === "examples" ? "page" : undefined} onClick={()=>navigate("examples")}>Examples</button>
 <>
                   <button
@@ -1440,7 +1443,12 @@ export function NativeYardApp({
                 />
               )}
               {contentView === "examples" && <SampleGallery onExample={example} />}
-              {contentView === "explore" && <PlantCatalog />}
+              {contentView === "explore" && (
+                <PlantCatalogView
+                  user={user}
+                  onBack={() => navigate(user ? "home" : "welcome")}
+                />
+              )}
               {contentView === "home" && (
                 <JourneyHome
                   accountsAvailable={capabilities.accounts}

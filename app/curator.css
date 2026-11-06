@@ -1,0 +1,796 @@
+/* ==========================================================================
+   CURATOR BOTANICAL CATALOG & EDITOR (ANTI-AI FIELD GUIDE DESIGN)
+   ========================================================================== */
+
+.curator-catalog-page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  color: var(--ink);
+}
+
+.curator-catalog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 32px;
+}
+
+.curator-header-stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--surface-warm);
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.curator-header-stamp .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--leaf);
+}
+
+.curator-catalog-header h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 400;
+  margin: 0 0 10px;
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+}
+.curator-catalog-header p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0;
+}
+
+.curator-header-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.curator-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--forest);
+  background: #e3ece4;
+  border: 1px solid #c8d8c9;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.curator-add-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  min-height: 44px;
+}
+
+.curator-refresh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 7px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.curator-refresh-btn:hover {
+  background: var(--surface-warm);
+  color: var(--ink);
+}
+
+/* Toolbar */
+.curator-toolbar {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.curator-search-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface-warm);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 8px 14px;
+  color: var(--muted);
+}
+.curator-search-field input {
+  flex: 1;
+  background: transparent;
+  border: 0;
+  font-size: 14px;
+  color: var(--ink);
+  outline: none;
+}
+.curator-clear-search {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+}
+
+.curator-filter-chips {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.curator-filter-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--muted);
+  margin-right: 4px;
+}
+.curator-chip {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.curator-chip.is-active {
+  background: var(--forest);
+  border-color: var(--forest);
+  color: #faf9f5;
+}
+
+.curator-count-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+.curator-loading-note {
+  color: var(--terracotta);
+  font-style: italic;
+}
+
+/* Plant Card Grid */
+.curator-plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.curator-plant-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+.curator-plant-card:hover {
+  border-color: var(--forest);
+  box-shadow: 0 4px 16px -4px rgba(24, 34, 27, 0.08);
+}
+
+.curator-card-media {
+  position: relative;
+  height: 190px;
+  background: var(--surface-warm);
+  overflow: hidden;
+}
+.curator-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+.curator-plant-card:hover .curator-card-media img {
+  transform: scale(1.03);
+}
+
+.curator-card-placeholder {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  color: #bccbc0;
+}
+
+.curator-status-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 1px solid var(--line);
+}
+.curator-status-tag.status-keystone {
+  background: #1e402c;
+  color: #f7f9f5;
+  border-color: #1e402c;
+}
+.curator-status-tag.status-native {
+  background: #2d6342;
+  color: #fff;
+  border-color: #2d6342;
+}
+.curator-status-tag.status-invasive {
+  background: #a13228;
+  color: #fff;
+  border-color: #8c251c;
+}
+.curator-status-tag.status-non-native {
+  background: #e4dfd0;
+  color: #4a4538;
+}
+
+.curator-organ-tag {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  background: rgba(250, 249, 245, 0.92);
+  color: var(--muted);
+  font-size: 8.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid var(--line);
+}
+
+.curator-card-content {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.curator-card-titles h3 {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  margin: 0 0 4px;
+  line-height: 1.25;
+  color: var(--ink);
+}
+.curator-card-titles em {
+  font-size: 13px;
+  color: var(--muted);
+  display: block;
+}
+.curator-family {
+  font-size: 11px;
+  color: #88988b;
+  display: block;
+  margin-top: 2px;
+}
+
+.curator-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+}
+.curator-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 7px;
+  border-radius: 3px;
+  background: var(--surface-warm);
+  color: var(--muted);
+}
+.curator-badge.lepidoptera {
+  background: #e5ece6;
+  color: var(--forest);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+}
+
+.curator-card-desc {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.curator-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.curator-photo-count {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.curator-card-buttons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.curator-view-btn,
+.curator-edit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.curator-view-btn {
+  background: var(--surface-warm);
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+.curator-edit-btn {
+  background: var(--forest);
+  border: 1px solid var(--forest);
+  color: #faf9f5;
+}
+
+/* ==========================================================================
+   MODAL & EDITOR
+   ========================================================================== */
+
+.curator-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(18, 26, 21, 0.65);
+  backdrop-filter: blur(2px);
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.curator-modal,
+.curator-detail-modal {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  width: min(840px, 100%);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 12px 48px -8px rgba(0, 0, 0, 0.25);
+}
+
+.curator-modal-header,
+.curator-detail-header {
+  padding: 20px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.curator-title-group h2,
+.curator-detail-header h2 {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  margin: 4px 0 2px;
+  color: var(--ink);
+}
+.curator-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--forest);
+  text-transform: uppercase;
+}
+
+.curator-close {
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+.curator-close:hover {
+  color: var(--ink);
+}
+
+.curator-tabs {
+  display: flex;
+  background: var(--surface-warm);
+  border-bottom: 1px solid var(--line);
+  padding: 0 16px;
+  overflow-x: auto;
+}
+.curator-tabs button {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.curator-tabs button.is-active {
+  color: var(--forest);
+  border-bottom-color: var(--forest);
+}
+
+.curator-body {
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.curator-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.curator-body label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.curator-body label span {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.curator-body input,
+.curator-body select,
+.curator-body textarea {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--ink);
+}
+.curator-body input:focus,
+.curator-body select:focus,
+.curator-body textarea:focus {
+  outline: 2px solid var(--forest);
+  border-color: var(--forest);
+}
+
+.curator-photo-upload-box {
+  background: var(--surface);
+  border: 1px dashed var(--line);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+.curator-photo-upload-box h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: var(--forest);
+}
+.curator-photo-upload-box p {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+.curator-upload-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.curator-upload-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+.curator-upload-btn {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--forest);
+  color: #fff;
+  border: 0;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.curator-upload-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.curator-photos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+.curator-photo-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.curator-photo-card.is-primary {
+  border: 2px solid var(--forest);
+}
+.curator-photo-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.curator-photo-meta {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 11px;
+}
+.curator-organ-badge {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 8.5px;
+  color: var(--muted);
+}
+.curator-primary-badge {
+  color: var(--forest);
+  font-weight: 800;
+  font-size: 8.5px;
+}
+.curator-photo-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding-top: 6px;
+  border-top: 1px solid var(--line);
+}
+.curator-text-action {
+  background: transparent;
+  border: 0;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--forest);
+  cursor: pointer;
+  padding: 0;
+}
+.curator-delete-action {
+  background: transparent;
+  border: 0;
+  color: #a13228;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Sources */
+.curator-sources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.curator-source-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px 16px;
+}
+.curator-source-info strong {
+  display: block;
+  font-size: 13px;
+}
+.curator-source-info a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--forest);
+  margin-top: 2px;
+}
+.curator-source-info p {
+  font-size: 11px;
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+
+.curator-add-source-form {
+  background: var(--surface-warm);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 16px 20px;
+}
+.curator-add-btn {
+  margin-top: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.curator-modal-footer,
+.curator-detail-footer {
+  padding: 16px 24px;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.curator-save-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--forest);
+  color: #faf9f5;
+  border: 0;
+  padding: 11px 22px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.curator-cancel-btn {
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Detail Modal Body */
+.curator-detail-body {
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.curator-detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.curator-detail-photo {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.curator-detail-photo img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.curator-detail-photo figcaption {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 11px;
+}
+.curator-detail-photo figcaption strong {
+  text-transform: uppercase;
+  font-size: 9px;
+  color: var(--forest);
+}
+
+.curator-trait-dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 16px 0;
+}
+.curator-trait-dl dt {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.curator-trait-dl dd {
+  margin: 4px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.curator-detail-description,
+.curator-detail-sources {
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.curator-detail-description h4,
+.curator-detail-sources h4 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin: 0 0 8px;
+  color: var(--forest);
+}
+.curator-detail-sources ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.curator-detail-sources li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}

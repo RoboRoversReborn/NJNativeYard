@@ -12,6 +12,7 @@
 @import "./save-feedback.css";
 @import "./auto-yard-plan.css";
 @import "./personal-header-nav.css";
+@import "./curator.css";
 :root {
   color-scheme: light;
   --font-dm-sans: Arial, sans-serif;
