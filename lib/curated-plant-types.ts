@@ -13,6 +13,7 @@ export type CuratedPhoto = {
   originalUrl?: string;
   source?: string;
   isPrimary?: boolean;
+  verificationStatus?: "verified" | "unverified";
   uploadedAt?: string;
   storagePath?: string;
 };

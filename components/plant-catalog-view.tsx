@@ -22,6 +22,7 @@ import {
   isCurator,
   isAdmin,
   checkUserPermissions,
+  updatePlantPhotoVerification,
 } from "@/lib/curated-plants-service";
 import { CuratedPlantEditor } from "./curated-plant-editor";
 import { AdminCuratorManager } from "./admin-curator-manager";
@@ -29,9 +30,11 @@ import { AdminCuratorManager } from "./admin-curator-manager";
 export function PlantCatalogView({
   user,
   onBack,
+  onOpenTeam,
 }: {
   user?: AppUser | null;
   onBack?: () => void;
+  onOpenTeam?: () => void;
 }) {
   const [plants, setPlants] = useState<CuratedPlant[]>([]);
   const [loading, setLoading] = useState(true);
@@ -159,7 +162,7 @@ export function PlantCatalogView({
             <button
               type="button"
               className="curator-secondary-btn"
-              onClick={() => setIsAdminModalOpen(true)}
+              onClick={onOpenTeam ? onOpenTeam : () => setIsAdminModalOpen(true)}
               title="Manage platform administrators and curators"
             >
               <ShieldCheck size={16} /> Manage Team
@@ -268,6 +271,11 @@ export function PlantCatalogView({
                 {plant.curationStatus === "staged" && (
                   <span className="curator-staged-tag">NPSNJ Profile</span>
                 )}
+                {primaryPhoto?.verificationStatus === "unverified" && (
+                  <span className="curator-unverified-tag" title="Candidate photo awaiting verification">
+                    <AlertTriangle size={10} /> Needs Verification
+                  </span>
+                )}
                 {primaryPhoto?.organ && (
                   <span className="curator-organ-tag">{primaryPhoto.organ}</span>
                 )}
@@ -351,7 +359,14 @@ export function PlantCatalogView({
                     <figure className="curator-detail-photo" key={ph.id || idx}>
                       <img src={ph.url} alt={selectedPlant.commonName} />
                       <figcaption>
-                        <strong>{ph.organ || "Specimen"}</strong>
+                        <div className="flex-row items-center justify-between">
+                          <strong>{ph.organ || "Specimen"}</strong>
+                          {ph.verificationStatus === "unverified" && (
+                            <span className="curator-unverified-tag" style={{ position: "static" }}>
+                              <AlertTriangle size={10} /> Unverified
+                            </span>
+                          )}
+                        </div>
                         <small>{ph.author} · {ph.license}</small>
                         {ph.citation && <small className="citation">{ph.citation}</small>}
                       </figcaption>
@@ -369,6 +384,40 @@ export function PlantCatalogView({
                   </div>
                 )}
               </div>
+
+              {/* Photo Verification Notice for Curators */}
+              {selectedPlant.photos?.some((ph) => ph.verificationStatus === "unverified") && (
+                <div className="curator-verification-notice">
+                  <div className="curator-notice-text">
+                    <AlertTriangle size={20} />
+                    <div>
+                      <strong>Candidate Photo · Verification Needed</strong>
+                      <p>
+                        This image was automatically retrieved from botanical records and is marked as unverified. Curators can review and verify it.
+                      </p>
+                    </div>
+                  </div>
+                  {curatorActive && (
+                    <button
+                      type="button"
+                      className="curator-verify-action-btn"
+                      onClick={async () => {
+                        try {
+                          const targetPhoto = selectedPlant.photos.find((p) => p.verificationStatus === "unverified");
+                          if (targetPhoto && user) {
+                            const updated = await updatePlantPhotoVerification(selectedPlant.id, targetPhoto.id, "verified", user);
+                            handlePlantSaved(updated);
+                          }
+                        } catch (err: any) {
+                          alert(err.message || "Failed to verify photo.");
+                        }
+                      }}
+                    >
+                      <CheckCircle size={15} /> Mark as Verified
+                    </button>
+                  )}
+                </div>
+              )}
 
               {/* Botanical Traits */}
               <div className="curator-detail-traits">

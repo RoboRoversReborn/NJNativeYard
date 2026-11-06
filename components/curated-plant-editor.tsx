@@ -479,9 +479,34 @@ export function CuratedPlantEditor({
                     <div className="curator-photo-meta">
                       <span className="curator-organ-badge">{photo.organ || "Specimen"}</span>
                       {photo.isPrimary && <span className="curator-primary-badge">PRIMARY</span>}
+                      {photo.verificationStatus === "unverified" ? (
+                        <span className="curator-unverified-tag" style={{ position: "static", alignSelf: "flex-start", margin: "2px 0" }}>
+                          Unverified
+                        </span>
+                      ) : (
+                        <span className="curator-staged-tag" style={{ position: "static", alignSelf: "flex-start", margin: "2px 0" }}>
+                          Verified
+                        </span>
+                      )}
                       <small>{photo.author || "Unknown author"}</small>
                       <small className="curator-license">{photo.license || "Attributed"}</small>
                       <div className="curator-photo-actions">
+                        {photo.verificationStatus === "unverified" && (
+                          <button
+                            type="button"
+                            className="curator-text-action"
+                            style={{ color: "#2b4c35", fontWeight: 700 }}
+                            onClick={() => {
+                              setPhotos((prev) =>
+                                prev.map((p) =>
+                                  p.id === photo.id ? { ...p, verificationStatus: "verified" } : p
+                                )
+                              );
+                            }}
+                          >
+                            Mark Verified
+                          </button>
+                        )}
                         {!photo.isPrimary && (
                           <button
                             type="button"

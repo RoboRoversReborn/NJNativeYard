@@ -5,10 +5,11 @@ import type { AppUser as User } from "@/lib/firebase/auth-user";
 
 export type PersonalHeaderNavProps = {
   user: User;
-  active: "home" | "yard" | "explore" | null;
+  active: "home" | "yard" | "explore" | "team" | null;
   onHome: () => void;
   onYard: () => void;
   onExplore?: () => void;
+  onTeam?: () => void;
   onSettings: () => void;
   onSignOut: () => void;
   signingOut?: boolean;
@@ -40,7 +41,7 @@ export function PersonalHeaderNav(props: PersonalHeaderNavProps) {
   return <ProfileNavigation key={`${props.user.id}:${profile.name}:${profile.avatar}`} {...props} profile={profile} />;
 }
 
-function ProfileNavigation({ active, onHome, onYard, onExplore, onSettings, onSignOut, signingOut, profile }: PersonalHeaderNavProps & { profile: ReturnType<typeof identity> }) {
+function ProfileNavigation({ active, onHome, onYard, onExplore, onTeam, onSettings, onSignOut, signingOut, profile }: PersonalHeaderNavProps & { profile: ReturnType<typeof identity> }) {
   const [open, setOpen] = useState(false);
   const [failedPhoto, setFailedPhoto] = useState(false);
   const root = useRef<HTMLDivElement>(null);
@@ -97,6 +98,9 @@ function ProfileNavigation({ active, onHome, onYard, onExplore, onSettings, onSi
       <button type="button" aria-current={active === "yard" ? "page" : undefined} onClick={() => { setOpen(false); onYard(); }}>My yard</button>
       {onExplore && (
         <button type="button" aria-current={active === "explore" ? "page" : undefined} onClick={() => { setOpen(false); onExplore(); }}>Flora Catalog</button>
+      )}
+      {onTeam && (
+        <button type="button" aria-current={active === "team" ? "page" : undefined} onClick={() => { setOpen(false); onTeam(); }}>Team</button>
       )}
     </nav>
     <div className="ny-personal-profile">

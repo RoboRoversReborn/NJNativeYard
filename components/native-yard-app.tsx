@@ -10,6 +10,8 @@ import { PersonalHeaderNav } from "./personal-header-nav";
 import { AreaBaseline } from "./area-baseline";
 import { PlantCatalog } from "./plant-catalog";
 import { PlantCatalogView } from "./plant-catalog-view";
+import { TeamManagementView } from "./team-management-view";
+import { isCurator } from "@/lib/curated-plants-service";
 import { CaptureContext } from "./capture-context";
 import { SaveToast } from "./save-toast";
 import { ObservationCompare } from "./observation-compare";
@@ -43,6 +45,7 @@ function autoPlanSignature(ownerId:string,property:Property,records:Survey[]) {
 type View =
   | "examples"
   | "explore"
+  | "team"
   | "welcome"
   | "compare"
   | "home"
@@ -1101,10 +1104,11 @@ export function NativeYardApp({
               </span>
             </button>
             {user ? <PersonalHeaderNav user={user}
-              active={view === "welcome" ? "home" : view === "explore" ? "explore" : contentView === "garden" || ["properties","analysis","scan","roadmap","compare"].includes(view) ? "yard" : null}
+              active={view === "welcome" ? "home" : view === "explore" ? "explore" : view === "team" ? "team" : contentView === "garden" || ["properties","analysis","scan","roadmap","compare"].includes(view) ? "yard" : null}
               onHome={()=>navigate("welcome")}
               onYard={()=>{setAreaId("");navigate("home");}}
               onExplore={()=>navigate("explore")}
+              onTeam={isCurator(user) ? () => navigate("team") : undefined}
               onSettings={()=>navigate("profile")} onSignOut={()=>void signOut()} signingOut={signingOut} /> : (
               <nav aria-label="Main navigation">
                 <button aria-current={view === "explore" ? "page" : undefined} onClick={()=>navigate("explore")}>Flora Catalog</button>
@@ -1447,6 +1451,7 @@ export function NativeYardApp({
                 <PlantCatalogView
                   user={user}
                   onBack={() => navigate(user ? "home" : "welcome")}
+                  onOpenTeam={() => navigate("team")}
                 />
               )}
               {contentView === "home" && (
@@ -1821,6 +1826,13 @@ export function NativeYardApp({
                   onSignOut={() => void signOut()}
                   onError={accountError}
                   repository={services.account}
+                />
+              )}
+              {contentView === "team" && user && (
+                <TeamManagementView
+                  user={user}
+                  onBack={() => navigate("home")}
+                  onGoToCatalog={() => navigate("explore")}
                 />
               )}
             </>

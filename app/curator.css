@@ -246,6 +246,75 @@
   border: 1px solid var(--line);
 }
 
+.curator-unverified-tag {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 3px 6px;
+  border-radius: 3px;
+  background: rgba(184, 92, 42, 0.92);
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+
+.curator-verification-notice {
+  background: #fbf6ec;
+  border: 1px solid #e2cb9c;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 12px 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.curator-notice-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #8a571c;
+}
+
+.curator-notice-text strong {
+  display: block;
+  font-size: 13px;
+  color: #5c3509;
+}
+
+.curator-notice-text p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #7d521f;
+}
+
+.curator-verify-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  background: #2b4c35;
+  color: #f4f0e6;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.curator-verify-action-btn:hover {
+  background: #1e3625;
+}
+
 .curator-no-photos {
   grid-column: 1 / -1;
   background: var(--sand);
@@ -1041,4 +1110,59 @@
   padding: 6px 10px;
   font-size: 12px;
 }
+
+/* ==========================================================================
+   Dedicated Team Management Page Styles
+   ========================================================================== */
+
+.team-page-container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.team-page-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.team-page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.team-header-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: var(--forest);
+}
+
+.team-page-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--ink);
+  letter-spacing: -0.5px;
+}
+
+.team-page-intro {
+  font-size: 15px;
+  color: var(--ink-secondary);
+  max-width: 680px;
+  line-height: 1.5;
+  margin: 0;
+}
+
 

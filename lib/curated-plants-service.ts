@@ -28,7 +28,8 @@ export interface CuratorRecord {
 }
 
 let memoryCache: CuratedPlant[] | null = null;
-const CACHE_STORAGE_KEY = "nativeyard_curated_plants_v1";
+const CACHE_STORAGE_KEY = "nativeyard_curated_plants_v4";
+const CACHE_TTL_MS = 3 * 60 * 1000; // 3 minutes
 const curatorRoleCache = new Map<string, { role: "admin" | "curator"; timestamp: number }>();
 
 export function isAdmin(user?: AppUser | null): boolean {
@@ -188,14 +189,23 @@ export async function getCuratedPlants(forceRefresh = false): Promise<CuratedPla
 
   if (typeof window !== "undefined" && !forceRefresh) {
     try {
+      // Clean up legacy keys
+      window.localStorage.removeItem("nativeyard_curated_plants_v1");
+      window.localStorage.removeItem("nativeyard_curated_plants_v2");
+      window.localStorage.removeItem("nativeyard_curated_plants_v3");
+
       const stored = window.localStorage.getItem(CACHE_STORAGE_KEY);
       if (stored) {
-        const parsed = JSON.parse(stored);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          memoryCache = parsed;
-          // Invalidate asynchronously to ensure freshness
-          void getCuratedPlants(true);
-          return memoryCache;
+        const payload = JSON.parse(stored);
+        if (
+          payload &&
+          Array.isArray(payload.items) &&
+          payload.items.length > 0 &&
+          Date.now() - (payload.timestamp || 0) < CACHE_TTL_MS
+        ) {
+          const items = payload.items as CuratedPlant[];
+          memoryCache = items;
+          return items;
         }
       }
     } catch {
@@ -224,7 +234,10 @@ export async function getCuratedPlants(forceRefresh = false): Promise<CuratedPla
       memoryCache = items;
       if (typeof window !== "undefined") {
         try {
-          window.localStorage.setItem(CACHE_STORAGE_KEY, JSON.stringify(items));
+          window.localStorage.setItem(
+            CACHE_STORAGE_KEY,
+            JSON.stringify({ timestamp: Date.now(), items })
+          );
         } catch {
           /* storage quota ignore */
         }
@@ -490,4 +503,53 @@ export async function removeCurator(
   await deleteDoc(doc(firestore, "curators", normEmail));
   curatorRoleCache.delete(normEmail);
 }
+
+export async function updatePlantPhotoVerification(
+  plantId: string,
+  photoId: string,
+  verificationStatus: "verified" | "unverified",
+  user: AppUser
+): Promise<CuratedPlant> {
+  if (!isCurator(user)) {
+    throw new Error("Only an authorized curator can verify plant photos.");
+  }
+
+  const plant = await getCuratedPlant(plantId);
+  if (!plant) throw new Error(`Plant ${plantId} not found.`);
+
+  const updatedPhotos = plant.photos.map((p) => {
+    if (p.id === photoId) {
+      return { ...p, verificationStatus };
+    }
+    return p;
+  });
+
+  const updatedPlant: CuratedPlant = {
+    ...plant,
+    photos: updatedPhotos,
+    updatedAt: new Date().toISOString(),
+    lastEditedBy: {
+      uid: user.id,
+      email: user.email,
+      displayName: user.user_metadata?.full_name || "Curator",
+    },
+  };
+
+  const firestore = getFirebaseDb();
+  if (firestore) {
+    await updateDoc(doc(firestore, "curated_plants", plantId), {
+      photos: updatedPhotos,
+      updatedAt: updatedPlant.updatedAt,
+      lastEditedBy: updatedPlant.lastEditedBy,
+    });
+  }
+
+  if (memoryCache) {
+    const idx = memoryCache.findIndex((p) => p.id === plantId);
+    if (idx >= 0) memoryCache[idx] = updatedPlant;
+  }
+
+  return updatedPlant;
+}
+
 
