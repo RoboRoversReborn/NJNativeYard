@@ -265,6 +265,9 @@ export function PlantCatalogView({
                     ? "Invasive"
                     : "Non-Native"}
                 </span>
+                {plant.curationStatus === "staged" && (
+                  <span className="curator-staged-tag">NPSNJ Profile</span>
+                )}
                 {primaryPhoto?.organ && (
                   <span className="curator-organ-tag">{primaryPhoto.organ}</span>
                 )}
@@ -343,16 +346,28 @@ export function PlantCatalogView({
             <div className="curator-detail-body">
               {/* Photo Gallery */}
               <div className="curator-detail-gallery">
-                {selectedPlant.photos?.map((ph, idx) => (
-                  <figure className="curator-detail-photo" key={ph.id || idx}>
-                    <img src={ph.url} alt={selectedPlant.commonName} />
-                    <figcaption>
-                      <strong>{ph.organ || "Specimen"}</strong>
-                      <small>{ph.author} · {ph.license}</small>
-                      {ph.citation && <small className="citation">{ph.citation}</small>}
-                    </figcaption>
-                  </figure>
-                ))}
+                {selectedPlant.photos && selectedPlant.photos.length > 0 ? (
+                  selectedPlant.photos.map((ph, idx) => (
+                    <figure className="curator-detail-photo" key={ph.id || idx}>
+                      <img src={ph.url} alt={selectedPlant.commonName} />
+                      <figcaption>
+                        <strong>{ph.organ || "Specimen"}</strong>
+                        <small>{ph.author} · {ph.license}</small>
+                        {ph.citation && <small className="citation">{ph.citation}</small>}
+                      </figcaption>
+                    </figure>
+                  ))
+                ) : (
+                  <div className="curator-no-photos">
+                    <Leaf size={32} />
+                    <p>No field photos cataloged yet</p>
+                    <small>
+                      {curatorActive
+                        ? "Curators can upload verified specimen photos using the edit button below."
+                        : "Sourced from the Native Plant Society of New Jersey flora index."}
+                    </small>
+                  </div>
+                )}
               </div>
 
               {/* Botanical Traits */}

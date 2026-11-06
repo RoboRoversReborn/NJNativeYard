@@ -49,6 +49,7 @@ export type CuratedPlant = {
   commonName: string;
   family?: string;
   status: "keystone" | "native" | "non-native" | "invasive";
+  curationStatus?: "curated" | "staged";
   njStatus?: string;
   type?: string;
   growthHabit?: string;
