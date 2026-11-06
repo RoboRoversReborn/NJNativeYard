@@ -7,16 +7,24 @@ service cloud.firestore {
     function isOwner(userId) {
       return isAuthenticated() && request.auth.uid == userId;
     }
-    function isCurator() {
+    function isAdmin() {
       return isAuthenticated() && (
-        request.auth.token.role == 'curator' ||
         request.auth.token.role == 'admin' ||
         request.auth.token.admin == true ||
-        request.auth.token.curator == true ||
         request.auth.token.email == "niravgadhia@gmail.com" ||
+        (exists(/databases/$(database)/documents/curators/$(request.auth.uid)) &&
+         get(/databases/$(database)/documents/curators/$(request.auth.uid)).data.role == 'admin') ||
+        (exists(/databases/$(database)/documents/curators/$(request.auth.token.email)) &&
+         get(/databases/$(database)/documents/curators/$(request.auth.token.email)).data.role == 'admin')
+      );
+    }
+    function isCurator() {
+      return isAdmin() || (isAuthenticated() && (
+        request.auth.token.role == 'curator' ||
+        request.auth.token.curator == true ||
         exists(/databases/$(database)/documents/curators/$(request.auth.uid)) ||
         exists(/databases/$(database)/documents/curators/$(request.auth.token.email))
-      );
+      ));
     }
 
     match /properties/{propId} {
@@ -55,7 +63,7 @@ service cloud.firestore {
 
     match /curators/{userId} {
       allow read: if true;
-      allow write: if isCurator();
+      allow write: if isAdmin();
     }
   }
 }

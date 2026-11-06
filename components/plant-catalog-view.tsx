@@ -17,8 +17,14 @@ import {
 } from "lucide-react";
 import type { CuratedPlant } from "@/lib/curated-plant-types";
 import type { AppUser } from "@/lib/firebase/auth-user";
-import { getCuratedPlants, isCurator } from "@/lib/curated-plants-service";
+import {
+  getCuratedPlants,
+  isCurator,
+  isAdmin,
+  checkUserPermissions,
+} from "@/lib/curated-plants-service";
 import { CuratedPlantEditor } from "./curated-plant-editor";
+import { AdminCuratorManager } from "./admin-curator-manager";
 
 export function PlantCatalogView({
   user,
@@ -43,7 +49,25 @@ export function PlantCatalogView({
   // Detail Modal State
   const [selectedPlant, setSelectedPlant] = useState<CuratedPlant | null>(null);
 
-  const curatorActive = isCurator(user);
+  // Admin Team Manager State
+  const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
+  const [permissions, setPermissions] = useState(() => ({
+    isCurator: isCurator(user),
+    isAdmin: isAdmin(user),
+  }));
+
+  useEffect(() => {
+    if (user) {
+      checkUserPermissions(user).then((res) => {
+        setPermissions({ isCurator: res.isCurator, isAdmin: res.isAdmin });
+      });
+    } else {
+      setPermissions({ isCurator: false, isAdmin: false });
+    }
+  }, [user]);
+
+  const curatorActive = permissions.isCurator;
+  const adminActive = permissions.isAdmin;
 
   async function loadData(force = false) {
     setLoading(true);
@@ -128,8 +152,18 @@ export function PlantCatalogView({
           {curatorActive && (
             <div className="curator-status-badge">
               <ShieldCheck size={16} />
-              <span>Curator Role: {user?.email || "Admin"}</span>
+              <span>{adminActive ? "Administrator" : "Curator"}: {user?.email}</span>
             </div>
+          )}
+          {adminActive && (
+            <button
+              type="button"
+              className="curator-secondary-btn"
+              onClick={() => setIsAdminModalOpen(true)}
+              title="Manage platform administrators and curators"
+            >
+              <ShieldCheck size={16} /> Manage Team
+            </button>
           )}
           {curatorActive && (
             <button className="primary curator-add-trigger" onClick={handleOpenCreate}>
@@ -413,6 +447,22 @@ export function PlantCatalogView({
           user={user}
           onClose={() => setIsEditorOpen(false)}
           onSaved={handlePlantSaved}
+        />
+      )}
+
+      {/* Admin & Curator Permissions Modal */}
+      {isAdminModalOpen && user && (
+        <AdminCuratorManager
+          user={user}
+          isOpen={isAdminModalOpen}
+          onClose={() => {
+            setIsAdminModalOpen(false);
+            if (user) {
+              checkUserPermissions(user).then((res) => {
+                setPermissions({ isCurator: res.isCurator, isAdmin: res.isAdmin });
+              });
+            }
+          }}
         />
       )}
     </div>

@@ -794,3 +794,212 @@
   gap: 8px;
   font-size: 13px;
 }
+
+/* ==========================================================================
+   Admin & Curator Permissions Manager Styles
+   ========================================================================== */
+
+.admin-manager-modal {
+  max-width: 820px;
+}
+
+.admin-manager-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.admin-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  color: var(--forest);
+}
+
+.admin-section-heading.between {
+  justify-content: space-between;
+}
+
+.admin-section-heading h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--ink);
+}
+
+.admin-section-desc {
+  font-size: 13px;
+  color: var(--ink-secondary);
+  margin: 0 0 16px;
+}
+
+.admin-grant-section {
+  background: var(--sand);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 20px;
+}
+
+.admin-grant-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-form-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.admin-form-row .flex-2 {
+  flex: 2;
+  min-width: 200px;
+}
+
+.admin-form-row .flex-1 {
+  flex: 1.2;
+  min-width: 160px;
+}
+
+.admin-grant-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.admin-roster-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-roster-table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--card-bg);
+}
+
+.admin-roster-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+
+.admin-roster-table th {
+  background: var(--sand);
+  padding: 12px 16px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--ink-secondary);
+  border-bottom: 1px solid var(--line);
+}
+
+.admin-roster-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+
+.admin-roster-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-roster-table tr:hover td {
+  background: rgba(244, 240, 230, 0.4);
+}
+
+.admin-roster-table tr.row-owner td {
+  background: rgba(43, 76, 53, 0.03);
+}
+
+.admin-user-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.admin-user-name {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.admin-user-email {
+  font-size: 12px;
+  color: var(--ink-secondary);
+  font-family: monospace;
+}
+
+.admin-role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+.admin-role-badge.primary-owner {
+  background: #2b4c35;
+  color: #f4f0e6;
+}
+
+.admin-role-badge.admin {
+  background: #3e5a47;
+  color: #f7f5ee;
+}
+
+.admin-role-badge.curator {
+  background: var(--sand-muted);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.admin-role-select {
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--card-bg);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.admin-meta-cell {
+  color: var(--ink-secondary);
+  font-size: 12px;
+}
+
+.admin-protected-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--ink-secondary);
+  padding: 2px 6px;
+  background: var(--sand);
+  border-radius: 4px;
+}
+
+.admin-footer-note {
+  font-size: 12px;
+  color: var(--ink-secondary);
+  margin: 0;
+  flex: 1;
+}
+
+.curator-secondary-btn.small {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+

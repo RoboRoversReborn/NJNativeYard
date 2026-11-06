@@ -5,6 +5,7 @@ import {
   getDocs,
   setDoc,
   updateDoc,
+  deleteDoc,
 } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import {
@@ -17,16 +18,69 @@ import type { CuratedPlant, CuratedPhoto } from "./curated-plant-types";
 import staticFlora from "@/data/nj-flora.v1.json";
 import staticPhotos from "@/data/reference-photos.downloaded.v1.json";
 
+export interface CuratorRecord {
+  email: string;
+  role: "admin" | "curator";
+  displayName?: string;
+  addedBy?: string;
+  addedAt: string;
+  updatedAt?: string;
+}
+
 let memoryCache: CuratedPlant[] | null = null;
 const CACHE_STORAGE_KEY = "nativeyard_curated_plants_v1";
+const curatorRoleCache = new Map<string, { role: "admin" | "curator"; timestamp: number }>();
 
-export function isCurator(user?: AppUser | null): boolean {
+export function isAdmin(user?: AppUser | null): boolean {
   if (!user) return false;
   const email = user.email?.toLowerCase().trim();
   if (email === "niravgadhia@gmail.com") return true;
-  if (user.app_metadata?.role === "curator" || user.app_metadata?.role === "admin") return true;
-  if (user.user_metadata?.role === "curator" || user.user_metadata?.role === "admin") return true;
+  if (user.app_metadata?.role === "admin" || user.user_metadata?.role === "admin") return true;
+  if (email && curatorRoleCache.get(email)?.role === "admin") return true;
   return false;
+}
+
+export function isCurator(user?: AppUser | null): boolean {
+  if (!user) return false;
+  if (isAdmin(user)) return true;
+  const email = user.email?.toLowerCase().trim();
+  if (user.app_metadata?.role === "curator" || user.user_metadata?.role === "curator") return true;
+  if (email && curatorRoleCache.has(email)) return true;
+  return false;
+}
+
+export async function checkUserPermissions(
+  user?: AppUser | null
+): Promise<{ isCurator: boolean; isAdmin: boolean; role?: "admin" | "curator" | null }> {
+  if (!user || !user.email) return { isCurator: false, isAdmin: false, role: null };
+  const email = user.email.toLowerCase().trim();
+  if (email === "niravgadhia@gmail.com") {
+    curatorRoleCache.set(email, { role: "admin", timestamp: Date.now() });
+    return { isCurator: true, isAdmin: true, role: "admin" };
+  }
+
+  if (process.env.NODE_ENV === "test" || !isFirebaseConfigured()) {
+    const admin = isAdmin(user);
+    const curator = isCurator(user);
+    return { isCurator: curator, isAdmin: admin, role: admin ? "admin" : curator ? "curator" : null };
+  }
+
+  try {
+    const firestore = getFirebaseDb();
+    if (!firestore) return { isCurator: isCurator(user), isAdmin: isAdmin(user), role: null };
+
+    const curatorDoc = await getDoc(doc(firestore, "curators", email));
+    if (curatorDoc.exists()) {
+      const data = curatorDoc.data();
+      const role = data.role === "admin" ? "admin" : "curator";
+      curatorRoleCache.set(email, { role, timestamp: Date.now() });
+      return { isCurator: true, isAdmin: role === "admin", role };
+    }
+  } catch (err) {
+    console.warn("Failed to check curator permissions:", err);
+  }
+
+  return { isCurator: isCurator(user), isAdmin: isAdmin(user), role: null };
 }
 
 /** Fallback to static bundled files if Firestore is offline or in test environments */
@@ -333,3 +387,107 @@ export async function uploadPlantPhoto(
 
   return { plant: updatedPlant, photo: newPhoto };
 }
+
+export async function getCuratorList(): Promise<CuratorRecord[]> {
+  if (process.env.NODE_ENV === "test" || !isFirebaseConfigured()) {
+    return [
+      {
+        email: "niravgadhia@gmail.com",
+        role: "admin",
+        displayName: "Nirav Gadhia",
+        addedAt: "2026-11-06T00:00:00.000Z",
+        addedBy: "system_bootstrap",
+      },
+    ];
+  }
+
+  const firestore = getFirebaseDb();
+  if (!firestore) return [];
+
+  const snapshot = await getDocs(collection(firestore, "curators"));
+  const list: CuratorRecord[] = [];
+  snapshot.forEach((d) => {
+    const data = d.data();
+    list.push({
+      email: data.email || d.id,
+      role: data.role === "curator" ? "curator" : "admin",
+      displayName: data.displayName,
+      addedBy: data.addedBy,
+      addedAt: data.addedAt || new Date().toISOString(),
+      updatedAt: data.updatedAt,
+    });
+  });
+
+  // Ensure primary owner is always present
+  if (!list.some((c) => c.email.toLowerCase() === "niravgadhia@gmail.com")) {
+    list.unshift({
+      email: "niravgadhia@gmail.com",
+      role: "admin",
+      displayName: "Nirav Gadhia",
+      addedAt: new Date().toISOString(),
+      addedBy: "system_bootstrap",
+    });
+  }
+
+  return list;
+}
+
+export async function setCuratorRole(
+  targetEmail: string,
+  role: "admin" | "curator",
+  currentUser: AppUser,
+  displayName?: string
+): Promise<void> {
+  const normEmail = targetEmail.toLowerCase().trim();
+  if (!normEmail || !normEmail.includes("@")) {
+    throw new Error("A valid email address is required.");
+  }
+
+  if (!isAdmin(currentUser)) {
+    throw new Error("Only an administrator can assign or modify access roles.");
+  }
+
+  const firestore = getFirebaseDb();
+  if (!firestore) throw new Error("Database not connected.");
+
+  const now = new Date().toISOString();
+  const curatorDocRef = doc(firestore, "curators", normEmail);
+  const existing = await getDoc(curatorDocRef);
+
+  const payload: CuratorRecord = {
+    email: normEmail,
+    role,
+    displayName: displayName?.trim() || normEmail.split("@")[0],
+    addedBy: currentUser.email || currentUser.id,
+    addedAt: existing.exists() ? existing.data()?.addedAt || now : now,
+    updatedAt: now,
+  };
+
+  await setDoc(curatorDocRef, payload, { merge: true });
+  curatorRoleCache.set(normEmail, { role, timestamp: Date.now() });
+}
+
+export async function removeCurator(
+  targetEmail: string,
+  currentUser: AppUser
+): Promise<void> {
+  const normEmail = targetEmail.toLowerCase().trim();
+  if (normEmail === "niravgadhia@gmail.com") {
+    throw new Error("Primary owner permissions cannot be revoked.");
+  }
+
+  if (currentUser.email?.toLowerCase().trim() === normEmail) {
+    throw new Error("You cannot revoke your own administrator access.");
+  }
+
+  if (!isAdmin(currentUser)) {
+    throw new Error("Only an administrator can revoke access.");
+  }
+
+  const firestore = getFirebaseDb();
+  if (!firestore) throw new Error("Database not connected.");
+
+  await deleteDoc(doc(firestore, "curators", normEmail));
+  curatorRoleCache.delete(normEmail);
+}
+
