@@ -654,11 +654,24 @@ export function NativeYardApp({
         );
       if (!currentIdentity(generation, ownerId)) return;
       await services.auth.signIn();
-    } catch (e) {
-      if (currentIdentity(generation, ownerId))
-        setMessage(
-          e instanceof Error ? e.message : "Google sign-in could not start.",
-        );
+    } catch (e: any) {
+      if (currentIdentity(generation, ownerId)) {
+        if (e?.code === "auth/popup-closed-by-user") {
+          // User intentionally closed the Google popup window, no error needed
+          return;
+        }
+        let userMsg = "Google sign-in could not start. Please try again.";
+        if (e?.code === "auth/popup-blocked") {
+          userMsg = "Pop-up was blocked by your browser. Please allow pop-ups or try again.";
+        } else if (e?.code === "auth/network-request-failed") {
+          userMsg = "Network error connecting to Google. Please check your internet connection.";
+        } else if (e?.code === "auth/unauthorized-domain") {
+          userMsg = "This domain is not authorized for Google sign-in. Please contact support.";
+        } else if (e instanceof Error && e.message) {
+          userMsg = e.message;
+        }
+        setMessage(userMsg);
+      }
     } finally {
       if (currentIdentity(generation, ownerId)) setBusy(false);
     }
