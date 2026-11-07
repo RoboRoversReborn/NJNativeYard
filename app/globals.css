@@ -13,6 +13,7 @@
 @import "./auto-yard-plan.css";
 @import "./personal-header-nav.css";
 @import "./curator.css";
+@import "./leaderboard.css";
 :root {
   color-scheme: light;
   --font-dm-sans: Arial, sans-serif;

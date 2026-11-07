@@ -41,132 +41,98 @@ export function PublicYardModal({
       role="dialog"
       aria-modal="true"
       aria-labelledby="showcase-title"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-stone-900/60 backdrop-blur-sm overflow-y-auto"
+      className="lb-modal-backdrop"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="relative w-full max-w-4xl max-h-[92vh] flex flex-col bg-[#FDFBF7] text-stone-900 rounded-2xl shadow-2xl border border-stone-200 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+      <div className="lb-modal-dialog">
         {/* Read-Only Notice Banner */}
-        <div className="bg-amber-950/5 border-b border-amber-900/10 px-6 py-2.5 flex items-center justify-between text-xs text-amber-900">
-          <div className="flex items-center gap-2 font-medium">
-            <Eye className="w-4 h-4 text-amber-700 shrink-0" />
+        <div className="lb-modal-notice">
+          <div style={{ display: "flex", alignItems: "center", gap: 8, fontWeight: 600 }}>
+            <Eye style={{ width: 16, height: 16, color: "#92400e", flexShrink: 0 }} />
             <span>
-              <strong>Public Community Showcase (Read-Only)</strong> — You are viewing this yard's published habitat record. Modifications are restricted to the owner.
+              <strong>Public Community Showcase (Read-Only)</strong> — Published habitat record for inspiration. Modifications restricted to owner.
             </span>
           </div>
           <button
             type="button"
             onClick={onClose}
-            className="p-1 rounded-lg hover:bg-stone-200/50 text-stone-500 hover:text-stone-800 transition-colors"
+            className="lb-modal-close-btn"
             aria-label="Close showcase modal"
           >
-            <X className="w-5 h-5" />
+            <X style={{ width: 20, height: 20 }} />
           </button>
         </div>
 
         {/* Modal Scrollable Content */}
-        <div className="flex-1 overflow-y-auto px-6 py-6 space-y-6">
+        <div className="lb-modal-body">
           {/* Header Card */}
-          <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-5 pb-6 border-b border-stone-200">
-            <div className="flex items-start gap-4 min-w-0">
+          <div className="lb-modal-header">
+            <div className="lb-modal-user-block">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={yard.coverPhotoUrl || "/samples/mixed-garden-starting-v4.png"}
                 alt={yard.yardName}
                 width={56}
                 height={56}
-                style={{
-                  width: "56px",
-                  height: "56px",
-                  minWidth: "56px",
-                  minHeight: "56px",
-                  maxWidth: "56px",
-                  maxHeight: "56px",
-                  objectFit: "cover",
-                  borderRadius: "9999px",
-                }}
-                className="w-14 h-14 rounded-full object-cover border-2 border-stone-200 shadow-xs shrink-0"
+                className="lb-modal-avatar"
                 onError={(e) => {
                   (e.currentTarget as HTMLImageElement).src = "/samples/mixed-garden-starting-v4.png";
                 }}
               />
-              <div className="space-y-1.5 min-w-0">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-800/10 text-emerald-900 border border-emerald-800/20">
-                    <ShieldCheck className="w-3.5 h-3.5 text-emerald-700" />
+              <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <span style={{ fontSize: 11, fontWeight: 700, padding: "2px 8px", borderRadius: 9999, background: "#dcfce7", color: "#166534" }}>
                     Verified NJ Yard
                   </span>
-                  <span className="text-xs text-stone-500 flex items-center gap-1">
-                    <Calendar className="w-3.5 h-3.5" />
+                  <span style={{ fontSize: 12, color: "#6c786e" }}>
                     Published {new Date(yard.publishedAt).toLocaleDateString("en-US", { month: "short", year: "numeric" })}
                   </span>
                 </div>
-                <h1 id="showcase-title" className="text-2xl sm:text-3xl font-serif font-bold tracking-tight text-stone-900">
+                <h1 id="showcase-title" style={{ fontFamily: "var(--font-fraunces, Georgia, serif)", fontSize: 24, fontWeight: 800, color: "#1a221b", margin: "2px 0 0" }}>
                   {yard.yardName}
                 </h1>
-                <div className="flex flex-wrap items-center gap-y-1 gap-x-4 text-sm text-stone-600">
-                  <span className="flex items-center gap-1 text-stone-800 font-medium">
-                    <UserCheck className="w-4 h-4 text-stone-500" />
-                    {yard.gardenerAlias}
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <MapPin className="w-4 h-4 text-stone-400" />
-                    {yard.townOrCounty}
-                  </span>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 13, color: "#5c685e" }}>
+                  <span style={{ fontWeight: 600, color: "#1a221b" }}>{yard.gardenerAlias}</span>
+                  <span>•</span>
+                  <span>{yard.townOrCounty}</span>
                 </div>
               </div>
             </div>
 
             {/* Score Pill / Badge */}
-            <div className="flex sm:flex-col items-center sm:items-end justify-between bg-stone-100/80 border border-stone-200/80 rounded-xl px-4 py-3 shrink-0">
-              <span className="text-xs font-medium text-stone-500 uppercase tracking-wider">Habitat Score</span>
-              <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-bold font-mono text-emerald-900">{yard.score}</span>
-                <span className="text-xs font-semibold text-stone-500">/ 100</span>
-              </div>
-              <span className="text-[11px] font-medium text-emerald-800 bg-emerald-100/70 px-2 py-0.5 rounded-full mt-1">
-                {yard.tier}
-              </span>
+            <div className="lb-modal-score-badge">
+              <div className="lb-modal-score-num">{yard.score}</div>
+              <div className="lb-modal-score-lbl">Habitat Score</div>
             </div>
           </div>
 
           {/* Quick Metrics Bar */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <div className="bg-stone-50 border border-stone-200/80 rounded-xl p-3.5">
-              <span className="text-xs text-stone-500 block">Native Species</span>
-              <span className="text-2xl font-bold text-stone-900 font-mono mt-0.5 block">
-                {yard.nativeSpeciesCount}
-              </span>
-              <span className="text-[11px] text-stone-500">Documented in yard</span>
+          <div className="lb-modal-metrics">
+            <div className="lb-modal-metric-card">
+              <span className="lb-modal-metric-lbl">Native Species</span>
+              <div className="lb-modal-metric-val">{yard.nativeSpeciesCount}</div>
             </div>
 
-            <div className="bg-stone-50 border border-stone-200/80 rounded-xl p-3.5">
-              <span className="text-xs text-stone-500 block">Keystone Genera</span>
-              <span className="text-2xl font-bold text-amber-900 font-mono mt-0.5 block">
-                {yard.keystoneCount}
-              </span>
-              <span className="text-[11px] text-amber-800/80">Caterpillar host anchors</span>
+            <div className="lb-modal-metric-card">
+              <span className="lb-modal-metric-lbl">Keystone Genera</span>
+              <div className="lb-modal-metric-val" style={{ color: "#92400e" }}>{yard.keystoneCount}</div>
             </div>
 
-            <div className="bg-stone-50 border border-stone-200/80 rounded-xl p-3.5">
-              <span className="text-xs text-stone-500 block">Invasive Species</span>
-              <span className={`text-2xl font-bold font-mono mt-0.5 block ${yard.invasiveCount === 0 ? "text-emerald-700" : "text-amber-700"}`}>
+            <div className="lb-modal-metric-card">
+              <span className="lb-modal-metric-lbl">Invasive Species</span>
+              <div className="lb-modal-metric-val" style={{ color: yard.invasiveCount === 0 ? "#166534" : "#991b1b" }}>
                 {yard.invasiveCount}
-              </span>
-              <span className="text-[11px] text-stone-500">
-                {yard.invasiveCount === 0 ? "Zero invasives detected" : "Targeted for removal"}
-              </span>
+              </div>
             </div>
 
-            <div className="bg-stone-50 border border-stone-200/80 rounded-xl p-3.5">
-              <span className="text-xs text-stone-500 block">Yard Areas</span>
-              <span className="text-2xl font-bold text-stone-900 font-mono mt-0.5 block">
-                {yard.areas.length}
-              </span>
-              <span className="text-[11px] text-stone-500">Surveyed planting zones</span>
+            <div className="lb-modal-metric-card">
+              <span className="lb-modal-metric-lbl">Yard Areas</span>
+              <div className="lb-modal-metric-val">{yard.areas.length}</div>
             </div>
           </div>
+
 
           {/* Earned Badges Section */}
           {yard.badges && yard.badges.length > 0 && (
@@ -305,15 +271,15 @@ export function PublicYardModal({
         </div>
 
         {/* Modal Footer */}
-        <div className="bg-stone-100/90 border-t border-stone-200 px-6 py-3.5 flex items-center justify-between">
-          <div className="text-xs text-stone-500 flex items-center gap-1.5">
-            <ShieldCheck className="w-4 h-4 text-emerald-700" />
+        <div className="lb-modal-footer">
+          <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12, color: "#6c786e" }}>
+            <ShieldCheck style={{ width: 16, height: 16, color: "#244b34" }} />
             <span>Community data verified against the New Jersey Native Plant Catalog.</span>
           </div>
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-2 bg-stone-900 hover:bg-stone-800 text-white font-medium text-sm rounded-xl transition-colors shadow-xs"
+            className="lb-modal-back-btn"
           >
             Back to Leaderboard
           </button>

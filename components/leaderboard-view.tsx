@@ -159,85 +159,74 @@ export function LeaderboardView({
   }
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-8 space-y-6 animate-in fade-in duration-200">
+    <div className="lb-container">
       {/* Title Header Matching Reference Style: Clean, No Giant Banners */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-stone-200/70">
-        <div>
-          <h1 className="text-3xl sm:text-4xl font-serif font-black tracking-tight text-stone-900">
+      <div className="lb-header">
+        <div className="lb-title-wrap">
+          <h1 className="lb-title">
             Native Yard Goals Leaderboard
           </h1>
-          <p className="text-sm text-stone-600 mt-1">
+          <p className="lb-subtitle">
             Tracking New Jersey residential habitat restoration, species diversity, and ecological achievements.
           </p>
         </div>
 
-        <div className="flex items-center gap-2 self-start sm:self-auto bg-stone-100 px-4 py-2 rounded-full border border-stone-200 text-xs font-bold text-stone-800 tracking-wider shadow-xs">
-          <Sprout className="w-4 h-4 text-emerald-700" />
+        <div className="lb-brand-badge">
+          <Sprout style={{ width: 16, height: 16, color: "#244b34" }} />
           <span>NATIVEYARD NJ</span>
         </div>
       </div>
 
       {/* Simplified Privacy Control: Yes/No Toggle Switch */}
       {user && userPropertiesWithSurveys.length > 0 && (
-        <div className="bg-[#FAF8F5] border border-stone-200/90 rounded-2xl p-4 sm:p-5 shadow-xs">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div className="space-y-0.5">
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-950 flex items-center gap-1.5">
-                <ShieldCheck className="w-4 h-4 text-emerald-700" />
-                My Yard Public Visibility
-              </span>
-              <p className="text-xs text-stone-600">
-                Choose whether your yard appears on the public leaderboard. Street address and private details are never shared.
-              </p>
-            </div>
+        <div className="lb-privacy-card">
+          <div className="lb-privacy-info">
+            <span className="lb-privacy-title">
+              <ShieldCheck style={{ width: 16, height: 16, color: "#244b34" }} />
+              My Yard Public Visibility
+            </span>
+            <p className="lb-privacy-desc">
+              Choose whether your yard appears on the public leaderboard. Street address and private details are never shared.
+            </p>
+          </div>
 
-            <div className="flex flex-wrap items-center gap-3">
-              {userPropertiesWithSurveys.map((prop) => {
-                const isPublished = yards.some((y) => y.id === prop.id && y.published);
-                const isBusy = togglingPropertyId === prop.id;
+          <div className="lb-privacy-actions">
+            {userPropertiesWithSurveys.map((prop) => {
+              const isPublished = yards.some((y) => y.id === prop.id && y.published);
+              const isBusy = togglingPropertyId === prop.id;
 
-                return (
-                  <div
-                    key={prop.id}
-                    className="flex items-center gap-3 bg-white border border-stone-200 px-3.5 py-2 rounded-xl shadow-xs"
-                  >
-                    <div className="min-w-0">
-                      <span className="font-semibold text-stone-900 text-xs block truncate max-w-[130px]">
-                        {prop.name}
-                      </span>
-                      <span className="text-[11px] text-stone-500">
-                        Public on Leaderboard:{" "}
-                        <strong className={isPublished ? "text-emerald-700" : "text-stone-600"}>
-                          {isPublished ? "Yes" : "No"}
-                        </strong>
-                      </span>
-                    </div>
-
-                    {/* Simple Yes/No Switch Toggle */}
-                    <button
-                      type="button"
-                      role="switch"
-                      aria-checked={isPublished}
-                      aria-label={`Toggle public leaderboard visibility for ${prop.name}`}
-                      disabled={isBusy}
-                      onClick={() => handleTogglePublish(prop, isPublished)}
-                      className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-hidden focus:ring-2 focus:ring-emerald-700 focus:ring-offset-1 ${
-                        isPublished ? "bg-emerald-700" : "bg-stone-300"
-                      }`}
-                    >
-                      <span
-                        className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow-md ring-0 transition duration-200 ease-in-out ${
-                          isPublished ? "translate-x-5" : "translate-x-0"
-                        }`}
-                      />
-                    </button>
+              return (
+                <div key={prop.id} className="lb-privacy-item">
+                  <div>
+                    <span className="lb-privacy-prop-name">
+                      {prop.name}
+                    </span>
+                    <span className="lb-privacy-prop-sub">
+                      Public on Leaderboard:{" "}
+                      <strong style={{ color: isPublished ? "#244b34" : "#6c786e" }}>
+                        {isPublished ? "Yes" : "No"}
+                      </strong>
+                    </span>
                   </div>
-                );
-              })}
-            </div>
+
+                  {/* Simple Yes/No Switch Toggle */}
+                  <button
+                    type="button"
+                    role="switch"
+                    aria-checked={isPublished}
+                    aria-label={`Toggle public leaderboard visibility for ${prop.name}`}
+                    disabled={isBusy}
+                    onClick={() => handleTogglePublish(prop, isPublished)}
+                    className="lb-toggle-btn"
+                  >
+                    <span className="lb-toggle-thumb" />
+                  </button>
+                </div>
+              );
+            })}
           </div>
           {toggleNotice && (
-            <p className="text-xs text-emerald-800 mt-2 font-medium">
+            <p style={{ fontSize: 12, color: "#244b34", fontWeight: 600, margin: 0 }}>
               {toggleNotice}
             </p>
           )}
@@ -245,24 +234,24 @@ export function LeaderboardView({
       )}
 
       {/* Filter and Search Bar */}
-      <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 bg-white p-3.5 rounded-2xl border border-stone-200 shadow-xs">
-        <div className="relative flex-1">
-          <Search className="w-4 h-4 text-stone-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+      <div className="lb-controls">
+        <div className="lb-search-wrap">
+          <Search className="lb-search-icon" style={{ width: 16, height: 16 }} />
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search by yard name, gardener, town, or plant..."
-            className="w-full pl-9 pr-4 py-2 text-sm bg-stone-50 border border-stone-200 rounded-xl focus:outline-hidden focus:ring-2 focus:ring-emerald-800/20 text-stone-900"
+            className="lb-search-input"
           />
         </div>
 
-        <div className="flex items-center gap-2">
-          <span className="text-xs text-stone-500 whitespace-nowrap hidden sm:inline">County:</span>
+        <div className="lb-filters-wrap">
+          <span className="lb-filter-label">County:</span>
           <select
             value={selectedCounty}
             onChange={(e) => setSelectedCounty(e.target.value)}
-            className="text-xs font-medium bg-stone-50 border border-stone-200 rounded-xl px-3 py-2 text-stone-800 focus:outline-hidden focus:ring-2 focus:ring-emerald-800/20"
+            className="lb-select"
           >
             {NJ_COUNTIES.map((county) => (
               <option key={county} value={county}>
@@ -271,32 +260,29 @@ export function LeaderboardView({
             ))}
           </select>
 
-          <span className="text-xs text-stone-500 whitespace-nowrap hidden sm:inline">Rank by:</span>
-          <div className="inline-flex rounded-xl bg-stone-100 p-0.5 text-xs font-medium">
+          <span className="lb-filter-label">Rank by:</span>
+          <div className="lb-sort-group">
             <button
               type="button"
               onClick={() => setSortBy("score")}
-              className={`px-3 py-1.5 rounded-lg transition-colors ${
-                sortBy === "score" ? "bg-white text-stone-900 shadow-xs font-bold" : "text-stone-600 hover:text-stone-900"
-              }`}
+              aria-pressed={sortBy === "score"}
+              className="lb-sort-btn"
             >
               Score
             </button>
             <button
               type="button"
               onClick={() => setSortBy("species")}
-              className={`px-3 py-1.5 rounded-lg transition-colors ${
-                sortBy === "species" ? "bg-white text-stone-900 shadow-xs font-bold" : "text-stone-600 hover:text-stone-900"
-              }`}
+              aria-pressed={sortBy === "species"}
+              className="lb-sort-btn"
             >
               Species
             </button>
             <button
               type="button"
               onClick={() => setSortBy("keystone")}
-              className={`px-3 py-1.5 rounded-lg transition-colors ${
-                sortBy === "keystone" ? "bg-white text-stone-900 shadow-xs font-bold" : "text-stone-600 hover:text-stone-900"
-              }`}
+              aria-pressed={sortBy === "keystone"}
+              className="lb-sort-btn"
             >
               Keystones
             </button>
@@ -304,140 +290,135 @@ export function LeaderboardView({
         </div>
       </div>
 
-      {/* Tabular Layout Wrapped with Horizontal Scroll Support */}
-      <div className="overflow-x-auto pb-2">
-        <div className="min-w-[720px] space-y-3">
-          {/* Black Header Pill Exactly Matching Reference Image */}
-          <div className="bg-black text-white rounded-2xl px-6 sm:px-8 py-3.5 shadow-md grid grid-cols-12 items-center text-xs font-bold uppercase tracking-wider">
-            <div className="col-span-4">Name</div>
-            <div className="col-span-2 text-center">Rank</div>
-            <div className="col-span-3">Location</div>
-            <div className="col-span-1 text-center">Score</div>
-            <div className="col-span-2 text-right">Badges</div>
-          </div>
-
-          {loading ? (
-            <div className="p-12 text-center text-stone-500 space-y-3 bg-white rounded-2xl border border-stone-200">
-              <RefreshCw className="w-6 h-6 animate-spin mx-auto text-emerald-800" />
-              <p className="text-sm">Loading leaderboard rankings...</p>
-            </div>
-          ) : yards.length === 0 ? (
-            <div className="p-12 text-center text-stone-500 space-y-2 bg-white rounded-2xl border border-stone-200">
-              <Trophy className="w-8 h-8 text-stone-300 mx-auto" />
-              <p className="text-sm font-medium">No yards match your search criteria.</p>
-              <p className="text-xs text-stone-400">Try adjusting your county filter or search query.</p>
-            </div>
-          ) : (
-            /* Floating Pastel Card Rows Matching Reference Design */
-            <div className="space-y-3">
-              {yards.map((yard, index) => {
+      {/* Semantic Tabular Layout (Strictly enforced rows and columns) */}
+      <div className="lb-table-wrapper">
+        <table className="lb-table">
+          <thead>
+            <tr>
+              <th className="lb-col-name">Name</th>
+              <th className="lb-col-rank">Rank</th>
+              <th className="lb-col-location">Location</th>
+              <th className="lb-col-score">Score</th>
+              <th className="lb-col-badges">Badges</th>
+            </tr>
+          </thead>
+          <tbody>
+            {loading ? (
+              <tr>
+                <td colSpan={5} style={{ textAlign: "center", padding: "48px 20px" }}>
+                  <RefreshCw style={{ width: 24, height: 24, color: "#244b34", animation: "spin 1s linear infinite", margin: "0 auto" }} />
+                  <p style={{ marginTop: 12, color: "#586358", fontSize: 14 }}>Loading leaderboard rankings...</p>
+                </td>
+              </tr>
+            ) : yards.length === 0 ? (
+              <tr>
+                <td colSpan={5} style={{ textAlign: "center", padding: "48px 20px" }}>
+                  <Trophy style={{ width: 32, height: 32, color: "#8c978e", margin: "0 auto 8px" }} />
+                  <p style={{ fontWeight: 700, color: "#1a221b", margin: 0 }}>No yards match your search criteria.</p>
+                  <p style={{ fontSize: 12, color: "#8c978e", marginTop: 4 }}>Try adjusting your county filter or search query.</p>
+                </td>
+              </tr>
+            ) : (
+              yards.map((yard, index) => {
                 const rank = index + 1;
-                const theme = ROW_THEMES[Math.min(index, ROW_THEMES.length - 1)];
+                const rowClass =
+                  rank === 1 ? "lb-row-rank-1" :
+                  rank === 2 ? "lb-row-rank-2" :
+                  rank === 3 ? "lb-row-rank-3" :
+                  rank === 4 ? "lb-row-rank-4" :
+                  rank === 5 ? "lb-row-rank-5" :
+                  rank === 6 ? "lb-row-rank-6" :
+                  "lb-row-rank-default";
                 const thumbnail = yard.coverPhotoUrl || "/samples/mixed-garden-starting-v4.png";
 
                 return (
-                  <div
+                  <tr
                     key={yard.id}
                     onClick={() => setSelectedYard(yard)}
-                    className={`group rounded-2xl px-6 sm:px-8 py-3.5 border transition-all duration-200 shadow-xs hover:shadow-md hover:scale-[1.006] cursor-pointer grid grid-cols-12 items-center gap-2 ${theme.bg}`}
+                    className={rowClass}
                   >
                     {/* Column 1: Small Circular Avatar (40x40) + Yard Name & Gardener */}
-                    <div className="col-span-4 flex items-center gap-3.5 min-w-0">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={thumbnail}
-                        alt={yard.yardName}
-                        width={40}
-                        height={40}
-                        style={{
-                          width: "40px",
-                          height: "40px",
-                          minWidth: "40px",
-                          minHeight: "40px",
-                          maxWidth: "40px",
-                          maxHeight: "40px",
-                          objectFit: "cover",
-                          borderRadius: "9999px",
-                        }}
-                        className="w-10 h-10 rounded-full object-cover shadow-xs border-2 border-white/80 shrink-0 group-hover:scale-105 transition-transform"
-                        onError={(e) => {
-                          (e.currentTarget as HTMLImageElement).src = "/samples/mixed-garden-starting-v4.png";
-                        }}
-                      />
-                      <div className="min-w-0">
-                        <span className="font-bold text-sm block truncate text-stone-900 group-hover:text-emerald-950">
-                          {yard.yardName}
-                        </span>
-                        <span className="text-xs text-stone-600 block truncate">
-                          {yard.gardenerAlias}
-                        </span>
+                    <td className="lb-col-name">
+                      <div className="lb-name-cell">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={thumbnail}
+                          alt={yard.yardName}
+                          width={40}
+                          height={40}
+                          className="lb-avatar"
+                          onError={(e) => {
+                            (e.currentTarget as HTMLImageElement).src = "/samples/mixed-garden-starting-v4.png";
+                          }}
+                        />
+                        <div className="lb-name-info">
+                          <span className="lb-yard-name">{yard.yardName}</span>
+                          <span className="lb-gardener-alias">{yard.gardenerAlias}</span>
+                        </div>
                       </div>
-                    </div>
+                    </td>
 
                     {/* Column 2: Rank (Formatted like 001, 002, 003...) */}
-                    <div className="col-span-2 text-center">
-                      <span className={`font-mono font-black text-base tracking-wider ${theme.rankColor}`}>
-                        {formatRank(rank)}
-                      </span>
-                    </div>
+                    <td className="lb-col-rank">
+                      <span className="lb-rank-num">{formatRank(rank)}</span>
+                    </td>
 
                     {/* Column 3: Location / County */}
-                    <div className="col-span-3 text-xs font-medium text-stone-700 flex items-center gap-1.5 truncate">
-                      <MapPin className="w-3.5 h-3.5 text-stone-400 shrink-0" />
-                      <span className="truncate">{yard.townOrCounty}</span>
-                    </div>
+                    <td className="lb-col-location">
+                      <div className="lb-location-cell">
+                        <MapPin style={{ width: 14, height: 14, color: "#78857a", flexShrink: 0 }} />
+                        <span>{yard.townOrCounty}</span>
+                      </div>
+                    </td>
 
                     {/* Column 4: Score */}
-                    <div className="col-span-1 text-center">
-                      <span className="font-mono font-black text-lg text-stone-900 block leading-tight">
-                        {yard.score}
-                      </span>
-                    </div>
+                    <td className="lb-col-score">
+                      <span className="lb-score-cell">{yard.score}</span>
+                    </td>
 
                     {/* Column 5: Badges (Circular Badges Matching Reference) */}
-                    <div className="col-span-2 flex items-center justify-end gap-1.5">
-                      {yard.badges.slice(0, 4).map((b) => (
-                        <span
-                          key={b.id}
-                          title={`${b.label}: ${b.description}`}
-                          className="w-8 h-8 rounded-full bg-white/95 border border-stone-200/60 shadow-xs flex items-center justify-center text-sm shrink-0 hover:scale-110 transition-transform"
-                        >
-                          {b.icon}
-                        </span>
-                      ))}
-                      {yard.badges.length > 4 && (
-                        <span className="text-[11px] font-bold text-stone-600 bg-white/80 px-2 py-1 rounded-full shadow-xs">
-                          +{yard.badges.length - 4}
-                        </span>
-                      )}
-                    </div>
-                  </div>
+                    <td className="lb-col-badges">
+                      <div className="lb-badges-cell">
+                        {yard.badges.slice(0, 4).map((b) => (
+                          <span
+                            key={b.id}
+                            title={`${b.label}: ${b.description}`}
+                            className="lb-badge-icon"
+                          >
+                            {b.icon}
+                          </span>
+                        ))}
+                        {yard.badges.length > 4 && (
+                          <span className="lb-badge-more">
+                            +{yard.badges.length - 4}
+                          </span>
+                        )}
+                      </div>
+                    </td>
+                  </tr>
                 );
-              })}
-            </div>
-          )}
-        </div>
+              })
+            )}
+          </tbody>
+        </table>
       </div>
 
-      {/* Bottom Badge Legend Card (Exactly Matching Reference Image) */}
-      <div className="bg-white border border-stone-200/90 rounded-2xl p-5 shadow-xs">
-        <div className="text-[11px] font-bold uppercase tracking-wider text-stone-400 mb-3 text-center sm:text-left">
+      {/* Bottom Badge Legend Card (Matching Reference Image) */}
+      <div className="lb-legend-card">
+        <div className="lb-legend-heading">
           Community Ecological Badges & Achievements
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5">
+        <div className="lb-legend-grid">
           {BADGE_LEGEND.map((badge) => (
-            <div
-              key={badge.title}
-              className="flex items-center gap-3 p-2.5 rounded-xl bg-stone-50/70 border border-stone-200/50"
-            >
-              <div className="w-9 h-9 rounded-full bg-white border border-stone-200 shadow-xs flex items-center justify-center text-base shrink-0">
+            <div key={badge.title} className="lb-legend-item">
+              <div className="lb-legend-icon">
                 {badge.icon}
               </div>
-              <div className="min-w-0">
-                <span className="text-xs font-bold text-stone-900 block truncate leading-tight">
+              <div>
+                <span className="lb-legend-title block">
                   {badge.title}
                 </span>
-                <span className="text-[11px] text-stone-500 block truncate leading-tight mt-0.5">
+                <span className="lb-legend-desc block">
                   {badge.desc}
                 </span>
               </div>
