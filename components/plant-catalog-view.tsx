@@ -507,6 +507,7 @@ export function PlantCatalogView({
       {/* Editor Modal */}
       {isEditorOpen && user && (
         <CuratedPlantEditor
+          key={editingPlant ? editingPlant.id : "new-plant"}
           plant={editingPlant}
           user={user}
           onClose={() => setIsEditorOpen(false)}

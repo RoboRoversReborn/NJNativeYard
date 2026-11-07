@@ -275,6 +275,24 @@ export async function getCuratedPlant(id: string): Promise<CuratedPlant | undefi
   return undefined;
 }
 
+function cleanFirestorePayload(obj: any): any {
+  if (obj === undefined) return null;
+  if (obj === null) return null;
+  if (Array.isArray(obj)) {
+    return obj.map(cleanFirestorePayload).filter((v) => v !== undefined);
+  }
+  if (typeof obj === "object" && !(obj instanceof Date)) {
+    const res: Record<string, any> = {};
+    for (const [key, val] of Object.entries(obj)) {
+      if (val !== undefined) {
+        res[key] = cleanFirestorePayload(val);
+      }
+    }
+    return res;
+  }
+  return obj;
+}
+
 /** Save or update a plant document in Firestore */
 export async function saveCuratedPlant(
   plant: CuratedPlant,
@@ -301,7 +319,8 @@ export async function saveCuratedPlant(
     },
   };
 
-  await setDoc(doc(firestore, "curated_plants", plant.id), updatedPlant, { merge: true });
+  const cleanedPayload = cleanFirestorePayload(updatedPlant);
+  await setDoc(doc(firestore, "curated_plants", plant.id), cleanedPayload, { merge: true });
 
   // Update in-memory and local cache
   if (memoryCache) {
@@ -314,7 +333,10 @@ export async function saveCuratedPlant(
     }
     if (typeof window !== "undefined") {
       try {
-        window.localStorage.setItem(CACHE_STORAGE_KEY, JSON.stringify(memoryCache));
+        window.localStorage.setItem(
+          CACHE_STORAGE_KEY,
+          JSON.stringify({ timestamp: Date.now(), items: memoryCache })
+        );
       } catch {
         /* storage quota ignore */
       }

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   X,
   Camera,
@@ -52,6 +52,29 @@ export function CuratedPlantEditor({
   // Photos & Sources
   const [photos, setPhotos] = useState<CuratedPhoto[]>(plant?.photos || []);
   const [sources, setSources] = useState<CuratedSource[]>(plant?.sources || []);
+
+  // Sync state whenever editing plant changes
+  useEffect(() => {
+    setId(plant?.id || "");
+    setCommonName(plant?.commonName || "");
+    setScientificName(plant?.scientificName || "");
+    setFamily(plant?.family || "");
+    setStatus(plant?.status || "native");
+    setType(plant?.type || "Shrub");
+    setGrowthHabit(plant?.growthHabit || "SHRUB");
+    setSun(plant?.sun || "Full sun–part shade");
+    setMoisture(plant?.moisture || "Medium");
+    setHeight(plant?.height || "");
+    setBloom(plant?.bloom || "");
+    setDeerResistance(plant?.deerResistance || "MODERATE");
+    setLepidoptera(plant?.lepidoptera ?? plant?.lepidopteraCount ?? "");
+    setSpecialistBeeSupport(Boolean(plant?.specialistBeeSupport));
+    setDescription(plant?.description || "");
+    setPhotos(plant?.photos || []);
+    setSources(plant?.sources || []);
+    setError("");
+    setSuccess(false);
+  }, [plant]);
 
   // New photo upload state
   const [uploadFile, setUploadFile] = useState<File | null>(null);
@@ -151,7 +174,7 @@ export function CuratedPlantEditor({
       setError("Scientific name and common name are required.");
       return;
     }
-    const finalId = id.trim() || scientificName.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    const finalId = (plant?.id || id.trim() || scientificName.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-")).trim();
 
     const plantDoc: CuratedPlant = {
       id: finalId,
@@ -159,6 +182,7 @@ export function CuratedPlantEditor({
       commonName: commonName.trim(),
       family: family.trim() || undefined,
       status,
+      curationStatus: plant?.curationStatus || (isNew ? "curated" : undefined),
       njStatus: status === "keystone" ? "NATIVE_KEYSTONE" : status === "native" ? "NATIVE" : status === "invasive" ? "INVASIVE_REGULATED" : "NON_NATIVE_BENIGN",
       type,
       growthHabit,
