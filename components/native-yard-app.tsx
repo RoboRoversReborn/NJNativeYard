@@ -11,6 +11,7 @@ import { AreaBaseline } from "./area-baseline";
 import { PlantCatalog } from "./plant-catalog";
 import { PlantCatalogView } from "./plant-catalog-view";
 import { TeamManagementView } from "./team-management-view";
+import { LeaderboardView } from "./leaderboard-view";
 import { isCurator } from "@/lib/curated-plants-service";
 import { CaptureContext } from "./capture-context";
 import { SaveToast } from "./save-toast";
@@ -46,6 +47,7 @@ type View =
   | "examples"
   | "explore"
   | "team"
+  | "leaderboard"
   | "welcome"
   | "compare"
   | "home"
@@ -251,6 +253,8 @@ export function NativeYardApp({
       "welcome",
       "examples",
       "explore",
+      "team",
+      "leaderboard",
       "compare",
       "scan",
       "analysis",
@@ -1104,13 +1108,15 @@ export function NativeYardApp({
               </span>
             </button>
             {user ? <PersonalHeaderNav user={user}
-              active={view === "welcome" ? "home" : view === "explore" ? "explore" : view === "team" ? "team" : contentView === "garden" || ["properties","analysis","scan","roadmap","compare"].includes(view) ? "yard" : null}
+              active={view === "welcome" ? "home" : view === "explore" ? "explore" : view === "leaderboard" ? "leaderboard" : view === "team" ? "team" : contentView === "garden" || ["properties","analysis","scan","roadmap","compare"].includes(view) ? "yard" : null}
               onHome={()=>navigate("welcome")}
               onYard={()=>{setAreaId("");navigate("home");}}
+              onLeaderboard={()=>navigate("leaderboard")}
               onExplore={()=>navigate("explore")}
               onTeam={isCurator(user) ? () => navigate("team") : undefined}
               onSettings={()=>navigate("profile")} onSignOut={()=>void signOut()} signingOut={signingOut} /> : (
               <nav aria-label="Main navigation">
+                <button aria-current={view === "leaderboard" ? "page" : undefined} onClick={()=>navigate("leaderboard")}>Leaderboard</button>
                 <button aria-current={view === "explore" ? "page" : undefined} onClick={()=>navigate("explore")}>Flora Catalog</button>
                 <button aria-current={view === "examples" ? "page" : undefined} onClick={()=>navigate("examples")}>Examples</button>
 <>
@@ -1241,7 +1247,7 @@ export function NativeYardApp({
                   {sampleSurvey && <span>/ {sampleYardById(sampleSurvey.sampleId)?.title || "Illustrative garden"}</span>}
                 </nav>
               )}
-              {user && !sampleSurvey && !["home", "welcome", "examples", "explore"].includes(view) && (
+              {user && !sampleSurvey && !["home", "welcome", "examples", "explore", "team", "leaderboard"].includes(view) && (
                 <nav aria-label="Breadcrumb" className="garden-breadcrumbs">
                   <button
                     className="text-button"
@@ -1452,6 +1458,14 @@ export function NativeYardApp({
                   user={user}
                   onBack={() => navigate(user ? "home" : "welcome")}
                   onOpenTeam={() => navigate("team")}
+                />
+              )}
+              {contentView === "leaderboard" && (
+                <LeaderboardView
+                  user={user}
+                  properties={properties}
+                  surveys={surveys}
+                  onNavigateHome={() => navigate(user ? "home" : "welcome")}
                 />
               )}
               {contentView === "home" && (
