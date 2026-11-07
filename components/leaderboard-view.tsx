@@ -18,6 +18,8 @@ import {
   Unlock,
   CheckCircle2,
   RefreshCw,
+  Medal,
+  Crown,
 } from "lucide-react";
 import type { PublicYard, LeaderboardSortBy } from "@/lib/leaderboard-types";
 import {
@@ -120,13 +122,13 @@ export function LeaderboardView({
     try {
       if (isCurrentlyPublished) {
         await unpublishYardFromLeaderboard(property.id, user.id);
-        setToggleNotice(`"${property.name}" unpublished from community leaderboard.`);
+        setToggleNotice(`"${property.name}" set to Private.`);
       } else {
         const propSurveys = surveys.filter((s) =>
           property.yard_areas.some((a) => a.id === s.areaId)
         );
         await publishYardToLeaderboard(property, propSurveys, user);
-        setToggleNotice(`"${property.name}" published to community leaderboard!`);
+        setToggleNotice(`"${property.name}" set to Public on Leaderboard!`);
       }
 
       // Refresh list
@@ -144,33 +146,33 @@ export function LeaderboardView({
   }
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-8 space-y-8 animate-in fade-in duration-200">
+    <div className="w-full max-w-6xl mx-auto px-4 py-8 space-y-6 animate-in fade-in duration-200">
       {/* Header Banner */}
       <div className="relative overflow-hidden bg-gradient-to-br from-stone-900 via-emerald-950 to-stone-900 text-white rounded-3xl p-6 sm:p-10 shadow-xl border border-stone-800">
         <div className="relative z-10 max-w-3xl space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
             <Trophy className="w-3.5 h-3.5" />
-            New Jersey Native Yard Leaderboard
+            NJ Native Yard Leaderboard
           </div>
           <h1 className="text-3xl sm:text-4xl font-serif font-bold tracking-tight text-stone-50">
-            Rewilding New Jersey, Yard by Yard
+            Garden State Habitat Rankings
           </h1>
           <p className="text-sm sm:text-base text-stone-300 max-w-2xl leading-relaxed">
-            Gamifying habitat restoration across the Garden State. Celebrate your native plant sanctuary, inspire your neighbors, and explore verified yards anchoring local ecosystems.
+            Gamifying habitat restoration across New Jersey. Track high-scoring yards, explore native plant inventories, and inspect top ecological sanctuaries.
           </p>
 
-          {/* Aggregate Community Metrics */}
+          {/* Quick Metrics */}
           <div className="grid grid-cols-3 gap-4 pt-4 border-t border-stone-800/80 max-w-lg">
             <div>
               <span className="text-xs text-stone-400 block">Ranked Yards</span>
               <span className="text-2xl font-bold font-mono text-emerald-400">{yards.length}</span>
             </div>
             <div>
-              <span className="text-xs text-stone-400 block">Native Plant Detections</span>
+              <span className="text-xs text-stone-400 block">Native Flora Found</span>
               <span className="text-2xl font-bold font-mono text-stone-100">{totalNativeSpecies}+</span>
             </div>
             <div>
-              <span className="text-xs text-stone-400 block">Avg Habitat Score</span>
+              <span className="text-xs text-stone-400 block">Average Score</span>
               <span className="text-2xl font-bold font-mono text-amber-400">{avgScore} / 100</span>
             </div>
           </div>
@@ -181,17 +183,17 @@ export function LeaderboardView({
         </div>
       </div>
 
-      {/* User Yard Standing & Privacy Controls */}
+      {/* Simplified Privacy Control: Yes/No Toggle Switch */}
       {user && userPropertiesWithSurveys.length > 0 && (
-        <div className="bg-[#FDFBF7] border border-stone-200/90 rounded-2xl p-5 shadow-xs">
+        <div className="bg-[#FAF8F5] border border-stone-200/90 rounded-2xl p-4 sm:p-5 shadow-xs">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div className="space-y-1">
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-900 flex items-center gap-1">
+            <div className="space-y-0.5">
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-950 flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-emerald-700" />
-                Your Yard Status & Privacy Controls
+                Your Yard Privacy Settings
               </span>
               <p className="text-xs text-stone-600">
-                During the pilot phase, yards with surveys are published by default to encourage community exchange. You can unpublish anytime to keep your yard private.
+                Choose whether your yard appears on the public leaderboard. Street address and private details are never shared.
               </p>
             </div>
 
@@ -203,32 +205,37 @@ export function LeaderboardView({
                 return (
                   <div
                     key={prop.id}
-                    className="flex items-center gap-2.5 bg-white border border-stone-200 px-3.5 py-2 rounded-xl text-xs"
+                    className="flex items-center gap-3 bg-white border border-stone-200 px-3.5 py-2 rounded-xl shadow-xs"
                   >
-                    <span className="font-semibold text-stone-800">{prop.name}</span>
+                    <div className="min-w-0">
+                      <span className="font-semibold text-stone-900 text-xs block truncate max-w-[130px]">
+                        {prop.name}
+                      </span>
+                      <span className="text-[11px] text-stone-500">
+                        Public on Leaderboard:{" "}
+                        <strong className={isPublished ? "text-emerald-700" : "text-stone-600"}>
+                          {isPublished ? "Yes" : "No"}
+                        </strong>
+                      </span>
+                    </div>
+
+                    {/* Simple Yes/No Switch Toggle */}
                     <button
                       type="button"
+                      role="switch"
+                      aria-checked={isPublished}
+                      aria-label={`Toggle public leaderboard visibility for ${prop.name}`}
                       disabled={isBusy}
                       onClick={() => handleTogglePublish(prop, isPublished)}
-                      className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg font-medium transition-colors ${
-                        isPublished
-                          ? "bg-emerald-100 text-emerald-900 hover:bg-emerald-200"
-                          : "bg-stone-200 text-stone-700 hover:bg-stone-300"
+                      className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-hidden focus:ring-2 focus:ring-emerald-700 focus:ring-offset-1 ${
+                        isPublished ? "bg-emerald-700" : "bg-stone-300"
                       }`}
                     >
-                      {isBusy ? (
-                        <RefreshCw className="w-3.5 h-3.5 animate-spin" />
-                      ) : isPublished ? (
-                        <>
-                          <Unlock className="w-3.5 h-3.5 text-emerald-700" />
-                          <span>Published (Click to Unpublish)</span>
-                        </>
-                      ) : (
-                        <>
-                          <Lock className="w-3.5 h-3.5 text-stone-500" />
-                          <span>Private (Click to Publish)</span>
-                        </>
-                      )}
+                      <span
+                        className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow-md ring-0 transition duration-200 ease-in-out ${
+                          isPublished ? "translate-x-5" : "translate-x-0"
+                        }`}
+                      />
                     </button>
                   </div>
                 );
@@ -236,7 +243,7 @@ export function LeaderboardView({
             </div>
           </div>
           {toggleNotice && (
-            <p className="text-xs text-emerald-800 mt-2 font-medium animate-in fade-in">
+            <p className="text-xs text-emerald-800 mt-2 font-medium">
               {toggleNotice}
             </p>
           )}
@@ -245,7 +252,7 @@ export function LeaderboardView({
 
       {/* Filter and Search Bar */}
       <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 bg-white p-3.5 rounded-2xl border border-stone-200 shadow-xs">
-        {/* Search Input */}
+        {/* Search */}
         <div className="relative flex-1">
           <Search className="w-4 h-4 text-stone-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
@@ -257,7 +264,7 @@ export function LeaderboardView({
           />
         </div>
 
-        {/* County Dropdown */}
+        {/* County Filter */}
         <div className="flex items-center gap-2">
           <span className="text-xs text-stone-500 whitespace-nowrap hidden sm:inline">County:</span>
           <select
@@ -272,7 +279,7 @@ export function LeaderboardView({
             ))}
           </select>
 
-          {/* Sort By Selector */}
+          {/* Sort Selector */}
           <span className="text-xs text-stone-500 whitespace-nowrap hidden sm:inline">Rank by:</span>
           <div className="inline-flex rounded-xl bg-stone-100 p-0.5 text-xs font-medium">
             <button
@@ -291,7 +298,7 @@ export function LeaderboardView({
                 sortBy === "species" ? "bg-white text-stone-900 shadow-xs font-bold" : "text-stone-600 hover:text-stone-900"
               }`}
             >
-              Native Species
+              Species
             </button>
             <button
               type="button"
@@ -300,258 +307,207 @@ export function LeaderboardView({
                 sortBy === "keystone" ? "bg-white text-stone-900 shadow-xs font-bold" : "text-stone-600 hover:text-stone-900"
               }`}
             >
-              Keystone
+              Keystones
             </button>
           </div>
         </div>
       </div>
 
-      {/* Podium for Top 3 (if no search filter applied and >= 3 yards) */}
-      {!searchQuery && selectedCounty === "All New Jersey" && yards.length >= 3 && (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-          {/* #2 Silver (left on desktop) */}
-          <div
-            onClick={() => setSelectedYard(yards[1])}
-            className="cursor-pointer group order-2 md:order-1 bg-white border-2 border-stone-200 hover:border-stone-400 rounded-2xl p-5 shadow-xs transition-all hover:shadow-md flex flex-col justify-between"
-          >
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-slate-200 text-slate-800 font-bold font-mono text-sm shadow-xs">
-                  #2
-                </span>
-                <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-800">
-                  Silver Habitat
-                </span>
-              </div>
-              <div>
-                <h3 className="font-serif font-bold text-lg text-stone-900 group-hover:text-emerald-900 transition-colors">
-                  {yards[1].yardName}
-                </h3>
-                <p className="text-xs text-stone-500 flex items-center gap-1 mt-0.5">
-                  <MapPin className="w-3.5 h-3.5" />
-                  {yards[1].townOrCounty}
-                </p>
-                <p className="text-xs text-stone-600 font-medium mt-1">
-                  Gardener: {yards[1].gardenerAlias}
-                </p>
-              </div>
-            </div>
-            <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between">
-              <div>
-                <span className="text-[10px] uppercase tracking-wider text-stone-400 block">Score</span>
-                <span className="text-2xl font-bold font-mono text-stone-900">{yards[1].score}</span>
-              </div>
-              <span className="text-xs font-medium text-emerald-800 group-hover:underline flex items-center gap-0.5">
-                View Yard <ChevronRight className="w-3.5 h-3.5" />
-              </span>
-            </div>
-          </div>
-
-          {/* #1 Gold (center on desktop, slightly taller) */}
-          <div
-            onClick={() => setSelectedYard(yards[0])}
-            className="cursor-pointer group order-1 md:order-2 bg-gradient-to-b from-amber-50/50 to-white border-2 border-amber-300 hover:border-amber-400 rounded-2xl p-6 shadow-md transition-all hover:shadow-lg flex flex-col justify-between relative overflow-hidden"
-          >
-            <div className="absolute top-0 right-0 bg-amber-400 text-amber-950 text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider shadow-xs">
-              Statewide Leader
-            </div>
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-amber-400 text-amber-950 font-black font-mono text-base shadow-sm">
-                  #1
-                </span>
-              </div>
-              <div>
-                <h3 className="font-serif font-bold text-xl text-stone-900 group-hover:text-amber-900 transition-colors">
-                  {yards[0].yardName}
-                </h3>
-                <p className="text-xs text-stone-500 flex items-center gap-1 mt-0.5">
-                  <MapPin className="w-3.5 h-3.5" />
-                  {yards[0].townOrCounty}
-                </p>
-                <p className="text-xs text-stone-700 font-medium mt-1">
-                  Gardener: {yards[0].gardenerAlias}
-                </p>
-              </div>
-
-              {/* Badges preview */}
-              {yards[0].badges.length > 0 && (
-                <div className="flex flex-wrap gap-1.5 pt-1">
-                  {yards[0].badges.slice(0, 3).map((b) => (
-                    <span
-                      key={b.id}
-                      className="text-xs px-2 py-0.5 bg-amber-100/80 text-amber-900 rounded-md font-medium"
-                    >
-                      {b.icon} {b.label}
-                    </span>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <div className="mt-4 pt-4 border-t border-amber-200/60 flex items-center justify-between">
-              <div>
-                <span className="text-[10px] uppercase tracking-wider text-amber-800 font-semibold block">Top Habitat Score</span>
-                <span className="text-3xl font-black font-mono text-amber-950">{yards[0].score}</span>
-              </div>
-              <span className="text-xs font-semibold text-amber-900 group-hover:underline flex items-center gap-0.5">
-                Inspect Showcase <ChevronRight className="w-4 h-4" />
-              </span>
-            </div>
-          </div>
-
-          {/* #3 Bronze (right on desktop) */}
-          <div
-            onClick={() => setSelectedYard(yards[2])}
-            className="cursor-pointer group order-3 md:order-3 bg-white border-2 border-stone-200 hover:border-stone-400 rounded-2xl p-5 shadow-xs transition-all hover:shadow-md flex flex-col justify-between"
-          >
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-700/20 text-amber-900 font-bold font-mono text-sm shadow-xs">
-                  #3
-                </span>
-                <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900">
-                  Bronze Habitat
-                </span>
-              </div>
-              <div>
-                <h3 className="font-serif font-bold text-lg text-stone-900 group-hover:text-emerald-900 transition-colors">
-                  {yards[2].yardName}
-                </h3>
-                <p className="text-xs text-stone-500 flex items-center gap-1 mt-0.5">
-                  <MapPin className="w-3.5 h-3.5" />
-                  {yards[2].townOrCounty}
-                </p>
-                <p className="text-xs text-stone-600 font-medium mt-1">
-                  Gardener: {yards[2].gardenerAlias}
-                </p>
-              </div>
-            </div>
-            <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between">
-              <div>
-                <span className="text-[10px] uppercase tracking-wider text-stone-400 block">Score</span>
-                <span className="text-2xl font-bold font-mono text-stone-900">{yards[2].score}</span>
-              </div>
-              <span className="text-xs font-medium text-emerald-800 group-hover:underline flex items-center gap-0.5">
-                View Yard <ChevronRight className="w-3.5 h-3.5" />
-              </span>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Leaderboard Table / Rows */}
+      {/* Gaming Leaderboard Table */}
       <div className="bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-xs">
-        <div className="px-6 py-4 border-b border-stone-200 flex items-center justify-between bg-stone-50/50">
-          <h2 className="text-sm font-bold uppercase tracking-wider text-stone-700 flex items-center gap-2">
-            <Globe className="w-4 h-4 text-emerald-800" />
-            Ranked Yard Standings
-          </h2>
+        <div className="px-6 py-4 border-b border-stone-200 flex items-center justify-between bg-stone-50/70">
+          <div className="flex items-center gap-2">
+            <Trophy className="w-4 h-4 text-amber-600" />
+            <h2 className="text-sm font-bold uppercase tracking-wider text-stone-800">
+              Community Standings
+            </h2>
+          </div>
           <span className="text-xs text-stone-500">
-            Showing {yards.length} {yards.length === 1 ? "yard" : "yards"}
+            {yards.length} {yards.length === 1 ? "yard" : "yards"} listed • Click any row to inspect details
           </span>
         </div>
 
         {loading ? (
           <div className="p-12 text-center text-stone-500 space-y-3">
             <RefreshCw className="w-6 h-6 animate-spin mx-auto text-emerald-800" />
-            <p className="text-sm">Loading community leaderboard...</p>
+            <p className="text-sm">Loading leaderboard rankings...</p>
           </div>
         ) : yards.length === 0 ? (
           <div className="p-12 text-center text-stone-500 space-y-2">
             <Trophy className="w-8 h-8 text-stone-300 mx-auto" />
             <p className="text-sm font-medium">No yards match your search criteria.</p>
-            <p className="text-xs text-stone-400">Try adjusting your county or search filter.</p>
+            <p className="text-xs text-stone-400">Try adjusting your county filter or search query.</p>
           </div>
         ) : (
-          <div className="divide-y divide-stone-100">
-            {yards.map((yard, index) => {
-              const rank = index + 1;
-              const isTopThree = rank <= 3;
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse min-w-[760px]">
+              <thead>
+                <tr className="border-b border-stone-200 bg-stone-50/40 text-[11px] font-bold uppercase tracking-wider text-stone-500">
+                  <th scope="col" className="py-3 px-4 text-center w-16">Rank</th>
+                  <th scope="col" className="py-3 px-4">Yard & Gardener</th>
+                  <th scope="col" className="py-3 px-4 text-center">Score</th>
+                  <th scope="col" className="py-3 px-4 text-center">Native Species</th>
+                  <th scope="col" className="py-3 px-4 text-center">Keystones</th>
+                  <th scope="col" className="py-3 px-4 text-center">Invasives</th>
+                  <th scope="col" className="py-3 px-4">Badges</th>
+                  <th scope="col" className="py-3 px-4 text-right">Showcase</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-stone-100 text-sm">
+                {yards.map((yard, index) => {
+                  const rank = index + 1;
+                  const isGold = rank === 1;
+                  const isSilver = rank === 2;
+                  const isBronze = rank === 3;
+                  const thumbnail = yard.coverPhotoUrl || "/samples/mixed-garden-starting-v4.png";
 
-              return (
-                <div
-                  key={yard.id}
-                  onClick={() => setSelectedYard(yard)}
-                  className="px-6 py-4 hover:bg-stone-50/80 transition-colors flex items-center justify-between gap-4 cursor-pointer group"
-                >
-                  <div className="flex items-center gap-4 min-w-0">
-                    {/* Rank Badge */}
-                    <span
-                      className={`inline-flex items-center justify-center w-8 h-8 rounded-full font-mono text-sm font-bold shrink-0 ${
-                        rank === 1
-                          ? "bg-amber-400 text-amber-950 shadow-xs"
-                          : rank === 2
-                          ? "bg-slate-200 text-slate-800"
-                          : rank === 3
-                          ? "bg-amber-700/20 text-amber-900"
-                          : "bg-stone-100 text-stone-600"
+                  return (
+                    <tr
+                      key={yard.id}
+                      onClick={() => setSelectedYard(yard)}
+                      className={`cursor-pointer group transition-colors ${
+                        isGold
+                          ? "bg-amber-50/30 hover:bg-amber-50/60"
+                          : isSilver
+                          ? "bg-slate-50/30 hover:bg-slate-50/60"
+                          : isBronze
+                          ? "bg-amber-900/5 hover:bg-amber-900/10"
+                          : "hover:bg-emerald-50/40"
                       }`}
                     >
-                      {rank}
-                    </span>
+                      {/* Rank Column */}
+                      <td className="py-3 px-4 text-center">
+                        <div className="inline-flex items-center justify-center">
+                          {isGold ? (
+                            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-400 text-amber-950 font-black font-mono text-sm shadow-xs border border-amber-300">
+                              #1
+                            </span>
+                          ) : isSilver ? (
+                            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-slate-200 text-slate-800 font-bold font-mono text-sm shadow-xs border border-slate-300">
+                              #2
+                            </span>
+                          ) : isBronze ? (
+                            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-700/20 text-amber-900 font-bold font-mono text-sm shadow-xs border border-amber-300/40">
+                              #3
+                            </span>
+                          ) : (
+                            <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-stone-100 text-stone-600 font-bold font-mono text-xs">
+                              {rank}
+                            </span>
+                          )}
+                        </div>
+                      </td>
 
-                    {/* Yard Info */}
-                    <div className="min-w-0 space-y-0.5">
-                      <div className="flex items-center gap-2">
-                        <h3 className="font-semibold text-stone-900 text-sm truncate group-hover:text-emerald-900 transition-colors">
-                          {yard.yardName}
-                        </h3>
-                        {yard.badges.slice(0, 2).map((b) => (
-                          <span
-                            key={b.id}
-                            title={b.description}
-                            className="hidden sm:inline-block text-xs"
-                          >
-                            {b.icon}
+                      {/* Yard & Image Column */}
+                      <td className="py-3 px-4">
+                        <div className="flex items-center gap-3">
+                          {/* Yard Small Thumbnail */}
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={thumbnail}
+                            alt={yard.yardName}
+                            className="w-12 h-12 rounded-xl object-cover border border-stone-200/90 shadow-xs shrink-0 group-hover:scale-105 transition-transform"
+                            onError={(e) => {
+                              (e.currentTarget as HTMLImageElement).src = "/samples/mixed-garden-starting-v4.png";
+                            }}
+                          />
+                          <div className="min-w-0">
+                            <span className="font-bold text-stone-900 group-hover:text-emerald-900 transition-colors block truncate max-w-[220px] sm:max-w-xs">
+                              {yard.yardName}
+                            </span>
+                            <div className="flex items-center gap-1.5 text-xs text-stone-500 mt-0.5">
+                              <span className="font-medium text-stone-700">{yard.gardenerAlias}</span>
+                              <span>•</span>
+                              <span className="flex items-center gap-0.5 text-stone-500 truncate">
+                                <MapPin className="w-3 h-3 text-stone-400 shrink-0" />
+                                {yard.townOrCounty}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+
+                      {/* Habitat Score */}
+                      <td className="py-3 px-4 text-center">
+                        <div className="inline-flex flex-col items-center">
+                          <span className="text-xl font-black font-mono text-emerald-950 leading-none">
+                            {yard.score}
                           </span>
-                        ))}
-                      </div>
-                      <div className="flex items-center gap-x-3 text-xs text-stone-500">
-                        <span>By {yard.gardenerAlias}</span>
-                        <span>•</span>
-                        <span className="flex items-center gap-0.5">
-                          <MapPin className="w-3 h-3 text-stone-400" />
-                          {yard.townOrCounty}
+                          <span className="text-[10px] font-medium text-emerald-800 bg-emerald-100/70 px-1.5 py-0.2 rounded-full mt-1">
+                            {yard.score >= 80 ? "Thriving" : yard.score >= 50 ? "Growing" : "Developing"}
+                          </span>
+                        </div>
+                      </td>
+
+                      {/* Native Species */}
+                      <td className="py-3 px-4 text-center font-mono">
+                        <span className="inline-flex items-center gap-1 font-semibold text-stone-800">
+                          <Leaf className="w-3.5 h-3.5 text-emerald-700" />
+                          {yard.nativeSpeciesCount}
                         </span>
-                      </div>
-                    </div>
-                  </div>
+                      </td>
 
-                  {/* Right Metrics & CTA */}
-                  <div className="flex items-center gap-6 shrink-0">
-                    <div className="hidden sm:block text-right">
-                      <span className="text-xs font-semibold text-stone-800 block">
-                        {yard.nativeSpeciesCount} native species
-                      </span>
-                      <span className="text-[11px] text-stone-500">
-                        {yard.keystoneCount} keystone genera
-                      </span>
-                    </div>
+                      {/* Keystone Count */}
+                      <td className="py-3 px-4 text-center font-mono">
+                        <span className="inline-flex items-center gap-1 font-semibold text-amber-900">
+                          <Award className="w-3.5 h-3.5 text-amber-600" />
+                          {yard.keystoneCount}
+                        </span>
+                      </td>
 
-                    {/* Score */}
-                    <div className="text-right">
-                      <span className="text-xl font-bold font-mono text-emerald-900 block leading-none">
-                        {yard.score}
-                      </span>
-                      <span className="text-[10px] text-stone-500 uppercase tracking-wider">Score</span>
-                    </div>
+                      {/* Invasives Count */}
+                      <td className="py-3 px-4 text-center font-mono">
+                        {yard.invasiveCount === 0 ? (
+                          <span className="inline-flex items-center gap-1 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/60">
+                            <ShieldCheck className="w-3 h-3" />
+                            0
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center text-xs font-semibold text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200">
+                            {yard.invasiveCount}
+                          </span>
+                        )}
+                      </td>
 
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setSelectedYard(yard);
-                      }}
-                      className="hidden md:inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-emerald-900 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-xl transition-colors"
-                    >
-                      <Eye className="w-3.5 h-3.5" />
-                      Showcase
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
+                      {/* Badges Preview */}
+                      <td className="py-3 px-4">
+                        <div className="flex flex-wrap gap-1 max-w-[150px]">
+                          {yard.badges.slice(0, 3).map((b) => (
+                            <span
+                              key={b.id}
+                              title={`${b.label}: ${b.description}`}
+                              className="text-sm px-1.5 py-0.5 bg-stone-100 rounded-md border border-stone-200/60"
+                            >
+                              {b.icon}
+                            </span>
+                          ))}
+                          {yard.badges.length > 3 && (
+                            <span className="text-[10px] font-semibold text-stone-500 bg-stone-100 px-1 py-0.5 rounded-md">
+                              +{yard.badges.length - 3}
+                            </span>
+                          )}
+                        </div>
+                      </td>
+
+                      {/* Action Button */}
+                      <td className="py-3 px-4 text-right">
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSelectedYard(yard);
+                          }}
+                          className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-emerald-900 bg-white hover:bg-emerald-50 border border-stone-200 hover:border-emerald-300 rounded-xl transition-all shadow-xs group-hover:border-emerald-500"
+                        >
+                          <Eye className="w-3.5 h-3.5 text-emerald-700" />
+                          Inspect
+                        </button>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
           </div>
         )}
       </div>

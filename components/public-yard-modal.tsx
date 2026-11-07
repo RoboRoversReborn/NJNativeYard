@@ -68,30 +68,41 @@ export function PublicYardModal({
         {/* Modal Scrollable Content */}
         <div className="flex-1 overflow-y-auto px-6 py-6 space-y-6">
           {/* Header Card */}
-          <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-6 border-b border-stone-200">
-            <div className="space-y-1.5">
-              <div className="flex items-center gap-2">
-                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-800/10 text-emerald-900 border border-emerald-800/20">
-                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-700" />
-                  Verified NJ Yard
-                </span>
-                <span className="text-xs text-stone-500 flex items-center gap-1">
-                  <Calendar className="w-3.5 h-3.5" />
-                  Published {new Date(yard.publishedAt).toLocaleDateString("en-US", { month: "short", year: "numeric" })}
-                </span>
-              </div>
-              <h1 id="showcase-title" className="text-2xl sm:text-3xl font-serif font-bold tracking-tight text-stone-900">
-                {yard.yardName}
-              </h1>
-              <div className="flex flex-wrap items-center gap-y-1 gap-x-4 text-sm text-stone-600">
-                <span className="flex items-center gap-1 text-stone-800 font-medium">
-                  <UserCheck className="w-4 h-4 text-stone-500" />
-                  {yard.gardenerAlias}
-                </span>
-                <span className="flex items-center gap-1">
-                  <MapPin className="w-4 h-4 text-stone-400" />
-                  {yard.townOrCounty}
-                </span>
+          <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-5 pb-6 border-b border-stone-200">
+            <div className="flex items-start gap-4 min-w-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={yard.coverPhotoUrl || "/samples/mixed-garden-starting-v4.png"}
+                alt={yard.yardName}
+                className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border border-stone-200 shadow-md shrink-0"
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).src = "/samples/mixed-garden-starting-v4.png";
+                }}
+              />
+              <div className="space-y-1.5 min-w-0">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-800/10 text-emerald-900 border border-emerald-800/20">
+                    <ShieldCheck className="w-3.5 h-3.5 text-emerald-700" />
+                    Verified NJ Yard
+                  </span>
+                  <span className="text-xs text-stone-500 flex items-center gap-1">
+                    <Calendar className="w-3.5 h-3.5" />
+                    Published {new Date(yard.publishedAt).toLocaleDateString("en-US", { month: "short", year: "numeric" })}
+                  </span>
+                </div>
+                <h1 id="showcase-title" className="text-2xl sm:text-3xl font-serif font-bold tracking-tight text-stone-900">
+                  {yard.yardName}
+                </h1>
+                <div className="flex flex-wrap items-center gap-y-1 gap-x-4 text-sm text-stone-600">
+                  <span className="flex items-center gap-1 text-stone-800 font-medium">
+                    <UserCheck className="w-4 h-4 text-stone-500" />
+                    {yard.gardenerAlias}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <MapPin className="w-4 h-4 text-stone-400" />
+                    {yard.townOrCounty}
+                  </span>
+                </div>
               </div>
             </div>
 
