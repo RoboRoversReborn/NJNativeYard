@@ -68,7 +68,7 @@ const ROW_THEMES = [
 ];
 
 const BADGE_LEGEND = [
-  { icon: "🏆", title: "Keystone Champion", desc: "Hosts 2+ Keystone Genera" },
+  { icon: "🏆", title: "Keystone Champion", desc: "2+ Keystone Genera" },
   { icon: "🐝", title: "Bee Haven", desc: "4+ Native Flower Species" },
   { icon: "🛡️", title: "Invasive Free", desc: "0 Invasive Plants Found" },
   { icon: "🌳", title: "Canopy Restorer", desc: "Native Tree Canopy" },
@@ -124,9 +124,6 @@ export function LeaderboardView({
     };
   }, [user, properties, surveys, selectedCounty, sortBy, searchQuery]);
 
-  const totalNativeSpecies = yards.reduce((sum, y) => sum + y.nativeSpeciesCount, 0);
-  const avgScore = yards.length > 0 ? Math.round(yards.reduce((sum, y) => sum + y.score, 0) / yards.length) : 0;
-
   const userPropertiesWithSurveys = properties.filter((p) =>
     surveys.some((s) => p.yard_areas.some((a) => a.id === s.areaId))
   );
@@ -163,8 +160,8 @@ export function LeaderboardView({
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-8 space-y-6 animate-in fade-in duration-200">
-      {/* Title Header Matching Reference Style */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2">
+      {/* Title Header Matching Reference Style: Clean, No Giant Banners */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-stone-200/70">
         <div>
           <h1 className="text-3xl sm:text-4xl font-serif font-black tracking-tight text-stone-900">
             Native Yard Goals Leaderboard
@@ -174,7 +171,7 @@ export function LeaderboardView({
           </p>
         </div>
 
-        <div className="flex items-center gap-2 self-start sm:self-auto bg-stone-100 px-3.5 py-1.5 rounded-full border border-stone-200 text-xs font-bold text-stone-800 tracking-wider">
+        <div className="flex items-center gap-2 self-start sm:self-auto bg-stone-100 px-4 py-2 rounded-full border border-stone-200 text-xs font-bold text-stone-800 tracking-wider shadow-xs">
           <Sprout className="w-4 h-4 text-emerald-700" />
           <span>NATIVEYARD NJ</span>
         </div>
@@ -248,7 +245,7 @@ export function LeaderboardView({
       )}
 
       {/* Filter and Search Bar */}
-      <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 bg-white p-3 rounded-2xl border border-stone-200 shadow-xs">
+      <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 bg-white p-3.5 rounded-2xl border border-stone-200 shadow-xs">
         <div className="relative flex-1">
           <Search className="w-4 h-4 text-stone-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
@@ -307,45 +304,44 @@ export function LeaderboardView({
         </div>
       </div>
 
-      {/* Reference-Styled Gaming Leaderboard */}
-      <div className="space-y-3">
-        {/* Dark Header Pill Matching Reference Design */}
-        <div className="bg-stone-900 text-white rounded-2xl px-6 sm:px-8 py-3.5 shadow-md hidden md:grid grid-cols-12 items-center text-xs font-bold uppercase tracking-wider">
-          <div className="col-span-4">Yard & Gardener</div>
-          <div className="col-span-2 text-center">Rank</div>
-          <div className="col-span-3">Location / County</div>
-          <div className="col-span-1 text-center">Score</div>
-          <div className="col-span-2 text-right">Badges</div>
-        </div>
-
-        {loading ? (
-          <div className="p-12 text-center text-stone-500 space-y-3 bg-white rounded-2xl border border-stone-200">
-            <RefreshCw className="w-6 h-6 animate-spin mx-auto text-emerald-800" />
-            <p className="text-sm">Loading leaderboard rankings...</p>
+      {/* Tabular Layout Wrapped with Horizontal Scroll Support */}
+      <div className="overflow-x-auto pb-2">
+        <div className="min-w-[720px] space-y-3">
+          {/* Black Header Pill Exactly Matching Reference Image */}
+          <div className="bg-black text-white rounded-2xl px-6 sm:px-8 py-3.5 shadow-md grid grid-cols-12 items-center text-xs font-bold uppercase tracking-wider">
+            <div className="col-span-4">Name</div>
+            <div className="col-span-2 text-center">Rank</div>
+            <div className="col-span-3">Location</div>
+            <div className="col-span-1 text-center">Score</div>
+            <div className="col-span-2 text-right">Badges</div>
           </div>
-        ) : yards.length === 0 ? (
-          <div className="p-12 text-center text-stone-500 space-y-2 bg-white rounded-2xl border border-stone-200">
-            <Trophy className="w-8 h-8 text-stone-300 mx-auto" />
-            <p className="text-sm font-medium">No yards match your search criteria.</p>
-            <p className="text-xs text-stone-400">Try adjusting your county filter or search query.</p>
-          </div>
-        ) : (
-          /* Floating Pastel Card Rows Matching Reference Design */
-          <div className="space-y-3">
-            {yards.map((yard, index) => {
-              const rank = index + 1;
-              const theme = ROW_THEMES[Math.min(index, ROW_THEMES.length - 1)];
-              const thumbnail = yard.coverPhotoUrl || "/samples/mixed-garden-starting-v4.png";
 
-              return (
-                <div
-                  key={yard.id}
-                  onClick={() => setSelectedYard(yard)}
-                  className={`group rounded-2xl p-4 sm:px-8 sm:py-4.5 border transition-all duration-200 shadow-xs hover:shadow-md hover:scale-[1.006] cursor-pointer ${theme.bg}`}
-                >
-                  {/* Desktop Grid Layout (12 columns) */}
-                  <div className="hidden md:grid grid-cols-12 items-center gap-2">
-                    {/* Column: Yard Name & Small Avatar Thumbnail */}
+          {loading ? (
+            <div className="p-12 text-center text-stone-500 space-y-3 bg-white rounded-2xl border border-stone-200">
+              <RefreshCw className="w-6 h-6 animate-spin mx-auto text-emerald-800" />
+              <p className="text-sm">Loading leaderboard rankings...</p>
+            </div>
+          ) : yards.length === 0 ? (
+            <div className="p-12 text-center text-stone-500 space-y-2 bg-white rounded-2xl border border-stone-200">
+              <Trophy className="w-8 h-8 text-stone-300 mx-auto" />
+              <p className="text-sm font-medium">No yards match your search criteria.</p>
+              <p className="text-xs text-stone-400">Try adjusting your county filter or search query.</p>
+            </div>
+          ) : (
+            /* Floating Pastel Card Rows Matching Reference Design */
+            <div className="space-y-3">
+              {yards.map((yard, index) => {
+                const rank = index + 1;
+                const theme = ROW_THEMES[Math.min(index, ROW_THEMES.length - 1)];
+                const thumbnail = yard.coverPhotoUrl || "/samples/mixed-garden-starting-v4.png";
+
+                return (
+                  <div
+                    key={yard.id}
+                    onClick={() => setSelectedYard(yard)}
+                    className={`group rounded-2xl px-6 sm:px-8 py-3.5 border transition-all duration-200 shadow-xs hover:shadow-md hover:scale-[1.006] cursor-pointer grid grid-cols-12 items-center gap-2 ${theme.bg}`}
+                  >
+                    {/* Column 1: Small Circular Avatar (40x40) + Yard Name & Gardener */}
                     <div className="col-span-4 flex items-center gap-3.5 min-w-0">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -366,36 +362,33 @@ export function LeaderboardView({
                       </div>
                     </div>
 
-                    {/* Column: Rank (Formatted like 001, 002, 003...) */}
+                    {/* Column 2: Rank (Formatted like 001, 002, 003...) */}
                     <div className="col-span-2 text-center">
                       <span className={`font-mono font-black text-base tracking-wider ${theme.rankColor}`}>
                         {formatRank(rank)}
                       </span>
                     </div>
 
-                    {/* Column: Location / County */}
+                    {/* Column 3: Location / County */}
                     <div className="col-span-3 text-xs font-medium text-stone-700 flex items-center gap-1.5 truncate">
                       <MapPin className="w-3.5 h-3.5 text-stone-400 shrink-0" />
                       <span className="truncate">{yard.townOrCounty}</span>
                     </div>
 
-                    {/* Column: Score */}
+                    {/* Column 4: Score */}
                     <div className="col-span-1 text-center">
                       <span className="font-mono font-black text-lg text-stone-900 block leading-tight">
                         {yard.score}
                       </span>
-                      <span className="text-[10px] text-stone-500 font-semibold uppercase">
-                        {yard.nativeSpeciesCount} sp
-                      </span>
                     </div>
 
-                    {/* Column: Badges (Circular Badges Matching Reference) */}
+                    {/* Column 5: Badges (Circular Badges Matching Reference) */}
                     <div className="col-span-2 flex items-center justify-end gap-1.5">
                       {yard.badges.slice(0, 4).map((b) => (
                         <span
                           key={b.id}
                           title={`${b.label}: ${b.description}`}
-                          className="w-8 h-8 rounded-full bg-white/90 border border-stone-200/60 shadow-xs flex items-center justify-center text-sm shrink-0 hover:scale-110 transition-transform"
+                          className="w-8 h-8 rounded-full bg-white/95 border border-stone-200/60 shadow-xs flex items-center justify-center text-sm shrink-0 hover:scale-110 transition-transform"
                         >
                           {b.icon}
                         </span>
@@ -407,61 +400,11 @@ export function LeaderboardView({
                       )}
                     </div>
                   </div>
-
-                  {/* Mobile Row Layout */}
-                  <div className="flex md:hidden items-center justify-between gap-3">
-                    <div className="flex items-center gap-3 min-w-0">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={thumbnail}
-                        alt={yard.yardName}
-                        className="w-10 h-10 rounded-full object-cover shadow-xs border-2 border-white/80 shrink-0"
-                        onError={(e) => {
-                          (e.currentTarget as HTMLImageElement).src = "/samples/mixed-garden-starting-v4.png";
-                        }}
-                      />
-                      <div className="min-w-0">
-                        <div className="flex items-center gap-2">
-                          <span className={`font-mono font-black text-xs ${theme.rankColor}`}>
-                            #{formatRank(rank)}
-                          </span>
-                          <span className="font-bold text-xs truncate text-stone-900">
-                            {yard.yardName}
-                          </span>
-                        </div>
-                        <span className="text-[11px] text-stone-600 block truncate">
-                          {yard.gardenerAlias} • {yard.townOrCounty}
-                        </span>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-3 shrink-0">
-                      <div className="text-right">
-                        <span className="font-mono font-black text-base text-stone-900 block leading-tight">
-                          {yard.score}
-                        </span>
-                        <span className="text-[10px] text-stone-500 uppercase font-semibold">
-                          pts
-                        </span>
-                      </div>
-
-                      <div className="flex items-center gap-1">
-                        {yard.badges.slice(0, 2).map((b) => (
-                          <span
-                            key={b.id}
-                            className="w-7 h-7 rounded-full bg-white shadow-xs flex items-center justify-center text-xs"
-                          >
-                            {b.icon}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
+                );
+              })}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Bottom Badge Legend Card (Exactly Matching Reference Image) */}
