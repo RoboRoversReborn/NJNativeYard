@@ -74,6 +74,18 @@ export function PublicYardModal({
               <img
                 src={yard.coverPhotoUrl || "/samples/mixed-garden-starting-v4.png"}
                 alt={yard.yardName}
+                width={56}
+                height={56}
+                style={{
+                  width: "56px",
+                  height: "56px",
+                  minWidth: "56px",
+                  minHeight: "56px",
+                  maxWidth: "56px",
+                  maxHeight: "56px",
+                  objectFit: "cover",
+                  borderRadius: "9999px",
+                }}
                 className="w-14 h-14 rounded-full object-cover border-2 border-stone-200 shadow-xs shrink-0"
                 onError={(e) => {
                   (e.currentTarget as HTMLImageElement).src = "/samples/mixed-garden-starting-v4.png";

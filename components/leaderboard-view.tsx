@@ -347,6 +347,18 @@ export function LeaderboardView({
                       <img
                         src={thumbnail}
                         alt={yard.yardName}
+                        width={40}
+                        height={40}
+                        style={{
+                          width: "40px",
+                          height: "40px",
+                          minWidth: "40px",
+                          minHeight: "40px",
+                          maxWidth: "40px",
+                          maxHeight: "40px",
+                          objectFit: "cover",
+                          borderRadius: "9999px",
+                        }}
                         className="w-10 h-10 rounded-full object-cover shadow-xs border-2 border-white/80 shrink-0 group-hover:scale-105 transition-transform"
                         onError={(e) => {
                           (e.currentTarget as HTMLImageElement).src = "/samples/mixed-garden-starting-v4.png";
